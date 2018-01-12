@@ -1,12 +1,12 @@
 ---
-layout: single
+layout: about
 author_profile: true
 read_time: false
 comments: true
 share: false
 related: false
 category: abouts
-permalink: /about/
+permalink: about/
 header:
   image: /assets/images/about.jpg
 ---
