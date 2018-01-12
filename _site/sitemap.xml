@@ -96,6 +96,9 @@
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/posts/</loc>
 </url>
 <url>
@@ -103,9 +106,5 @@
 </url>
 <url>
 <loc>http://localhost:4000/til/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/index.html</loc>
-<lastmod>2018-01-12T23:06:32+09:00</lastmod>
 </url>
 </urlset>
