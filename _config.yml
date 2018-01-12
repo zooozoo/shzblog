@@ -9,7 +9,7 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Record, Organize, Make it mine"
+title                    : "Record | Organize | Make it mine"
 title_separator          : "-"
 name                     : "석헌주"
 description              : "My programming study blog and I hope it help someone who struggling with code"
@@ -193,6 +193,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -248,8 +249,10 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
       comments: true
-      share: true
+      share: false
       related: true
+      permalink: /:categories/:path/
+      category: records
