@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-12T20:20:57+09:00</updated><id>http://localhost:4000/</id><title type="html">Record | Organize | Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>-Yoda</name></author><entry><title type="html">About</title><link href="http://localhost:4000/about/" rel="alternate" type="text/html" title="About" /><published>2018-01-12T00:00:00+09:00</published><updated>2018-01-12T00:00:00+09:00</updated><id>http://localhost:4000/about</id><content type="html" xml:base="http://localhost:4000/about/">&lt;h1 id=&quot;안녕하세요&quot;&gt;안녕하세요&lt;/h1&gt;</content><author><name>-Yoda</name></author><category term="abouts" /><summary type="html">안녕하세요</summary></entry><entry><title type="html">Docker관련</title><link href="http://localhost:4000/records/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="alternate" type="text/html" title="Docker관련" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>http://localhost:4000/records/records/docker%EA%B4%80%EB%A0%A8</id><content type="html" xml:base="http://localhost:4000/records/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/">&lt;h1 id=&quot;docker-세팅&quot;&gt;Docker 세팅&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-12T22:14:50+09:00</updated><id>http://localhost:4000/</id><title type="html">Record | Organize | Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>-Yoda</name></author><entry><title type="html">Docker관련</title><link href="http://localhost:4000/records/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="alternate" type="text/html" title="Docker관련" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>http://localhost:4000/records/records/docker%EA%B4%80%EB%A0%A8</id><content type="html" xml:base="http://localhost:4000/records/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/">&lt;h1 id=&quot;docker-세팅&quot;&gt;Docker 세팅&lt;/h1&gt;
 
 &lt;p&gt;도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.&lt;/p&gt;
 
@@ -2564,4 +2564,78 @@ Global Config tab에서 Program &amp;gt; Share State Among Window &amp;gt; All�
 &lt;p&gt;log out을 한후 다시 log in을 한다.
 한글/영어가 한영키로 전환되는지 확인한다.&lt;/p&gt;
 
-&lt;p&gt;가져온 블로그: &lt;a href=&quot;http://hochulshin.com/ubuntu-1604-hangul/&quot;&gt;출처&lt;/a&gt;&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">ubuntu 에서 한글입력기 설정 방법</summary></entry></feed>
+&lt;p&gt;가져온 블로그: &lt;a href=&quot;http://hochulshin.com/ubuntu-1604-hangul/&quot;&gt;출처&lt;/a&gt;&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">ubuntu 에서 한글입력기 설정 방법</summary></entry><entry><title type="html">Ubuntu_shortcut</title><link href="http://localhost:4000/records/records/2017-09-30-ubuntu_shortcut/" rel="alternate" type="text/html" title="Ubuntu_shortcut" /><published>2017-09-30T00:00:00+09:00</published><updated>2017-09-30T00:00:00+09:00</updated><id>http://localhost:4000/records/records/ubuntu_shortcut</id><content type="html" xml:base="http://localhost:4000/records/records/2017-09-30-ubuntu_shortcut/">&lt;h1 id=&quot;일반&quot;&gt;일반&lt;/h1&gt;
+
+&lt;h4 id=&quot;ctrl--alt-l&quot;&gt;ctrl + alt L&lt;/h4&gt;
+&lt;p&gt;화면 잠금&lt;/p&gt;
+
+&lt;h4 id=&quot;super윈도우키--d&quot;&gt;super(윈도우키) + D&lt;/h4&gt;
+&lt;p&gt;모든 창 내리기&lt;/p&gt;
+
+&lt;h4 id=&quot;super--w&quot;&gt;super + w&lt;/h4&gt;
+&lt;p&gt;현재 작업공간에 열려있는 창 작게 보여주기(화살표로 선택가능)&lt;/p&gt;
+
+&lt;h4 id=&quot;super--shift--w&quot;&gt;super + shift + w&lt;/h4&gt;
+&lt;p&gt;모든 작업공간에 열려있는 창 적게 보기여주기(화살표로 선택가능)&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--w&quot;&gt;ctrl + w&lt;/h4&gt;
+&lt;p&gt;현재의 작업공간이나, 모든 작업공간에 열려있는 창을 띄운다음에(&lt;code class=&quot;highlighter-rouge&quot;&gt;super + w&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;super + shift + w&lt;/code&gt;)
+&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl + w&lt;/code&gt;명령을 통해 선택된 창을 하나씩 종료시킬 수 있다.&lt;/p&gt;
+
+&lt;h4 id=&quot;alt--좌마우스-끌기&quot;&gt;Alt + 좌마우스 끌기&lt;/h4&gt;
+&lt;p&gt;창 이동. 창의 어느 곳이든 잡고 이동 가능.&lt;/p&gt;
+
+&lt;h4 id=&quot;alt--중마우스-끌기&quot;&gt;Alt + 중마우스 끌기&lt;/h4&gt;
+&lt;p&gt;(우분투) 창 크기 조절.&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--q&quot;&gt;ctrl + q&lt;/h4&gt;
+&lt;p&gt;현재 어플리케이션 종료&lt;/p&gt;
+
+&lt;h4 id=&quot;alt--tab&quot;&gt;Alt + tab&lt;/h4&gt;
+&lt;p&gt;창이동 (&lt;code class=&quot;highlighter-rouge&quot;&gt;Alt&lt;/code&gt;키를 계속 누른 상태에서 Quotation Mark(쿼데이션 마크, 키보드 1 왼쪽에 있음)를 누르면 선택된 창의 작동 모습을 확인할 수 있다.)&lt;/p&gt;
+
+&lt;h1 id=&quot;터미널-관련&quot;&gt;터미널 관련&lt;/h1&gt;
+
+&lt;h4 id=&quot;ctrl--c&quot;&gt;ctrl + c&lt;/h4&gt;
+&lt;p&gt;현재 프로세서 끝내기&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--z&quot;&gt;ctrl + z&lt;/h4&gt;
+&lt;p&gt;현재 프로세서를 백그라운드로 실행&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--a&quot;&gt;ctrl + a&lt;/h4&gt;
+&lt;p&gt;첫줄로 커서 이동&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--e&quot;&gt;ctrl + e&lt;/h4&gt;
+&lt;p&gt;마지막 줄로 커서 이동&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--l&quot;&gt;ctrl + l&lt;/h4&gt;
+&lt;p&gt;터미널 청소&lt;/p&gt;
+
+&lt;h4 id=&quot;shift--pageup--pagedown&quot;&gt;Shift + PageUp / PageDown&lt;/h4&gt;
+&lt;p&gt;터미널 결과물을 스크롤 하기&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--r&quot;&gt;ctrl + r&lt;/h4&gt;
+&lt;p&gt;사용한 명령어 키워드로 찾기&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--shift--w&quot;&gt;ctrl + shift + w&lt;/h4&gt;
+&lt;p&gt;현재 터미널 탭 닫기&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--shift--q&quot;&gt;ctrl + shift + q&lt;/h4&gt;
+&lt;p&gt;현재 터미널 창 닫기&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--pageup-pagedown&quot;&gt;ctrl + PageUp, PageDown&lt;/h4&gt;
+&lt;p&gt;터미널 탭 이동&lt;/p&gt;
+
+&lt;h4 id=&quot;ctrl--c-1&quot;&gt;ctrl + c&lt;/h4&gt;
+&lt;p&gt;작성한 명령어 실행 안시키고 다음 명령어 입력줄 실행&lt;/p&gt;
+
+&lt;h1 id=&quot;그-외-유용한-팁&quot;&gt;그 외 유용한 팁&lt;/h1&gt;
+
+&lt;h4 id=&quot;파일탐색창에서-ctrl--l&quot;&gt;파일탐색창에서 ctrl + l&lt;/h4&gt;
+&lt;p&gt;팔일 탐색창의 현재위치 경로를 얻을 수 있다.&lt;/p&gt;
+
+&lt;p&gt;출처: http://slayer95.tistory.com/entry/Useful-Shortcut-Keys-In-Ubuntu-우분투-단축키 [I Love Ubuntu~♡]&lt;/p&gt;
+
+&lt;p&gt;참조 사이트
+(http://egloos.zum.com/nemonein/v/5265559)
+(http://slayer95.tistory.com/entry/Useful-Shortcut-Keys-In-Ubuntu-%EC%9A%B0%EB%B6%84%ED%88%AC-%EB%8B%A8%EC%B6%95%ED%82%A4)&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">일반</summary></entry></feed>

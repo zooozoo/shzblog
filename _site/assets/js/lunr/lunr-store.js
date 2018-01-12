@@ -113,9 +113,4 @@ var store = [{
         "excerpt":"Docker 세팅도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.docker run ubuntu:16.04docker run --rm it ubuntu:16:04 /bin/bash켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.Dockerfile.base 이미지 만드는 명령어sudo docker build -t base -f Dockerfile.base .Dockerfile.base를 기준으로 우리가 쓸 도커(container)...","categories": ["records"],
         "tags": [],
         "url": "http://localhost:4000/records/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/",
-        "teaser":null},{
-        "title": "About",
-        "excerpt":"안녕하세요","categories": ["abouts"],
-        "tags": [],
-        "url": "http://localhost:4000/about/",
         "teaser":null}]
