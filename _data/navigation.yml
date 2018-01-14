@@ -2,10 +2,10 @@
 main:
   - title: "POSTS"
     url: /posts/
-  - title: "TIL"
-    url: /til/
   - title: "RECORDS"
     url: /records/
+  - title: "TIL"
+    url: /til/
   - title: "ABOUT"
     url: /about/
 
