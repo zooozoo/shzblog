@@ -1,4 +1,9 @@
 var store = [{
+        "title": "Test",
+        "excerpt":"test","categories": ["posts"],
+        "tags": [],
+        "url": "http://localhost:4000/posts/2017-09-09-test/",
+        "teaser":null},{
         "title": "Css",
         "excerpt":"1. css란?마크업 언어(html)가 실제 표시되는 방법을 기술하는 언어***2. css사용법 head안쪽 style태그 내부에 작성 사용할 요소의 style속성에 정의 외부 스타일 시트를 사용, link태그를 사용, href속성에 경로를 입력*** 1.css선택자 html페이지 내부의 모든 요소에 같은 css속성을 적용합니다. margin이나 padding값을 초기화하는 등, 기본값을 정할 때 주로 사용합니다. 다만 문서의 모든 요소를 읽기 때문에 페이지...","categories": ["records"],
         "tags": [],

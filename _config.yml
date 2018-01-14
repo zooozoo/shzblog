@@ -256,7 +256,7 @@ defaults:
       permalink: /:path/
       category: records
       sidebar:
-        nav: "docs"
+        nav: "records"
 
   - scope:
       path: "_posts/posts"
@@ -269,6 +269,8 @@ defaults:
       related: true
       permalink: /:path/
       category: posts
+      sidebar:
+        nav: "posts"
 
   - scope:
       path: "_posts/til"
