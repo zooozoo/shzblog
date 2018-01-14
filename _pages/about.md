@@ -7,7 +7,7 @@ share: false
 related: false
 category: abouts
 title: About
-permalink: about/
+permalink: /about/
 header:
   image: /assets/images/about.jpg
 ---

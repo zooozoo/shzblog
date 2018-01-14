@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "POSTS"
-    url: posts/
+    url: /posts/
   - title: "TIL"
-    url: til/
+    url: /til/
   - title: "RECORDS"
-    url: records/
+    url: /records/
   - title: "ABOUT"
-    url: about/
+    url: /about/
 
 
 
@@ -21,6 +21,3 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-
-# url 주소 가장 앞쪽에 '/'를 붙이면 로컬에서는 제대로 작동하는데
-# github에서는 '/'가 하나 더 들어가는 현상이 발생해서 url값의 앞쪽에 '/'을 지워서 적용함
