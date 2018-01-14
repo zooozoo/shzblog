@@ -1,13 +1,13 @@
 # main links
 main:
   - title: "POSTS"
-    url: /posts/
+    url: posts/
   - title: "TIL"
-    url: /til/
+    url: til/
   - title: "RECORDS"
-    url: /records/
+    url: records/
   - title: "ABOUT"
-    url: /about/
+    url: about/
   # - title: "Quick-Start Guide"
   #   url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   # - title: "About"
