@@ -245,7 +245,7 @@ compress_html:
 defaults:
   # _posts
   - scope:
-      path: "records/"
+      path: "records"
       type:
     values:
       layout: single
