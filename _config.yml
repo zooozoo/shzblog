@@ -51,7 +51,7 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
+search                   : true # true, false (default)
 search_full_content      : # true, false (default)
 
 # SEO Related
@@ -248,6 +248,7 @@ defaults:
       path: "_posts/records"
     values:
       layout: single
+      search: true
       author_profile: false
       read_time: true
       comments: true
@@ -262,6 +263,7 @@ defaults:
       path: "_posts/posts"
     values:
       layout: single
+      search: true
       author_profile: false
       read_time: true
       comments: true
@@ -276,6 +278,7 @@ defaults:
       path: "_posts/til"
     values:
       layout: single
+      search: true
       author_profile: false
       read_time: true
       comments: true

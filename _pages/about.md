@@ -1,5 +1,6 @@
 ---
 layout: about
+search: true
 author_profile: true
 read_time: false
 comments: true
