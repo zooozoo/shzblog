@@ -254,5 +254,5 @@ defaults:
       comments: true
       share: false
       related: true
-      permalink: :path/
+      permalink: /:path/
       category: records
