@@ -246,7 +246,6 @@ defaults:
   # _posts
   - scope:
       path: "_posts/records"
-      # type:
     values:
       layout: single
       author_profile: false
@@ -256,3 +255,27 @@ defaults:
       related: true
       permalink: /:path/
       category: records
+
+  - scope:
+      path: "_posts/posts"
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      permalink: /:path/
+      category: posts
+
+  - scope:
+      path: "_posts/til"
+    values:
+      layout: single
+      author_profile: false
+      read_time: true
+      comments: true
+      share: false
+      related: true
+      permalink: /:path/
+      category: til
