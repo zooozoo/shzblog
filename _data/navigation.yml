@@ -5,7 +5,7 @@ main:
   - title: "TIL"
     url: til/
   - title: "RECORDS"
-    url: records/
+    url: test/
   - title: "ABOUT"
     url: about/
 
