@@ -1,0 +1,23 @@
+{% assign navigation = site.data.navigation[include.nav] %}
+
+<nav class="nav__list">
+  {% if page.sidebar.title %}<h3 class="nav__title" style="padding-left: 0;">{{ page.sidebar.title }}</h3>{% endif %}
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
+  <ul class="nav__items">
+      <li>
+          <span class="nav__sub-title">
+          {% if page.url == "/records/" %}
+            {{ page.category }}
+          {% else %}
+            {{ page.category }}
+          {% endif %}
+          </span>
+        <ul>
+          {% for post in site.categories.records %}
+            <li><a href="{{ domain }}{{ post.url }}" class="{{ active }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </li>
+  </ul>
+</nav>
