@@ -10,28 +10,23 @@ main:
     url: /about/
 
 records:
-  - title: records
+  - title: Records
     children:
-      - title: "Quick-Start Guide"
+      - title: "test"
         url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
 
 posts:
-  - title: posts
+  - title: Posts
     children:
-      - title: "Quick-Start Guide"
+      - title: "test"
         url: /docs/quick-start-guide/
-      - title: "Structure"
-        url: /docs/structure/
-      - title: "Installation"
-        url: /docs/installation/
-      - title: "Upgrading"
-        url: /docs/upgrading/
+
+til:
+  - title: TIL
+    children:
+      - title: "1월 3째주"
+        url: /til/2018-01-15-1월15일~21일/
+
 
 
   # - title: "Quick-Start Guide"

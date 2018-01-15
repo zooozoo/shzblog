@@ -118,4 +118,14 @@ var store = [{
         "excerpt":"Docker 세팅도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.docker run ubuntu:16.04docker run --rm it ubuntu:16:04 /bin/bash켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.Dockerfile.base 이미지 만드는 명령어sudo docker build -t base -f Dockerfile.base .Dockerfile.base를 기준으로 우리가 쓸 도커(container)...","categories": ["records"],
         "tags": [],
         "url": "http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/",
+        "teaser":null},{
+        "title": "Hello_digital_world",
+        "excerpt":"커니핸 교수의 Hello Digital World 공부소프트웨어의 계층하드웨어커널운영체제라이브러리집합(API를 통해 접근 가능)애플리케이션 운영 체제와 애플리케이션 사이의 경계는 뚜렷하게 정의되어 있지 않다. 완벽하진 않아도 유용한 지침은 한 애플리케이션이 다른 애플리케이션을 간섭하지 않도록 보장하는 데 필요한 것은 무엇이든 운영체제의 일부라는 점이다. 메모리 관리, 즉 프로그램이 실행되는 동안 메모리 어디에 프로그램을 둘지 결정하는 일은 운영...","categories": ["records"],
+        "tags": [],
+        "url": "http://localhost:4000/records/2018-01-15-Hello_Digital_World/",
+        "teaser":null},{
+        "title": "1월15일~21일",
+        "excerpt":"1월 15일 월요일  커니핸 교수의 hello digital world 공부 (링크)","categories": ["til"],
+        "tags": [],
+        "url": "http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/",
         "teaser":null}]

@@ -181,7 +181,7 @@
     
       <li>
         
-          <span class="nav__sub-title">records</span>
+          <span class="nav__sub-title">Records</span>
         
 
         
@@ -194,30 +194,6 @@
             
 
             <li><a href="http://localhost:4000/docs/quick-start-guide/" class="">Quick-Start Guide</a></li>
-          
-            
-            
-
-            
-            
-
-            <li><a href="http://localhost:4000/docs/structure/" class="">Structure</a></li>
-          
-            
-            
-
-            
-            
-
-            <li><a href="http://localhost:4000/docs/installation/" class="">Installation</a></li>
-          
-            
-            
-
-            
-            
-
-            <li><a href="http://localhost:4000/docs/upgrading/" class="">Upgrading</a></li>
           
         </ul>
         
@@ -254,6 +230,33 @@
       
 
       <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#methods-that-return-new-querysets">Methods that return new QuerySets</a>
+    <ul>
+      <li><a href="#filter">filter()</a></li>
+      <li><a href="#exclude">exclude()</a></li>
+      <li><a href="#annotate">annotate()</a></li>
+      <li><a href="#order_by">order_by()</a></li>
+      <li><a href="#reverse">reverse()</a></li>
+      <li><a href="#distinct">distinct()</a></li>
+      <li><a href="#values">values()</a></li>
+      <li><a href="#values_listfields-flatfalse">values_list(*fields, flat=False)</a></li>
+      <li><a href="#datesfield-kind-orderasc">dates(field, kind, order=’ASC’)</a></li>
+      <li><a href="#datetimesfield_name--kind-orderasc-tzinfonone">datetimes(field_name,  kind, order=’ASC’, tzinfo=None)</a></li>
+      <li><a href="#none">none()</a></li>
+      <li><a href="#all">all()</a></li>
+      <li><a href="#unionother_qs-allfalse">union(*other_qs, all=False)</a></li>
+      <li><a href="#intersectionother_qs">intersection(*other_qs)</a></li>
+      <li><a href="#select_relatedfields">select_related(*fields)</a></li>
+    </ul>
+  </li>
+</ul>
+            </nav>
+          </aside>
         
         <h1 id="queryset-api">QuerySet API</h1>
 
@@ -586,6 +589,64 @@ Entry.objects.select_related('blog').filter(pub_date__gt=timezone.now())
     
     <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="permalink">1월15일~21일
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">1월 15일 월요일
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/records/2018-01-15-Hello_Digital_World/" rel="permalink">Hello_digital_world
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  2 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">커니핸 교수의 Hello Digital World 공부
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
         <a href="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="permalink">Docker관련
 </a>
       
@@ -635,67 +696,8 @@ Docker 세팅
 </div>
 
         
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/records/2017-10-15-postgresql/" rel="permalink">Postgresql
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  less than 1 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">명령어 기록 (ubuntu-1604)
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/" rel="permalink">Django_model_fieldtype
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  5 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">Model field reference
-
-</p>
-  </article>
-</div>
-
-        
       </div>
     </div>
-  
   
 </div>
 

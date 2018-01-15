@@ -97,6 +97,14 @@
 <lastmod>2017-11-16T00:00:00+09:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/records/2018-01-15-Hello_Digital_World/</loc>
+<lastmod>2018-01-15T00:00:00+09:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/</loc>
+<lastmod>2018-01-15T00:00:00+09:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -122,5 +130,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/page5/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/page6/</loc>
 </url>
 </urlset>
