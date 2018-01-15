@@ -10,7 +10,7 @@ var store = [{
         "url": "http://localhost:4000/records/2017-09-09-css/",
         "teaser":null},{
         "title": "Html",
-        "excerpt":"#HTML##html 기본####1. HTML은?마크업 언어, “하이퍼 텍스트”####2. 웹 표준W3C, 웹표준####3. 웹 접근성WCAG 웹 콘텐츠를 더 접근성 있게 만드는 권고안의 넓은 범위####4. HTML의 기본구조&lt;!DOCTYPE html&gt;-&gt; doctype은 문서 유형을 지정&lt;head&gt; &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;-&gt; html문서에 관한 기본 정보를 포함&lt;body&gt;&lt;/body&gt;&lt;/html&gt;-&gt; 로 이루어진 요소를 '테그'라 부릅니다.####5. 주석주석은 자주 습관적으로 사용하는 것이 좋습니다.####6.태그의 요소와 속성&lt;요소 속성=\"값&gt;-&gt; 스스로 닫는 태그...","categories": ["records"],
+        "excerpt":"#HTML##html 기본####1. HTML은?마크업 언어, “하이퍼 텍스트”####2. 웹 표준W3C, 웹표준####3. 웹 접근성WCAG 웹 콘텐츠를 더 접근성 있게 만드는 권고안의 넓은 범위####4. HTML의 기본구조&lt;!DOCTYPE html&gt;-&gt; doctype은 문서 유형을 지정&lt;head&gt; &lt;title&gt;Document&lt;/title&gt;&lt;/head&gt;-&gt; html문서에 관한 기본 정보를 포함&lt;body&gt;&lt;/body&gt;&lt;/html&gt;-&gt; &lt;와 &gt;로 이루어진 요소를 ‘테그’라 부릅니다.####5. 주석주석은 자주 습관적으로 사용하는 것이 좋습니다.####6.태그의 요소와 속성&lt;요소 속성=\"값&gt;-&gt; 스스로 닫는...","categories": ["records"],
         "tags": [],
         "url": "http://localhost:4000/records/2017-09-09-html/",
         "teaser":null},{

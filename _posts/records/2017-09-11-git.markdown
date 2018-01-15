@@ -1,6 +1,4 @@
-
-### 협업시 팁
-
+# 협업시 팁
 
 ### General
 
@@ -69,21 +67,20 @@ Git의 브랜치는 커밋 사이를 가볍게 이동할 수 있는 어떤 포�
 
 * `git reset` 명령어가 하는일
 1. HEAD이동
-reset 명령이 하는 첫 번째 일은 HEAD 브랜치를 이동시킨다. checkout 명령처럼 HEAD가 가리키는 브랜치를 바꾸지는 않는다. HEAD는 계속 현재 브랜치를 가리키고 있고, 현재 브랜치가 가리키는 커밋을 바꾼다. HEAD가 master 브랜치를 가리키고 있다면(즉 master 브랜치를 Checkout 하고 작업하고 있다면) git reset 9e5e6a4 명령은 master 브랜치가 `9e5e6a4`를 그가리키게 한다.
+  reset 명령이 하는 첫 번째 일은 HEAD 브랜치를 이동시킨다. checkout 명령처럼 HEAD가 가리키는 브랜치를 바꾸지는 않는다. HEAD는 계속 현재 브랜치를 가리키고 있고, 현재 브랜치가 가리키는 커밋을 바꾼다. HEAD가 master 브랜치를 가리키고 있다면(즉 master 브랜치를 Checkout 하고 작업하고 있다면) git reset 9e5e6a4 명령은 master 브랜치가 `9e5e6a4`를 그가리키게 한다.
 
 <https://git-scm.com/book/ko/v2/Git-%EB%8F%84%EA%B5%AC-Reset-%EB%AA%85%ED%99%95%ED%9E%88-%EC%95%8C%EA%B3%A0-%EA%B0%80%EA%B8%B0> 해당내용 참조해서 이해하고 정리하기.
 
 <http://devpools.kr/2017/02/05/%EC%B4%88%EB%B3%B4%EC%9A%A9-git-%EB%90%98%EB%8F%8C%EB%A6%AC%EA%B8%B0-reset-revert/> 쉽게 설명해 놓은 참고할 만한 블로그
 
 * github에서 상대방 초대하기
-해당 리포지터리의 settings에 가서 collaborators에서 상대방 아이디 입력하면 초대장 날라간다.
+  해당 리포지터리의 settings에 가서 collaborators에서 상대방 아이디 입력하면 초대장 날라간다.
 
 * git upstream이란
-github에 올린 브랜치랑 매칭시켜서 github에 올렸을 때 다른 브랜치랑 merge되지 않도록 할 수 있다. 다음 예시와 같은 명령어로 upstream설정을 줄 수 있다.
+  github에 올린 브랜치랑 매칭시켜서 github에 올렸을 때 다른 브랜치랑 merge되지 않도록 할 수 있다. 다음 예시와 같은 명령어로 upstream설정을 줄 수 있다.
 ```
 `git checkout -b [branch] [remotename]/[branch]
 ```
-
 
 ***
 
@@ -151,10 +148,10 @@ git 명령을 사용하지 않고 단순히 워킹 디렉터리에서 파일을 
 커밋하면 파일은 삭제되고 Git은 이 파일을 더 추적하지 않는다.
 
 * git rm -f 파일명
-staged된 파일을 강제로 해제
+  staged된 파일을 강제로 해제
 
 * git mv 기존이름 바꿀이름
-staged된 파일의 이름을 수정
+  staged된 파일의 이름을 수정
 
 * git rm --cached 파일명
 
@@ -191,7 +188,7 @@ Staged상태의 파일을 Unstaged상태로 변경한다.
 Modified(수정되고 add하지 않은 상태)상태의 파일을 최근 커밋된 버전으로 다시 되돌리는 명령어
 
 * git checkout .
-Modified 상태의 전체 내용을 직전 커밋한 내용으로 되돌리는 명령어
+  Modified 상태의 전체 내용을 직전 커밋한 내용으로 되돌리는 명령어
 
 
 * git remote
@@ -216,10 +213,10 @@ Clone한 이후에(혹은 마지막으로 가져온 이후에) 수정된 모든 
 
 
 * git pull 리모트이름
-Clone 한 서버에서 데이터를 가져오고 그 데이터를 자동으로 현재 작업하는 코드와 Merge시킨다.
+  Clone 한 서버에서 데이터를 가져오고 그 데이터를 자동으로 현재 작업하는 코드와 Merge시킨다.
 
 * git pull 리모트이름 브랜치이름
-위의 `브랜치이름`의 경우 온라인 저장소의 브랜치가 여러개일 경우 어떤 브랜치의 파일들을 가져올지 명시해주는 것 이다.
+  위의 `브랜치이름`의 경우 온라인 저장소의 브랜치가 여러개일 경우 어떤 브랜치의 파일들을 가져올지 명시해주는 것 이다.
 
 
 * git push 리모트저장소이름 브랜치이름
@@ -256,7 +253,7 @@ Annotated태그를 만든다. /Lightweight 태그는 브랜치와 비슷한데 �
 
 
 * git tag 태그이름
-Lightweight 태그는 기본적으로 파일에 커밋 체크섬을 저장하는 것뿐이다. 다른 정보는 저장하지 않는다. Lightweight 태그를 만들 때는 -a, -s, -m 옵션을 사용하지 않는다.
+  Lightweight 태그는 기본적으로 파일에 커밋 체크섬을 저장하는 것뿐이다. 다른 정보는 저장하지 않는다. Lightweight 태그를 만들 때는 -a, -s, -m 옵션을 사용하지 않는다.
 
 
 * git tag -a 태그명 이전커밋히스토리의커밋체크섬
@@ -311,7 +308,7 @@ Tracked 된 로컬 파일 전체를 확인할 수 있다.
 
 
 * rm - rf .git (깃 해제))
-해당폴더에서 깃 트레킹을 해제하는 명령어
+  해당폴더에서 깃 트레킹을 해제하는 명령어
 
 
 * git stash
