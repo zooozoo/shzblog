@@ -258,8 +258,6 @@ defaults:
       category: records
       sidebar:
         nav: "records"
-      toc: true
-      toc_label: Contents
 
   - scope:
       path: "_posts/posts"
