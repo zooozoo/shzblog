@@ -1,6 +1,6 @@
 ---
 title: UX/UI fontsize customzing at atom editor
-tag: atom, ide, tip,
+tag: [atom, ide, tip]
 ---
 
 블로그 작성을 위해서 아톰 editor를 사용하는데
