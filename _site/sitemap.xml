@@ -126,13 +126,10 @@
 <loc>http://localhost:4000/til/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/atom/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/tags/ide/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/tags/tip/</loc>
+<loc>http://localhost:4000/tags/atom/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/categories/records/</loc>

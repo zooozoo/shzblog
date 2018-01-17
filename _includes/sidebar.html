@@ -20,6 +20,10 @@
         {% include nav_list_records nav=page.sidebar.nav %}
       {% elsif page.url == "/records/" %}
         {% include nav_list_records nav=page.sidebar.nav %}
+      {% elsif page.url == "/posts/" %}
+        {% include nav_list_posts nav=page.sidebar.nav %}
+      {% elsif page.category == "records" %}
+        {% include nav_list_posts nav=page.sidebar.nav %}
       {% else %}
         {% include nav_list nav=page.sidebar.nav %}
       {% endif %}
