@@ -1,9 +1,4 @@
 var store = [{
-        "title": "Test",
-        "excerpt":"test","categories": ["posts"],
-        "tags": [],
-        "url": "http://localhost:4000/posts/2017-09-09-test/",
-        "teaser":null},{
         "title": "Css",
         "excerpt":"1. css란?마크업 언어(html)가 실제 표시되는 방법을 기술하는 언어***2. css사용법 head안쪽 style태그 내부에 작성 사용할 요소의 style속성에 정의 외부 스타일 시트를 사용, link태그를 사용, href속성에 경로를 입력*** 1.css선택자 html페이지 내부의 모든 요소에 같은 css속성을 적용합니다. margin이나 padding값을 초기화하는 등, 기본값을 정할 때 주로 사용합니다. 다만 문서의 모든 요소를 읽기 때문에 페이지...","categories": ["records"],
         "tags": [],
@@ -120,12 +115,17 @@ var store = [{
         "url": "http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/",
         "teaser":null},{
         "title": "Hello_digital_world",
-        "excerpt":"커니핸 교수의 Hello Digital World 공부소프트웨어의 계층하드웨어커널운영체제라이브러리집합(API를 통해 접근 가능)애플리케이션 운영 체제와 애플리케이션 사이의 경계는 뚜렷하게 정의되어 있지 않다. 완벽하진 않아도 유용한 지침은 한 애플리케이션이 다른 애플리케이션을 간섭하지 않도록 보장하는 데 필요한 것은 무엇이든 운영체제의 일부라는 점이다. 메모리 관리, 즉 프로그램이 실행되는 동안 메모리 어디에 프로그램을 둘지 결정하는 일은 운영...","categories": ["records"],
+        "excerpt":"커니핸 교수의 Hello Digital World 공부제이펍 출판사에서 출판한 커니핸 교수의 Hello Digital World를 공부하며 오래 기억하고 싶은 내용들을 기록한 게시물 입니다.저작권 관련 문제가 있을 경우 블로그에서 내리겠습니다.소프트웨어의 계층하드웨어커널운영체제라이브러리집합(API를 통해 접근 가능)애플리케이션 운영 체제와 애플리케이션 사이의 경계는 뚜렷하게 정의되어 있지 않다. 완벽하진 않아도 유용한 지침은 한 애플리케이션이 다른 애플리케이션을 간섭하지 않도록...","categories": ["records"],
         "tags": [],
         "url": "http://localhost:4000/records/2018-01-15-Hello_Digital_World/",
         "teaser":null},{
         "title": "1월15일~21일",
-        "excerpt":"1월 15일 월요일  커니핸 교수의 hello digital world 공부 (링크)","categories": ["til"],
+        "excerpt":"1월 15일 월요일  커니핸 교수의 hello digital world 공부 (링크)1월 17일 수요일  커니핸 교수의 hello digital world 공부 (링크)","categories": ["til"],
         "tags": [],
         "url": "http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/",
+        "teaser":null},{
+        "title": "UX/UI fontsize customzing at atom editor",
+        "excerpt":"블로그 작성을 위해서 아톰 editor를 사용하는데왼쪽 프로젝트의 파일 목록이 나오는 부분과, 파일명을 보여주는 부분의 글씨가 너무 작아서불편함을 느끼고 있었다. 운영체제의 디스플레이 세팅을 통해서 글씨를 키워볼까 했는데다른 부분은 모두 만족하고 사용하고 있었기 때문에 건들이기 싫었고 atom의 글씨 크기만바꾸고 싶었다.그래서 검색!그리고 찾았다!! 아래는 해당 링크 https://github.com/atom/atom/issues/2530좀 더 자세히 설명을 남기자면 메뉴에서 settings를...","categories": ["posts"],
+        "tags": ["atom","ide","tip"],
+        "url": "http://localhost:4000/posts/2018-01-17-atom/",
         "teaser":null}]
