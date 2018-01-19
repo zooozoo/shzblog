@@ -120,7 +120,7 @@ var store = [{
         "url": "https://zooozoo.github.io/records/2018-01-15-Hello_Digital_World/",
         "teaser":null},{
         "title": "1월15일~21일",
-        "excerpt":"1월 15일 월요일  커니핸 교수의 hello digital world 공부 (링크)1월 17일 수요일  커니핸 교수의 hello digital world 공부 (링크)","categories": ["til"],
+        "excerpt":"1월 15일 월요일 커니핸 교수의 hello digital world 공부 (링크)1월 17일 수요일 커니핸 교수의 hello digital world 공부 (링크)1월 17일 수요일 블로그 만들기 posts sidebar navigations에 자동으로 태그 목록 보여주도록 설정 개별 post 들어 갔을 때 sidebar가 제대로 표시되지 않았는데 header에 sidebar변수가 인식되지 않는 현상 발견 -&gt; 형식에 맞는 새로운...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/",
         "teaser":null},{
