@@ -1,4 +1,0 @@
----
-title: UX/UI fontsize customzing at atom editor
-tag: atom
----
