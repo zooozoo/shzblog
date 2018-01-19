@@ -1,3 +1,4 @@
+<!-- 여기서 부터는 'group-by-array'의 내용 -->
 <!--
 # Jekyll Group-By-Array 0.1.0
 # https://github.com/mushishi78/jekyll-group-by-array
@@ -18,30 +19,27 @@
 
 <!-- Uniq -->
 {% assign __names =  __names | sort %}
+
 {% for name in __names %}
-
 <!-- If not equal to previous then it must be unique as sorted -->
-{% unless name == previous %}
-
+  {% unless name == previous %}
 <!-- Push to group_names -->
-{% assign group_names = group_names | push: name %}
-{% endunless %}
-
-{% assign previous = name %}
+    {% assign group_names = group_names | push: name %}
+  {% endunless %}
+  {% assign previous = name %}
 {% endfor %}
-
 
 <!-- group_items -->
 {% for name in group_names %}
-
 <!-- Collect if contains -->
-{% assign __item = __empty_array %}
-{% for __element in include.collection %}
-{% if __element[include.field] contains name %}
-{% assign __item = __item | push: __element %}
-{% endif %}
+  {% assign __item = __empty_array %}
+  {% for __element in include.collection %}
+    {% if __element[include.field] contains name %}
+      {% assign __item = __item | push: __element %}
+    {% endif %}
+  {% endfor %}
+<!-- Push to group_items -->
+  {% assign group_items = group_items | push: __item %}
 {% endfor %}
 
-<!-- Push to group_items -->
-{% assign group_items = group_items | push: __item %}
-{% endfor %}
+<!-- 여기서 부터 'tag-archive 내용' -->
