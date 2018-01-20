@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Record|Organize|Make it mine">
 <meta property="og:title" content="Hello_digital_world">
-<meta property="og:url" content="https://zooozoo.github.io/records/2018-01-15-Hello_Digital_World/">
+<meta property="og:url" content="http://localhost:4000/records/2018-01-15-Hello_Digital_World/">
 
 
   <meta property="og:description" content="커니핸 교수의 Hello Digital World 공부">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="https://zooozoo.github.io/records/2018-01-15-Hello_Digital_World/">
+<link rel="canonical" href="http://localhost:4000/records/2018-01-15-Hello_Digital_World/">
 
 
 
@@ -53,7 +53,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "zoozoo",
-      "url" : "https://zooozoo.github.io",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -67,7 +67,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="https://zooozoo.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -79,7 +79,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="https://zooozoo.github.io/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -114,27 +114,27 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="https://zooozoo.github.io/">HOME</a>
+        <a class="site-title" href="http://localhost:4000/">HOME</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="https://zooozoo.github.io/posts/" >POSTS</a>
+              <a href="http://localhost:4000/posts/" >POSTS</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="https://zooozoo.github.io/records/" >RECORDS</a>
+              <a href="http://localhost:4000/records/" >RECORDS</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="https://zooozoo.github.io/til/" >TIL</a>
+              <a href="http://localhost:4000/til/" >TIL</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="https://zooozoo.github.io/about/" >ABOUT</a>
+              <a href="http://localhost:4000/about/" >ABOUT</a>
             </li>
           
         </ul>
@@ -265,7 +265,7 @@
 
 
 
-  8 minute read
+  9 minute read
 </p>
           
         </header>
@@ -288,6 +288,7 @@
   <li><a href="#ip-주소의-할당">IP 주소의 할당</a></li>
   <li><a href="#ip와-tcp">IP와 TCP</a></li>
   <li><a href="#상위-레벨-프로토콜">상위 레벨 프로토콜</a></li>
+  <li><a href="#월드와이드-웹">월드와이드 웹</a></li>
 </ul>
             </nav>
           </aside>
@@ -486,6 +487,24 @@ IP                 IP                IP     ... IP                 IP
 
 </code></pre></div></div>
 
+<h3 id="월드와이드-웹">월드와이드 웹</h3>
+
+<blockquote>
+  <p>인터넷에서 가장 눈에 띄는 부분은 월드 와이드 웹으로, 지금은 그냥 ‘웹’이라고 한다. 인터넷과 웹을 하나로 보는 경향이 있지만, 둘은 서로 다르다. 9장에서 보았듯이 인터넷은 전 세계 수백만 대의 컴퓨터가 서로 쉽게 통신할 수 있도록 해 주는 통신 인프라 또는 하위 계층이다. 웹은 정보를 제공하는 컴퓨터들(서버들)과 정보를 요청하는 컴퓨터들(클라이언트들)을 연결한다. 웹은 인터넷을 ‘사용하여’연결을 맺고 정보를 전달하며 인터넷에서 이용할 수 있는 다른 서비스에 접근하기 위한 인터페이스를 제공한다.</p>
+
+  <p>많은 훌륭한 아이디어와 마찬가지로, 웹은 본질적으로 간단하다. 어디나 연결되어 있고 효율적이며 개방적이고 기본적으로 무료인 기저 네트워크가 존재한다는 전제하에(매우 중요한 조건이다) 단지 네 가지만이 중요하다.</p>
+
+  <p>첫 번째는 URL, 즉 균일 자원 지시자(Uniform Resource Locator)로, http://www.amazon.com같이 정보 출처에 대한 이름을 명시한다.</p>
+
+  <p>둘째는 HTTP, 즉 하이퍼텍스트 전송 프로토콜(HyperText Transfer Protocol)로, 앞 장에서 상위 레벨 프로토콜의 예로 간략하게 언급한 것이다. HTTP는 간단하다. 클라이언트가 특정 URL을 요청하면 서버는 요청된 정보를 반환한다.</p>
+
+  <p>셋째는 HTML, 즉 하이퍼텍스트 마크업 언어(HyperText Markup Language)로, 서버가 반환하는 정보의 서식이나 표현 방식을 설명하기 위한 언어다. 이것도 마찬가지로 간단하고 매우 조금만 알아도 기본적인 사용법을 익힐 수 있다.</p>
+
+  <p>마지막으로, 브라우저가 있는데, 컴퓨터에서 실행되는 크롬, 파이어폭스, 사파리, 인터넷 익스플로러 같은 프로그램으로, URL과 HTTP를 사용하여 서버에 요청을 보내고 서버에서 보낸 HTML을 가져와서 표시해 준다.</p>
+
+  <p>(발췌)</p>
+</blockquote>
+
 
         
       </section>
@@ -508,7 +527,7 @@ IP                 IP                IP     ... IP                 IP
     
       
       
-      <a href="https://zooozoo.github.io/categories/records" class="page__taxonomy-item" rel="tag">records</a>
+      <a href="http://localhost:4000/categories/records" class="page__taxonomy-item" rel="tag">records</a>
     
     </span>
   </p>
@@ -524,11 +543,11 @@ IP                 IP                IP     ... IP                 IP
       
   <nav class="pagination">
     
-      <a href="https://zooozoo.github.io/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="pagination--pager" title="Docker관련
+      <a href="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="pagination--pager" title="Docker관련
 ">Previous</a>
     
     
-      <a href="https://zooozoo.github.io/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" class="pagination--pager" title="1월15일~21일
+      <a href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" class="pagination--pager" title="1월15일~21일
 ">Next</a>
     
   </nav>
@@ -553,7 +572,7 @@ IP                 IP                IP     ... IP                 IP
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/posts/2018-01-17-atom/" rel="permalink">UX/UI fontsize customzing at atom editor
+        <a href="http://localhost:4000/posts/2018-01-17-atom/" rel="permalink">UX/UI fontsize customzing at atom editor
 </a>
       
     </h2>
@@ -566,10 +585,9 @@ IP                 IP                IP     ... IP                 IP
   less than 1 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">블로그 작성을 위해서 아톰 editor를 사용하는데
-왼쪽 프로젝트의 파일 목록이 나오는 부분과, 파일명을 보여주는 부분의 글씨가 너무 작아서
-불편함을 느끼고 있었다. 운영체제의 디스플레이 세팅을 통해서 글씨를 키워볼까 했는데
-다른 부분은 모두 만족하고 사용하고 있었기 때문에 건들이...</p>
+    <p class="archive__item-excerpt" itemprop="description">아톰 에디터에서 UX/UI 글씨크기 바꾸기
+
+</p>
   </article>
 </div>
 
@@ -583,7 +601,7 @@ IP                 IP                IP     ... IP                 IP
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="permalink">1월15일~21일
+        <a href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="permalink">1월15일~21일
 </a>
       
     </h2>
@@ -612,7 +630,7 @@ IP                 IP                IP     ... IP                 IP
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="permalink">Docker관련
+        <a href="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="permalink">Docker관련
 </a>
       
     </h2>
@@ -642,7 +660,7 @@ Docker 세팅
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/records/2017-11-16-ECS/" rel="permalink">Ecs
+        <a href="http://localhost:4000/records/2017-11-16-ECS/" rel="permalink">Ecs
 </a>
       
     </h2>
@@ -695,7 +713,7 @@ Docker 세팅
     
     
     
-    <li><a href="https://zooozoo.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -705,16 +723,16 @@ Docker 세팅
     </div>
 
     
-  <script src="https://zooozoo.github.io/assets/js/main.min.js"></script>
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
 
 
   
   
-  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr.min.js"></script>
-  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-store.js"></script>
-  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-en.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
 
 
 
@@ -723,7 +741,7 @@ Docker 세팅
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://zooozoo.github.io/records/2018-01-15-Hello_Digital_World/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "http://localhost:4000/records/2018-01-15-Hello_Digital_World/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/records/Hello_Digital_World"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
