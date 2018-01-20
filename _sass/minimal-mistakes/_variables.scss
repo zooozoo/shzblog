@@ -136,9 +136,10 @@ $x-large: 1280px !default;
 /*
    Grid
    ========================================================================== */
-
-$right-sidebar-width-narrow: 150px !default;
-$right-sidebar-width: 250px !default;
+// 브라우저 창이 가장 큰거 다음일 때
+$right-sidebar-width-narrow: 200px !default;
+// 브라우저 창이 가장 큰 사이즈 일때
+$right-sidebar-width: 230px !default;
 $right-sidebar-width-wide: 400px !default;
 
 /*
