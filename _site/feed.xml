@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-20T17:14:50+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>-Yoda</name></author><entry><title type="html">UX/UI fontsize customzing at atom editor</title><link href="http://localhost:4000/posts/2018-01-17-atom/" rel="alternate" type="text/html" title="UX/UI fontsize customzing at atom editor" /><published>2018-01-17T00:00:00+09:00</published><updated>2018-01-17T00:00:00+09:00</updated><id>http://localhost:4000/posts/atom</id><content type="html" xml:base="http://localhost:4000/posts/2018-01-17-atom/">&lt;h3 id=&quot;아톰-에디터에서-uxui-글씨크기-바꾸기&quot;&gt;아톰 에디터에서 UX/UI 글씨크기 바꾸기&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-20T21:35:56+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>-Seok Hun Zoo</name></author><entry><title type="html">UX/UI fontsize customzing at atom editor</title><link href="http://localhost:4000/posts/2018-01-17-atom/" rel="alternate" type="text/html" title="UX/UI fontsize customzing at atom editor" /><published>2018-01-17T00:00:00+09:00</published><updated>2018-01-17T00:00:00+09:00</updated><id>http://localhost:4000/posts/atom</id><content type="html" xml:base="http://localhost:4000/posts/2018-01-17-atom/">&lt;h3 id=&quot;아톰-에디터에서-uxui-글씨크기-바꾸기&quot;&gt;아톰 에디터에서 UX/UI 글씨크기 바꾸기&lt;/h3&gt;
 
 &lt;p&gt;블로그 작성을 위해서 아톰 editor를 사용하는데
 왼쪽 프로젝트의 파일 목록이 나오는 부분과, 파일명을 보여주는 부분의 글씨가 너무 작아서
@@ -21,7 +21,7 @@
 html, body, .tree-view, .tab-bar .tab {
   font-size: @font-size;
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>-Yoda</name></author><category term="posts" /><category term="ide" /><category term="atom" /><summary type="html">아톰 에디터에서 UX/UI 글씨크기 바꾸기</summary></entry><entry><title type="html">1월15일~21일</title><link href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="alternate" type="text/html" title="1월15일~21일" /><published>2018-01-15T00:00:00+09:00</published><updated>2018-01-15T00:00:00+09:00</updated><id>http://localhost:4000/til/1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/">&lt;h3 id=&quot;1월-15일-월요일&quot;&gt;1월 15일 월요일&lt;/h3&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="posts" /><category term="ide" /><category term="atom" /><summary type="html">아톰 에디터에서 UX/UI 글씨크기 바꾸기</summary></entry><entry><title type="html">1월15일~21일</title><link href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="alternate" type="text/html" title="1월15일~21일" /><published>2018-01-15T00:00:00+09:00</published><updated>2018-01-15T00:00:00+09:00</updated><id>http://localhost:4000/til/1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/">&lt;h3 id=&quot;1월-15일-월요일&quot;&gt;1월 15일 월요일&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;커니핸 교수의 hello digital world 공부 &lt;a href=&quot;http://localhost:4000/records/2018-01-15-Hello_Digital_World/&quot;&gt;(링크)&lt;/a&gt;&lt;/li&gt;
@@ -44,7 +44,13 @@ html, body, .tree-view, .tab-bar .tab {
       &lt;li&gt;jekyll-archive가 git-page에서 적용되지 않는 현상 해결&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>-Yoda</name></author><category term="til" /><summary type="html">1월 15일 월요일</summary></entry><entry><title type="html">Hello_digital_world</title><link href="http://localhost:4000/records/2018-01-15-Hello_Digital_World/" rel="alternate" type="text/html" title="Hello_digital_world" /><published>2018-01-15T00:00:00+09:00</published><updated>2018-01-15T00:00:00+09:00</updated><id>http://localhost:4000/records/Hello_Digital_World</id><content type="html" xml:base="http://localhost:4000/records/2018-01-15-Hello_Digital_World/">&lt;h1 id=&quot;커니핸-교수의-hello-digital-world-공부&quot;&gt;커니핸 교수의 Hello Digital World 공부&lt;/h1&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1월-20일-토요일&quot;&gt;1월 20일 토요일&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;커니핸 교수의 hello digital world 공부 &lt;a href=&quot;http://localhost:4000/records/2018-01-15-Hello_Digital_World/&quot;&gt;(링크)&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="til" /><summary type="html">1월 15일 월요일</summary></entry><entry><title type="html">Hello_digital_world</title><link href="http://localhost:4000/records/2018-01-15-Hello_Digital_World/" rel="alternate" type="text/html" title="Hello_digital_world" /><published>2018-01-15T00:00:00+09:00</published><updated>2018-01-15T00:00:00+09:00</updated><id>http://localhost:4000/records/Hello_Digital_World</id><content type="html" xml:base="http://localhost:4000/records/2018-01-15-Hello_Digital_World/">&lt;h1 id=&quot;커니핸-교수의-hello-digital-world-공부&quot;&gt;커니핸 교수의 Hello Digital World 공부&lt;/h1&gt;
 
 &lt;p&gt;제이펍 출판사에서 출판한 &lt;code class=&quot;highlighter-rouge&quot;&gt;커니핸 교수의 Hello Digital World&lt;/code&gt;를 공부하며 오래 기억하고 싶은 내용들을 기록한 게시물 입니다.&lt;/p&gt;
 
@@ -254,7 +260,53 @@ IP                 IP                IP     ... IP                 IP
   &lt;p&gt;마지막으로, 브라우저가 있는데, 컴퓨터에서 실행되는 크롬, 파이어폭스, 사파리, 인터넷 익스플로러 같은 프로그램으로, URL과 HTTP를 사용하여 서버에 요청을 보내고 서버에서 보낸 HTML을 가져와서 표시해 준다.&lt;/p&gt;
 
   &lt;p&gt;(발췌)&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">커니핸 교수의 Hello Digital World 공부</summary></entry><entry><title type="html">Docker관련</title><link href="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="alternate" type="text/html" title="Docker관련" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>http://localhost:4000/records/docker%EA%B4%80%EB%A0%A8</id><content type="html" xml:base="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/">&lt;h1 id=&quot;docker-세팅&quot;&gt;Docker 세팅&lt;/h1&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;암호기법에서의-키key&quot;&gt;암호기법에서의 키(key)&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;암호 기법의 기본 아이디어는 앨리스와 밥이 내용은 비공개로 유지하되 서로 통신중이라는 점은 숨기지 않으면서 메시지를 주고받기를 원한다는 것이다. 이렇게 하려면 다른 사람은 이해할 수 없고 앨리스와 밥만 이해할 수 있도록 메시지를 변형했다가 다시 복원하는 데 사용할 수 있는 일종의 공유된 비밀이 있어야 한다. 이 비밀을 &lt;code class=&quot;highlighter-rouge&quot;&gt;키(key)&lt;/code&gt;라고 한다. 예를 들어, 카이사르 암호에서 키는 알파벳이 옮겨지는 거리, 즉 A를 D로 바꾸기 위한 3 등의 값이 된다. 에그니마 같은 복잡한 기계식 암호화 장치에서 키는 여러 개의 코드 휠 설정과 한 조의 플러그배선 연결을 조합한 것이다. 최신 컴퓨터 기반 암호화 체계에서 키는 어떤 알고리즘에 사용되는 큰 비밀 수로, 이 알고리즘은 그 비밀 수를 모르고는 메시지를 복원하기가 실행 불가능한 방식으로 메시지의 비트를 변형시킨다.&lt;/p&gt;
+
+  &lt;p&gt;(발췌)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;비밀-키-암호-기법&quot;&gt;비밀 키 암호 기법&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;근본적으로 다른 두 종류의 암호 체계가 오늘날 사용되고 있다. 더 오래된 방식은 보통 &lt;code class=&quot;highlighter-rouge&quot;&gt;비밀 키 암호 기법&lt;/code&gt; 또는 &lt;code class=&quot;highlighter-rouge&quot;&gt;대칭 키 암호 기법&lt;/code&gt;이라고 한다. 암호화 및 복호화에 같은 키를 사용하므로 ‘대칭 키’가 특징을 더 잘 묘사해 주지만. ‘비밀 키’는 새로운 종류의 암호 체계의 이름인 &lt;code class=&quot;highlighter-rouge&quot;&gt;공개 키 암호 기법&lt;/code&gt;과 더 잘 대비 되는데, 이는 다음 절에서 다룬다.&lt;/p&gt;
+
+  &lt;p&gt;비밀 키 암호 기법에서는 같은 비밀 키를 사용하여 메시지를 암호화하고 복호화 한다. 이 비밀 키는 메시지를 교환하고자 하는 모든 당사자에 의해 공유된다. 알고리즘이 완전히 이해되고 결함이나 약점이 없다고 가정하면, 메시지 암호를 해독하는 유일한 방법은 무차별 대입 공격이다. 이 방법은 가능한 모든 비밀 키를 시도해서 암호화에 사용된 키를 찾는다. 이것은 오랜 시간이 걸릴 수 있다. 만약 키가 N비트라면 키를 찾는 데 드는 노력은 대략 2의 n승에 비례한다. 하지만 무차별 대입이 멍청한 것을 의미하지는 않는다. 공격자는 긴 키보다 짧은 키를 먼저 시도하고 가능성이 작은 것보다 그럴듯한 키를 먼저 시도할 것이다. 예를 들면, ‘password’와 ‘12345’같이 흔한 단어나 숫자 패턴을 기반으로 하는 사전공격을 시도한다. 사람들이 키를 고르는 데 성의가 없거나 부주의할 경우 이러한 공격은 매우 성공적 일 수 있다.&lt;/p&gt;
+
+  &lt;p&gt;(발췌)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;des와-aes&quot;&gt;DES와 AES&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;1976년경부터 2000년대 초반까지 가장 널리 사용된 비밀 키 암호 알고리즘은 IBM과 NSA가 개발한 데이터 암호화 표준(Data Encryption Standard), 즉 DES였다. DES는 56비트 키를 이용했는데, 컴퓨터가 빨라짐에 따라 56비트는 너무 짧다는 것이 판명됬다. 이로 인해 더 긴 키를 이용하는 새로운 알고리즘들을 만들게 됬다.&lt;/p&gt;
+
+  &lt;p&gt;이들 중 가장 널리 사용되는 것은 고급 암호화 표준(Advanced Encryption Standard), 즉 AES다. AES는 128비트, 192비트, 256비트의 세 가지 키 길이를 지원하므로 수많은 가능한 키가 있으며, 어떤 약점이 발견되지 않는 한 수년 동안 무차별 대입 공격이 통하지 않을 것이다.&lt;/p&gt;
+
+  &lt;p&gt;(발췌 요약)&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;공개-키-암호-기법&quot;&gt;공개 키 암호 기법&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;공개 키 암호 체계에서 각 사람은 공개 키와 개인 키로 구성된 키 쌍을 가지고 있다. 쌍으로 된 키들은 수학적으로 연관성이 있는 정수이며, 쌍 중의 하나의 키로 암호화된 메시지는 나머지 키로만 해독될 수 있으며 그 반대도 마찬가지인 속성을 지니고 있다. 키가 충분히 길다면 공격자가 비밀 메시지를 해독하거나 공개 키에서 개인 키를 추론하는 것은 실행 불가능하다. 공격자가 사용할 수 있는 가장 잘 알려진 알고리즘은 키 길이에 따라 기하급수적으로 증가하는 실행 시간을 필요로 한다.&lt;/p&gt;
+
+  &lt;p&gt;실제로 사용될 때, 공개 키는 정말로 공개된다. 흔히 웹 페이지에 게시되어 모든 사람이 이용할 수 있다. 개인 키는 엄격히 비공개로 유지되며, 이 키 쌍의 소유자에게만 알려져 있는 비밀로 유지되어야 한다.&lt;/p&gt;
+
+  &lt;p&gt;엘리스가 밥에게 밥만 읽을 수 있도록 암호화된 메시지를 보내고 싶다고 가정해 보자. 앨리스는 밥의 웹페이지로 가서 그의 공개 키를 가져오고 그에게 보낼 자신의 메시지를 암호화하는데 사용한다. 그녀가 암호화된 메시지를 보내면 도청자 이브는 앨리스가 밥에게 메시지를 보낸다는 것을 알 수 있을지 모르지만, 메시지가 암호화되어 있어서 그 내용은 알 수 없다.&lt;/p&gt;
+
+  &lt;p&gt;밥은 자신의 개인 키로 앨리스의 메시지를 해독하는데, 이는 그만이 알고 있는 정보이자 자신의 공개 키로 암호화된 메시지를 해독하는 유일한 방법이다. 밥이 앨리스에게 암호화된 답신을 보내고자 한다면 ‘앨리스의’ 공개 키로 암호화한다. 마찬가지로 이브는 답신을 볼 수는 있지만, 이해할 수 없는 암호화된 형태로만 볼 수 있다. 앨리스는 그녀만 알고 있는 자신의 개인 키로 밥의 답신을 해독한다.&lt;/p&gt;
+
+  &lt;p&gt;이러한 책략은 키 분배 문제를 해결해 주는데, 분배해야 할 공유된 비밀이 없기 때문이다. 앨리스와 밥은 자신들의 웹 페이지에 각자의 공개 키를 가지고 있으며, 누구나 사전 협의나 아무런 비밀 교환 없이 둘 중 누구와도 비공개 대화를 계속할 수 있다.&lt;/p&gt;
+
+  &lt;p&gt;공개 키 암호의 기법의 한 가지 결점은 알고리즘이 더 느린 경향이 있다는 것인데, 어쩌면 AES같은 비밀 키 알고리즘보다 몇백배에서 몇천 배 더 느릴 수 있다. 따라서 모든 것을 공개 키로 암호화하는 대신 2단계 절차를 이용한다. 공개 키를 사용하여 임시 비밀 키에 대해 합의를 본 다음 AES를 사용하여 대량으로 데이터를 전송한다.&lt;/p&gt;
+
+  &lt;p&gt;통신은 각 단계에서 보안이 유지되는데, 처음에는 임시 키를 설정하기 위해 공개 키를 사용하고, 다음으로 대량의 데이터 교환을 위해 AES를 사용하기 때문에 안전하다. 인터넷 상점, 온라인 메일 서비스 및 다른 여러 사이트를 방문하는 경우 여러분은 이 기법을 사용하고 있는 것 이다. 실제로 작동하는 것을 확인할 수 있는데, 이러한 경우 브라우저에서 HTTPS 프로토콜로 연결하고 있다는 것을 보여 주고 링크가 암호화되었음을 나타내는 닫힌 자물쇠 아이콘을 표시해 주기 때문이다.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">커니핸 교수의 Hello Digital World 공부</summary></entry><entry><title type="html">Docker관련</title><link href="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="alternate" type="text/html" title="Docker관련" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>http://localhost:4000/records/docker%EA%B4%80%EB%A0%A8</id><content type="html" xml:base="http://localhost:4000/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/">&lt;h1 id=&quot;docker-세팅&quot;&gt;Docker 세팅&lt;/h1&gt;
 
 &lt;p&gt;도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.&lt;/p&gt;
 
@@ -307,7 +359,7 @@ IP                 IP                IP     ... IP                 IP
 
 &lt;p&gt;실행되고 있는 이미지 파일(container) 정보 확인하는 명령어&lt;/p&gt;
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker ps
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">Docker 세팅</summary></entry><entry><title type="html">Ecs</title><link href="http://localhost:4000/records/2017-11-16-ECS/" rel="alternate" type="text/html" title="Ecs" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>http://localhost:4000/records/ECS</id><content type="html" xml:base="http://localhost:4000/records/2017-11-16-ECS/">&lt;p&gt;도커만 올려서 바로 배포할 수 있는 ecs라는 서비스가 있는데 나중에 사용방법 확인해서 elastic beanstalk과 비교해서 어떤게 더 편하게 배포할 수 있는지 확인해 보기&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">도커만 올려서 바로 배포할 수 있는 ecs라는 서비스가 있는데 나중에 사용방법 확인해서 elastic beanstalk과 비교해서 어떤게 더 편하게 배포할 수 있는지 확인해 보기</summary></entry><entry><title type="html">Postgresql</title><link href="http://localhost:4000/records/2017-10-15-postgresql/" rel="alternate" type="text/html" title="Postgresql" /><published>2017-10-15T00:00:00+09:00</published><updated>2017-10-15T00:00:00+09:00</updated><id>http://localhost:4000/records/postgresql</id><content type="html" xml:base="http://localhost:4000/records/2017-10-15-postgresql/">&lt;h1 id=&quot;명령어-기록-ubuntu-1604&quot;&gt;명령어 기록 (ubuntu-1604)&lt;/h1&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">Docker 세팅</summary></entry><entry><title type="html">Ecs</title><link href="http://localhost:4000/records/2017-11-16-ECS/" rel="alternate" type="text/html" title="Ecs" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>http://localhost:4000/records/ECS</id><content type="html" xml:base="http://localhost:4000/records/2017-11-16-ECS/">&lt;p&gt;도커만 올려서 바로 배포할 수 있는 ecs라는 서비스가 있는데 나중에 사용방법 확인해서 elastic beanstalk과 비교해서 어떤게 더 편하게 배포할 수 있는지 확인해 보기&lt;/p&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">도커만 올려서 바로 배포할 수 있는 ecs라는 서비스가 있는데 나중에 사용방법 확인해서 elastic beanstalk과 비교해서 어떤게 더 편하게 배포할 수 있는지 확인해 보기</summary></entry><entry><title type="html">Postgresql</title><link href="http://localhost:4000/records/2017-10-15-postgresql/" rel="alternate" type="text/html" title="Postgresql" /><published>2017-10-15T00:00:00+09:00</published><updated>2017-10-15T00:00:00+09:00</updated><id>http://localhost:4000/records/postgresql</id><content type="html" xml:base="http://localhost:4000/records/2017-10-15-postgresql/">&lt;h1 id=&quot;명령어-기록-ubuntu-1604&quot;&gt;명령어 기록 (ubuntu-1604)&lt;/h1&gt;
 
 &lt;h3 id=&quot;데이터베이스-생성&quot;&gt;데이터베이스 생성&lt;/h3&gt;
 &lt;p&gt;커맨드창 에서 ‘zoozoo’라는 계정 이름으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;testname&lt;/code&gt;이라는 데이터베이스를 생성&lt;/p&gt;
@@ -364,7 +416,7 @@ IP                 IP                IP     ... IP                 IP
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo systemctl restart postgresql.service&lt;/code&gt;명령을 통해 postgresql 재시작&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">명령어 기록 (ubuntu-1604)</summary></entry><entry><title type="html">Dajngo_queryset_method</title><link href="http://localhost:4000/records/2017-10-14-dajngo_querySet_method/" rel="alternate" type="text/html" title="Dajngo_queryset_method" /><published>2017-10-14T00:00:00+09:00</published><updated>2017-10-14T00:00:00+09:00</updated><id>http://localhost:4000/records/dajngo_querySet_method</id><content type="html" xml:base="http://localhost:4000/records/2017-10-14-dajngo_querySet_method/">&lt;h1 id=&quot;queryset-api&quot;&gt;QuerySet API&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">명령어 기록 (ubuntu-1604)</summary></entry><entry><title type="html">Dajngo_queryset_method</title><link href="http://localhost:4000/records/2017-10-14-dajngo_querySet_method/" rel="alternate" type="text/html" title="Dajngo_queryset_method" /><published>2017-10-14T00:00:00+09:00</published><updated>2017-10-14T00:00:00+09:00</updated><id>http://localhost:4000/records/dajngo_querySet_method</id><content type="html" xml:base="http://localhost:4000/records/2017-10-14-dajngo_querySet_method/">&lt;h1 id=&quot;queryset-api&quot;&gt;QuerySet API&lt;/h1&gt;
 
 &lt;h2 id=&quot;methods-that-return-new-querysets&quot;&gt;Methods that return new QuerySets&lt;/h2&gt;
 
@@ -627,7 +679,7 @@ Entry.objects.select_related('blog').filter(pub_date__gt=timezone.now())
 
 &lt;p&gt;select_related ()를 많은 관련 객체로 호출하거나 모든 관계를 모르는 경우가 있습니다. 이러한 경우에는 인수없이 select_related ()를 호출 할 수 있습니다. 이것은 발견 할 수있는 null이 아닌 모든 외래 키를 반환합니다. null 입력 가능 외래 키가 지정되어야합니다. 대부분의 경우에는 기본 쿼리를보다 복잡하게 만들고 실제로 필요한 것보다 많은 데이터를 반환하기 때문에 권장되지 않습니다.&lt;/p&gt;
 
-&lt;p&gt;QuerySet에서 select_related의 이전 호출에 의해 추가 된 관련 필드 목록을 지우려면 매개 변수로 None을 전달할 수 있습니다.&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">QuerySet API</summary></entry><entry><title type="html">Django_model_fieldtype</title><link href="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/" rel="alternate" type="text/html" title="Django_model_fieldtype" /><published>2017-10-13T00:00:00+09:00</published><updated>2017-10-13T00:00:00+09:00</updated><id>http://localhost:4000/records/django_model_fieldtype-</id><content type="html" xml:base="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/">&lt;h1 id=&quot;model-field-reference&quot;&gt;Model field reference&lt;/h1&gt;
+&lt;p&gt;QuerySet에서 select_related의 이전 호출에 의해 추가 된 관련 필드 목록을 지우려면 매개 변수로 None을 전달할 수 있습니다.&lt;/p&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">QuerySet API</summary></entry><entry><title type="html">Django_model_fieldtype</title><link href="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/" rel="alternate" type="text/html" title="Django_model_fieldtype" /><published>2017-10-13T00:00:00+09:00</published><updated>2017-10-13T00:00:00+09:00</updated><id>http://localhost:4000/records/django_model_fieldtype-</id><content type="html" xml:base="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/">&lt;h1 id=&quot;model-field-reference&quot;&gt;Model field reference&lt;/h1&gt;
 
 &lt;h2 id=&quot;field-types&quot;&gt;Field types&lt;/h2&gt;
 
@@ -855,7 +907,7 @@ Entry.objects.select_related('blog').filter(pub_date__gt=timezone.now())
 
 &lt;ul&gt;
   &lt;li&gt;보편적으로 유일한 식별자를 저장하기위한 필드입니다. 파이썬의 UUID 클래스를 사용합니다. PostgreSQL에서 사용될 때 이것은 uuid 데이터 유형에 저장되고, 그렇지 않으면 char (32)에 저장됩니다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">Model field reference</summary></entry><entry><title type="html">Django_document</title><link href="http://localhost:4000/records/2017-10-10-django_document/" rel="alternate" type="text/html" title="Django_document" /><published>2017-10-10T00:00:00+09:00</published><updated>2017-10-10T00:00:00+09:00</updated><id>http://localhost:4000/records/django_document</id><content type="html" xml:base="http://localhost:4000/records/2017-10-10-django_document/">&lt;h4 id=&quot;field-option-중-choices&quot;&gt;Field option 중 choices&lt;/h4&gt;
+&lt;/ul&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">Model field reference</summary></entry><entry><title type="html">Django_document</title><link href="http://localhost:4000/records/2017-10-10-django_document/" rel="alternate" type="text/html" title="Django_document" /><published>2017-10-10T00:00:00+09:00</published><updated>2017-10-10T00:00:00+09:00</updated><id>http://localhost:4000/records/django_document</id><content type="html" xml:base="http://localhost:4000/records/2017-10-10-django_document/">&lt;h4 id=&quot;field-option-중-choices&quot;&gt;Field option 중 choices&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;choices 에서 앞쪽이 데이터베이스 에서 인식하는 벨류값, 뒤쪽이 클라이언트 화면에서 보이는 값&lt;/li&gt;
@@ -878,7 +930,7 @@ class Person(models.Model):
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;null&lt;/code&gt;값은 데이터베이스에 어떠한 데이터도 갖고 있지 않다는 것을 말한다. (datetime 이나 integerfield에는 비어있는 시간이나 숫자라는 개념이 없기 때문에 빈값을 적용시키기 위헤서는 null=True옵션을 줘야한다.)&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;blnak&lt;/code&gt;값은 ‘비어있는 값’을 말하며 blank=True를 적용 했을 때에 데이터베이스에 ‘비어있는 값’을 저장하게 된다.(charfield, textfield에는 비어있는 값을 인식시키기 위헤서 blnak=True 옵션을 준다.) blank의 또다른 기능 중 하나는 admin에서 필수 입력요소 인지를 판단할 수 있게 해준다.&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">Field option 중 choices</summary></entry><entry><title type="html">Test!</title><link href="http://localhost:4000/records/2017-10-09-welcome-to-jekyll/" rel="alternate" type="text/html" title="Test!" /><published>2017-10-09T22:48:43+09:00</published><updated>2017-10-09T22:48:43+09:00</updated><id>http://localhost:4000/records/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/records/2017-10-09-welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;blnak&lt;/code&gt;값은 ‘비어있는 값’을 말하며 blank=True를 적용 했을 때에 데이터베이스에 ‘비어있는 값’을 저장하게 된다.(charfield, textfield에는 비어있는 값을 인식시키기 위헤서 blnak=True 옵션을 준다.) blank의 또다른 기능 중 하나는 admin에서 필수 입력요소 인지를 판단할 수 있게 해준다.&lt;/p&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">Field option 중 choices</summary></entry><entry><title type="html">Test!</title><link href="http://localhost:4000/records/2017-10-09-welcome-to-jekyll/" rel="alternate" type="text/html" title="Test!" /><published>2017-10-09T22:48:43+09:00</published><updated>2017-10-09T22:48:43+09:00</updated><id>http://localhost:4000/records/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/records/2017-10-09-welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
 
 &lt;p&gt;To add new posts, simply add a file in the &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory that follows the convention &lt;code class=&quot;highlighter-rouge&quot;&gt;YYYY-MM-DD-name-of-post.ext&lt;/code&gt; and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
 
@@ -890,4 +942,4 @@ class Person(models.Model):
 &lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>-Yoda</name></author><category term="records" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>-Seok Hun Zoo</name></author><category term="records" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
