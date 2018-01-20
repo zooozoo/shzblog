@@ -84,9 +84,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "-Seok Hun Zoo"
+  name             : "Seok Hun Zoo"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I love programming"
+  bio              : "\"I ♡ programming\""
   location         :
   email            :
   uri              :
