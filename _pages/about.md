@@ -10,8 +10,6 @@ category: abouts
 permalink: /about/
 header:
   image: /assets/images/about3.jpg
-  filter: 0.5
-
 ---
 
 “you must be ready to burn yourself in your own flame; how could you rise anew if you have not first become ashes?"

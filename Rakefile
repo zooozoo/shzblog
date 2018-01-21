@@ -84,6 +84,7 @@ require "jekyll"
 
 # Change your GitHub reponame
 GITHUB_REPONAME = "zooozoo/zooozoo.github.io"
+ENV["JEKYLL_ENV"] = "production"
 
 
 desc "Generate blog files"
@@ -93,7 +94,6 @@ task :generate do
     "destination" => "_site"
   })).process
 end
-
 
 desc "Generate and publish blog to gh-pages"
 task :publish => [:generate] do
