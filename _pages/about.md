@@ -9,7 +9,7 @@ related: false
 category: abouts
 permalink: /about/
 header:
-  image: /assets/images/about2.jpg
+  image: /assets/images/about3.jpg
   filter: 0.5
 
 ---
