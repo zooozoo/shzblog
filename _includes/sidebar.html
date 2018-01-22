@@ -20,10 +20,14 @@
         {% include nav_list_records nav=page.sidebar.nav %}
       {% elsif page.url == "/records/" %}
         {% include nav_list_records nav=page.sidebar.nav %}
-      {% elsif page.url == "/posts/" %}
-        {% include nav_list_posts nav=page.sidebar.nav %}
       {% elsif page.category == "posts" %}
         {% include nav_list_posts nav=page.sidebar.nav %}
+      {% elsif page.url == "/posts/" %}
+        {% include nav_list_posts nav=page.sidebar.nav %}
+      {% elsif page.category == "til" %}
+        {% include nav_list_til nav=page.sidebar.nav %}
+      {% elsif page.url == "/til/" %}
+        {% include nav_list_til nav=page.sidebar.nav %}
       {% else %}
         {% include nav_list nav=page.sidebar.nav %}
       {% endif %}
