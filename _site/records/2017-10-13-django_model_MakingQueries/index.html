@@ -1,0 +1,702 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>            Django_model_makingqueries - Record      Organize      Make it mine      </title>
+<meta name="description" content="Making Queries">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Record|Organize|Make it mine">
+<meta property="og:title" content="Django_model_makingqueries">
+<meta property="og:url" content="http://localhost:4000/records/2017-10-13-django_model_MakingQueries/">
+
+
+  <meta property="og:description" content="Making Queries">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2017-10-13T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/records/2017-10-13-django_model_MakingQueries/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "zoozoo",
+      "url" : "http://localhost:4000",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="http://localhost:4000/">HOME</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/posts/" >POSTS</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/records/" >RECORDS</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/til/" >TIL</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="http://localhost:4000/about/" >ABOUT</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+        
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+      <li>
+          <span class="nav__sub-title">
+          
+            records
+          
+          </span>
+        <ul>
+          
+            <li><a href="/records/2018-01-23-Fluent_Python/" class="">전문가를 위한 파이썬</a></li>
+          
+            <li><a href="/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="">Docker관련</a></li>
+          
+            <li><a href="/records/2017-11-16-ECS/" class="">Ecs</a></li>
+          
+            <li><a href="/records/2017-10-15-postgresql/" class="">Postgresql</a></li>
+          
+            <li><a href="/records/2017-10-14-dajngo_querySet_method/" class="">Dajngo_queryset_method</a></li>
+          
+            <li><a href="/records/2017-10-13-django_model_fieldtype-/" class="">Django_model_fieldtype</a></li>
+          
+            <li><a href="/records/2017-10-13-django_model_MakingQueries/" class="">Django_model_makingqueries</a></li>
+          
+            <li><a href="/records/2017-10-10-django_document/" class="">Django_document</a></li>
+          
+            <li><a href="/records/2017-10-09-welcome-to-jekyll/" class="">Test!</a></li>
+          
+            <li><a href="/records/2017-10-03-SQL/" class="">Sql</a></li>
+          
+            <li><a href="/records/2017-09-30-ubuntu_%EC%84%A4%EC%A0%95%EA%B4%80%EB%A0%A8/" class="">Ubuntu_설정관련</a></li>
+          
+            <li><a href="/records/2017-09-30-ubuntu_shortcut/" class="">Ubuntu_shortcut</a></li>
+          
+            <li><a href="/records/2017-09-30-atom_settings/" class="">Atom_settings</a></li>
+          
+            <li><a href="/records/2017-09-28-localkey,%20publickey,%EA%B9%83%ED%97%99%20%EA%B4%80%EB%A0%A8/" class="">Localkey, publickey,깃헙 관련</a></li>
+          
+            <li><a href="/records/2017-09-25-pycharm_shortcut/" class="">Pycharm_shortcut</a></li>
+          
+            <li><a href="/records/2017-09-25-django/" class="">Django</a></li>
+          
+            <li><a href="/records/2017-09-25-CLI/" class="">Cli</a></li>
+          
+            <li><a href="/records/2017-09-21-pycharm/" class="">Pycharm</a></li>
+          
+            <li><a href="/records/2017-09-14-vim%EA%B4%80%EB%A0%A8/" class="">Vim관련</a></li>
+          
+            <li><a href="/records/2017-09-14-python_script/" class="">Python_script</a></li>
+          
+            <li><a href="/records/2017-09-13-pyenv,virtualenv/" class="">Pyenv,virtualenv</a></li>
+          
+            <li><a href="/records/2017-09-12-python/" class="">Python</a></li>
+          
+            <li><a href="/records/2017-09-11-git/" class="">Git</a></li>
+          
+            <li><a href="/records/2017-09-09-html/" class="">Html</a></li>
+          
+            <li><a href="/records/2017-09-09-css/" class="">Css</a></li>
+          
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+      
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Django_model_makingqueries">
+    <meta itemprop="description" content="Making Queries">
+    <meta itemprop="datePublished" content="October 13, 2017">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">Django_model_makingqueries
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#creating-objects">Creating objects</a></li>
+  <li><a href="#saving-changes-to-objects">Saving changes to objects</a></li>
+  <li><a href="#saving-foreignkey-and-manytomanyfield-fields">Saving ForeignKey and ManyToManyField fields</a></li>
+  <li><a href="#retrieving-objects">Retrieving objects</a></li>
+  <li><a href="#retrieving-specific-objects-with-filters">Retrieving specific objects with filters</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h1 id="making-queries">Making Queries</h1>
+
+<p><a href="https://docs.djangoproject.com/ko/1.11/topics/db/queries/#retrieving-specific-objects-with-filters">장고문서</a> 를 공부하며 기록한 내용입니다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; from blog.models import Blog
+&gt;&gt;&gt; b = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
+&gt;&gt;&gt; b.save()
+</code></pre></div></div>
+
+<blockquote>
+  <p>This performs an <code class="highlighter-rouge">INSERT</code> SQL statement behind the scenes. Django doesn’t hit the database until you explicitly call <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save"><code class="highlighter-rouge">save()</code></a>.</p>
+</blockquote>
+
+<p>안쪽에서는 sql 문이 작동되는데, 장고는 save() method가 실행되기 전까지는 database를 치지 않는다.</p>
+
+<h3 id="creating-objects">Creating objects</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>save() takes a number of advanced options not described here. See the documentation for save() for complete details.
+
+To create and save an object in a single step, use the create() method.
+</code></pre></div></div>
+
+<p>save() method에는 다양한 옵션이 존재하고, 한번에 save()까지 처리하려면 create() mothod를 사용한다.</p>
+
+<h3 id="saving-changes-to-objects">Saving changes to objects</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To save changes to an object that's already in the database, use save().
+</code></pre></div></div>
+
+<p>save() method는 이미 저장된 내용을 변경하는데에도 사용된다.</p>
+
+<h3 id="saving-foreignkey-and-manytomanyfield-fields">Saving <code class="highlighter-rouge">ForeignKey</code> and <code class="highlighter-rouge">ManyToManyField</code> fields</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Updating a ForeignKey field works exactly the same way as saving a normal field -- simply assign an object of the right type to the field in question. This example updates the blog attribute of an Entry instance entry, assuming appropriate instances of Entry and Blog are already saved to the database (so we can retrieve them below):
+</code></pre></div></div>
+
+<p>ForeignKey field의 경우 일반 필드와 같이 업데이트 할 수 있습니다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Updating a ManyToManyField works a little differently -- use the add() method on the field to add a record to the relation. This example adds the Author instance joe to the entry object:
+
+&gt;&gt;&gt; from blog.models import Author
+&gt;&gt;&gt; joe = Author.objects.create(name="Joe")
+&gt;&gt;&gt; entry.authors.add(joe)
+</code></pre></div></div>
+
+<p>ManyToManyField의 경우 약간 다르게 작동합니다. add()라는 method를 사용합니다. 예시의 경우 joe라는 Author객체를 만들고 entry와 author의 관계를 add() method를 생성합니다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To add multiple records to a ManyToManyField in one go, include multiple arguments in the call to add(), like this:
+
+&gt;&gt;&gt; john = Author.objects.create(name="John")
+&gt;&gt;&gt; paul = Author.objects.create(name="Paul")
+&gt;&gt;&gt; george = Author.objects.create(name="George")
+&gt;&gt;&gt; ringo = Author.objects.create(name="Ringo")
+&gt;&gt;&gt; entry.authors.add(john, paul, george, ringo)
+</code></pre></div></div>
+
+<p>한번에 여러개의 데이터를 ManyToMany 관계에 추가하려고 할 때에, 한번에 속성을 여러개 적용할 수 있습니다.</p>
+
+<h3 id="retrieving-objects">Retrieving objects</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>To retrieve objects from your database, construct a QuerySet via a Manager on your model class.
+
+A QuerySet represents a collection of objects from your database. It can have zero, one or many filters. Filters narrow down the query results based on the given parameters. In SQL terms, a QuerySet equates to a SELECT statement, and a filter is a limiting clause such as WHERE or LIMIT.
+
+You get a QuerySet by using your model's Manager. Each model has at least one Manager, and it's called objects by default. Access it directly via the model class, like so:
+
+&gt;&gt;&gt; Blog.objects
+&lt;django.db.models.manager.Manager object at ...&gt;
+&gt;&gt;&gt; b = Blog(name='Foo', tagline='Bar')
+&gt;&gt;&gt; b.objects
+Traceback:
+    ...
+AttributeError: "Manager isn't accessible via Blog instances."
+</code></pre></div></div>
+
+<p>데이터베이스에서 객체를 꺼내려 할 때 당신의 모델 클래스의 매니저를 통해 쿼리셋을 구성해야 합니다.</p>
+
+<p>하나의 쿼리셋은 당신의 데이터베스로부터 나온 객체의 모음을 의미합니다.  해당 쿼리셋은 0개 혹은 다수의 filter를 포함할 수 있습니다. filter는 주어진 매개변수에 기반하여 쿼리 결과물의 범위를 좁게할 수 있습니다. SQL문 에서 쿼리셋은 SELECT문과 같고, filter는 WHERE 또는 LIMIT와 같이 조건절 입니다.</p>
+
+<p>당신은 모델매니저를 사용함으로써 쿼리셋을 만들 수 있습니다. 각각의 모델은 적어도 하나 이상의 Manager를 가지며, 기본값으로 objects로 주어집니다. 예시와 같이 모델클래스를 통해서 바로 불러올 수 있습니다.</p>
+
+<h3 id="retrieving-specific-objects-with-filters">Retrieving specific objects with filters</h3>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>For example, to get a QuerySet of blog entries from the year 2006, use filter() like so:
+
+Entry.objects.filter(pub_date__year=2006)
+
+With the default manager class, it is the same as:
+
+Entry.objects.all().filter(pub_date__year=2006)
+</code></pre></div></div>
+
+<p>filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.</p>
+
+<h4 id="chaining-filters">Chaining filters</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>The result of refining a QuerySet is itself a QuerySet, so it's possible to chain refinements together. For example:
+
+&gt;&gt;&gt; Entry.objects.filter(
+...     headline__startswith='What'
+... ).exclude(
+...     pub_date__gte=datetime.date.today()
+... ).filter(
+...     pub_date__gte=datetime.date(2005, 1, 30)
+... )
+
+This takes the initial QuerySet of all entries in the database, adds a filter, then an exclusion, then another filter. The final result is a QuerySet containing all entries with a headline that starts with "What", that were published between January 30, 2005, and the current day.
+</code></pre></div></div>
+
+<p>쿼리셋을 걸러낸 결과는 여전히 쿼리셋이므로 해당 쿼리셋을 다시 여러번 연결하여 걸러낼 수 있다.</p>
+
+<p>예시에서 나온 쿼리셋은 데이터베이스에서 모든 엔트리를 가져온다. 그리고나서 filter를 추가하고 난후에 exclusion을 적용하고, 마지막으로 다시 filter를 적용한다. 결과적으로 쿼리셋은 ‘What’으로 시작하고, pub date가 2005년 1월 30일 부터 오늘미만의 객체를 가지고 있게 된다.</p>
+
+<h4 id="filtered-querysets-are-unique">Filtered QuerySets are unique</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Each time you refine a QuerySet, you get a brand-new QuerySet that is in no way bound to the previous QuerySet. Each refinement creates a separate and distinct QuerySet that can be stored, used and reused.
+</code></pre></div></div>
+
+<p>쿼리셋을 걸러낼 때 마다 당시는 새로운 쿼리셋을 얻게 되며 그 쿼리셋은 이전 쿼리셋에 영향을 주지 않는다. 각각의 걸러내는 과정은 저장될 수 있고 재사용 될 수 있는 분리된 고유의 쿼리셋이다.</p>
+
+<h4 id="querysets-are-lazy">QuerySets are lazy</h4>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>QuerySets are lazy -- the act of creating a QuerySet doesn't involve any database activity. You can stack filters together all day long, and Django won't actually run the query until the QuerySet is evaluated. Take a look at this example:
+
+&gt;&gt;&gt; q = Entry.objects.filter(headline__startswith="What")
+&gt;&gt;&gt; q = q.filter(pub_date__lte=datetime.date.today())
+&gt;&gt;&gt; q = q.exclude(body_text__icontains="food")
+&gt;&gt;&gt; print(q)
+
+Though this looks like three database hits, in fact it hits the database only once, at the last line (print(q)). In general, the results of a QuerySet aren't fetched from the database until you "ask" for them. When you do, the QuerySet is evaluated by accessing the database. For more details on exactly when evaluation takes place, see When QuerySets are evaluated.
+</code></pre></div></div>
+
+<p>쿼리셋은 자주 작동 되지 않습니다 –쿼리셋을 생성하는 것이 데이터베이스의 작동을 포함하지 않는다는 말 입니다. 당신은 filter를 하루종일 쌓아나갈 수 있으며 장고는 쿼리가 평가되기 전까지는 데이터베이스를 작동시키지 않을 것 입니다.</p>
+
+<p>예시에서는 마치 데이터베이스를 3번 친 것 처럼 보이지만, 사실 마지막 라인에서 한번 쳤으며(print(q)). 일반적으로 쿼리셋의 결과는 당신이 요청하기 전까지 데이터베이스에서 데이터를 가져오지 않습니다.  당신이 요청을 할때 쿼리셋은 평가되며 데이터베이스에 접근하게 됩니다.</p>
+
+<p>아래의 예시와 같이 쿼리가 작동했는지 여부를 확인할 수 있다. <a href="https://stackoverflow.com/questions/20171736/when-is-a-django-queryset-evaluated">출처 stackoverflow</a></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; from django.contrib.auth.models import *
+&gt;&gt;&gt; from django.db import connection
+&gt;&gt;&gt; connection.queries
+[]
+&gt;&gt;&gt; query = User.objects.filter(pk=1)
+&gt;&gt;&gt; connection.queries
+[]
+&gt;&gt;&gt; query.exists()
+True
+&gt;&gt;&gt; connection.queries
+[{u'time': u'0.000', u'sql': u'SELECT (1) AS `a` FROM `auth_user` WHERE `auth_user`.`id` = 1  LIMIT 1'}]
+&gt;&gt;&gt; query.get()
+&lt;User: root&gt;
+&gt;&gt;&gt; connection.queries
+[{u'time': u'0.000', u'sql': u'SELECT (1) AS `a` FROM `auth_user` WHERE `auth_user`.`id` = 1  LIMIT 1'}, 
+ {u'time': u'0.000', u'sql': u'SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 '}]
+&gt;&gt;&gt; 
+</code></pre></div></div>
+
+<p>구글에서 찾은 효과적인 쿼리셋 사용법 블로그글 <a href="http://blog.etianen.com/blog/2013/06/08/django-querysets/">참조: Using Django querysets effectively</a></p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="http://localhost:4000/categories/records" class="page__taxonomy-item" rel="tag">records</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2017-10-13T00:00:00+09:00">October 13, 2017</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="http://localhost:4000/records/2017-10-10-django_document/" class="pagination--pager" title="Django_document
+">Previous</a>
+    
+    
+      <a href="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/" class="pagination--pager" title="Django_model_fieldtype
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="permalink">전문가를 위한 파이썬
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="permalink">1월22일~28일
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">1월 22일 월요일
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/posts/2018-01-17-atom/" rel="permalink">UX/UI fontsize customzing at atom editor
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">아톰 에디터에서 UX/UI 글씨크기 바꾸기
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="permalink">1월15일~21일
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">1월 15일 월요일
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/zooozoo"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 zoozoo. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+
+  
+  
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "http://localhost:4000/records/2017-10-13-django_model_MakingQueries/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/records/django_model_MakingQueries"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hunzoos-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-23T17:40:39+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">전문가를 위한 파이썬</title><link href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>http://localhost:4000/records/Fluent_Python</id><content type="html" xml:base="http://localhost:4000/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">1월22일~28일</title><link href="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="alternate" type="text/html" title="1월22일~28일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>http://localhost:4000/til/1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/">&lt;h3 id=&quot;1월-22일-월요일&quot;&gt;1월 22일 월요일&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-24T01:33:36+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">전문가를 위한 파이썬</title><link href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>http://localhost:4000/records/Fluent_Python</id><content type="html" xml:base="http://localhost:4000/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">1월22일~28일</title><link href="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="alternate" type="text/html" title="1월22일~28일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>http://localhost:4000/til/1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/">&lt;h3 id=&quot;1월-22일-월요일&quot;&gt;1월 22일 월요일&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Try-Django-Tutorial youtube 강의 9커밋까지 완료&lt;/li&gt;
@@ -44,7 +44,7 @@ Additional information is available from the Django docs.
 
         &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/6386172/datetimefield-doesnt-show-in-admin-system&quot;&gt;답변링크&lt;/a&gt;&lt;/p&gt;
 
-        &lt;p&gt;그리고 그대로 적용해 보았고, 수정할 수 없는 상태로 잘 나온다. 
+        &lt;p&gt;그리고 그대로 적용해 보았고, 수정할 수 없는 상태로 잘 나온다.
 장고 문서에 아래와 같이 나와있어서&lt;/p&gt;
 
         &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;As currently implemented, setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
@@ -56,8 +56,8 @@ Additional information is available from the Django docs.
 updated = models.DateTimeField(auto_now=True, editable=True, blank=True)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;        &lt;/div&gt;
 
-        &lt;p&gt;다시 admin에 나오나 확인해 봤는데 안나온다. 
-auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 강제하는 것 같다. 
+        &lt;p&gt;다시 admin에 나오나 확인해 봤는데 안나온다.
+auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 강제하는 것 같다.
 혹시 몰라서 모든 속성값을 지우고 admin에 나오나 해봤는데 나온다.&lt;/p&gt;
 
         &lt;p&gt;결국 auto_now_add, 와 auto_now 속성을 적용하고 admin에서 확인하기 위해서는 stackoverflow에 나온데로 admin 모듈에서 class로 설정해주는 방법이 현재로썬 최선인 것 같다.&lt;/p&gt;
@@ -66,7 +66,7 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
         &lt;p&gt;query set&lt;/p&gt;
       &lt;/li&gt;
       &lt;li&gt;
-        &lt;p&gt;장고 문서 복습 : &lt;code class=&quot;highlighter-rouge&quot;&gt;Making queries&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;Templates(overview)&lt;/code&gt;&lt;/p&gt;
+        &lt;p&gt;장고 문서 복습 : &lt;a href=&quot;/records/2017-10-13-django_model_MakingQueries/&quot;&gt;Making queries&lt;/a&gt;, Templates(overview)&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;

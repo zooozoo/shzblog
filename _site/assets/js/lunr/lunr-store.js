@@ -89,6 +89,11 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/records/2017-10-10-django_document/",
         "teaser":null},{
+        "title": "Django_model_makingqueries",
+        "excerpt":"Making Queries장고문서 를 공부하며 기록한 내용입니다.&gt;&gt;&gt; from blog.models import Blog&gt;&gt;&gt; b = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')&gt;&gt;&gt; b.save() This performs an INSERT SQL statement behind the scenes. Django doesn’t hit the database until you explicitly call save().안쪽에서는 sql 문이 작동되는데, 장고는 save() method가 실행되기 전까지는 database를 치지 않는다.Creating...","categories": ["records"],
+        "tags": [],
+        "url": "http://localhost:4000/records/2017-10-13-django_model_MakingQueries/",
+        "teaser":null},{
         "title": "Django_model_fieldtype",
         "excerpt":"Model field referenceField typesAutoField(**options) 추가하는 인스턴스마다 자동으로 사용가능한 ID값을 할당하는 IntegerField. 기본적으로 primary key field가 자동으로 추가해 주기 때문에 필요한 경우에 사용하면 됩니다.BigAutoField(**options) 사용 할 수 있는 숫자가 1부터 9223372036854775807까지 보장되는 AutoField와 유사한 필드입니다.BigIntegerField(**options) 9223372036854775807까지의 숫자를 맞출 수 있다는 것을 제외하고는 IntegerField와 매우 흡사 한 64 비트 정수입니다.이 필드의 기본...","categories": ["records"],
         "tags": [],

@@ -273,7 +273,7 @@ Additional information is available from the Django docs.
 
         <p><a href="https://stackoverflow.com/questions/6386172/datetimefield-doesnt-show-in-admin-system">답변링크</a></p>
 
-        <p>그리고 그대로 적용해 보았고, 수정할 수 없는 상태로 잘 나온다. 
+        <p>그리고 그대로 적용해 보았고, 수정할 수 없는 상태로 잘 나온다.
 장고 문서에 아래와 같이 나와있어서</p>
 
         <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As currently implemented, setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
@@ -285,8 +285,8 @@ Additional information is available from the Django docs.
 updated = models.DateTimeField(auto_now=True, editable=True, blank=True)
 </code></pre></div>        </div>
 
-        <p>다시 admin에 나오나 확인해 봤는데 안나온다. 
-auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 강제하는 것 같다. 
+        <p>다시 admin에 나오나 확인해 봤는데 안나온다.
+auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 강제하는 것 같다.
 혹시 몰라서 모든 속성값을 지우고 admin에 나오나 해봤는데 나온다.</p>
 
         <p>결국 auto_now_add, 와 auto_now 속성을 적용하고 admin에서 확인하기 위해서는 stackoverflow에 나온데로 admin 모듈에서 class로 설정해주는 방법이 현재로썬 최선인 것 같다.</p>
@@ -295,7 +295,7 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
         <p>query set</p>
       </li>
       <li>
-        <p>장고 문서 복습 : <code class="highlighter-rouge">Making queries</code>, <code class="highlighter-rouge">Templates(overview)</code></p>
+        <p>장고 문서 복습 : <a href="/records/2017-10-13-django_model_MakingQueries/">Making queries</a>, Templates(overview)</p>
       </li>
     </ul>
   </li>
