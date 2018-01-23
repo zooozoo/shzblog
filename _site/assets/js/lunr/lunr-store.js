@@ -119,13 +119,8 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/til/2018-01-14-TIL/",
         "teaser":null},{
-        "title": "Hello_digital_world",
-        "excerpt":"커니핸 교수의 Hello Digital World 공부제이펍 출판사에서 출판한 커니핸 교수의 Hello Digital World를 공부하며 오래 기억하고 싶은 내용들을 기록한 게시물 입니다.저작권 관련 문제가 있을 경우 블로그에서 내리겠습니다.소프트웨어의 계층하드웨어커널운영체제라이브러리집합(API를 통해 접근 가능)애플리케이션 운영 체제와 애플리케이션 사이의 경계는 뚜렷하게 정의되어 있지 않다. 완벽하진 않아도 유용한 지침은 한 애플리케이션이 다른 애플리케이션을 간섭하지 않도록...","categories": ["records"],
-        "tags": [],
-        "url": "http://localhost:4000/records/2018-01-15-Hello_Digital_World/",
-        "teaser":null},{
         "title": "1월15일~21일",
-        "excerpt":"1월 15일 월요일 커니핸 교수의 hello digital world 공부 (링크)1월 17일 수요일 커니핸 교수의 hello digital world 공부 (링크)1월 19일 금요일 블로그 만들기 posts sidebar navigations에 자동으로 태그 목록 보여주도록 설정 개별 post 들어 갔을 때 sidebar가 제대로 표시되지 않았는데 header에 sidebar변수가 인식되지 않는 현상 발견-&gt; 형식에 맞는 새로운 sidebar...","categories": ["til"],
+        "excerpt":"1월 15일 월요일 커니핸 교수의 hello digital world 공부1월 17일 수요일 커니핸 교수의 hello digital world 공부1월 19일 금요일 블로그 만들기 posts sidebar navigations에 자동으로 태그 목록 보여주도록 설정 개별 post 들어 갔을 때 sidebar가 제대로 표시되지 않았는데 header에 sidebar변수가 인식되지 않는 현상 발견-&gt; 형식에 맞는 새로운 sidebar html 파일을...","categories": ["til"],
         "tags": [],
         "url": "http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/",
         "teaser":null},{
@@ -135,7 +130,12 @@ var store = [{
         "url": "http://localhost:4000/posts/2018-01-17-atom/",
         "teaser":null},{
         "title": "1월22일~28일",
-        "excerpt":"1월 22일 월요일  Try-Django-Tutorial youtube 강의 9커밋까지 완료  하루3분 네트워크 독서  블로그 정리          about page 내용 작성 및 records 내용 정리-&gt; 이전부터 쭉 작성해 왔던 것들인데 미완성 된 부분도 있고 구성에 일관성이 없어서 한번 다시 쭉 정리해야할 필요성을 느낌      ","categories": ["til"],
+        "excerpt":"1월 22일 월요일 Try-Django-Tutorial youtube 강의 9커밋까지 완료 하루3분 네트워크 독서 블로그 정리 about page 내용 작성 및 records 내용 정리-&gt; 이전부터 쭉 작성해 왔던 것들인데 미완성 된 부분도 있고 구성에 일관성이 없어서 한번 다시 쭉 정리해야할 필요성을 느낌 1월 23일 화요일 Try-Django-Tutorial youtube 강의 17커밋까지 완료 class based view...","categories": ["til"],
         "tags": [],
         "url": "http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/",
+        "teaser":null},{
+        "title": "전문가를 위한 파이썬",
+        "excerpt":"","categories": ["records"],
+        "tags": [],
+        "url": "http://localhost:4000/records/2018-01-23-Fluent_Python/",
         "teaser":null}]

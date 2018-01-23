@@ -219,7 +219,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
           
         </header>
@@ -240,6 +240,66 @@
   </li>
 </ol>
 
+<h3 id="1월-23일-화요일">1월 23일 화요일</h3>
+
+<ol>
+  <li>
+    <p>Try-Django-Tutorial youtube 강의 17커밋까지 완료</p>
+
+    <ul>
+      <li>
+        <p>class based view</p>
+      </li>
+      <li>
+        <p>template include, extends</p>
+      </li>
+      <li>
+        <p>model</p>
+      </li>
+      <li>
+        <p>Model 에서 DateTimeField 관련
+모델에 DateTimeField를 적용 시켰는데 admin page에 보이질 않는다. 동영상 강의 에서는 분명히 보이는데 내가 안보이는 거라서 검색을 해봤고 stackoverflow에 다음과 같은 솔루션을 얻었다.</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If you really want to see date in the admin panel, you can add readonly_fields in admin.py:
+
+class RatingAdmin(admin.ModelAdmin):
+    readonly_fields = ('date',)
+
+admin.site.register(Rating,RatingAdmin)
+Any field you specify will be added last after the editable fields. To control the order you can use the  fields options.
+
+Additional information is available from the Django docs.
+</code></pre></div>        </div>
+
+        <p><a href="https://stackoverflow.com/questions/6386172/datetimefield-doesnt-show-in-admin-system">답변링크</a></p>
+
+        <p>그리고 그대로 적용해 보았고, 수정할 수 없는 상태로 잘 나온다. 
+장고 문서에 아래와 같이 나와있어서</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As currently implemented, setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
+</code></pre></div>        </div>
+
+        <p>모델 속성을 다음과 같이 바꾸고</p>
+
+        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>timestamp = models.DateTimeField(auto_now_add=True, editable=True, blank=True)
+updated = models.DateTimeField(auto_now=True, editable=True, blank=True)
+</code></pre></div>        </div>
+
+        <p>다시 admin에 나오나 확인해 봤는데 안나온다. 
+auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 강제하는 것 같다. 
+혹시 몰라서 모든 속성값을 지우고 admin에 나오나 해봤는데 나온다.</p>
+
+        <p>결국 auto_now_add, 와 auto_now 속성을 적용하고 admin에서 확인하기 위해서는 stackoverflow에 나온데로 admin 모듈에서 class로 설정해주는 방법이 현재로썬 최선인 것 같다.</p>
+      </li>
+      <li>
+        <p>query set</p>
+      </li>
+      <li>
+        <p>장고 문서 복습 : <code class="highlighter-rouge">Making queries</code>, <code class="highlighter-rouge">Templates(overview)</code></p>
+      </li>
+    </ul>
+  </li>
+</ol>
 
         
       </section>
@@ -282,7 +342,8 @@
 ">Previous</a>
     
     
-      <a href="#" class="pagination--pager disabled">Next</a>
+      <a href="http://localhost:4000/records/2018-01-23-Fluent_Python/" class="pagination--pager" title="전문가를 위한 파이썬
+">Next</a>
     
   </nav>
 
@@ -296,6 +357,34 @@
     <div class="page__related">
       <h4 class="page__related-title">You May Also Enjoy</h4>
       <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="permalink">전문가를 위한 파이썬
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
         
           
 
@@ -364,35 +453,6 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/records/2018-01-15-Hello_Digital_World/" rel="permalink">Hello_digital_world
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  12 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">커니핸 교수의 Hello Digital World 공부
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
         <a href="http://localhost:4000/til/2018-01-14-TIL/" rel="permalink">TIL 시작
 </a>
       
@@ -446,8 +506,6 @@
       <li><a href="https://github.com/zooozoo"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
     
     
-    
-      <li><a href="https://bitbucket.org/잘못된 내용이 있다면 편하게 리플 남겨주세요~!"><i class="fab fa-fw fa-bitbucket" aria-hidden="true"></i> Bitbucket</a></li>
     
     <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>

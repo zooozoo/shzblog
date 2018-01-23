@@ -1,11 +1,5 @@
 # 커니핸 교수의 Hello Digital World 공부
 
-제이펍 출판사에서 출판한 `커니핸 교수의 Hello Digital World`를 공부하며 오래 기억하고 싶은 내용들을 기록한 게시물 입니다. 
-
-저작권 관련 문제가 있을 경우 블로그에서 내리겠습니다.
-
-
-
 ###  소프트웨어의 계층
 
 ```
@@ -22,21 +16,45 @@
 
 다시 이야기 하면 애플리케이션이 컴퓨터 자원을 사용하는데 있어서 다른 애플리케이션의 간섭을 받지 않고 독립적으로 우영될 수 있도록 도와주는 일은 운영 체제의 영역.
 
+아래는 구글에서 `소프트웨어 계층`이라는 단어로 검색했을 때 위키백과에  위키 백과에서 설명하는 `추상화 계층`
+
+> **추상화 계층**(abstraction layer)은 특정한 집합의 기능의 자세한 부분을 숨기는 한 방법이다. 추상화 계층을 이용하는 소프트웨어 모델에는 [컴퓨터 네트워크](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC) [통신 프로토콜](https://ko.wikipedia.org/wiki/%ED%86%B5%EC%8B%A0_%ED%94%84%EB%A1%9C%ED%86%A0%EC%BD%9C)을 위한 [OSI 7개 계층 모형](https://ko.wikipedia.org/wiki/OSI_%EB%AA%A8%ED%98%95), [OpenGL](https://ko.wikipedia.org/wiki/OpenGL) 그래픽 드로잉 라이브러리, [유닉스](https://ko.wikipedia.org/wiki/%EC%9C%A0%EB%8B%89%EC%8A%A4)가 기원이고 [MS-DOS](https://ko.wikipedia.org/wiki/MS-DOS), [리눅스](https://ko.wikipedia.org/wiki/%EB%A6%AC%EB%88%85%EC%8A%A4), 그 밖의 현대 [운영 체제](https://ko.wikipedia.org/wiki/%EC%9A%B4%EC%98%81_%EC%B2%B4%EC%A0%9C) 대부분이 채택한 [바이트 스트림](https://ko.wikipedia.org/w/index.php?title=%EB%B0%94%EC%9D%B4%ED%8A%B8_%EC%8A%A4%ED%8A%B8%EB%A6%BC&action=edit&redlink=1) 입출력(I/O) 모형이 있다.
+>
+> 유닉스 운영 체제에서 대부분의 종류의 입출력 기능은 [장치](https://ko.wikipedia.org/wiki/%EC%9E%A5%EC%B9%98)로부터 읽어들이거나 장치로 기록된 바이트의 스트림으로 간주된다. 이러한 바이트 모델의 스트림은 [장치 독립](https://ko.wikipedia.org/w/index.php?title=%EC%9E%A5%EC%B9%98_%EB%8F%85%EB%A6%BD&action=edit&redlink=1)을 목적으로 파일 입출력, 소켓 입출력, 터미널 입출력에 쓰인다. 응용 프로그램 수준에서 장치로 읽기/쓰기를 하기 위해 프로그램은 장치(터미널과 같은 실제 장치나, [파일 시스템](https://ko.wikipedia.org/wiki/%ED%8C%8C%EC%9D%BC_%EC%8B%9C%EC%8A%A4%ED%85%9C)의 파일, 또는 [네트워크 포트](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4_%ED%8F%AC%ED%8A%B8)와 같은 [가상 장치](https://ko.wikipedia.org/w/index.php?title=%EA%B0%80%EC%83%81_%EC%9E%A5%EC%B9%98&action=edit&redlink=1)) 열기 명령을 호출한다. 이 장치의 물리적 특성은 운영 체제가 중재하며 프로그래머가 장치로부터 바이트를 읽거나 쓰기할 수 있게 하는데 이를 [추상화](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%83%81%ED%99%94_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)) [인터페이스](https://ko.wikipedia.org/wiki/%EC%9D%B8%ED%84%B0%ED%8E%98%EC%9D%B4%EC%8A%A4_(%EC%BB%B4%ED%93%A8%ED%8C%85))라고 한다. 그 뒤 운영 체제는 바이트 스트림을 장치로 읽거나 쓸 수 있도록 실제 [변형](https://ko.wikipedia.org/w/index.php?title=%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8_%EB%B3%80%ED%98%95&action=edit&redlink=1) 과정을 수행한다.
+>
+> [(위키백과 발췌)](https://ko.wikipedia.org/wiki/%EC%B6%94%EC%83%81%ED%99%94_%EA%B3%84%EC%B8%B5)
+
 ### 자바스크립트 예제 중 변수에 대해서
 
 >  변수란 프로그램이 실행되는 동안 프로그램이 값을 저장할 수 있는 RAM상의 장소를 뜻한다. 프로그램이 무엇을 하는지에 따라 값이 변경될 수 있기 때문에 변수라고 한다. 변수를 선언하는 것은 모형 어셈블리 언어에서 했던 것처럼 메모리 위치에 이름을 지정하는 일의 고수준 언어 버전이다. 은유적으로, 선언문은 '등장인물들'로, 희곡에 나오는 인물의 목록이다.
 >
 >  (발췌)
 
+[위키백과](https://ko.wikipedia.org/wiki/%EB%B3%80%EC%88%98_(%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99))에서의 변수에 대한 정의
+
+>[컴퓨터 프로그래밍](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D)에서 **변수**(變數) 또는 **스칼라**(scalar)는 아직 알려지지 않거나 어느 정도까지만 알려져 있는 양이나 정보에 대한 상징적인 이름이다. 컴퓨터 [소스 코드](https://ko.wikipedia.org/wiki/%EC%86%8C%EC%8A%A4_%EC%BD%94%EB%93%9C)에서의 변수 이름은 일반적으로 [데이터 저장 위치](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A3%BC%EC%86%8C)와 그 안의 내용물과 관련되어 있으며 이러한 것들은 프로그램 실행 도중에 변경될 수 있다.
+>
+>프로그래밍에서의 변수는 수학에서 말하는 [변수](https://ko.wikipedia.org/wiki/%EB%B3%80%EC%88%98)의 개념과 완전히 일치하지 않을 수도 있다. 컴퓨터 변수의 값은 수학에서처럼 [등식](https://ko.wikipedia.org/wiki/%EB%93%B1%EC%8B%9D)이나 [공식](https://ko.wikipedia.org/wiki/%EA%B3%B5%EC%8B%9D)의 필수적인 부분이 아니다. 컴퓨터 환경에서 변수는 반복적인 과정 안에서 이용할 수도 있다. 이를테면 한 장소의 값을 할당한 뒤 어느 곳에서 사용한 다음 새로운 값으로 다시 할당하고 같은 방법으로 다시 사용할 수도 있다. 컴퓨터 프로그래밍에서의 변수는 긴 이름이 자주 나오며, 어떻게 이용할 것인지에 대한 설명을 나타내는 반면 수학에서의 변수는 짧은 시간 동안 쓰이는 간결한, 한 두 개 문자 이름이다.
+>
+>[컴파일러](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%8C%8C%EC%9D%BC%EB%9F%AC)는 변수의 상징적인 이름을 데이터의 실제 위치로 치환해야 한다. 변수 값, 형, 위치는 일반적으로 고정된 채 유지되는 반면 위치에 저장되어 있는 데이터는 프로그램 실행 도중 변경될 수 있다.
+
+[위키백과](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC_%EC%A3%BC%EC%86%8C)에서의 메모리 주소에 대한 내용
+
+>[컴퓨터 과학](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EA%B3%BC%ED%95%99)에서 **메모리 주소**는 [메모리](https://ko.wikipedia.org/wiki/%EB%A9%94%EB%AA%A8%EB%A6%AC) 위치에 대한 식별자로, [컴퓨터 프로그램](https://ko.wikipedia.org/wiki/%EC%BB%B4%ED%93%A8%ED%84%B0_%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4)이나 하드웨어 장치가 데이터를 저장하고 나중에 이를 가져오는 장소이다. 일반적으로 이는 [이진](https://ko.wikipedia.org/wiki/%EC%9D%B4%EC%A7%84%EB%B2%95) 형태의 [숫자](https://ko.wikipedia.org/wiki/%EC%88%98_(%EC%88%98%ED%95%99))로 되어 있다.
+>
+>컴퓨터 프로그램에서 **절대 주소**는 메모리 위치를 식별하는 메모리 고유 주소이다. 즉, [기억장치](https://ko.wikipedia.org/wiki/%EA%B8%B0%EC%96%B5%EC%9E%A5%EC%B9%98) 고유의 번지로서, 기억장치 중 기억장소를 직접 숫자로 지정하는 주소역할을 한다. [기계어](https://ko.wikipedia.org/wiki/%EA%B8%B0%EA%B3%84%EC%96%B4) 정보가 기억되어 있으며, 1,2,3,4…와 같이 16진수로 약속하여 순서대로 결정한다. 반면 **상대 주소**는 고유 주소가 아니며, 특정 영역에 상대적인 주소를 지정한다.
+
+
+
 ### 광케이블에 대하여
 
-**광케이블**
+광케이블
 
 > **광케이블**(光cable, optical cable)이란 [광섬유](https://ko.wikipedia.org/wiki/%EA%B4%91%EC%84%AC%EC%9C%A0)를 이용한 하나의 [통신 매체](https://ko.wikipedia.org/w/index.php?title=%ED%86%B5%EC%8B%A0_%EB%A7%A4%EC%B2%B4&action=edit&redlink=1)이다. 광케이블은 [구리선](https://ko.wikipedia.org/w/index.php?title=%EA%B5%AC%EB%A6%AC%EC%84%A0&action=edit&redlink=1)을 사용하는 통신방식보다 자료 [전송속도](https://ko.wikipedia.org/wiki/%EC%A0%84%EC%86%A1%EC%86%8D%EB%8F%84)가 수십 배로 빠르나, [네트워크](https://ko.wikipedia.org/wiki/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC)를 새로 구축해야 한다는 단점이 있다.
 >
 > (위키백과 발췌)
 
-**광섬유**
+광섬유
 
 > 광학섬유라고도 한다. 이 현상을 이용하여 빛을 전송할 때 광손실을 줄이기 위하여 투명도가 고도로 높은 재료가 필요하며, 고순도의 석영이나 광학적 성질이 우수한 고분자재료를 사용한다. 광섬유는 1970년에 미국의 코닝사가 저손실석영섬유를 개발한 것을 계기로 개량을 거듭하여 광통신의 실용화에 크게 이용되고 있다.
 >
