@@ -143,4 +143,9 @@ var store = [{
         "excerpt":"","categories": ["records"],
         "tags": [],
         "url": "http://localhost:4000/records/2018-01-23-Fluent_Python/",
+        "teaser":null},{
+        "title": "Spanning multi-valued relationships",
+        "excerpt":"장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)해당 내용을 이미 알고 있고 스압을 느끼신다면 stackoverflow 의 답변으로 바로 가보시길…해당 부분은 Spanning multi-valued relationships 라는 부분인데 ForeignKey나 Many-to-Many관계에있는 모델중에서 관계된 모델을 조건으로 해서 filtering...","categories": ["posts"],
+        "tags": ["Django"],
+        "url": "http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/",
         "teaser":null}]

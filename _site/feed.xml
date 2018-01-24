@@ -1,4 +1,211 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-24T10:43:52+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">전문가를 위한 파이썬</title><link href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>http://localhost:4000/records/Fluent_Python</id><content type="html" xml:base="http://localhost:4000/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">1월22일~28일</title><link href="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="alternate" type="text/html" title="1월22일~28일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>http://localhost:4000/til/1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/">&lt;h3 id=&quot;1월-22일-월요일&quot;&gt;1월 22일 월요일&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-01-24T17:42:14+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">Spanning multi-valued relationships</title><link href="http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>http://localhost:4000/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
+
+&lt;p&gt;해당 내용을 이미 알고 있고 스압을 느끼신다면 &lt;a href=&quot;https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django&quot;&gt;stackoverflow 의 답변&lt;/a&gt;으로 바로 가보시길…&lt;/p&gt;
+
+&lt;p&gt;해당 부분은 &lt;code class=&quot;highlighter-rouge&quot;&gt;Spanning multi-valued relationships&lt;/code&gt; 라는 부분인데 ForeignKey나 Many-to-Many관계에있는 모델중에서 관계된 모델을 조건으로 해서 filtering 하는 내용이다.&lt;/p&gt;
+
+&lt;p&gt;장고 문서에서는 아래의 모델을 기준으로 설명한다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from django.db import models
+
+class Blog(models.Model):
+    name = models.CharField(max_length=100)
+    tagline = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+class Author(models.Model):
+    name = models.CharField(max_length=200)
+    email = models.EmailField()
+
+    def __str__(self):
+        return self.name
+
+class Entry(models.Model):
+    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
+    headline = models.CharField(max_length=255)
+    body_text = models.TextField()
+    pub_date = models.DateField()
+    mod_date = models.DateField()
+    authors = models.ManyToManyField(Author)
+    n_comments = models.IntegerField()
+    n_pingbacks = models.IntegerField()
+    rating = models.IntegerField()
+
+    def __str__(self):
+        return self.headline
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;해당 모델은 Blog (일) &amp;lt; - &amp;gt; (다) Entry &amp;lt; - &amp;gt; (다)Author 의 관계를 가지고 있다.&lt;/p&gt;
+
+&lt;p&gt;다음은 장고 문서에서 설명하는 내용&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;To handle both of these situations, Django has a consistent way of processing &lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter()&lt;/code&gt;&lt;/a&gt; calls. Everything inside a single &lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter()&lt;/code&gt;&lt;/a&gt; call is applied simultaneously to filter out items matching all those requirements. Successive &lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter()&lt;/code&gt;&lt;/a&gt; calls further restrict the set of objects, but for multi-valued relations, they apply to any object linked to the primary model, not necessarily those objects that were selected by an earlier &lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;filter()&lt;/code&gt;&lt;/a&gt; call.&lt;/p&gt;
+
+  &lt;p&gt;That may sound a bit confusing, so hopefully an example will clarify. To select all blogs that contain entries with both &lt;em&gt;“Lennon”&lt;/em&gt; in the headline and that were published in 2008 (the same entry satisfying both conditions), we would write:&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;To select all blogs that contain an entry with &lt;em&gt;“Lennon”&lt;/em&gt; in the headline &lt;strong&gt;as well as&lt;/strong&gt; an entry that was published in 2008, we would write:&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;Suppose there is only one blog that had both entries containing &lt;em&gt;“Lennon”&lt;/em&gt; and entries from 2008, but that none of the entries from 2008 contained &lt;em&gt;“Lennon”&lt;/em&gt;. The first query would not return any blogs, but the second query would return that one blog.&lt;/p&gt;
+
+  &lt;p&gt;In the second example, the first filter restricts the queryset to all those blogs linked to entries with &lt;em&gt;“Lennon”&lt;/em&gt; in the headline. The second filter restricts the set of blogs &lt;em&gt;further&lt;/em&gt; to those that are also linked to entries that were published in 2008. The entries selected by the second filter may or may not be the same as the entries in the first filter. We are filtering the &lt;code class=&quot;highlighter-rouge&quot;&gt;Blog&lt;/code&gt; items with each filter statement, not the &lt;code class=&quot;highlighter-rouge&quot;&gt;Entry&lt;/code&gt; items.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;요약해서 설명하자면&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;와 같이 필터 안에 여러개의 조건을 써서 찾는 것과&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;이런식으로(chaining) 필터를 나눠서 각각 찾는것이 다른 결과를 가지며 그 이유는 결과가 Entry를 탐색하는 것이 아닌  Blog를 탐색하는 것이기 때문이라고 설명하고 있다.&lt;/p&gt;
+
+&lt;p&gt;두 번째 예시가 잘 이해되지 않았는데 만약 첫번째 filter로 blog 객체를 추려낸 후에 그 값을 두 번째 filter를 적용하면 어떻게 하든 첫 번째 예시와 같아야만 할 것 같다. 결국에 돌고 돌아 이해한 내용은&lt;/p&gt;
+
+&lt;p&gt;장고에 있는 문서보다는 &lt;a href=&quot;https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django&quot;&gt;stackoverflow 에 예시&lt;/a&gt;로 쓰여진 내용이 훨씬 잘 이해 된다.&lt;/p&gt;
+
+&lt;p&gt;누군가 나랑 똑같은 질문을 stackoverflow에 했고 아주 상세한 설명이 있어서 덕분해 잘 이해할 수 있었다.&lt;/p&gt;
+
+&lt;p&gt;아래는 해당 답변 내용이다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The case in which results of “multiple arguments filter-query” is different then “chained-filter-query”, following:&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;Selecting referenced objects on the basis of referencing objects and relationship is one-to-many (or many-to-many).&lt;/p&gt;
+
+    &lt;p&gt;Multiple filters:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Referenced.filter(referencing1_a=x, referencing1_b=y)
+    #  same referencing model   ^^                ^^
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Chained filters:&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    Referenced.filter(referencing1_a=x).filter(referencing1_b=y)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Both queries can output different result:
+If more then one rows in referencing-model&lt;code class=&quot;highlighter-rouge&quot;&gt;Referencing1&lt;/code&gt;can refer to same row in referenced-model&lt;code class=&quot;highlighter-rouge&quot;&gt;Referenced&lt;/code&gt;. This can be the case in &lt;code class=&quot;highlighter-rouge&quot;&gt;Referenced&lt;/code&gt;: &lt;code class=&quot;highlighter-rouge&quot;&gt;Referencing1&lt;/code&gt; have either 1:N (one to many) or N:M (many to many) relation-ship.&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;Example:&lt;/p&gt;
+
+  &lt;p&gt;Consider my application &lt;code class=&quot;highlighter-rouge&quot;&gt;my_company&lt;/code&gt; has two models &lt;code class=&quot;highlighter-rouge&quot;&gt;Employee&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;Dependent&lt;/code&gt;. An employee in &lt;code class=&quot;highlighter-rouge&quot;&gt;my_company&lt;/code&gt; can have more than dependents(in other-words a dependent can be son/daughter of a single employee, while a employee can have more than one son/daughter).
+Ehh, assuming like husband-wife both can’t work in a &lt;code class=&quot;highlighter-rouge&quot;&gt;my_company&lt;/code&gt;. I took 1:m example&lt;/p&gt;
+
+  &lt;p&gt;So, &lt;code class=&quot;highlighter-rouge&quot;&gt;Employee&lt;/code&gt; is referenced-model that can be referenced by more then &lt;code class=&quot;highlighter-rouge&quot;&gt;Dependent&lt;/code&gt; that is referencing-model. Now consider relation-state as follows:&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Employee:        Dependent:
++------+        +------+--------+-------------+--------------+
+| name |        | name | E-name | school_mark | college_mark |
++------+        +------+--------+-------------+--------------+
+| A    |        | a1   |   A    |          79 |           81 |
+| B    |        | b1   |   B    |          80 |           60 |
++------+        | b2   |   B    |          68 |           86 |
+                +------+--------+-------------+--------------+  
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;Dependent&lt;code class=&quot;highlighter-rouge&quot;&gt;a1&lt;/code&gt;refers to employee&lt;code class=&quot;highlighter-rouge&quot;&gt;A&lt;/code&gt;, and dependent&lt;code class=&quot;highlighter-rouge&quot;&gt;b1, b2&lt;/code&gt;references to employee&lt;code class=&quot;highlighter-rouge&quot;&gt;B&lt;/code&gt;.&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;Now my query is:&lt;/p&gt;
+
+  &lt;p&gt;Find all employees those having son/daughter has distinction marks (say &amp;gt;= 75%) in both college and school?&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Employee.objects.filter(dependent__school_mark__gte=75,
+...                         dependent__college_mark__gte=75)
+
+[&amp;lt;Employee: A&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;Output is ‘A’ dependent ‘a1’ has distinction marks in both college and school is dependent on employee ‘A’. Note ‘B’ is not selected because nether of ‘B’’s child has distinction marks in both college and school. Relational algebra:&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;Employee &lt;strong&gt;⋈&lt;/strong&gt;(school_mark &amp;gt;=75 AND college_mark&amp;gt;=75)Dependent&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;In Second, case I need a query:&lt;/p&gt;
+
+  &lt;p&gt;Find all employees whose some of dependents has distinction marks in college and school?&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Employee.objects.filter(
+...             dependent__school_mark__gte=75
+...                ).filter(
+...             dependent__college_mark__gte=75)
+
+[&amp;lt;Employee: A&amp;gt;, &amp;lt;Employee: B&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;This time ‘B’ also selected because ‘B’ has two children (more than one!), one has distinction mark in school ‘b1’ and other is has distinction mark in college ‘b2’.
+Order of filter doesn’t matter we can also write above query as:&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Employee.objects.filter(
+...             dependent__college_mark__gte=75
+...                ).filter(
+...             dependent__school_mark__gte=75)
+
+[&amp;lt;Employee: A&amp;gt;, &amp;lt;Employee: B&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;result is same! Relational algebra can be:&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;(Employee &lt;strong&gt;⋈&lt;/strong&gt;(school_mark &amp;gt;=75)Dependent) &lt;strong&gt;⋈&lt;/strong&gt;(college_mark&amp;gt;=75)Dependent&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;p&gt;Note following:&lt;/p&gt;
+
+  &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;dq1 = Dependent.objects.filter(college_mark__gte=75, school_mark__gte=75)
+dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;  &lt;/div&gt;
+
+  &lt;p&gt;Outputs same result: &lt;code class=&quot;highlighter-rouge&quot;&gt;[&amp;lt;Dependent: a1&amp;gt;]&lt;/code&gt;&lt;/p&gt;
+
+  &lt;p&gt;I check target SQL query generated by Django using &lt;code class=&quot;highlighter-rouge&quot;&gt;print qd1.query&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;print qd2.query&lt;/code&gt;both are same(Django 1.6).&lt;/p&gt;
+
+  &lt;p&gt;But semantically both are different to &lt;em&gt;me&lt;/em&gt;. first looks like simple section σ&lt;a href=&quot;Dependent&quot;&gt;school_mark &amp;gt;= 75 AND college_mark &amp;gt;= 75&lt;/a&gt; and second like slow nested query: σ&lt;a href=&quot;σ[college_mark &amp;gt;= 75](Dependent)&quot;&gt;school_mark &amp;gt;= 75&lt;/a&gt;.&lt;/p&gt;
+
+  &lt;p&gt;If one need &lt;a href=&quot;http://codepad.org/c6VODLRf&quot;&gt;Code @codepad&lt;/a&gt;&lt;/p&gt;
+
+  &lt;p&gt;btw, it is given in documentation @&lt;a href=&quot;https://docs.djangoproject.com/en/dev/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;Spanning multi-valued relationships&lt;/a&gt; I have just added an example, I think it will be helpful for someone new.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;스택오버플로우에 올라온 답변을 요약해 보자면&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Employee.objects.filter(dependent__school_mark__gte=75,
+...                         dependent__college_mark__gte=75)
+
+[&amp;lt;Employee: A&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같은 필터링은 dependent에서 두개의 조건을 동시에 만족하는 Employee를 찾는 것 이므로 결과는 Employee A가 된다.&lt;/p&gt;
+
+&lt;p&gt;반면에&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; Employee.objects.filter(
+...             dependent__school_mark__gte=75
+...                ).filter(
+...             dependent__college_mark__gte=75)
+
+[&amp;lt;Employee: A&amp;gt;, &amp;lt;Employee: B&amp;gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위의 경우 첫번째 필터에서 걸러지는 내용은 Employee A, B 가 된다.(왜냐하면 dependent 의 a1과 b1이 조건을 만족했기 때문이다. ) 두번째 필터가 포인트 인데 두번째 필터에서 college_mark가 75점 이상인 Employee를 다시 찾게되고 그 결과값도 Employee A, B가 된다. 왜냐하면 첫번째 필터에서 걸러진 후의 결과는 Employee A, B 이고 두번째 필터는 이 중에서 다시 college_mark가 75점 이상인 경우를 찾아내는 것인데  Employee B의 경우 college_mark가 75점 이상인 dependent b2 를 가지고 있기 때문이다. 즉 Employee B는 college_mark와 school_mark가 동시에 75점 이상인 dependent를 가지고 있지 않지만, school_mark가 75점 이상인 dependent b1과 college_mark가 75점 이상인 dependent b2 이렇게 두개의 dependent를 가지고 있기 때문에 두 번째 필터에서도 해당 조건을 만족하는 것 이다. 언뜻 생각하기에 혼동되는 부분이 두번째 필터를 생각할 때 dependent를 기준으로 생각하기 때문이다. 첫번째 필터에서 해당되는 dependent가 a1과 b1 이기 때문에 두번 째 필터에서 dependent a1, b1 이렇게 2개를 기준으로 필터링 해야할 것 같지만 Employee 기준으로 생각하면 첫번째 필터의 결과는 해당조건을 만족하는 dependent와 연결된 Employee가 되기 때문에  필터를 하기 전 과 후는 같은 상황이 된다.&lt;/p&gt;
+
+&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="Django" /><summary type="html">장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>http://localhost:4000/records/Fluent_Python</id><content type="html" xml:base="http://localhost:4000/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">1월22일~28일</title><link href="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="alternate" type="text/html" title="1월22일~28일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>http://localhost:4000/til/1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC</id><content type="html" xml:base="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/">&lt;h3 id=&quot;1월-22일-월요일&quot;&gt;1월 22일 월요일&lt;/h3&gt;
 
 &lt;ol&gt;
   &lt;li&gt;Try-Django-Tutorial youtube 강의 9커밋까지 완료&lt;/li&gt;
@@ -70,6 +277,15 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;하루3분 네트워크 교실&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1월-24일-수요일&quot;&gt;1월 24일 수요일&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;장고 문서 복습 &lt;a href=&quot;/records/2017-10-13-django_model_MakingQueries/&quot;&gt;Making queries&lt;/a&gt;, 관련내용 &lt;a href=&quot;/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/&quot;&gt;posting&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">1월 22일 월요일</summary></entry><entry><title type="html">UX/UI fontsize customzing at atom editor</title><link href="http://localhost:4000/posts/2018-01-17-atom/" rel="alternate" type="text/html" title="UX/UI fontsize customzing at atom editor" /><published>2018-01-17T00:00:00+09:00</published><updated>2018-01-17T00:00:00+09:00</updated><id>http://localhost:4000/posts/atom</id><content type="html" xml:base="http://localhost:4000/posts/2018-01-17-atom/">&lt;h3 id=&quot;아톰-에디터에서-uxui-글씨크기-바꾸기&quot;&gt;아톰 에디터에서 UX/UI 글씨크기 바꾸기&lt;/h3&gt;
 
 &lt;p&gt;블로그 작성을 위해서 아톰 editor를 사용하는데
@@ -523,232 +739,4 @@ Entry.objects.select_related('blog').filter(pub_date__gt=timezone.now())
 
 &lt;p&gt;select_related ()를 많은 관련 객체로 호출하거나 모든 관계를 모르는 경우가 있습니다. 이러한 경우에는 인수없이 select_related ()를 호출 할 수 있습니다. 이것은 발견 할 수있는 null이 아닌 모든 외래 키를 반환합니다. null 입력 가능 외래 키가 지정되어야합니다. 대부분의 경우에는 기본 쿼리를보다 복잡하게 만들고 실제로 필요한 것보다 많은 데이터를 반환하기 때문에 권장되지 않습니다.&lt;/p&gt;
 
-&lt;p&gt;QuerySet에서 select_related의 이전 호출에 의해 추가 된 관련 필드 목록을 지우려면 매개 변수로 None을 전달할 수 있습니다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">QuerySet API</summary></entry><entry><title type="html">Django_model_fieldtype</title><link href="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/" rel="alternate" type="text/html" title="Django_model_fieldtype" /><published>2017-10-13T00:00:00+09:00</published><updated>2017-10-13T00:00:00+09:00</updated><id>http://localhost:4000/records/django_model_fieldtype-</id><content type="html" xml:base="http://localhost:4000/records/2017-10-13-django_model_fieldtype-/">&lt;h1 id=&quot;model-field-reference&quot;&gt;Model field reference&lt;/h1&gt;
-
-&lt;h2 id=&quot;field-types&quot;&gt;Field types&lt;/h2&gt;
-
-&lt;h3 id=&quot;autofieldoptions&quot;&gt;AutoField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;추가하는 인스턴스마다 자동으로 사용가능한 ID값을 할당하는 IntegerField. 기본적으로 primary key field가 자동으로 추가해 주기 때문에 필요한 경우에 사용하면 됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;bigautofieldoptions&quot;&gt;BigAutoField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;사용 할 수 있는 숫자가 1부터 9223372036854775807까지 보장되는 AutoField와 유사한 필드입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;bigintegerfieldoptions&quot;&gt;BigIntegerField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;9223372036854775807까지의 숫자를 맞출 수 있다는 것을 제외하고는 IntegerField와 매우 흡사 한 64 비트 정수입니다.이 필드의 기본 양식 위젯은 TextInput입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;binaryfieldoptions&quot;&gt;BinaryField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;이진 데이터를 저장하는 필드입니다. 바이트 할당 만 지원합니다. 이 입력란에는 기능이 제한되어 있습니다. 예를 들어, BinaryField 값에 대한 쿼리 집합을 필터링 할 수 없습니다. 또한 BinaryField를 ModelForm에 포함시키는 것도 불가능합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;booleanfieldoptions&quot;&gt;BooleanField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Ture/False 값을 가지는 필드입니다.&lt;/li&gt;
-  &lt;li&gt;필드에 대한 기본 위젯은 CheckboxInput입니다.&lt;/li&gt;
-  &lt;li&gt;null값을 받아야만 한다면 NullBooleanField를 대신 사용하면 됩니다.&lt;/li&gt;
-  &lt;li&gt;default값이 정의되어 있지 않으면 BooleanField의 기본값은 None입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;charfieldmax_lengthnone-options&quot;&gt;Charfield(max_length=None, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;string field로 길거나 짧은 문자열 보두 지원합니다.&lt;/li&gt;
-  &lt;li&gt;대량의 텍스트를 사용해야 한다면 Textfield를 사용하면 됩니다.&lt;/li&gt;
-  &lt;li&gt;기본 위젯은 TextInput입니다.&lt;/li&gt;
-  &lt;li&gt;CharField는 필수인자인 &lt;code class=&quot;highlighter-rouge&quot;&gt;max_length&lt;/code&gt;를 반드시 입력해줘야 합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;datefieldauto_nowfalse-auto_now_addfalse-options&quot;&gt;DateField(auto_now=False, auto_now_add=False, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;python에서 datetime.date 인스턴스로 표현되는 날짜입니다. 추가로 몇 가지 선택적 인수가 있습니다.&lt;/li&gt;
-  &lt;li&gt;DateField.auto_now : 데이터가 save될 때 마다 현재시각을 자동으로 부여합니다.&lt;/li&gt;
-  &lt;li&gt;DateField.auto_now_add : 데이터를 처음 만들 때 마다 자동으로 현재시각을 부여합니다.&lt;/li&gt;
-  &lt;li&gt;기본적으로 현재시각을 부여하지만 기본값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;default=date.today&lt;/code&gt;나 &lt;code class=&quot;highlighter-rouge&quot;&gt;default=timezone.now&lt;/code&gt;와 같은 옵션을 설정할 수 있습니다.&lt;/li&gt;
-  &lt;li&gt;기본 위젯은 TextInput입니다. admin페이지에는 기본적으로 Today를 설정할 수 있는 단축키가 만들어 집니다.&lt;/li&gt;
-  &lt;li&gt;auto_now_add, auto_now 및 default 옵션은 상호 배타적입니다. 이러한 옵션을 함께 사용하면 오류가 발생합니다.&lt;/li&gt;
-  &lt;li&gt;auto_now 또는 auto_now_add를 True로 설정하면 해당 필드는 editable = False 및 blank = True로 설정됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;datetimefieldauto_nowfalse-auto_now_addfalse-options&quot;&gt;DateTimeField(auto_now=False, auto_now_add=False, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Python에서 datetime.datetime 인스턴스로 표현되는 날짜와 시간입니다.&lt;/li&gt;
-  &lt;li&gt;DateField와 동일한 인수를 사용합니다.&lt;/li&gt;
-  &lt;li&gt;기본 위젯으로 한개의 TextInput을 가지며, admin페이지 JavaScript 바로 가기가있는 두 개의 별도 TextInput 위젯을 사용합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;decimalfieldmax_digitsnone-decimal_placesnone-options&quot;&gt;DecimalField(max_digits=None, decimal_places=None, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;고정 소수점 이하의 십진수로 파이썬에서 Decimal 인스턴스로 나타냅니다. 필수 인자로 &lt;code class=&quot;highlighter-rouge&quot;&gt;max_digits(최대 자릿수)&lt;/code&gt;와 &lt;code class=&quot;highlighter-rouge&quot;&gt;decimal_places(소숫점)&lt;/code&gt;가 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;durationfieldoptions&quot;&gt;Durationfield(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;특정 기간을 담을 수 있는 필드입니다. (python의 timedelta)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;emailfieldmax_length254-options&quot;&gt;EmailField(max_length=254, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;email주소 유효성을 확인할 수 있는 CharField입니다. EmailCalidator를 이용하여 유효성을 검사합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;filefieldupolad_tonone-max_length100-options&quot;&gt;FileField(upolad_to=None, max_length=100, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;해당 필드에 primary_key는 사용할 수 없습니다.&lt;/li&gt;
-  &lt;li&gt;이 속성은 업로드 디렉토리와 파일 이름을 설정하는 방법을 제공하며 두 가지 방법으로 설정할 수 있습니다.&lt;/li&gt;
-  &lt;li&gt;upload_to : 이 속성은 업로드 디렉토리와 파일 이름을 설정하는 방법을 제공하며 두 가지 방법으로 설정할 수 있습니다. 두 경우 모두 값은 Storage.save () 메서드에 전달됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class MyModel(models.Model):
-    # file will be uploaded to MEDIA_ROOT/uploads
-    upload = models.FileField(upload_to='uploads/')
-    # or...
-    # file will be saved to MEDIA_ROOT/uploads/2015/01/30
-    upload = models.FileField(upload_to='uploads/%Y/%m/%d/')
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;기본 FileSystemStorage를 사용하는 경우 문자열 값이 MEDIA_ROOT 경로에 추가되어 업로드 된 파일이 저장 될 로컬 파일 시스템의 위치가 형성됩니다.&lt;/li&gt;
-  &lt;li&gt;upload_to는 함수와 같이 호출 할 수 있습니다. 이것은 파일 이름을 포함하여 업로드 경로를 얻기 위해 호출됩니다. 호출 할 때에는 FileField가 선언된 model의 instance와 filename인자가 필요합니다.&lt;/li&gt;
-  &lt;li&gt;storage  : 파일의 저장 및 검색을 처리하는 저장 할 수 있는 속성입니다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Filefield와 ImageField를 사용함에 있어서 몇가지 순서가 있습니다.&lt;/p&gt;
-
-    &lt;ol&gt;
-      &lt;li&gt;설정 파일에서 Django가 업로드 된 파일을 저장할 디렉토리의 전체 경로로 MEDIA_ROOT을 정의해야합니다. MEDIA_URL을 해당 디렉토리의 기본 공개 URL로 정의하십시오.&lt;/li&gt;
-      &lt;li&gt;모델에 FileField 또는 ImageField를 추가하고 upload_to 옵션을 정의하여 업로드 된 파일이 저장될 MEDIA_ROOT의 하위 디렉토리를 지정합니다.&lt;/li&gt;
-      &lt;li&gt;데이터베이스에 저장되는 것은 파일 경로입니다. 장고가 제공하는 url속성도 사용할 수 있습니다. 예를 들어 mug_shot 이라는 ImageField를 만들었다고 가정하면 ``과 같은 형식으로 파일의 경로를 가져올 수 있습니다.&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;업로드된 파일의 URL을 url속성을 사용하여 사용할 수 있습니다.&lt;/p&gt;
-
-    &lt;p&gt;#### FieldFile&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;모델에서 FileField에 액세스하면 FieldFile 인스턴스가 기본 파일에 액세스하기위한 프록시로 제공됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* FieldFile.name - 연결된 FileField의 저장소 루트로부터의 상대 경로를 포함하는 파일의 이름입니다.
-* FieldFile.size - 기본 Storage.size () 메서드의 결과입니다.
-* FieldFile.url - 기본 Storage 클래스의 url () 메서드를 호출하여 파일의 상대 URL에 액세스하는 읽기 전용 속성입니다.
-* FieldFile.open(mode='rb') - 지정된 모드에서이 인스턴스와 관련된 파일을 열거 나 다시 엽니 다. 표준 파이썬 open () 메소드와는 달리, 파일 디스크립터를 리턴하지 않습니다.
-* FieldFile.close -  표준 파이썬 file.close () 메소드와 유사하게 동작하고이 인스턴스와 관련된 파일을 닫습니다.
-* FieldFile.save(name, content, save=True) - 이 메서드는 파일 이름과 파일 내용을 가져 와서 필드의 저장소 클래스에 전달한 다음 저장된 파일을 모델 필드와 연결합니다. 모델의 FileField 인스턴스에 파일 데이터를 수동으로 연결하려면 save () 메서드를 사용하여 해당 파일 데이터를 유지합니다.
-* FieldFile.delete(save=True) - 이 인스턴스와 관련된 파일을 삭제하고 필드의 모든 특성을 지 웁니다. 이 메소드는 delete ()가 호출 될 때 열려있을 경우 파일을 닫습니다.모델을 삭제하면 관련 파일이 삭제되지 않습니다. 고아 파일을 정리해야하는 경우 직접 처리해야합니다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;filepathfieldpathnone-matchnone-recursivefalse-max_length100-options&quot;&gt;FilePathField(path=None, match=None, recursive=False, max_length=100, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;CharField는 파일 시스템의 특정 디렉토리에있는 제한된 파일 이름을 선택합니다. 3개의 인자를 받으며 그중 첫번째는 필수인자 입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* FilePathField.path - 필수인자로 해당 필드가 선택해야하는 파일의 절대경로를 입력해줍니다.
-* FilePathField.match - 정규표현식을 통해 해당 필드가 파일네임을 필터링 할 수 있게 합니다.
-* FilePathField.recursive - path의 모든 하위 디렉토리가 포함되어야하는지 여부를 지정합니다.
-* FilePathField.allow_files - 지정된 위치의 파일을 포함할지 여부를 지정합니다.
-* FilePathField.allow_folders - 지정된 위치의 폴더를 포함할지 여부를 지정합니다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h3 id=&quot;floatfieldoptions&quot;&gt;FloatField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;float 인스턴스로 파이썬에서 표현 된 부동 소수점 숫자입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;imagefieldupload_tonone-height_fieldnone-width_fieldnone-max_length100-options&quot;&gt;ImageField(upload_to=None, height_field=None, width_field=None, max_length=100, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;FileField의 모든 특성 및 메서드를 상속하지만 업로드 된 개체가 유효한 이미지인지 확인합니다.&lt;/li&gt;
-  &lt;li&gt;FileField에서 사용할 수있는 특수 특성 외에도 ImageField에는 height 및 width 특성이 있습니다. 이러한 속성에 대한 쿼리를 용이하게하기 위해 ImageField에는 두 개의 추가 선택적 인수가 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;* ImageField.height_field - 모델 인스턴스가 저장 될 때마다 자동으로 지정된 높이를 갖게하는모델 필드의 이름입니다.
-* ImageField.width_field - 모델 인스턴스가 저장 될 때마다 자동으로 지정된 너비를 갖게하는모델 필드의 이름입니다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Imagefield를 사용하기 위해서는 Pillow 라이브러리를 설치해야만 한다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;integerfieldoptions&quot;&gt;IntegerField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;정수를 받을 수 있는 필드입니다. 정수. -2147483648에서 2147483647까지의 값은 장고가 지원하는 모든 데이터베이스에서 안전합니다. 이 필드의 기본 양식 위젯은 localize가 False 일 때 NumberInput이고 그렇지 않으면 TextInput입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;genericipaddressfieldprotocolboth-unpack_ipv4false-options&quot;&gt;GenericIPAddressField(protocol=’both’, unpack_ipv4=False, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;문자열 형식의 IPv4 또는 IPv6 주소를 받을 수 있는 필드입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;nullbooleanfieldoptions&quot;&gt;NullBooleanField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;BooleanField와 비슷하지만 NULL을 옵션 중 하나로 허용합니다. BooleanField 대신 null = True를 사용할 수도 있습니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;positiveintegerfieldoptions&quot;&gt;PositiveIntegerField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;IntegerField와 같으나 양수 또는 0이어야합니다. 0에서 2147483647 사이의 값은 장고가 지원하는 모든 데이터베이스에서 안전합니다. 이전 버전과의 호환성을 위해 0 값이 허용됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;positivesmallintegerfieldoptions&quot;&gt;PositiveSmallIntegerField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;PositiveIntegerField와 같지만 특정 (데이터베이스에 따라 다릅니다.) 지점에서만 값을 허용합니다. 0에서 32767 사이의 값은 장고가 지원하는 모든 데이터베이스에서 안전합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;slugfieldmax_length50-options&quot;&gt;SlugField(max_length=50, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Slug는 신문 용어입니다. Slug는 글자, 숫자, 밑줄 또는 하이픈 만 포함하는 짧은 레이블입니다. 일반적으로 URL에 사용됩니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;smallintegerfieldoptions&quot;&gt;SmallIntegerField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;IntegerField와 같지만 특정 (데이터베이스에 따라) 지점에서만 값을 허용합니다. -32768에서 32767 사이의 값은 장고가 지원하는 모든 데이터베이스에서 안전합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;textfieldoptions&quot;&gt;TextField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;큰 텍스트 필드. 이 필드의 기본 양식 위젯은 Textarea입니다. max_length 속성을 지정하면 자동 생성 양식 필드의 Textarea 위젯에 반영됩니다. 그러나 모델 또는 데이터베이스 수준에서는 적용되지 않습니다. CharField를 사용하십시오.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;timefieldauto_nowfalse-auto_now_addfalse-options&quot;&gt;TimeField(auto_now=False, auto_now_add=False, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Python에서 datetime.time 인스턴스로 표현되는 시간입니다. DateField와 동일한 자동 채우기 옵션을 적용합니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;urlfieldmax_length200-options&quot;&gt;URLField(max_length=200, **options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;url을 위한 CharField입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;uuidfieldoptions&quot;&gt;UUIDField(**options)&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;보편적으로 유일한 식별자를 저장하기위한 필드입니다. 파이썬의 UUID 클래스를 사용합니다. PostgreSQL에서 사용될 때 이것은 uuid 데이터 유형에 저장되고, 그렇지 않으면 char (32)에 저장됩니다.&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">Model field reference</summary></entry></feed>
+&lt;p&gt;QuerySet에서 select_related의 이전 호출에 의해 추가 된 관련 필드 목록을 지우려면 매개 변수로 None을 전달할 수 있습니다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">QuerySet API</summary></entry></feed>
