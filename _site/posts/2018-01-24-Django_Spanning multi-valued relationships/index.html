@@ -18,7 +18,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Record|Organize|Make it mine">
 <meta property="og:title" content="Spanning multi-valued relationships">
-<meta property="og:url" content="http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">
+<meta property="og:url" content="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">
 
 
   <meta property="og:description" content="장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)">
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">
+<link rel="canonical" href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">
 
 
 
@@ -53,7 +53,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "zoozoo",
-      "url" : "http://localhost:4000",
+      "url" : "https://zooozoo.github.io",
       "sameAs" : null
     }
   </script>
@@ -67,7 +67,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
+<link href="https://zooozoo.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -79,7 +79,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="https://zooozoo.github.io/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -114,27 +114,27 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/">HOME</a>
+        <a class="site-title" href="https://zooozoo.github.io/">HOME</a>
         <ul class="visible-links">
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/posts/" >POSTS</a>
+              <a href="https://zooozoo.github.io/posts/" >POSTS</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/records/" >RECORDS</a>
+              <a href="https://zooozoo.github.io/records/" >RECORDS</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/til/" >TIL</a>
+              <a href="https://zooozoo.github.io/til/" >TIL</a>
             </li>
           
             
             <li class="masthead__menu-item">
-              <a href="http://localhost:4000/about/" >ABOUT</a>
+              <a href="https://zooozoo.github.io/about/" >ABOUT</a>
             </li>
           
         </ul>
@@ -191,7 +191,7 @@
             <li><a href="/tags/atom" class="">atom</a></li>
           
             
-            <li><a href="/tags/Django" class="">Django</a></li>
+            <li><a href="/tags/django" class="">django</a></li>
           
         </ul>
       </li>
@@ -222,7 +222,7 @@
 
 
 
-  5 minute read
+  6 minute read
 </p>
           
         </header>
@@ -238,35 +238,35 @@
 
 <p>장고 문서에서는 아래의 모델을 기준으로 설명한다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>from django.db import models
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">models</span>
 
-class Blog(models.Model):
-    name = models.CharField(max_length=100)
-    tagline = models.TextField()
+<span class="k">class</span> <span class="nc">Blog</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+    <span class="n">tagline</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
 
-    def __str__(self):
-        return self.name
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
 
-class Author(models.Model):
-    name = models.CharField(max_length=200)
-    email = models.EmailField()
+<span class="k">class</span> <span class="nc">Author</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">name</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+    <span class="n">email</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">EmailField</span><span class="p">()</span>
 
-    def __str__(self):
-        return self.name
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">name</span>
 
-class Entry(models.Model):
-    blog = models.ForeignKey(Blog, on_delete=models.CASCADE)
-    headline = models.CharField(max_length=255)
-    body_text = models.TextField()
-    pub_date = models.DateField()
-    mod_date = models.DateField()
-    authors = models.ManyToManyField(Author)
-    n_comments = models.IntegerField()
-    n_pingbacks = models.IntegerField()
-    rating = models.IntegerField()
+<span class="k">class</span> <span class="nc">Entry</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+    <span class="n">blog</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ForeignKey</span><span class="p">(</span><span class="n">Blog</span><span class="p">,</span> <span class="n">on_delete</span><span class="o">=</span><span class="n">models</span><span class="o">.</span><span class="n">CASCADE</span><span class="p">)</span>
+    <span class="n">headline</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">255</span><span class="p">)</span>
+    <span class="n">body_text</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
+    <span class="n">pub_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">()</span>
+    <span class="n">mod_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">()</span>
+    <span class="n">authors</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">ManyToManyField</span><span class="p">(</span><span class="n">Author</span><span class="p">)</span>
+    <span class="n">n_comments</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">()</span>
+    <span class="n">n_pingbacks</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">()</span>
+    <span class="n">rating</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">IntegerField</span><span class="p">()</span>
 
-    def __str__(self):
-        return self.headline
+    <span class="k">def</span> <span class="nf">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">headline</span>
 </code></pre></div></div>
 
 <p>해당 모델은 Blog (일) &lt; - &gt; (다) Entry &lt; - &gt; (다)Author 의 관계를 가지고 있다.</p>
@@ -278,12 +278,12 @@ class Entry(models.Model):
 
   <p>That may sound a bit confusing, so hopefully an example will clarify. To select all blogs that contain entries with both <em>“Lennon”</em> in the headline and that were published in 2008 (the same entry satisfying both conditions), we would write:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__headline__contains</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">,</span> <span class="n">entry__pub_date__year</span><span class="o">=</span><span class="mi">2008</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>To select all blogs that contain an entry with <em>“Lennon”</em> in the headline <strong>as well as</strong> an entry that was published in 2008, we would write:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__headline__contains</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__pub_date__year</span><span class="o">=</span><span class="mi">2008</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>Suppose there is only one blog that had both entries containing <em>“Lennon”</em> and entries from 2008, but that none of the entries from 2008 contained <em>“Lennon”</em>. The first query would not return any blogs, but the second query would return that one blog.</p>
@@ -293,12 +293,12 @@ class Entry(models.Model):
 
 <p>요약해서 설명하자면</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__headline__contains</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">,</span> <span class="n">entry__pub_date__year</span><span class="o">=</span><span class="mi">2008</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>와 같이 필터 안에 여러개의 조건을 써서 찾는 것과</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__headline__contains</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__pub_date__year</span><span class="o">=</span><span class="mi">2008</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>이런식으로(chaining) 필터를 나눠서 각각 찾는것이 다른 결과를 가지며 그 이유는 결과가 Entry를 탐색하는 것이 아닌  Blog를 탐색하는 것이기 때문이라고 설명하고 있다.</p>
@@ -319,13 +319,13 @@ class Entry(models.Model):
 
     <p>Multiple filters:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Referenced.filter(referencing1_a=x, referencing1_b=y)
-    #  same referencing model   ^^                ^^
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="n">Referenced</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">referencing1_a</span><span class="o">=</span><span class="n">x</span><span class="p">,</span> <span class="n">referencing1_b</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
+<span class="c">#  same referencing model   ^^                ^^</span>
 </code></pre></div>    </div>
 
     <p>Chained filters:</p>
 
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    Referenced.filter(referencing1_a=x).filter(referencing1_b=y)
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Referenced</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">referencing1_a</span><span class="o">=</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">referencing1_b</span><span class="o">=</span><span class="n">y</span><span class="p">)</span>
 </code></pre></div>    </div>
 
     <p>Both queries can output different result:
@@ -357,10 +357,10 @@ Ehh, assuming like husband-wife both can’t work in a <code class="highlighter-
 
   <p>Find all employees those having son/daughter has distinction marks (say &gt;= 75%) in both college and school?</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Employee.objects.filter(dependent__school_mark__gte=75,
-...                         dependent__college_mark__gte=75)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Employee</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">dependent__school_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span>
+<span class="o">...</span>                         <span class="n">dependent__college_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
 
-[&lt;Employee: A&gt;]
+<span class="p">[</span><span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">A</span><span class="o">&gt;</span><span class="p">]</span>
 </code></pre></div>  </div>
 
   <p>Output is ‘A’ dependent ‘a1’ has distinction marks in both college and school is dependent on employee ‘A’. Note ‘B’ is not selected because nether of ‘B’’s child has distinction marks in both college and school. Relational algebra:</p>
@@ -373,23 +373,23 @@ Ehh, assuming like husband-wife both can’t work in a <code class="highlighter-
 
   <p>Find all employees whose some of dependents has distinction marks in college and school?</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Employee.objects.filter(
-...             dependent__school_mark__gte=75
-...                ).filter(
-...             dependent__college_mark__gte=75)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Employee</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>             <span class="n">dependent__school_mark__gte</span><span class="o">=</span><span class="mi">75</span>
+<span class="o">...</span>                <span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>             <span class="n">dependent__college_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
 
-[&lt;Employee: A&gt;, &lt;Employee: B&gt;]
+<span class="p">[</span><span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">A</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">B</span><span class="o">&gt;</span><span class="p">]</span>
 </code></pre></div>  </div>
 
   <p>This time ‘B’ also selected because ‘B’ has two children (more than one!), one has distinction mark in school ‘b1’ and other is has distinction mark in college ‘b2’.
 Order of filter doesn’t matter we can also write above query as:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Employee.objects.filter(
-...             dependent__college_mark__gte=75
-...                ).filter(
-...             dependent__school_mark__gte=75)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Employee</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>             <span class="n">dependent__college_mark__gte</span><span class="o">=</span><span class="mi">75</span>
+<span class="o">...</span>                <span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>             <span class="n">dependent__school_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
 
-[&lt;Employee: A&gt;, &lt;Employee: B&gt;]
+<span class="p">[</span><span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">A</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">B</span><span class="o">&gt;</span><span class="p">]</span>
 </code></pre></div>  </div>
 
   <p>result is same! Relational algebra can be:</p>
@@ -400,8 +400,8 @@ Order of filter doesn’t matter we can also write above query as:</p>
 
   <p>Note following:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dq1 = Dependent.objects.filter(college_mark__gte=75, school_mark__gte=75)
-dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">dq1</span> <span class="o">=</span> <span class="n">Dependent</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">college_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span> <span class="n">school_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
+<span class="n">dq2</span> <span class="o">=</span> <span class="n">Dependent</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">college_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">school_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>Outputs same result: <code class="highlighter-rouge">[&lt;Dependent: a1&gt;]</code></p>
@@ -417,25 +417,31 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
 
 <p>스택오버플로우에 올라온 답변을 요약해 보자면</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Employee.objects.filter(dependent__school_mark__gte=75,
-...                         dependent__college_mark__gte=75)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Employee</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">dependent__school_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">,</span>
+<span class="o">...</span>                         <span class="n">dependent__college_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
 
-[&lt;Employee: A&gt;]
+<span class="p">[</span><span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">A</span><span class="o">&gt;</span><span class="p">]</span>
 </code></pre></div></div>
 
 <p>위와 같은 필터링은 dependent에서 두개의 조건을 동시에 만족하는 Employee를 찾는 것 이므로 결과는 Employee A가 된다.</p>
 
 <p>반면에</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Employee.objects.filter(
-...             dependent__school_mark__gte=75
-...                ).filter(
-...             dependent__college_mark__gte=75)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Employee</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>             <span class="n">dependent__school_mark__gte</span><span class="o">=</span><span class="mi">75</span>
+<span class="o">...</span>                <span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>             <span class="n">dependent__college_mark__gte</span><span class="o">=</span><span class="mi">75</span><span class="p">)</span>
 
-[&lt;Employee: A&gt;, &lt;Employee: B&gt;]
+<span class="p">[</span><span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">A</span><span class="o">&gt;</span><span class="p">,</span> <span class="o">&lt;</span><span class="n">Employee</span><span class="p">:</span> <span class="n">B</span><span class="o">&gt;</span><span class="p">]</span>
 </code></pre></div></div>
 
-<p>위의 경우 첫번째 필터에서 걸러지는 내용은 Employee A, B 가 된다.(왜냐하면 dependent 의 a1과 b1이 조건을 만족했기 때문이다. ) 두번째 필터가 포인트 인데 두번째 필터에서 college_mark가 75점 이상인 Employee를 다시 찾게되고 그 결과값도 Employee A, B가 된다. 왜냐하면 첫번째 필터에서 걸러진 후의 결과는 Employee A, B 이고 두번째 필터는 이 중에서 다시 college_mark가 75점 이상인 경우를 찾아내는 것인데  Employee B의 경우 college_mark가 75점 이상인 dependent b2 를 가지고 있기 때문이다. 즉 Employee B는 college_mark와 school_mark가 동시에 75점 이상인 dependent를 가지고 있지 않지만, school_mark가 75점 이상인 dependent b1과 college_mark가 75점 이상인 dependent b2 이렇게 두개의 dependent를 가지고 있기 때문에 두 번째 필터에서도 해당 조건을 만족하는 것 이다. 언뜻 생각하기에 혼동되는 부분이 두번째 필터를 생각할 때 dependent를 기준으로 생각하기 때문이다. 첫번째 필터에서 해당되는 dependent가 a1과 b1 이기 때문에 두번 째 필터에서 dependent a1, b1 이렇게 2개를 기준으로 필터링 해야할 것 같지만 Employee 기준으로 생각하면 첫번째 필터의 결과는 해당조건을 만족하는 dependent와 연결된 Employee가 되기 때문에  필터를 하기 전 과 후는 같은 상황이 된다.</p>
+<p>위의 경우 첫번째 필터에서 걸러지는 내용은 Employee A, B 가 된다.(왜냐하면 dependent 의 a1과 b1이 조건을 만족했기 때문이다. ) 두번째 필터가 포인트 인데 두번째 필터에서 college_mark가 75점 이상인 dependent를 가지고 있는 Employee를 다시 찾게되고 그 결과값도 Employee A, B가 된다. 왜냐하면 첫번째 필터에서 걸러진 후의 결과는 Employee A, B 이고 두번째 필터는 이 중에서 다시 college_mark가 75점 이상인 경우를 찾아내는 것인데  Employee B의 경우 college_mark가 75점 이상인 dependent b2 를 가지고 있기 때문이다.</p>
+
+<p>즉 Employee B는 college_mark와 school_mark가 동시에 75점 이상인 dependent를 가지고 있지 않지만, school_mark가 75점 이상인 dependent b1과 college_mark가 75점 이상인 dependent b2 이렇게 두개의 dependent를 가지고 있기 때문에 두 번째 필터에서도 해당 조건을 만족하는 것 이다.</p>
+
+<p>언뜻 생각하기에 혼동되는 부분이 두번째 필터를 생각할 때 dependent를 기준으로 생각하기 때문이다. 첫번째 필터에서 해당되는 dependent가 a1과 b1 이기 때문에 두번 째 필터에서 dependent a1, b1 이렇게 2개를 기준으로 필터링 해야할 것 같지만 Employee 기준으로 생각하면 첫번째 필터의 결과는 해당조건을 만족하는 dependent와 연결된 Employee가 되기 때문에  필터를 하기 전 과 후는 같은 상황이 된다.</p>
+
+<p>이해하고 다시 적은 내용이지만 다시 생각해 봐도 글로 설명하는 것 보다 예시를 통해 이해하는 편이 훨씬 도움이 되는 듯 하다.</p>
 
 <p>잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.</p>
 
@@ -458,7 +464,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
       
       
-      <a href="http://localhost:4000/tags/django" class="page__taxonomy-item" rel="tag">Django</a>
+      <a href="https://zooozoo.github.io/tags/django" class="page__taxonomy-item" rel="tag">django</a>
     
     </span>
   </p>
@@ -479,7 +485,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
       
       
-      <a href="http://localhost:4000/categories/posts" class="page__taxonomy-item" rel="tag">posts</a>
+      <a href="https://zooozoo.github.io/categories/posts" class="page__taxonomy-item" rel="tag">posts</a>
     
     </span>
   </p>
@@ -495,7 +501,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
       
   <nav class="pagination">
     
-      <a href="http://localhost:4000/records/2018-01-23-Fluent_Python/" class="pagination--pager" title="전문가를 위한 파이썬
+      <a href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" class="pagination--pager" title="전문가를 위한 파이썬
 ">Previous</a>
     
     
@@ -505,6 +511,14 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
 
     </div>
 
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a Comment</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
     
   </article>
 
@@ -523,7 +537,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/records/2018-01-23-Fluent_Python/" rel="permalink">전문가를 위한 파이썬
+        <a href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="permalink">전문가를 위한 파이썬
 </a>
       
     </h2>
@@ -551,7 +565,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="permalink">1월22일~28일
+        <a href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="permalink">1월22일~28일
 </a>
       
     </h2>
@@ -580,7 +594,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/posts/2018-01-17-atom/" rel="permalink">UX/UI fontsize customzing at atom editor
+        <a href="https://zooozoo.github.io/posts/2018-01-17-atom/" rel="permalink">UX/UI fontsize customzing at atom editor
 </a>
       
     </h2>
@@ -609,7 +623,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="permalink">1월15일~21일
+        <a href="https://zooozoo.github.io/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/" rel="permalink">1월15일~21일
 </a>
       
     </h2>
@@ -663,7 +677,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
     
     
-    <li><a href="http://localhost:4000/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="https://zooozoo.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -673,16 +687,16 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     </div>
 
     
-  <script src="http://localhost:4000/assets/js/main.min.js"></script>
+  <script src="https://zooozoo.github.io/assets/js/main.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
 
 
 
   
   
-  <script defer src="http://localhost:4000/assets/js/lunr/lunr.min.js"></script>
-  <script defer src="http://localhost:4000/assets/js/lunr/lunr-store.js"></script>
-  <script defer src="http://localhost:4000/assets/js/lunr/lunr-en.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-en.js"></script>
 
 
 
@@ -691,7 +705,7 @@ dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.url = "https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/";  // Replace PAGE_URL with your page's canonical URL variable
       this.page.identifier = "/posts/Django_Spanning multi-valued relationships"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE

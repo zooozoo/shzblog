@@ -4,7 +4,7 @@
 
 
 
-```
+```python
 >>> from blog.models import Blog
 >>> b = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
 >>> b.save()
@@ -44,7 +44,7 @@ ForeignKey field의 경우 일반 필드와 같이 업데이트 할 수 있습�
 
 > Updating a ManyToManyField works a little differently -- use the add() method on the field to add a record to the relation. This example adds the Author instance joe to the entry object:
 
-```
+```python
 >>> from blog.models import Author
 >>> joe = Author.objects.create(name="Joe")
 >>> entry.authors.add(joe)
@@ -56,7 +56,7 @@ ManyToManyField의 경우 약간 다르게 작동합니다. add()라는 method�
 
 > To add multiple records to a ManyToManyField in one go, include multiple arguments in the call to add(), like this:
 
-```
+```python
 >>> john = Author.objects.create(name="John")
 >>> paul = Author.objects.create(name="Paul")
 >>> george = Author.objects.create(name="George")
@@ -76,7 +76,7 @@ ManyToManyField의 경우 약간 다르게 작동합니다. add()라는 method�
 >
 > You get a QuerySet by using your model's Manager. Each model has at least one Manager, and it's called objects by default. Access it directly via the model class, like so:
 
-```
+```python
 >>> Blog.objects
 <django.db.models.manager.Manager object at ...>
 >>> b = Blog(name='Foo', tagline='Bar')
@@ -98,13 +98,13 @@ AttributeError: "Manager isn't accessible via Blog instances."
 
 > For example, to get a QuerySet of blog entries from the year 2006, use filter() like so:
 
-```
+```python
 Entry.objects.filter(pub_date__year=2006)
 ```
 
 > With the default manager class, it is the same as:
 
-```
+```python
 Entry.objects.all().filter(pub_date__year=2006)
 ```
 
@@ -116,7 +116,7 @@ filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.
 
 > The result of refining a QuerySet is itself a QuerySet, so it's possible to chain refinements together. For example:
 
-```
+```python
 >>> Entry.objects.filter(
 ...     headline__startswith='What'
 ... ).exclude(
@@ -146,7 +146,7 @@ filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.
 
 > QuerySets are lazy -- the act of creating a QuerySet doesn't involve any database activity. You can stack filters together all day long, and Django won't actually run the query until the QuerySet is evaluated. Take a look at this example:
 
-```
+```python
 >>> q = Entry.objects.filter(headline__startswith="What")
 >>> q = q.filter(pub_date__lte=datetime.date.today())
 >>> q = q.exclude(body_text__icontains="food")
@@ -161,7 +161,7 @@ filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.
 
 아래의 예시와 같이 쿼리가 작동했는지 여부를 확인할 수 있다. [출처 stackoverflow](https://stackoverflow.com/questions/20171736/when-is-a-django-queryset-evaluated)
 
-```
+```python
 >>> from django.contrib.auth.models import *
 >>> from django.db import connection
 >>> connection.queries
@@ -191,13 +191,13 @@ True
 
 파이썬 slicing 문법의 subset을 활용하여 당신의 쿼리셋의 결과의 갯수를 제한 할 수 있다. 
 
-```
+```python
 >>> Entry.objects.all()[:5]
 ```
 
 위의 예시는 처음부터 5개의 객체만 리턴한다.
 
-```
+```python
 >>> Entry.objects.all()[5:10]
 ```
 
@@ -209,7 +209,7 @@ True
 
 > Generally, slicing a [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) returns a new [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) -- it doesn't evaluate the query. An exception is if you use the "step" parameter of Python slice syntax. For example, this would actually execute the query in order to return a list of every *second* object of the first 10:
 >
-> ```
+> ```python
 > >>> Entry.objects.all()[:10:2]
 > ```
 
@@ -223,13 +223,13 @@ True
 >
 > Basic lookups keyword arguments take the form `field__lookuptype=value`. (That's a double-underscore). For example:
 >
-> ```
+> ```python
 > >>> Entry.objects.filter(pub_date__lte='2006-01-01')
 > ```
 >
 > translates (roughly) into the following SQL:
 >
-> ```
+> ```python
 > SELECT * FROM blog_entry WHERE pub_date <= '2006-01-01';
 > ```
 
@@ -237,7 +237,7 @@ Field lookup은 SQL문의 WHERE절을의 가장 중요한 부분을 정의 하�
 
 > The field specified in a lookup has to be the name of a model field. There's one exception though, in case of a [`ForeignKey`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey) you can specify the field name suffixed with `_id`. In this case, the value parameter is expected to contain the raw value of the foreign model's primary key. For example:
 >
-> ```
+> ```python
 > >>> Entry.objects.filter(blog_id=4)
 > ```
 
@@ -249,7 +249,7 @@ exact
 >
 > For example, the following two statements are equivalent:
 >
-> ```
+> ```python
 > >>> Blog.objects.get(id__exact=14)  # Explicit form
 > >>> Blog.objects.get(id=14)         # __exact is implied
 > ```
@@ -260,7 +260,7 @@ iexact
 
 > A case-insensitive match. So, the query:
 >
-> ```
+> ```python
 > >>> Blog.objects.get(name__iexact="beatles blog")
 > ```
 >
@@ -270,13 +270,13 @@ contains
 
 > Case-sensitive containment test. For example:
 >
-> ```
+> ```python
 > Entry.objects.get(headline__contains='Lennon')
 > ```
 >
 > Roughly translates to this SQL:
 >
-> ```
+> ```python
 > SELECT ... WHERE headline LIKE '%Lennon%';
 > ```
 >
@@ -292,7 +292,7 @@ contains
 >
 > This example retrieves all `Entry` objects with a `Blog` whose `name` is `'Beatles Blog'`:
 >
-> ```
+> ```python
 > >>> Entry.objects.filter(blog__name='Beatles Blog')
 > ```
 
@@ -306,7 +306,7 @@ contains
 >
 > This example retrieves all `Blog` objects which have at least one `Entry` whose `headline` contains `'Lennon'`:
 >
-> ```
+> ```python
 > >>> Blog.objects.filter(entry__headline__contains='Lennon')
 > ```
 
@@ -316,7 +316,7 @@ contains
 
 > If you are filtering across multiple relationships and one of the intermediate models doesn't have a value that meets the filter condition, Django will treat it as if there is an empty (all values are `NULL`), but valid, object there. All this means is that no error will be raised. For example, in this filter:
 >
-> ```
+> ```python
 > Blog.objects.filter(entry__authors__name='Lennon')
 > ```
 >
@@ -326,13 +326,13 @@ contains
 
 만약 entry와 관계된 author가 없다면, 그것은 해당 이름이 없다는 것으로 간주되며 일반적으로 이해되는 상황이다. 헷갈릴 수 있는 한가지 경우는 isnull을 사용할 때다. 
 
-> ```
+> ```python
 > Blog.objects.filter(entry__authors__name__isnull=True)
 > ```
 >
 > will return `Blog` objects that have an empty `name` on the `author` and also those which have an empty `author` on the `entry`. If you don't want those latter objects, you could write:
 >
-> ```
+> ```python
 > Blog.objects.filter(entry__authors__isnull=False, entry__authors__name__isnull=True)
 > ```
 
@@ -347,3 +347,167 @@ contains
 
 
 #### Filters can reference fields on the model
+
+한 모델안에 필드들 간의 비교가 필요할 때 `F expressions`을 통해서 할 수 있다.
+
+> For example, to find a list of all blog entries that have had more comments than pingbacks, we construct an `F()`object to reference the pingback count, and use that `F()` object in the query:
+
+예를 들어 pingback 보다 더 많은 comments를 가지고 있는 blog 리스트를 찾기 위해서 우리는 F()객체를 만들고 pingback을 참조하는 방법으로 목표를 달성할 수 있다.
+
+```python
+>>> from django.db.models import F
+>>> Entry.objects.filter(n_comments__gt=F('n_pingbacks'))
+```
+
+(참고로 필드 이름은 각각 `n_comments`, `n_pingbacks`로 만들어 놓음)
+
+> Django supports the use of addition, subtraction, multiplication, division, modulo, and power arithmetic with `F()`objects, both with constants and with other `F()` objects. To find all the blog entries with more than *twice* as many comments as pingbacks, we modify the query:
+>
+> ```python
+> >>>Entry.objects.filter(n_comments__gt=F('n_pingbacks') * 2)
+> ```
+
+장고는 상수와의 더하기, 빼기, 곱하기, 나누기 모듈을 F()과 함께 지원한다. 예시에서는 pingback의 2배 이상의 comment를 가지고 있는 Entry 의 리스트를 찾아내는 filter
+
+> To find all the entries where the rating of the entry is less than the sum of the pingback count and comment count, we would issue the query:
+>
+> ```python
+> >>> Entry.objects.filter(rating__lt=F('n_comments') + F('n_pingbacks'))
+> ```
+
+comments와 pingbacks의 수를 합친 것보다 작은 rating을 가지고 있는 Entry를 찾아내기 위하여 예시와 같은 쿼리셋을 만들수도 있다. 
+
+> You can also use the double underscore notation to span relationships in an `F()` object. An `F()` object with a double underscore will introduce any joins needed to access the related object. For example, to retrieve all the entries where the author's name is the same as the blog name, we could issue the query:
+>
+> ```python
+> >>> Entry.objects.filter(authors__name=F('blog__name'))
+> ```
+
+또한 F()안에서 더블언더스코어 표현법을 사용하여 관계를 확장하여 필터링 하는 기능 또한 사용할 수 있다. 예시는 author의 이름과 blog의 이름이 같은 Entry의 리스트를 찾는 쿼리다.
+
+> For date and date/time fields, you can add or subtract a [`timedelta`](https://docs.python.org/3/library/datetime.html#datetime.timedelta) object. The following would return all entries that were modified more than 3 days after they were published:
+>
+> ```python
+> >>> from datetime import timedelta
+> >>> Entry.objects.filter(mod_date__gt=F('pub_date') + timedelta(days=3))
+> ```
+
+date/time 필드에서는 timedelta 객체를 더하거나 뺄 수 있다. 예시에서는 발행된지 3일 이후에 수정된 Entry의 리스트를 찾는다. 
+
+> The `F()` objects support bitwise operations by `.bitand()`, `.bitor()`, `.bitrightshift()`, and `.bitleftshift()`. For example:
+>
+> ```python
+> >>> F('somefield').bitand(16)
+> ```
+
+F() 객체는 바이트단위 기능도 제공한다. 아래는 예시
+
+
+
+#### The pk lookup shortcut
+
+쿼리에서의 pk값의 다양한 사용이 가능하다. 
+
+```python
+# Get blogs entries with id 1, 4 and 7
+>>> Blog.objects.filter(pk__in=[1,4,7])
+
+# Get all blog entries with id > 14
+>>> Blog.objects.filter(pk__gt=14)
+```
+
+pk값 조회는 관계의 단계를 넘어서도 가능하다. 다음은 동일한 예시 3문장
+
+```python
+>>> Entry.objects.filter(blog__id__exact=3) # Explicit form
+>>> Entry.objects.filter(blog__id=3)        # __exact is implied
+>>> Entry.objects.filter(blog__pk=3)        # __pk implies __id__exact
+```
+
+
+
+### Escaping percent signs and underscores in LIKE statements
+
+장고에서 필드를 찾아보는 쿼리를 사용할 때 퍼센트 마크와(`%`) 언더스코어는(`_`)자동으로 escape 문자가 적용된다. 왜냐하면 SQL의 like문 에서는 `%`는 multiple character wildcard , `_`는 single character wildcard를 의미하기 때문이다. 
+
+
+
+#### Caching and QuerySets
+
+> Each [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) contains a cache to minimize database access. Understanding how it works will allow you to write the most efficient code.
+
+각각의 쿼리셋은 데이터베이스 접근을 최소화 하기 위하여 캐시값을 보유하고 있다. 
+
+> In a newly created [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet), the cache is empty. The first time a [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) is evaluated -- and, hence, a database query happens -- Django saves the query results in the [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet)’s cache and returns the results that have been explicitly requested (e.g., the next element, if the [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) is being iterated over). Subsequent evaluations of the [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) reuse the cached results.
+
+새로생성되 쿼리의 캐시값은 비어있습니다. 쿼리가 처음 평가되고 이에따라 데이터베이스 쿼리가 발생하면 장고는 쿼리의 결과를 쿼리케시에 저장합니다. 그리고 그것이 명시적으로 요청되었을 때 캐시에 가지고 있는 결과값을 리턴합니다. 뒤에 따라오는 쿼리셋의 평가는 캐시값의 결과를 재사용 합니다. 
+
+> Keep this caching behavior in mind, because it may bite you if you don't use your [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet)s correctly. For example, the following will create two [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet)s, evaluate them, and throw them away:
+>
+> ```python
+> >>> print([e.headline for e in Entry.objects.all()])
+> >>> print([e.pub_date for e in Entry.objects.all()])
+> ```
+
+캐시가 이런식으로 움직인다는 것을 명심해야 합니다. 왜냐하면 이러한 사실은 당신이 쿼리셋을 올바르게 사용하지 않도록 할 수 있기 때문입니다. 예를들면 예시에서는 두개의 쿼리를 생성할 것입니다. 그리고 평가한 후에 버려질 것 입니다. 
+
+> That means the same database query will be executed twice, effectively doubling your database load. Also, there's a possibility the two lists may not include the same database records, because an `Entry` may have been added or deleted in the split second between the two requests.
+>
+> To avoid this problem, simply save the [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) and reuse it:
+>
+> ```python
+> >>> queryset = Entry.objects.all()
+> >>> print([p.headline for p in queryset]) # Evaluate the query set.
+> >>> print([p.pub_date for p in queryset]) # Re-use the cache from the evaluation.
+> ```
+
+이것은 동일한 데이터베이스 쿼리가 두번 실행 되리라는 것을 의미합니다. 실제로 당신의 데이터베이스는 두번 로드됩니다. 또한 두개의 리스트는 동일한 데이터베이스의 기록을 공유하고 있지 않을 가능성도 있습니다. 왜냐하면 두개의 쿼리가 동작하는 짧은 시간 사이에 Entry가 추가되거나 지워질 수도 있기 때문입니다. 
+
+이러한 문제를 피하기 위해서 우리는 간단하게 쿼리셋을 저장하고 다시 재사용할 수 있습니다. 
+
+(그러니까 첫번째와 두 번째 쿼리가 작동할 때 각각 데이터베이스를 치게 되는데, 아래쪽의 예시에서는 두번째 쿼리에서 첫번 째 쿼리의 캐시값을 재사용 하기 때문에 더 효율적이라는 이야기, 더 자세한 쿼리 최적화 관련해서는 다른 페이지의 관련 문서를 읽어봐야 할 것 같다. [[Database access optimization]](https://docs.djangoproject.com/en/2.0/topics/db/optimization/)
+
+**When QuerySets are not cached**
+
+> Querysets do not always cache their results. When evaluating only *part* of the queryset, the cache is checked, but if it is not populated then the items returned by the subsequent query are not cached. Specifically, this means that[limiting the queryset](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#limiting-querysets) using an array slice or an index will not populate the cache.
+
+쿼리셋이 언제나 그 결과를 캐시에 저장하는 것은 아닙니다. 쿼리셋의 일부만 평가 할 때에는 캐시값을 확인하지만, 만약 뒤에오는 쿼리에 의해 반환되는 아이템이 없을 경우에 쿼리는 캐시값을 저장하지 않습니다. 특히 이것은 쿼리값을 캐시로 저장하지 않는 슬라이스나 인덱스를 이용한 쿼리 사용을 제한한다는 것을 의미합니다. 
+
+> For example, repeatedly getting a certain index in a queryset object will query the database each time:
+>
+> ```python
+> >>> queryset = Entry.objects.all()
+> >>> print(queryset[5]) # Queries the database
+> >>> print(queryset[5]) # Queries the database again
+> ```
+
+예를 들어 쿼리 객체에서 특정 인덱스를 반복해서 호출하는 것은 매번 데이터베이스에 쿼리를 날릴 것 입니다. 
+
+>However, if the entire queryset has already been evaluated, the cache will be checked instead:
+>
+>```python
+>>>> queryset = Entry.objects.all()
+>>>> [entry for entry in queryset] # Queries the database
+>>>> print(queryset[5]) # Uses cache
+>>>> print(queryset[5]) # Uses cache
+>```
+
+그러나 전체 쿼리가 이미 평가되었다면 캐시값은 저장 될 것입니다.
+
+> Here are some examples of other actions that will result in the entire queryset being evaluated and therefore populate the cache:
+>
+> ```python
+> >>> [entry for entry in queryset]
+> >>> bool(queryset)
+> >>> entry in queryset
+> >>> list(queryset)
+> ```
+
+이번 예문은 전체쿼리가 평가되고 그럼으로써 캐시값을 가지게 됩니다. 
+
+(간단히 말해서 슬라이스나, 인덱스를 이용해서 쿼리를 날리는 경우 캐시되지 않기 때문에 주의하라는 내용)
+
+
+
+#### Complex lookups with Qobjects
+

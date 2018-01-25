@@ -1,6 +1,6 @@
 ---
 title: Spanning multi-valued relationships
-tag: Django
+tag: django
 ---
 
 장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)
@@ -15,7 +15,7 @@ tag: Django
 
 장고 문서에서는 아래의 모델을 기준으로 설명한다.
 
-```
+```python
 from django.db import models
 
 class Blog(models.Model):
@@ -55,15 +55,15 @@ class Entry(models.Model):
 >
 > That may sound a bit confusing, so hopefully an example will clarify. To select all blogs that contain entries with both *"Lennon"* in the headline and that were published in 2008 (the same entry satisfying both conditions), we would write:
 >
-> ```
-> Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
-> ```
+> ```python
+Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
+```
 >
 > To select all blogs that contain an entry with *"Lennon"* in the headline **as well as** an entry that was published in 2008, we would write:
 >
-> ```
-> Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
-> ```
+> ```python
+ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
+```
 >
 > Suppose there is only one blog that had both entries containing *"Lennon"* and entries from 2008, but that none of the entries from 2008 contained *"Lennon"*. The first query would not return any blogs, but the second query would return that one blog.
 >
@@ -71,13 +71,13 @@ class Entry(models.Model):
 
 요약해서 설명하자면
 
-```
+```python
 Blog.objects.filter(entry__headline__contains='Lennon', entry__pub_date__year=2008)
 ```
 
 와 같이 필터 안에 여러개의 조건을 써서 찾는 것과
 
-```
+```python
 Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__year=2008)
 ```
 
@@ -105,16 +105,16 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 > >
 > > Multiple filters:
 > >
-> > ```
-> >     Referenced.filter(referencing1_a=x, referencing1_b=y)
-> >     #  same referencing model   ^^                ^^
-> > ```
+> > ```python
+ Referenced.filter(referencing1_a=x, referencing1_b=y)
+#  same referencing model   ^^                ^^
+```
 > >
 > > Chained filters:
 > >
-> > ```
-> >     Referenced.filter(referencing1_a=x).filter(referencing1_b=y)
-> > ```
+> > ```python
+Referenced.filter(referencing1_a=x).filter(referencing1_b=y)
+```
 > >
 > > Both queries can output different result:
 > > If more then one rows in referencing-model`Referencing1`can refer to same row in referenced-model`Referenced`. This can be the case in `Referenced`: `Referencing1` have either 1:N (one to many) or N:M (many to many) relation-ship.
@@ -143,7 +143,7 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 >
 > Find all employees those having son/daughter has distinction marks (say >= 75%) in both college and school?
 >
-> ```
+> ```python
 > >>> Employee.objects.filter(dependent__school_mark__gte=75,
 > ...                         dependent__college_mark__gte=75)
 >
@@ -158,7 +158,7 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 >
 > Find all employees whose some of dependents has distinction marks in college and school?
 >
-> ```
+> ```python
 > >>> Employee.objects.filter(
 > ...             dependent__school_mark__gte=75
 > ...                ).filter(
@@ -170,7 +170,7 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 > This time 'B' also selected because 'B' has two children (more than one!), one has distinction mark in school 'b1' and other is has distinction mark in college 'b2'.
 > Order of filter doesn't matter we can also write above query as:
 >
-> ```
+> ```python
 > >>> Employee.objects.filter(
 > ...             dependent__college_mark__gte=75
 > ...                ).filter(
@@ -185,7 +185,7 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 >
 > Note following:
 >
-> ```
+> ```python
 > dq1 = Dependent.objects.filter(college_mark__gte=75, school_mark__gte=75)
 > dq2 = Dependent.objects.filter(college_mark__gte=75).filter(school_mark__gte=75)
 > ```
@@ -202,7 +202,7 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 
 스택오버플로우에 올라온 답변을 요약해 보자면
 
-```
+```python
 >>> Employee.objects.filter(dependent__school_mark__gte=75,
 ...                         dependent__college_mark__gte=75)
 
@@ -213,7 +213,7 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 
 반면에
 
-```
+```python
 >>> Employee.objects.filter(
 ...             dependent__school_mark__gte=75
 ...                ).filter(
@@ -222,12 +222,12 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 [<Employee: A>, <Employee: B>]
 ```
 
- 위의 경우 첫번째 필터에서 걸러지는 내용은 Employee A, B 가 된다.(왜냐하면 dependent 의 a1과 b1이 조건을 만족했기 때문이다. ) 두번째 필터가 포인트 인데 두번째 필터에서 college_mark가 75점 이상인 dependent를 가지고 있는 Employee를 다시 찾게되고 그 결과값도 Employee A, B가 된다. 왜냐하면 첫번째 필터에서 걸러진 후의 결과는 Employee A, B 이고 두번째 필터는 이 중에서 다시 college_mark가 75점 이상인 경우를 찾아내는 것인데  Employee B의 경우 college_mark가 75점 이상인 dependent b2 를 가지고 있기 때문이다. 
+ 위의 경우 첫번째 필터에서 걸러지는 내용은 Employee A, B 가 된다.(왜냐하면 dependent 의 a1과 b1이 조건을 만족했기 때문이다. ) 두번째 필터가 포인트 인데 두번째 필터에서 college_mark가 75점 이상인 dependent를 가지고 있는 Employee를 다시 찾게되고 그 결과값도 Employee A, B가 된다. 왜냐하면 첫번째 필터에서 걸러진 후의 결과는 Employee A, B 이고 두번째 필터는 이 중에서 다시 college_mark가 75점 이상인 경우를 찾아내는 것인데  Employee B의 경우 college_mark가 75점 이상인 dependent b2 를 가지고 있기 때문이다.
 
- 즉 Employee B는 college_mark와 school_mark가 동시에 75점 이상인 dependent를 가지고 있지 않지만, school_mark가 75점 이상인 dependent b1과 college_mark가 75점 이상인 dependent b2 이렇게 두개의 dependent를 가지고 있기 때문에 두 번째 필터에서도 해당 조건을 만족하는 것 이다. 
+ 즉 Employee B는 college_mark와 school_mark가 동시에 75점 이상인 dependent를 가지고 있지 않지만, school_mark가 75점 이상인 dependent b1과 college_mark가 75점 이상인 dependent b2 이렇게 두개의 dependent를 가지고 있기 때문에 두 번째 필터에서도 해당 조건을 만족하는 것 이다.
 
  언뜻 생각하기에 혼동되는 부분이 두번째 필터를 생각할 때 dependent를 기준으로 생각하기 때문이다. 첫번째 필터에서 해당되는 dependent가 a1과 b1 이기 때문에 두번 째 필터에서 dependent a1, b1 이렇게 2개를 기준으로 필터링 해야할 것 같지만 Employee 기준으로 생각하면 첫번째 필터의 결과는 해당조건을 만족하는 dependent와 연결된 Employee가 되기 때문에  필터를 하기 전 과 후는 같은 상황이 된다.
 
-이해하고 다시 적은 내용이지만 다시 생각해 봐도 글로 설명하는 것 보다 예시를 통해 이해하는 편이 훨씬 도움이 되는 듯 하다. 
+이해하고 다시 적은 내용이지만 다시 생각해 봐도 글로 설명하는 것 보다 예시를 통해 이해하는 편이 훨씬 도움이 되는 듯 하다.
 
 잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.
