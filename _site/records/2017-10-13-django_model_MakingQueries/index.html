@@ -267,7 +267,7 @@
 
 
 
-  9 minute read
+  14 minute read
 </p>
           
         </header>
@@ -284,6 +284,7 @@
   <li><a href="#saving-foreignkey-and-manytomanyfield-fields">Saving ForeignKey and ManyToManyField fields</a></li>
   <li><a href="#retrieving-objects">Retrieving objects</a></li>
   <li><a href="#retrieving-specific-objects-with-filters">Retrieving specific objects with filters</a></li>
+  <li><a href="#escaping-percent-signs-and-underscores-in-like-statements">Escaping percent signs and underscores in LIKE statements</a></li>
 </ul>
             </nav>
           </aside>
@@ -292,9 +293,9 @@
 
 <p><a href="https://docs.djangoproject.com/ko/1.11/topics/db/queries/#retrieving-specific-objects-with-filters">장고문서</a> 를 공부하며 기록한 내용입니다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; from blog.models import Blog
-&gt;&gt;&gt; b = Blog(name='Beatles Blog', tagline='All the latest Beatles news.')
-&gt;&gt;&gt; b.save()
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">blog.models</span> <span class="kn">import</span> <span class="n">Blog</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">Blog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Beatles Blog'</span><span class="p">,</span> <span class="n">tagline</span><span class="o">=</span><span class="s">'All the latest Beatles news.'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
 </code></pre></div></div>
 
 <blockquote>
@@ -333,9 +334,9 @@
   <p>Updating a ManyToManyField works a little differently – use the add() method on the field to add a record to the relation. This example adds the Author instance joe to the entry object:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; from blog.models import Author
-&gt;&gt;&gt; joe = Author.objects.create(name="Joe")
-&gt;&gt;&gt; entry.authors.add(joe)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">blog.models</span> <span class="kn">import</span> <span class="n">Author</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">joe</span> <span class="o">=</span> <span class="n">Author</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"Joe"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">entry</span><span class="o">.</span><span class="n">authors</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">joe</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>ManyToManyField의 경우 약간 다르게 작동합니다. add()라는 method를 사용합니다. 예시의 경우 joe라는 Author객체를 만들고 entry와 author의 관계를 add() method를 생성합니다.</p>
@@ -344,11 +345,11 @@
   <p>To add multiple records to a ManyToManyField in one go, include multiple arguments in the call to add(), like this:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; john = Author.objects.create(name="John")
-&gt;&gt;&gt; paul = Author.objects.create(name="Paul")
-&gt;&gt;&gt; george = Author.objects.create(name="George")
-&gt;&gt;&gt; ringo = Author.objects.create(name="Ringo")
-&gt;&gt;&gt; entry.authors.add(john, paul, george, ringo)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">john</span> <span class="o">=</span> <span class="n">Author</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"John"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">paul</span> <span class="o">=</span> <span class="n">Author</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"Paul"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">george</span> <span class="o">=</span> <span class="n">Author</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"George"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ringo</span> <span class="o">=</span> <span class="n">Author</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">"Ringo"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">entry</span><span class="o">.</span><span class="n">authors</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">john</span><span class="p">,</span> <span class="n">paul</span><span class="p">,</span> <span class="n">george</span><span class="p">,</span> <span class="n">ringo</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>한번에 여러개의 데이터를 ManyToMany 관계에 추가하려고 할 때에, 한번에 속성을 여러개 적용할 수 있습니다.</p>
@@ -363,13 +364,13 @@
   <p>You get a QuerySet by using your model’s Manager. Each model has at least one Manager, and it’s called objects by default. Access it directly via the model class, like so:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Blog.objects
-&lt;django.db.models.manager.Manager object at ...&gt;
-&gt;&gt;&gt; b = Blog(name='Foo', tagline='Bar')
-&gt;&gt;&gt; b.objects
-Traceback:
-    ...
-AttributeError: "Manager isn't accessible via Blog instances."
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span>
+<span class="o">&lt;</span><span class="n">django</span><span class="o">.</span><span class="n">db</span><span class="o">.</span><span class="n">models</span><span class="o">.</span><span class="n">manager</span><span class="o">.</span><span class="n">Manager</span> <span class="nb">object</span> <span class="n">at</span> <span class="o">...&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">Blog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Foo'</span><span class="p">,</span> <span class="n">tagline</span><span class="o">=</span><span class="s">'Bar'</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">b</span><span class="o">.</span><span class="n">objects</span>
+<span class="n">Traceback</span><span class="p">:</span>
+    <span class="o">...</span>
+<span class="nb">AttributeError</span><span class="p">:</span> <span class="s">"Manager isn't accessible via Blog instances."</span>
 </code></pre></div></div>
 
 <p>데이터베이스에서 객체를 꺼내려 할 때 당신의 모델 클래스의 매니저를 통해 쿼리셋을 구성해야 합니다.</p>
@@ -384,14 +385,14 @@ AttributeError: "Manager isn't accessible via Blog instances."
   <p>For example, to get a QuerySet of blog entries from the year 2006, use filter() like so:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entry.objects.filter(pub_date__year=2006)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pub_date__year</span><span class="o">=</span><span class="mi">2006</span><span class="p">)</span>
 </code></pre></div></div>
 
 <blockquote>
   <p>With the default manager class, it is the same as:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entry.objects.all().filter(pub_date__year=2006)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pub_date__year</span><span class="o">=</span><span class="mi">2006</span><span class="p">)</span>
 </code></pre></div></div>
 
 <p>filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.</p>
@@ -402,13 +403,13 @@ AttributeError: "Manager isn't accessible via Blog instances."
   <p>The result of refining a QuerySet is itself a QuerySet, so it’s possible to chain refinements together. For example:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.filter(
-...     headline__startswith='What'
-... ).exclude(
-...     pub_date__gte=datetime.date.today()
-... ).filter(
-...     pub_date__gte=datetime.date(2005, 1, 30)
-... )
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>     <span class="n">headline__startswith</span><span class="o">=</span><span class="s">'What'</span>
+<span class="o">...</span> <span class="p">)</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span>
+<span class="o">...</span>     <span class="n">pub_date__gte</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">()</span>
+<span class="o">...</span> <span class="p">)</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span>
+<span class="o">...</span>     <span class="n">pub_date__gte</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+<span class="o">...</span> <span class="p">)</span>
 </code></pre></div></div>
 
 <blockquote>
@@ -433,10 +434,10 @@ AttributeError: "Manager isn't accessible via Blog instances."
   <p>QuerySets are lazy – the act of creating a QuerySet doesn’t involve any database activity. You can stack filters together all day long, and Django won’t actually run the query until the QuerySet is evaluated. Take a look at this example:</p>
 </blockquote>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; q = Entry.objects.filter(headline__startswith="What")
-&gt;&gt;&gt; q = q.filter(pub_date__lte=datetime.date.today())
-&gt;&gt;&gt; q = q.exclude(body_text__icontains="food")
-&gt;&gt;&gt; print(q)
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">headline__startswith</span><span class="o">=</span><span class="s">"What"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pub_date__lte</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">today</span><span class="p">())</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">q</span> <span class="o">=</span> <span class="n">q</span><span class="o">.</span><span class="n">exclude</span><span class="p">(</span><span class="n">body_text__icontains</span><span class="o">=</span><span class="s">"food"</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
 </code></pre></div></div>
 
 <blockquote>
@@ -449,23 +450,23 @@ AttributeError: "Manager isn't accessible via Blog instances."
 
 <p>아래의 예시와 같이 쿼리가 작동했는지 여부를 확인할 수 있다. <a href="https://stackoverflow.com/questions/20171736/when-is-a-django-queryset-evaluated">출처 stackoverflow</a></p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; from django.contrib.auth.models import *
-&gt;&gt;&gt; from django.db import connection
-&gt;&gt;&gt; connection.queries
-[]
-&gt;&gt;&gt; query = User.objects.filter(pk=1)
-&gt;&gt;&gt; connection.queries
-[]
-&gt;&gt;&gt; query.exists()
-True
-&gt;&gt;&gt; connection.queries
-[{u'time': u'0.000', u'sql': u'SELECT (1) AS `a` FROM `auth_user` WHERE `auth_user`.`id` = 1  LIMIT 1'}]
-&gt;&gt;&gt; query.get()
-&lt;User: root&gt;
-&gt;&gt;&gt; connection.queries
-[{u'time': u'0.000', u'sql': u'SELECT (1) AS `a` FROM `auth_user` WHERE `auth_user`.`id` = 1  LIMIT 1'}, 
- {u'time': u'0.000', u'sql': u'SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 '}]
-&gt;&gt;&gt; 
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">django.contrib.auth.models</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">django.db</span> <span class="kn">import</span> <span class="n">connection</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">connection</span><span class="o">.</span><span class="n">queries</span>
+<span class="p">[]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">query</span> <span class="o">=</span> <span class="n">User</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">connection</span><span class="o">.</span><span class="n">queries</span>
+<span class="p">[]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">query</span><span class="o">.</span><span class="n">exists</span><span class="p">()</span>
+<span class="bp">True</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">connection</span><span class="o">.</span><span class="n">queries</span>
+<span class="p">[{</span><span class="s">u'time'</span><span class="p">:</span> <span class="s">u'0.000'</span><span class="p">,</span> <span class="s">u'sql'</span><span class="p">:</span> <span class="s">u'SELECT (1) AS `a` FROM `auth_user` WHERE `auth_user`.`id` = 1  LIMIT 1'</span><span class="p">}]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">query</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+<span class="o">&lt;</span><span class="n">User</span><span class="p">:</span> <span class="n">root</span><span class="o">&gt;</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">connection</span><span class="o">.</span><span class="n">queries</span>
+<span class="p">[{</span><span class="s">u'time'</span><span class="p">:</span> <span class="s">u'0.000'</span><span class="p">,</span> <span class="s">u'sql'</span><span class="p">:</span> <span class="s">u'SELECT (1) AS `a` FROM `auth_user` WHERE `auth_user`.`id` = 1  LIMIT 1'</span><span class="p">},</span> 
+ <span class="p">{</span><span class="s">u'time'</span><span class="p">:</span> <span class="s">u'0.000'</span><span class="p">,</span> <span class="s">u'sql'</span><span class="p">:</span> <span class="s">u'SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 '</span><span class="p">}]</span>
+<span class="o">&gt;&gt;&gt;</span> 
 </code></pre></div></div>
 
 <p>구글에서 찾은 효과적인 쿼리셋 사용법 블로그글 <a href="http://blog.etianen.com/blog/2013/06/08/django-querysets/">참조: Using Django querysets effectively</a></p>
@@ -478,12 +479,12 @@ True
 
 <p>파이썬 slicing 문법의 subset을 활용하여 당신의 쿼리셋의 결과의 갯수를 제한 할 수 있다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.all()[:5]
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()[:</span><span class="mi">5</span><span class="p">]</span>
 </code></pre></div></div>
 
 <p>위의 예시는 처음부터 5개의 객체만 리턴한다.</p>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.all()[5:10]
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()[</span><span class="mi">5</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
 </code></pre></div></div>
 
 <p>위의 예시는 6번째 객체부터 10번째 까지 리턴한다.</p>
@@ -497,7 +498,7 @@ True
 <blockquote>
   <p>Generally, slicing a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> returns a new <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> – it doesn’t evaluate the query. An exception is if you use the “step” parameter of Python slice syntax. For example, this would actually execute the query in order to return a list of every <em>second</em> object of the first 10:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.all()[:10:2]
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()[:</span><span class="mi">10</span><span class="p">:</span><span class="mi">2</span><span class="p">]</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -510,12 +511,12 @@ True
 
   <p>Basic lookups keyword arguments take the form <code class="highlighter-rouge">field__lookuptype=value</code>. (That’s a double-underscore). For example:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.filter(pub_date__lte='2006-01-01')
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pub_date__lte</span><span class="o">=</span><span class="s">'2006-01-01'</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>translates (roughly) into the following SQL:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT * FROM blog_entry WHERE pub_date &lt;= '2006-01-01';
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">SELECT</span> <span class="o">*</span> <span class="n">FROM</span> <span class="n">blog_entry</span> <span class="n">WHERE</span> <span class="n">pub_date</span> <span class="o">&lt;=</span> <span class="s">'2006-01-01'</span><span class="p">;</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -524,7 +525,7 @@ True
 <blockquote>
   <p>The field specified in a lookup has to be the name of a model field. There’s one exception though, in case of a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey"><code class="highlighter-rouge">ForeignKey</code></a> you can specify the field name suffixed with <code class="highlighter-rouge">_id</code>. In this case, the value parameter is expected to contain the raw value of the foreign model’s primary key. For example:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.filter(blog_id=4)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog_id</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -537,8 +538,8 @@ True
 
   <p>For example, the following two statements are equivalent:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Blog.objects.get(id__exact=14)  # Explicit form
-&gt;&gt;&gt; Blog.objects.get(id=14)         # __exact is implied
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">id__exact</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>  <span class="c"># Explicit form</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>         <span class="c"># __exact is implied</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -549,7 +550,7 @@ True
 <blockquote>
   <p>A case-insensitive match. So, the query:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Blog.objects.get(name__iexact="beatles blog")
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">name__iexact</span><span class="o">=</span><span class="s">"beatles blog"</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>Would match a <code class="highlighter-rouge">Blog</code> titled <code class="highlighter-rouge">"Beatles Blog"</code>, <code class="highlighter-rouge">"beatles blog"</code>, or even <code class="highlighter-rouge">"BeAtlES blOG"</code>.</p>
@@ -560,12 +561,12 @@ True
 <blockquote>
   <p>Case-sensitive containment test. For example:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Entry.objects.get(headline__contains='Lennon')
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">headline__contains</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>Roughly translates to this SQL:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>SELECT ... WHERE headline LIKE '%Lennon%';
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">SELECT</span> <span class="o">...</span> <span class="n">WHERE</span> <span class="n">headline</span> <span class="n">LIKE</span> <span class="s">'</span><span class="si">%</span><span class="s">Lennon</span><span class="si">%</span><span class="s">'</span><span class="p">;</span>
 </code></pre></div>  </div>
 
   <p>Note this will match the headline <code class="highlighter-rouge">'Today Lennon honored'</code> but not <code class="highlighter-rouge">'today lennonhonored'</code>.</p>
@@ -580,7 +581,7 @@ True
 
   <p>This example retrieves all <code class="highlighter-rouge">Entry</code> objects with a <code class="highlighter-rouge">Blog</code> whose <code class="highlighter-rouge">name</code> is <code class="highlighter-rouge">'Beatles Blog'</code>:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Entry.objects.filter(blog__name='Beatles Blog')
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog__name</span><span class="o">=</span><span class="s">'Beatles Blog'</span><span class="p">)</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -595,7 +596,7 @@ True
 
   <p>This example retrieves all <code class="highlighter-rouge">Blog</code> objects which have at least one <code class="highlighter-rouge">Entry</code> whose <code class="highlighter-rouge">headline</code> contains <code class="highlighter-rouge">'Lennon'</code>:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; Blog.objects.filter(entry__headline__contains='Lennon')
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__headline__contains</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">)</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -606,7 +607,7 @@ True
 <blockquote>
   <p>If you are filtering across multiple relationships and one of the intermediate models doesn’t have a value that meets the filter condition, Django will treat it as if there is an empty (all values are <code class="highlighter-rouge">NULL</code>), but valid, object there. All this means is that no error will be raised. For example, in this filter:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__authors__name='Lennon')
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__authors__name</span><span class="o">=</span><span class="s">'Lennon'</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>(if there was a related <code class="highlighter-rouge">Author</code> model), if there was no <code class="highlighter-rouge">author</code> associated with an entry, it would be treated as if there was also no <code class="highlighter-rouge">name</code> attached, rather than raising an error because of the missing <code class="highlighter-rouge">author</code>. Usually this is exactly what you want to have happen. The only case where it might be confusing is if you are using <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#std:fieldlookup-isnull"><code class="highlighter-rouge">isnull</code></a>.</p>
@@ -617,12 +618,12 @@ True
 <p>만약 entry와 관계된 author가 없다면, 그것은 해당 이름이 없다는 것으로 간주되며 일반적으로 이해되는 상황이다. 헷갈릴 수 있는 한가지 경우는 isnull을 사용할 때다.</p>
 
 <blockquote>
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__authors__name__isnull=True)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__authors__name__isnull</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div>  </div>
 
   <p>will return <code class="highlighter-rouge">Blog</code> objects that have an empty <code class="highlighter-rouge">name</code> on the <code class="highlighter-rouge">author</code> and also those which have an empty <code class="highlighter-rouge">author</code> on the <code class="highlighter-rouge">entry</code>. If you don’t want those latter objects, you could write:</p>
 
-  <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Blog.objects.filter(entry__authors__isnull=False, entry__authors__name__isnull=True)
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">entry__authors__isnull</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">entry__authors__name__isnull</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 </code></pre></div>  </div>
 </blockquote>
 
@@ -633,6 +634,177 @@ True
 <p><a href="/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">posting</a> 내용으로 대체</p>
 
 <h4 id="filters-can-reference-fields-on-the-model">Filters can reference fields on the model</h4>
+
+<p>한 모델안에 필드들 간의 비교가 필요할 때 <code class="highlighter-rouge">F expressions</code>을 통해서 할 수 있다.</p>
+
+<blockquote>
+  <p>For example, to find a list of all blog entries that have had more comments than pingbacks, we construct an <code class="highlighter-rouge">F()</code>object to reference the pingback count, and use that <code class="highlighter-rouge">F()</code> object in the query:</p>
+</blockquote>
+
+<p>예를 들어 pingback 보다 더 많은 comments를 가지고 있는 blog 리스트를 찾기 위해서 우리는 F()객체를 만들고 pingback을 참조하는 방법으로 목표를 달성할 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">django.db.models</span> <span class="kn">import</span> <span class="n">F</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">n_comments__gt</span><span class="o">=</span><span class="n">F</span><span class="p">(</span><span class="s">'n_pingbacks'</span><span class="p">))</span>
+</code></pre></div></div>
+
+<p>(참고로 필드 이름은 각각 <code class="highlighter-rouge">n_comments</code>, <code class="highlighter-rouge">n_pingbacks</code>로 만들어 놓음)</p>
+
+<blockquote>
+  <p>Django supports the use of addition, subtraction, multiplication, division, modulo, and power arithmetic with <code class="highlighter-rouge">F()</code>objects, both with constants and with other <code class="highlighter-rouge">F()</code> objects. To find all the blog entries with more than <em>twice</em> as many comments as pingbacks, we modify the query:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span><span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">n_comments__gt</span><span class="o">=</span><span class="n">F</span><span class="p">(</span><span class="s">'n_pingbacks'</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>장고는 상수와의 더하기, 빼기, 곱하기, 나누기 모듈을 F()과 함께 지원한다. 예시에서는 pingback의 2배 이상의 comment를 가지고 있는 Entry 의 리스트를 찾아내는 filter</p>
+
+<blockquote>
+  <p>To find all the entries where the rating of the entry is less than the sum of the pingback count and comment count, we would issue the query:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">rating__lt</span><span class="o">=</span><span class="n">F</span><span class="p">(</span><span class="s">'n_comments'</span><span class="p">)</span> <span class="o">+</span> <span class="n">F</span><span class="p">(</span><span class="s">'n_pingbacks'</span><span class="p">))</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>comments와 pingbacks의 수를 합친 것보다 작은 rating을 가지고 있는 Entry를 찾아내기 위하여 예시와 같은 쿼리셋을 만들수도 있다.</p>
+
+<blockquote>
+  <p>You can also use the double underscore notation to span relationships in an <code class="highlighter-rouge">F()</code> object. An <code class="highlighter-rouge">F()</code> object with a double underscore will introduce any joins needed to access the related object. For example, to retrieve all the entries where the author’s name is the same as the blog name, we could issue the query:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">authors__name</span><span class="o">=</span><span class="n">F</span><span class="p">(</span><span class="s">'blog__name'</span><span class="p">))</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>또한 F()안에서 더블언더스코어 표현법을 사용하여 관계를 확장하여 필터링 하는 기능 또한 사용할 수 있다. 예시는 author의 이름과 blog의 이름이 같은 Entry의 리스트를 찾는 쿼리다.</p>
+
+<blockquote>
+  <p>For date and date/time fields, you can add or subtract a <a href="https://docs.python.org/3/library/datetime.html#datetime.timedelta"><code class="highlighter-rouge">timedelta</code></a> object. The following would return all entries that were modified more than 3 days after they were published:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">timedelta</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">mod_date__gt</span><span class="o">=</span><span class="n">F</span><span class="p">(</span><span class="s">'pub_date'</span><span class="p">)</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">3</span><span class="p">))</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>date/time 필드에서는 timedelta 객체를 더하거나 뺄 수 있다. 예시에서는 발행된지 3일 이후에 수정된 Entry의 리스트를 찾는다.</p>
+
+<blockquote>
+  <p>The <code class="highlighter-rouge">F()</code> objects support bitwise operations by <code class="highlighter-rouge">.bitand()</code>, <code class="highlighter-rouge">.bitor()</code>, <code class="highlighter-rouge">.bitrightshift()</code>, and <code class="highlighter-rouge">.bitleftshift()</code>. For example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">F</span><span class="p">(</span><span class="s">'somefield'</span><span class="p">)</span><span class="o">.</span><span class="n">bitand</span><span class="p">(</span><span class="mi">16</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>F() 객체는 바이트단위 기능도 제공한다. 아래는 예시</p>
+
+<h4 id="the-pk-lookup-shortcut">The pk lookup shortcut</h4>
+
+<p>쿼리에서의 pk값의 다양한 사용이 가능하다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Get blogs entries with id 1, 4 and 7</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pk__in</span><span class="o">=</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
+
+<span class="c"># Get all blog entries with id &gt; 14</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pk__gt</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>pk값 조회는 관계의 단계를 넘어서도 가능하다. 다음은 동일한 예시 3문장</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog__id__exact</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c"># Explicit form</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog__id</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>        <span class="c"># __exact is implied</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog__pk</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>        <span class="c"># __pk implies __id__exact</span>
+</code></pre></div></div>
+
+<h3 id="escaping-percent-signs-and-underscores-in-like-statements">Escaping percent signs and underscores in LIKE statements</h3>
+
+<p>장고에서 필드를 찾아보는 쿼리를 사용할 때 퍼센트 마크와(<code class="highlighter-rouge">%</code>) 언더스코어는(<code class="highlighter-rouge">_</code>)자동으로 escape 문자가 적용된다. 왜냐하면 SQL의 like문 에서는 <code class="highlighter-rouge">%</code>는 multiple character wildcard , <code class="highlighter-rouge">_</code>는 single character wildcard를 의미하기 때문이다.</p>
+
+<h4 id="caching-and-querysets">Caching and QuerySets</h4>
+
+<blockquote>
+  <p>Each <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> contains a cache to minimize database access. Understanding how it works will allow you to write the most efficient code.</p>
+</blockquote>
+
+<p>각각의 쿼리셋은 데이터베이스 접근을 최소화 하기 위하여 캐시값을 보유하고 있다.</p>
+
+<blockquote>
+  <p>In a newly created <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>, the cache is empty. The first time a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> is evaluated – and, hence, a database query happens – Django saves the query results in the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>’s cache and returns the results that have been explicitly requested (e.g., the next element, if the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> is being iterated over). Subsequent evaluations of the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> reuse the cached results.</p>
+</blockquote>
+
+<p>새로생성되 쿼리의 캐시값은 비어있습니다. 쿼리가 처음 평가되고 이에따라 데이터베이스 쿼리가 발생하면 장고는 쿼리의 결과를 쿼리케시에 저장합니다. 그리고 그것이 명시적으로 요청되었을 때 캐시에 가지고 있는 결과값을 리턴합니다. 뒤에 따라오는 쿼리셋의 평가는 캐시값의 결과를 재사용 합니다.</p>
+
+<blockquote>
+  <p>Keep this caching behavior in mind, because it may bite you if you don’t use your <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>s correctly. For example, the following will create two <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>s, evaluate them, and throw them away:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">headline</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">([</span><span class="n">e</span><span class="o">.</span><span class="n">pub_date</span> <span class="k">for</span> <span class="n">e</span> <span class="ow">in</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()])</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>캐시가 이런식으로 움직인다는 것을 명심해야 합니다. 왜냐하면 이러한 사실은 당신이 쿼리셋을 올바르게 사용하지 않도록 할 수 있기 때문입니다. 예를들면 예시에서는 두개의 쿼리를 생성할 것입니다. 그리고 평가한 후에 버려질 것 입니다.</p>
+
+<blockquote>
+  <p>That means the same database query will be executed twice, effectively doubling your database load. Also, there’s a possibility the two lists may not include the same database records, because an <code class="highlighter-rouge">Entry</code> may have been added or deleted in the split second between the two requests.</p>
+
+  <p>To avoid this problem, simply save the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> and reuse it:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">queryset</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">([</span><span class="n">p</span><span class="o">.</span><span class="n">headline</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">queryset</span><span class="p">])</span> <span class="c"># Evaluate the query set.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">([</span><span class="n">p</span><span class="o">.</span><span class="n">pub_date</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">queryset</span><span class="p">])</span> <span class="c"># Re-use the cache from the evaluation.</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>이것은 동일한 데이터베이스 쿼리가 두번 실행 되리라는 것을 의미합니다. 실제로 당신의 데이터베이스는 두번 로드됩니다. 또한 두개의 리스트는 동일한 데이터베이스의 기록을 공유하고 있지 않을 가능성도 있습니다. 왜냐하면 두개의 쿼리가 동작하는 짧은 시간 사이에 Entry가 추가되거나 지워질 수도 있기 때문입니다.</p>
+
+<p>이러한 문제를 피하기 위해서 우리는 간단하게 쿼리셋을 저장하고 다시 재사용할 수 있습니다.</p>
+
+<p>(그러니까 첫번째와 두 번째 쿼리가 작동할 때 각각 데이터베이스를 치게 되는데, 아래쪽의 예시에서는 두번째 쿼리에서 첫번 째 쿼리의 캐시값을 재사용 하기 때문에 더 효율적이라는 이야기, 더 자세한 쿼리 최적화 관련해서는 다른 페이지의 관련 문서를 읽어봐야 할 것 같다. <a href="https://docs.djangoproject.com/en/2.0/topics/db/optimization/">[Database access optimization]</a></p>
+
+<p><strong>When QuerySets are not cached</strong></p>
+
+<blockquote>
+  <p>Querysets do not always cache their results. When evaluating only <em>part</em> of the queryset, the cache is checked, but if it is not populated then the items returned by the subsequent query are not cached. Specifically, this means that<a href="https://docs.djangoproject.com/ko/1.11/topics/db/queries/#limiting-querysets">limiting the queryset</a> using an array slice or an index will not populate the cache.</p>
+</blockquote>
+
+<p>쿼리셋이 언제나 그 결과를 캐시에 저장하는 것은 아닙니다. 쿼리셋의 일부만 평가 할 때에는 캐시값을 확인하지만, 만약 뒤에오는 쿼리에 의해 반환되는 아이템이 없을 경우에 쿼리는 캐시값을 저장하지 않습니다. 특히 이것은 쿼리값을 캐시로 저장하지 않는 슬라이스나 인덱스를 이용한 쿼리 사용을 제한한다는 것을 의미합니다.</p>
+
+<blockquote>
+  <p>For example, repeatedly getting a certain index in a queryset object will query the database each time:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">queryset</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">queryset</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c"># Queries the database</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">queryset</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c"># Queries the database again</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>예를 들어 쿼리 객체에서 특정 인덱스를 반복해서 호출하는 것은 매번 데이터베이스에 쿼리를 날릴 것 입니다.</p>
+
+<blockquote>
+  <p>However, if the entire queryset has already been evaluated, the cache will be checked instead:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">queryset</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">entry</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">queryset</span><span class="p">]</span> <span class="c"># Queries the database</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">queryset</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c"># Uses cache</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">queryset</span><span class="p">[</span><span class="mi">5</span><span class="p">])</span> <span class="c"># Uses cache</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>그러나 전체 쿼리가 이미 평가되었다면 캐시값은 저장 될 것입니다.</p>
+
+<blockquote>
+  <p>Here are some examples of other actions that will result in the entire queryset being evaluated and therefore populate the cache:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="p">[</span><span class="n">entry</span> <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">queryset</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">bool</span><span class="p">(</span><span class="n">queryset</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">queryset</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="nb">list</span><span class="p">(</span><span class="n">queryset</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>이번 예문은 전체쿼리가 평가되고 그럼으로써 캐시값을 가지게 됩니다.</p>
+
+<p>(간단히 말해서 슬라이스나, 인덱스를 이용해서 쿼리를 날리는 경우 캐시되지 않기 때문에 주의하라는 내용)</p>
+
+<h4 id="complex-lookups-with-qobjects">Complex lookups with Qobjects</h4>
+
 
         
       </section>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-01-25T19:01:24+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">Spanning multi-valued relationships</title><link href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-01-25T23:18:45+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">Spanning multi-valued relationships</title><link href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
 
 &lt;p&gt;해당 내용을 이미 알고 있고 스압을 느끼신다면 &lt;a href=&quot;https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django&quot;&gt;stackoverflow 의 답변&lt;/a&gt;으로 바로 가보시길…&lt;/p&gt;
 
@@ -292,7 +292,22 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
 
 &lt;ol&gt;
   &lt;li&gt;장고 문서 복습 &lt;a href=&quot;/records/2017-10-13-django_model_MakingQueries/&quot;&gt;Making queries&lt;/a&gt;, 관련내용 &lt;a href=&quot;/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/&quot;&gt;posting&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;​&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;1월-25일-목요일&quot;&gt;1월 25일 목요일&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;오늘 하루 커멘트: 몸이 아파서 집중도 잘 안되고 진도도 잘 안빠지는 하루였다.. 
+잘 이해되지 않는 부분을 꼼꼼히 챙겨가며 진도를 나가려 하니 원하는 만큼의 분량을 뽑아내지 못하는 일이 부지기수… try django tutorial의 경우 빠르게 만들어 나가는 노력이 더 필요하다.&lt;/li&gt;
+  &lt;li&gt;git hub blog의 theme를 내가 원하는 모양으로 customizing 하는데에 있어서 css 때문에 어려움을 겪었다. 패스트 캠퍼스 초창기에 공부했던 sass같은 내용들이 잘 기억이 안나고 혼선이 생겨서, 장고문서 복습 이후에 온라인에 나와있는 강의를 빠르게 한번 들어보는 것도 괜찮을 것 같다.&lt;/li&gt;
+  &lt;li&gt;그렇게 css를 배워서 bootstrap을 잘 쓰고 싶다는 욕망이 생김&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;오늘 한일&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;장고 문서 복습 &lt;a href=&quot;/records/2017-10-13-django_model_MakingQueries/&quot;&gt;Making queries&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;try django tutorial 26커밋 까지 완성&lt;/li&gt;
 &lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">1월 22일 월요일</summary></entry><entry><title type="html">UX/UI fontsize customzing at atom editor</title><link href="https://zooozoo.github.io/posts/2018-01-17-atom/" rel="alternate" type="text/html" title="UX/UI fontsize customzing at atom editor" /><published>2018-01-17T00:00:00+09:00</published><updated>2018-01-17T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/atom</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-01-17-atom/">&lt;h3 id=&quot;아톰-에디터에서-uxui-글씨크기-바꾸기&quot;&gt;아톰 에디터에서 UX/UI 글씨크기 바꾸기&lt;/h3&gt;
 
 &lt;p&gt;블로그 작성을 위해서 아톰 editor를 사용하는데

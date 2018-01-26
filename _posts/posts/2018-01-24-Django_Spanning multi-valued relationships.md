@@ -83,17 +83,12 @@ Blog.objects.filter(entry__headline__contains='Lennon').filter(entry__pub_date__
 
 이런식으로(chaining) 필터를 나눠서 각각 찾는것이 다른 결과를 가지며 그 이유는 결과가 Entry를 탐색하는 것이 아닌  Blog를 탐색하는 것이기 때문이라고 설명하고 있다.
 
-두 번째 예시가 잘 이해되지 않았는데 만약 첫번째 filter로 blog 객체를 추려낸 후에 그 값을 두 번째 filter를 적용하면 어떻게 하든 첫 번째 예시와 같아야만 할 것 같다. 결국에 돌고 돌아 이해한 내용은
-
-
-
-
-
-장고에 있는 문서보다는 [stackoverflow 에 예시](https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django)로 쓰여진 내용이 훨씬 잘 이해 된다.
+두 번째 예시가 잘 이해되지 않았는데 만약 첫번째 filter로 blog 객체를 추려낸 후에 해당 결과를 가지고 두 번째 filter를 적용하면 어떻게 하든 첫 번째 예시와 같은 결과를 할 것 같다. 결국에 돌고 돌아 stackoverflow를 통해 내용을 이해할 수 있었다.
 
 누군가 나랑 똑같은 질문을 stackoverflow에 했고 아주 상세한 설명이 있어서 덕분해 잘 이해할 수 있었다.
 
 
+장고에 있는 문서보다는 [stackoverflow 에 예시](https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django)로 쓰여진 내용이 훨씬 잘 이해 된다.
 
 
 

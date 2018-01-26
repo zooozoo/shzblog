@@ -426,7 +426,7 @@ pk값 조회는 관계의 단계를 넘어서도 가능하다. 다음은 동일�
 
 
 
-### Escaping percent signs and underscores in LIKE statements
+#### Escaping percent signs and underscores in LIKE statements
 
 장고에서 필드를 찾아보는 쿼리를 사용할 때 퍼센트 마크와(`%`) 언더스코어는(`_`)자동으로 escape 문자가 적용된다. 왜냐하면 SQL의 like문 에서는 `%`는 multiple character wildcard , `_`는 single character wildcard를 의미하기 때문이다. 
 
@@ -509,5 +509,146 @@ pk값 조회는 관계의 단계를 넘어서도 가능하다. 다음은 동일�
 
 
 
-#### Complex lookups with Qobjects
+#### Complex lookups with Q objects
 
+> keyword argument queries -- in [`filter()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter), etc. -- are "AND"ed together. If you need to execute more complex queries (for example, queries with `OR` statements), you can use [`Q objects`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.Q).
+>
+> A [`Q object`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.Q) (`django.db.models.Q`) is an object used to encapsulate a collection of keyword arguments. These keyword arguments are specified as in "Field lookups" above.
+>
+> For example, this `Q` object encapsulates a single `LIKE` query:
+>
+> ```python
+> from django.db.models import Q
+> Q(question__startswith='What')
+> ```
+
+filter()와 같은 쿼리의 키워드는 AND의 형태로 묶여서 사용됩니다. 만약 더 복잡한 쿼리동작이 필요하다면 (예를 들면 OR조건문과 같이),  Q objects를 사용할 수 있습니다. 
+
+Q object는 키워드인자모음을 캡슐화 하기 위해서 사용되는 객체입니다. 이런 키워드인자는 "Field lookups"의 인자로 지정됩니다. 
+
+예시에서는 Q object가 하나의 LIKE쿼리를 캡슐화 합니다.
+
+> `Q` objects can be combined using the `&` and `|` operators. When an operator is used on two `Q` objects, it yields a new `Q`object.
+>
+> For example, this statement yields a single `Q` object that represents the "OR" of two `"question__startswith"`queries:
+>
+> ```python
+> Q(question__startswith='Who') | Q(question__startswith='What')
+> ```
+
+Q objects는 `&`와 `|`를 연산자를 사용하여 묶을 수 있습니다. 두개의 Q objects 에서 하나의 연산자가 사용되면, 새로운 Q object는 무시됩니다.
+
+예시에서는 하나의 Q object가 무시되는데 이것은 두개의 `"question__startswith"`쿼리가 `OR의 관계임을 나타냅니다.
+
+>This is equivalent to the following SQL `WHERE` clause:
+>
+>```python
+>WHERE question LIKE 'Who%' OR question LIKE 'What%'
+>```
+
+이것은 이전 예문과 동일한 SQL WHERE절 입니다.
+
+> You can compose statements of arbitrary complexity by combining `Q` objects with the `&` and `|` operators and use parenthetical grouping. Also, `Q` objects can be negated using the `~` operator, allowing for combined lookups that combine both a normal query and a negated (`NOT`) query:
+>
+> ```python
+> Q(question__startswith='Who') | ~Q(pub_date__year=2005)
+> ```
+>
+> 
+
+당시는 `&`와 `|` 그리고 괄호를 사용하여 Q objects를 조합해서 임의의 복잡한 문장을 만들어낼 수 있습니다. 또한 Q objects는 `~`를 사용하여 부정의 의미로 사용할 수 있으며, 이것은 일반적인 커리와 부정의 의미인 쿼리를 묶어서 사용할 수 있게 해줍니다.  
+
+> Each lookup function that takes keyword-arguments (e.g. [`filter()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter), [`exclude()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.exclude), [`get()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.get)) can also be passed one or more `Q` objects as positional (not-named) arguments. If you provide multiple `Q` object arguments to a lookup function, the arguments will be "AND"ed together. For example:
+>
+> ```python
+> Poll.objects.get(
+>     Q(question__startswith='Who'),
+>     Q(pub_date=date(2005, 5, 2)) | Q(pub_date=date(2005, 5, 6))
+> )
+> ```
+>
+> ... roughly translates into the SQL:
+>
+> ```python
+> SELECT * from polls WHERE question LIKE 'Who%'
+>     AND (pub_date = '2005-05-02' OR pub_date = '2005-05-06')
+> ```
+
+filter(), exclude(), get()과 같이 키워드 인자를 가지는 검색 function은 하나 이상의 Q objects를 위치 인자로 가질 수 있습니다. 만약 복수의 Q object 인자를 검색function에 전달 할 경우, 전달 된 인자들은 "AND로 엮이게 됩니다.
+
+( `|` 로 붂인것은 "OR"로 인식되고, `,` 구분된 인자로 된 것들 끼리는 서로 "AND"로 묶인다는 이야기)
+
+> Lookup functions can mix the use of `Q` objects and keyword arguments. All arguments provided to a lookup function (be they keyword arguments or `Q` objects) are "AND"ed together. However, if a `Q` object is provided, it must precede the definition of any keyword arguments. For example:
+>
+> ```python
+> Poll.objects.get(
+>     Q(pub_date=date(2005, 5, 2)) | Q(pub_date=date(2005, 5, 6)),
+>     question__startswith='Who',
+> )
+> ```
+>
+> ... would be a valid query, equivalent to the previous example; but:
+>
+> ```python
+> # INVALID QUERY
+> Poll.objects.get(
+>     question__startswith='Who',
+>     Q(pub_date=date(2005, 5, 2)) | Q(pub_date=date(2005, 5, 6))
+> )
+> ```
+>
+> ... would not be valid.
+
+검색 function은 Q objects와 키워드 인자를 함께 사용하여 구성할 수 있다. 전달된 모든 인자는 "AND"로 엮이게 된다. 하지만, 만약 Q object를 함께 사용하는 경우에 키워드 인자의 순서를 명확하게 해주어야만 합니다다.
+
+(python은 function을 사용할 때 위치인자를 먼저 앞에두고 키워드 인자는 뒷쪽에 두는 순서로 사용해야만 한다는 이야기)
+
+
+
+#### Deleting objects
+
+> The delete method, conveniently, is named [`delete()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.delete). This method immediately deletes the object and returns the number of objects deleted and a dictionary with the number of deletions per object type. Example:
+>
+> ```python
+> >>> e.delete()
+> (1, {'weblog.Entry': 1})
+> ```
+>
+
+삭제 메소드는 `delete()`로 이름지어져 있다. 이 메소드는 즉시 해당 객체를 지우고 삭제된 객체의 갯수와, 삭제된 각 객체의 타입을 담은 딕셔너리를 반환합니다.
+
+>You can also delete objects in bulk. Every [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) has a [`delete()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.delete) method, which deletes all members of that [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet).
+>
+>For example, this deletes all `Entry` objects with a `pub_date` year of 2005:
+>
+>```python
+>>>> Entry.objects.filter(pub_date__year=2005).delete()
+>(5, {'webapp.Entry': 5})
+>```
+
+당신은 많은 야으이 객체를 한번에 삭제할 수도 있다. 모든 쿼리셋은 `delete()`메서드를 가지며 쿼리셋으로 가져오는 모든 객체를 삭제한다. 예시에서는 `pub_date`가 2005년인 모든 Entry를 삭제합니다.
+
+> Keep in mind that this will, whenever possible, be executed purely in SQL, and so the `delete()` methods of individual object instances will not necessarily be called during the process. If you've provided a custom `delete()` method on a model class and want to ensure that it is called, you will need to "manually" delete instances of that model (e.g., by iterating over a [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) and calling `delete()` on each object individually) rather than using the bulk [`delete()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.delete) method of a [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet).
+
+가능할 때 마다 이것이 순전히 SQL에서 작동된다는 점을 명심하십시요, 그럼으로써 각 객체의  `delete()`메소드가 지우는 과정에 있어서 필요하지 않을 것입니다. 만약 모델 클래스에 커스텀 `delete()`메소드를 만들고, 그것이 사용되어지기를 확실하게 하기 위해서는 한꺼번에 `delete()`메서드를 사용하기 보다는 일일이 모델 인스턴스를 지워야 할 것입니다.
+
+> When Django deletes an object, by default it emulates the behavior of the SQL constraint `ON DELETECASCADE` -- in other words, any objects which had foreign keys pointing at the object to be deleted will be deleted along with it. For example:
+>
+> ```python
+> b = Blog.objects.get(pk=1)
+> # This will delete the Blog and all of its Entry objects.
+> b.delete()
+> ```
+> This cascade behavior is customizable via the on_delete argument to the ForeignKey.
+
+장고가 객체를 삭제할 때에는, 기본적으로 SQL에 강제되어 있는 `ON DELETECASCADE`를 모방합니다. 다르게 말하자면, 지워지는 객체를 foreign key로 지정하고 있는 객체는 함께 지워진다는 말 입니다.
+
+cascade 동작은 `on_delete`인자를 통해서 ForeignKey에서 원하는 대로 조정할 수 있습니다.
+
+> Note that [`delete()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.delete) is the only [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) method that is not exposed on a [`Manager`](https://docs.djangoproject.com/ko/1.11/topics/db/managers/#django.db.models.Manager) itself. This is a safety mechanism to prevent you from accidentally requesting `Entry.objects.delete()`, and deleting *all* the entries. If you *do* want to delete all the objects, then you have to explicitly request a complete query set:
+>
+> ```python
+> Entry.objects.all().delete()
+> ```
+
+`delete()`메서드는 Manager에서 파생되지 않은 유일한 쿼리셋 메서드라는 점을 기억하세요. 이거는 당신이 우발적으로 `Entry.objects.delete()`와 같이 요청해서 모든 엔트리를 지우게끔 하는 것을 방지하기 위한 장치입니다. 만약 모든 객체를 지우고 싶다면 전체 request 쿼리셋 문장을 명시해야 합니다.
