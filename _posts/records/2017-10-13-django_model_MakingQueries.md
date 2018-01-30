@@ -652,3 +652,66 @@ cascade 동작은 `on_delete`인자를 통해서 ForeignKey에서 원하는 대�
 > ```
 
 `delete()`메서드는 Manager에서 파생되지 않은 유일한 쿼리셋 메서드라는 점을 기억하세요. 이거는 당신이 우발적으로 `Entry.objects.delete()`와 같이 요청해서 모든 엔트리를 지우게끔 하는 것을 방지하기 위한 장치입니다. 만약 모든 객체를 지우고 싶다면 전체 request 쿼리셋 문장을 명시해야 합니다.
+
+
+
+#### Copying model instances
+
+> Although there is no built-in method for copying model instances, it is possible to easily create new instance with all fields' values copied. In the simplest case, you can just set `pk` to `None`. Using our blog example:
+>
+> ```python
+> blog = Blog(name='My blog', tagline='Blogging is easy')
+> blog.save() # blog.pk == 1
+>
+> blog.pk = None
+> blog.save() # blog.pk == 2
+> ```
+
+모델인스턴스를 복사사하는 내장 메서드가 따로 있는건 아니지만 간단하게 인스턴스의 전체 필드 내용을 복사하는 것이 가능합니다. 가장 간단한 캐이스로, `pk`값을 `None` 으로 지정하는 것 이다. 
+
+(pk 필드는 자동으로 생성되니까 None으로 설정하고 새로 저장하면 같은 내용의 새로운 인스턴스가 생성되는 것)
+
+> Things get more complicated if you use inheritance. Consider a subclass of `Blog`:
+>
+> ```python
+> class ThemeBlog(Blog):
+>     theme = models.CharField(max_length=200)
+>
+> django_blog = ThemeBlog(name='Django', tagline='Django is easy', theme='python')
+> django_blog.save() # django_blog.pk == 3
+>
+> ```
+>
+> Due to how inheritance works, you have to set both `pk` and `id` to None:
+>
+> ```python
+> django_blog.pk = None
+> django_blog.id = None
+> django_blog.save() # django_blog.pk == 4
+> ```
+
+더 복잡한 경우는 상속을 사용하는 경우다. 이런경우는 `pk`와 `id` 모두 `None`을 할당한 후에 save()해야 복사된다.
+
+> This process doesn't copy relations that aren't part of the model's database table. For example, `Entry` has a `ManyToManyField` to `Author`. After duplicating an entry, you must set the many-to-many relations for the new entry:
+>
+> ```python
+> entry = Entry.objects.all()[0] # some previous entry
+> old_authors = entry.authors.all()
+> entry.pk = None
+> entry.save()
+> entry.authors.set(old_authors)
+> ```
+
+복제기능은 해당모델의 데이이터베이스 테이블의 일부분이 아닌 관계모델에 대해서는 지원하지 않습니다. 예를들면 `Entry`를 복제하게 될 경우 save()를 한 후에 mtm관계에 있는 `Author`는 따로 지정해해 주어야 합니다.
+
+> For a `OneToOneField`, you must duplicate the related object and assign it to the new object's field to avoid violating the one-to-one unique constraint. For example, assuming `entry` is already duplicated as above:
+>
+> ```python
+> detail = EntryDetail.objects.all()[0]
+> detail.pk = None
+> detail.entry = entry
+> detail.save()
+> ```
+
+oto 필드의 경우, save() 전에 관계모델을 지정해 주어야하는데 oto필드의 연결된 모델간의 1대1 연결방식을 유지하기 위함입니다. 
+

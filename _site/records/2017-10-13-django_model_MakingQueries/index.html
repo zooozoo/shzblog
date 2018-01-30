@@ -267,7 +267,7 @@
 
 
 
-  14 minute read
+  19 minute read
 </p>
           
         </header>
@@ -284,7 +284,6 @@
   <li><a href="#saving-foreignkey-and-manytomanyfield-fields">Saving ForeignKey and ManyToManyField fields</a></li>
   <li><a href="#retrieving-objects">Retrieving objects</a></li>
   <li><a href="#retrieving-specific-objects-with-filters">Retrieving specific objects with filters</a></li>
-  <li><a href="#escaping-percent-signs-and-underscores-in-like-statements">Escaping percent signs and underscores in LIKE statements</a></li>
 </ul>
             </nav>
           </aside>
@@ -713,7 +712,7 @@
 <span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog__pk</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>        <span class="c"># __pk implies __id__exact</span>
 </code></pre></div></div>
 
-<h3 id="escaping-percent-signs-and-underscores-in-like-statements">Escaping percent signs and underscores in LIKE statements</h3>
+<h4 id="escaping-percent-signs-and-underscores-in-like-statements">Escaping percent signs and underscores in LIKE statements</h4>
 
 <p>장고에서 필드를 찾아보는 쿼리를 사용할 때 퍼센트 마크와(<code class="highlighter-rouge">%</code>) 언더스코어는(<code class="highlighter-rouge">_</code>)자동으로 escape 문자가 적용된다. 왜냐하면 SQL의 like문 에서는 <code class="highlighter-rouge">%</code>는 multiple character wildcard , <code class="highlighter-rouge">_</code>는 single character wildcard를 의미하기 때문이다.</p>
 
@@ -803,8 +802,156 @@
 
 <p>(간단히 말해서 슬라이스나, 인덱스를 이용해서 쿼리를 날리는 경우 캐시되지 않기 때문에 주의하라는 내용)</p>
 
-<h4 id="complex-lookups-with-qobjects">Complex lookups with Qobjects</h4>
+<h4 id="complex-lookups-with-q-objects">Complex lookups with Q objects</h4>
 
+<blockquote>
+  <p>keyword argument queries – in <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter"><code class="highlighter-rouge">filter()</code></a>, etc. – are “AND”ed together. If you need to execute more complex queries (for example, queries with <code class="highlighter-rouge">OR</code> statements), you can use <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.Q"><code class="highlighter-rouge">Q objects</code></a>.</p>
+
+  <p>A <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.Q"><code class="highlighter-rouge">Q object</code></a> (<code class="highlighter-rouge">django.db.models.Q</code>) is an object used to encapsulate a collection of keyword arguments. These keyword arguments are specified as in “Field lookups” above.</p>
+
+  <p>For example, this <code class="highlighter-rouge">Q</code> object encapsulates a single <code class="highlighter-rouge">LIKE</code> query:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">django.db.models</span> <span class="kn">import</span> <span class="n">Q</span>
+<span class="n">Q</span><span class="p">(</span><span class="n">question__startswith</span><span class="o">=</span><span class="s">'What'</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>filter()와 같은 쿼리의 키워드는 AND의 형태로 묶여서 사용됩니다. 만약 더 복잡한 쿼리동작이 필요하다면 (예를 들면 OR조건문과 같이),  Q objects를 사용할 수 있습니다.</p>
+
+<p>Q object는 키워드인자모음을 캡슐화 하기 위해서 사용되는 객체입니다. 이런 키워드인자는 “Field lookups”의 인자로 지정됩니다.</p>
+
+<p>예시에서는 Q object가 하나의 LIKE쿼리를 캡슐화 합니다.</p>
+
+<blockquote>
+  <p><code class="highlighter-rouge">Q</code> objects can be combined using the <code class="highlighter-rouge">&amp;</code> and <code class="highlighter-rouge">|</code> operators. When an operator is used on two <code class="highlighter-rouge">Q</code> objects, it yields a new <code class="highlighter-rouge">Q</code>object.</p>
+
+  <p>For example, this statement yields a single <code class="highlighter-rouge">Q</code> object that represents the “OR” of two <code class="highlighter-rouge">"question__startswith"</code>queries:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Q</span><span class="p">(</span><span class="n">question__startswith</span><span class="o">=</span><span class="s">'Who'</span><span class="p">)</span> <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">question__startswith</span><span class="o">=</span><span class="s">'What'</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>Q objects는 <code class="highlighter-rouge">&amp;</code>와 <code class="highlighter-rouge">|</code>를 연산자를 사용하여 묶을 수 있습니다. 두개의 Q objects 에서 하나의 연산자가 사용되면, 새로운 Q object는 무시됩니다.</p>
+
+<p>예시에서는 하나의 Q object가 무시되는데 이것은 두개의 <code class="highlighter-rouge">"question__startswith"</code>쿼리가 `OR의 관계임을 나타냅니다.</p>
+
+<blockquote>
+  <p>This is equivalent to the following SQL <code class="highlighter-rouge">WHERE</code> clause:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">WHERE</span> <span class="n">question</span> <span class="n">LIKE</span> <span class="s">'Who</span><span class="si">%</span><span class="s">'</span> <span class="n">OR</span> <span class="n">question</span> <span class="n">LIKE</span> <span class="s">'What</span><span class="si">%</span><span class="s">'</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>이것은 이전 예문과 동일한 SQL WHERE절 입니다.</p>
+
+<blockquote>
+  <p>You can compose statements of arbitrary complexity by combining <code class="highlighter-rouge">Q</code> objects with the <code class="highlighter-rouge">&amp;</code> and <code class="highlighter-rouge">|</code> operators and use parenthetical grouping. Also, <code class="highlighter-rouge">Q</code> objects can be negated using the <code class="highlighter-rouge">~</code> operator, allowing for combined lookups that combine both a normal query and a negated (<code class="highlighter-rouge">NOT</code>) query:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Q</span><span class="p">(</span><span class="n">question__startswith</span><span class="o">=</span><span class="s">'Who'</span><span class="p">)</span> <span class="o">|</span> <span class="o">~</span><span class="n">Q</span><span class="p">(</span><span class="n">pub_date__year</span><span class="o">=</span><span class="mi">2005</span><span class="p">)</span>
+</code></pre></div>  </div>
+
+</blockquote>
+
+<p>당시는 <code class="highlighter-rouge">&amp;</code>와 <code class="highlighter-rouge">|</code> 그리고 괄호를 사용하여 Q objects를 조합해서 임의의 복잡한 문장을 만들어낼 수 있습니다. 또한 Q objects는 <code class="highlighter-rouge">~</code>를 사용하여 부정의 의미로 사용할 수 있으며, 이것은 일반적인 커리와 부정의 의미인 쿼리를 묶어서 사용할 수 있게 해줍니다.</p>
+
+<blockquote>
+  <p>Each lookup function that takes keyword-arguments (e.g. <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter"><code class="highlighter-rouge">filter()</code></a>, <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.exclude"><code class="highlighter-rouge">exclude()</code></a>, <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.get"><code class="highlighter-rouge">get()</code></a>) can also be passed one or more <code class="highlighter-rouge">Q</code> objects as positional (not-named) arguments. If you provide multiple <code class="highlighter-rouge">Q</code> object arguments to a lookup function, the arguments will be “AND”ed together. For example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Poll</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">Q</span><span class="p">(</span><span class="n">question__startswith</span><span class="o">=</span><span class="s">'Who'</span><span class="p">),</span>
+    <span class="n">Q</span><span class="p">(</span><span class="n">pub_date</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">pub_date</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="p">)</span>
+</code></pre></div>  </div>
+
+  <p>… roughly translates into the SQL:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">SELECT</span> <span class="o">*</span> <span class="k">from</span> <span class="n">polls</span> <span class="n">WHERE</span> <span class="n">question</span> <span class="n">LIKE</span> <span class="s">'Who</span><span class="si">%</span><span class="s">'</span>
+    <span class="n">AND</span> <span class="p">(</span><span class="n">pub_date</span> <span class="o">=</span> <span class="s">'2005-05-02'</span> <span class="n">OR</span> <span class="n">pub_date</span> <span class="o">=</span> <span class="s">'2005-05-06'</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>filter(), exclude(), get()과 같이 키워드 인자를 가지는 검색 function은 하나 이상의 Q objects를 위치 인자로 가질 수 있습니다. 만약 복수의 Q object 인자를 검색function에 전달 할 경우, 전달 된 인자들은 “AND로 엮이게 됩니다.</p>
+
+<p>( <code class="highlighter-rouge">|</code> 로 붂인것은 “OR”로 인식되고, <code class="highlighter-rouge">,</code> 구분된 인자로 된 것들 끼리는 서로 “AND”로 묶인다는 이야기)</p>
+
+<blockquote>
+  <p>Lookup functions can mix the use of <code class="highlighter-rouge">Q</code> objects and keyword arguments. All arguments provided to a lookup function (be they keyword arguments or <code class="highlighter-rouge">Q</code> objects) are “AND”ed together. However, if a <code class="highlighter-rouge">Q</code> object is provided, it must precede the definition of any keyword arguments. For example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Poll</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">Q</span><span class="p">(</span><span class="n">pub_date</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">pub_date</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">)),</span>
+    <span class="n">question__startswith</span><span class="o">=</span><span class="s">'Who'</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div>  </div>
+
+  <p>… would be a valid query, equivalent to the previous example; but:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># INVALID QUERY</span>
+<span class="n">Poll</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="n">question__startswith</span><span class="o">=</span><span class="s">'Who'</span><span class="p">,</span>
+    <span class="n">Q</span><span class="p">(</span><span class="n">pub_date</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span> <span class="o">|</span> <span class="n">Q</span><span class="p">(</span><span class="n">pub_date</span><span class="o">=</span><span class="n">date</span><span class="p">(</span><span class="mi">2005</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="p">)</span>
+</code></pre></div>  </div>
+
+  <p>… would not be valid.</p>
+</blockquote>
+
+<p>검색 function은 Q objects와 키워드 인자를 함께 사용하여 구성할 수 있다. 전달된 모든 인자는 “AND”로 엮이게 된다. 하지만, 만약 Q object를 함께 사용하는 경우에 키워드 인자의 순서를 명확하게 해주어야만 합니다다.</p>
+
+<p>(python은 function을 사용할 때 위치인자를 먼저 앞에두고 키워드 인자는 뒷쪽에 두는 순서로 사용해야만 한다는 이야기)</p>
+
+<h4 id="deleting-objects">Deleting objects</h4>
+
+<blockquote>
+  <p>The delete method, conveniently, is named <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.delete"><code class="highlighter-rouge">delete()</code></a>. This method immediately deletes the object and returns the number of objects deleted and a dictionary with the number of deletions per object type. Example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+<span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">{</span><span class="s">'weblog.Entry'</span><span class="p">:</span> <span class="mi">1</span><span class="p">})</span>
+</code></pre></div>  </div>
+
+</blockquote>
+
+<p>삭제 메소드는 <code class="highlighter-rouge">delete()</code>로 이름지어져 있다. 이 메소드는 즉시 해당 객체를 지우고 삭제된 객체의 갯수와, 삭제된 각 객체의 타입을 담은 딕셔너리를 반환합니다.</p>
+
+<blockquote>
+  <p>You can also delete objects in bulk. Every <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> has a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.delete"><code class="highlighter-rouge">delete()</code></a> method, which deletes all members of that <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>.</p>
+
+  <p>For example, this deletes all <code class="highlighter-rouge">Entry</code> objects with a <code class="highlighter-rouge">pub_date</code> year of 2005:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pub_date__year</span><span class="o">=</span><span class="mi">2005</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+<span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="p">{</span><span class="s">'webapp.Entry'</span><span class="p">:</span> <span class="mi">5</span><span class="p">})</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>당신은 많은 야으이 객체를 한번에 삭제할 수도 있다. 모든 쿼리셋은 <code class="highlighter-rouge">delete()</code>메서드를 가지며 쿼리셋으로 가져오는 모든 객체를 삭제한다. 예시에서는 <code class="highlighter-rouge">pub_date</code>가 2005년인 모든 Entry를 삭제합니다.</p>
+
+<blockquote>
+  <p>Keep in mind that this will, whenever possible, be executed purely in SQL, and so the <code class="highlighter-rouge">delete()</code> methods of individual object instances will not necessarily be called during the process. If you’ve provided a custom <code class="highlighter-rouge">delete()</code> method on a model class and want to ensure that it is called, you will need to “manually” delete instances of that model (e.g., by iterating over a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> and calling <code class="highlighter-rouge">delete()</code> on each object individually) rather than using the bulk <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.delete"><code class="highlighter-rouge">delete()</code></a> method of a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>.</p>
+</blockquote>
+
+<p>가능할 때 마다 이것이 순전히 SQL에서 작동된다는 점을 명심하십시요, 그럼으로써 각 객체의  <code class="highlighter-rouge">delete()</code>메소드가 지우는 과정에 있어서 필요하지 않을 것입니다. 만약 모델 클래스에 커스텀 <code class="highlighter-rouge">delete()</code>메소드를 만들고, 그것이 사용되어지기를 확실하게 하기 위해서는 한꺼번에 <code class="highlighter-rouge">delete()</code>메서드를 사용하기 보다는 일일이 모델 인스턴스를 지워야 할 것입니다.</p>
+
+<blockquote>
+  <p>When Django deletes an object, by default it emulates the behavior of the SQL constraint <code class="highlighter-rouge">ON DELETECASCADE</code> – in other words, any objects which had foreign keys pointing at the object to be deleted will be deleted along with it. For example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">b</span> <span class="o">=</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="c"># This will delete the Blog and all of its Entry objects.</span>
+<span class="n">b</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</code></pre></div>  </div>
+  <p>This cascade behavior is customizable via the on_delete argument to the ForeignKey.</p>
+</blockquote>
+
+<p>장고가 객체를 삭제할 때에는, 기본적으로 SQL에 강제되어 있는 <code class="highlighter-rouge">ON DELETECASCADE</code>를 모방합니다. 다르게 말하자면, 지워지는 객체를 foreign key로 지정하고 있는 객체는 함께 지워진다는 말 입니다.</p>
+
+<p>cascade 동작은 <code class="highlighter-rouge">on_delete</code>인자를 통해서 ForeignKey에서 원하는 대로 조정할 수 있습니다.</p>
+
+<blockquote>
+  <p>Note that <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.delete"><code class="highlighter-rouge">delete()</code></a> is the only <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> method that is not exposed on a <a href="https://docs.djangoproject.com/ko/1.11/topics/db/managers/#django.db.models.Manager"><code class="highlighter-rouge">Manager</code></a> itself. This is a safety mechanism to prevent you from accidentally requesting <code class="highlighter-rouge">Entry.objects.delete()</code>, and deleting <em>all</em> the entries. If you <em>do</em> want to delete all the objects, then you have to explicitly request a complete query set:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p><code class="highlighter-rouge">delete()</code>메서드는 Manager에서 파생되지 않은 유일한 쿼리셋 메서드라는 점을 기억하세요. 이거는 당신이 우발적으로 <code class="highlighter-rouge">Entry.objects.delete()</code>와 같이 요청해서 모든 엔트리를 지우게끔 하는 것을 방지하기 위한 장치입니다. 만약 모든 객체를 지우고 싶다면 전체 request 쿼리셋 문장을 명시해야 합니다.</p>
 
         
       </section>
@@ -947,7 +1094,7 @@
 
 
 
-  1 minute read
+  2 minute read
 </p>
     
     <p class="archive__item-excerpt" itemprop="description">1월 22일 월요일
