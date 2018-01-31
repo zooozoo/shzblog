@@ -139,6 +139,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/",
         "teaser":null},{
+        "title": "1월29일~2월04일",
+        "excerpt":"1월 30일 화요일오늘 한일  Try-Django-Tutorial youtube 강의 42커밋까지 완료1월 31일 수요일오늘 한일  Try-Django-Tutorial youtube 강의 45커밋까지 완료 -&gt; 완성","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9429%EC%9D%BC~2%EC%9B%9404%EC%9D%BC/",
+        "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
         "tags": [],

@@ -267,7 +267,7 @@
 
 
 
-  19 minute read
+  21 minute read
 </p>
           
         </header>
@@ -953,6 +953,70 @@
 
 <p><code class="highlighter-rouge">delete()</code>메서드는 Manager에서 파생되지 않은 유일한 쿼리셋 메서드라는 점을 기억하세요. 이거는 당신이 우발적으로 <code class="highlighter-rouge">Entry.objects.delete()</code>와 같이 요청해서 모든 엔트리를 지우게끔 하는 것을 방지하기 위한 장치입니다. 만약 모든 객체를 지우고 싶다면 전체 request 쿼리셋 문장을 명시해야 합니다.</p>
 
+<h4 id="copying-model-instances">Copying model instances</h4>
+
+<blockquote>
+  <p>Although there is no built-in method for copying model instances, it is possible to easily create new instance with all fields’ values copied. In the simplest case, you can just set <code class="highlighter-rouge">pk</code> to <code class="highlighter-rouge">None</code>. Using our blog example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">blog</span> <span class="o">=</span> <span class="n">Blog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'My blog'</span><span class="p">,</span> <span class="n">tagline</span><span class="o">=</span><span class="s">'Blogging is easy'</span><span class="p">)</span>
+<span class="n">blog</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c"># blog.pk == 1</span>
+
+<span class="n">blog</span><span class="o">.</span><span class="n">pk</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">blog</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c"># blog.pk == 2</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>모델인스턴스를 복사사하는 내장 메서드가 따로 있는건 아니지만 간단하게 인스턴스의 전체 필드 내용을 복사하는 것이 가능합니다. 가장 간단한 캐이스로, <code class="highlighter-rouge">pk</code>값을 <code class="highlighter-rouge">None</code> 으로 지정하는 것 이다.</p>
+
+<p>(pk 필드는 자동으로 생성되니까 None으로 설정하고 새로 저장하면 같은 내용의 새로운 인스턴스가 생성되는 것)</p>
+
+<blockquote>
+  <p>Things get more complicated if you use inheritance. Consider a subclass of <code class="highlighter-rouge">Blog</code>:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">class</span> <span class="nc">ThemeBlog</span><span class="p">(</span><span class="n">Blog</span><span class="p">):</span>
+    <span class="n">theme</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">200</span><span class="p">)</span>
+
+<span class="n">django_blog</span> <span class="o">=</span> <span class="n">ThemeBlog</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s">'Django'</span><span class="p">,</span> <span class="n">tagline</span><span class="o">=</span><span class="s">'Django is easy'</span><span class="p">,</span> <span class="n">theme</span><span class="o">=</span><span class="s">'python'</span><span class="p">)</span>
+<span class="n">django_blog</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c"># django_blog.pk == 3</span>
+
+</code></pre></div>  </div>
+
+  <p>Due to how inheritance works, you have to set both <code class="highlighter-rouge">pk</code> and <code class="highlighter-rouge">id</code> to None:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">django_blog</span><span class="o">.</span><span class="n">pk</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">django_blog</span><span class="o">.</span><span class="nb">id</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">django_blog</span><span class="o">.</span><span class="n">save</span><span class="p">()</span> <span class="c"># django_blog.pk == 4</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>더 복잡한 경우는 상속을 사용하는 경우다. 이런경우는 <code class="highlighter-rouge">pk</code>와 <code class="highlighter-rouge">id</code> 모두 <code class="highlighter-rouge">None</code>을 할당한 후에 save()해야 복사된다.</p>
+
+<blockquote>
+  <p>This process doesn’t copy relations that aren’t part of the model’s database table. For example, <code class="highlighter-rouge">Entry</code> has a <code class="highlighter-rouge">ManyToManyField</code> to <code class="highlighter-rouge">Author</code>. After duplicating an entry, you must set the many-to-many relations for the new entry:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">entry</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span> <span class="c"># some previous entry</span>
+<span class="n">old_authors</span> <span class="o">=</span> <span class="n">entry</span><span class="o">.</span><span class="n">authors</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span>
+<span class="n">entry</span><span class="o">.</span><span class="n">pk</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">entry</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+<span class="n">entry</span><span class="o">.</span><span class="n">authors</span><span class="o">.</span><span class="nb">set</span><span class="p">(</span><span class="n">old_authors</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>복제기능은 해당모델의 데이이터베이스 테이블의 일부분이 아닌 관계모델에 대해서는 지원하지 않습니다. 예를들면 <code class="highlighter-rouge">Entry</code>를 복제하게 될 경우 save()를 한 후에 mtm관계에 있는 <code class="highlighter-rouge">Author</code>는 따로 지정해해 주어야 합니다.</p>
+
+<blockquote>
+  <p>For a <code class="highlighter-rouge">OneToOneField</code>, you must duplicate the related object and assign it to the new object’s field to avoid violating the one-to-one unique constraint. For example, assuming <code class="highlighter-rouge">entry</code> is already duplicated as above:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">detail</span> <span class="o">=</span> <span class="n">EntryDetail</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">detail</span><span class="o">.</span><span class="n">pk</span> <span class="o">=</span> <span class="bp">None</span>
+<span class="n">detail</span><span class="o">.</span><span class="n">entry</span> <span class="o">=</span> <span class="n">entry</span>
+<span class="n">detail</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>oto 필드의 경우, save() 전에 관계모델을 지정해 주어야하는데 oto필드의 연결된 모델간의 1대1 연결방식을 유지하기 위함입니다.</p>
+
+
         
       </section>
 
@@ -1084,7 +1148,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="permalink">1월22일~28일
+        <a href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9429%EC%9D%BC~2%EC%9B%9404%EC%9D%BC/" rel="permalink">1월29일~2월04일
 </a>
       
     </h2>
@@ -1094,10 +1158,10 @@
 
 
 
-  2 minute read
+  less than 1 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">1월 22일 월요일
+    <p class="archive__item-excerpt" itemprop="description">1월 30일 화요일
 
 </p>
   </article>
@@ -1113,7 +1177,7 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/posts/2018-01-17-atom/" rel="permalink">UX/UI fontsize customzing at atom editor
+        <a href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/" rel="permalink">1월22일~28일
 </a>
       
     </h2>
@@ -1123,10 +1187,10 @@
 
 
 
-  less than 1 minute read
+  2 minute read
 </p>
     
-    <p class="archive__item-excerpt" itemprop="description">아톰 에디터에서 UX/UI 글씨크기 바꾸기
+    <p class="archive__item-excerpt" itemprop="description">1월 22일 월요일
 
 </p>
   </article>
