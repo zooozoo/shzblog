@@ -140,9 +140,14 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/",
         "teaser":null},{
         "title": "1월29일~2월04일",
-        "excerpt":"1월 30일 화요일오늘 한일  Try-Django-Tutorial youtube 강의 42커밋까지 완료1월 31일 수요일오늘 한일  Try-Django-Tutorial youtube 강의 45커밋까지 완료 -&gt; 완성","categories": ["til"],
+        "excerpt":"1월 30일 화요일오늘 한일 Try-Django-Tutorial youtube 강의 42커밋까지 완료1월 31일 수요일오늘 한일 Try-Django-Tutorial youtube 강의 45커밋까지 완료 -&gt; 완성2월 01일 목요일오늘 한일 처음시작하는 파이썬 복습 135p2월 02일 금요일오늘 한일 처음시작하는 파이썬 복습클로져(closure)와 데커레이터(decorator)에 대해서 제대로 이해할 수 있었다. 참고한 블로그 링크클로져(closure)데커레이커(decorator) 결론적으로는 파이썬의 내부함수와, 클로져를 잘 이해하고 있어야 데커레이터를 이해할...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9429%EC%9D%BC~2%EC%9B%9404%EC%9D%BC/",
+        "teaser":null},{
+        "title": "2월05일~2월09일0",
+        "excerpt":"2월 06일 화요일오늘 한일  처음시작하는 파이썬 6장~7장 복습","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9405%EC%9D%BC~2%EC%9B%9409%EC%9D%BC0/",
         "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
