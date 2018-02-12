@@ -144,10 +144,15 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9429%EC%9D%BC~2%EC%9B%9404%EC%9D%BC/",
         "teaser":null},{
-        "title": "2월05일~2월09일",
+        "title": "2월05일~2월11일",
         "excerpt":"2월 06일 화요일오늘 한일 처음시작하는 파이썬 6장~7장 복습2월 07일 수요일오늘 한일 처음시작하는 파이썬 7장~12장 복습(완료)이전에는 6장까지 주로 공부했었는데, 이번에 전체를 다시 복습하면서 1장부터 6장까지의 내용중에서도 또 새롭게 알게되거나 더 잘 이해할 수 있었던 부분이 많았다. 나머지 부분에서는 네트워크나, 비동기처리, 테스트나 여러가지 모듈을 사용하는 방법들이 기억에 남았다. 이전에 6장 이후의 내용들을...","categories": ["til"],
         "tags": [],
-        "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9405%EC%9D%BC~2%EC%9B%9409%EC%9D%BC/",
+        "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9405%EC%9D%BC~2%EC%9B%9411%EC%9D%BC/",
+        "teaser":null},{
+        "title": "2월12일~2월18일",
+        "excerpt":"2월 12일 월요일오늘 한일  커니핸 교수의 Hello, Digital World 복습(잽터4 - 챕터7: 소프트웨어)","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/",
         "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
