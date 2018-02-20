@@ -34,7 +34,7 @@ save() method는 이미 저장된 내용을 변경하는데에도 사용된다.
 
 
 
-### Saving `ForeignKey` and `ManyToManyField` fields
+#### Saving `ForeignKey` and `ManyToManyField` fields
 
 > Updating a ForeignKey field works exactly the same way as saving a normal field -- simply assign an object of the right type to the field in question. This example updates the blog attribute of an Entry instance entry, assuming appropriate instances of Entry and Blog are already saved to the database (so we can retrieve them below):
 
@@ -94,7 +94,7 @@ AttributeError: "Manager isn't accessible via Blog instances."
 
 
 
-### Retrieving specific objects with filters
+#### Retrieving specific objects with filters
 
 > For example, to get a QuerySet of blog entries from the year 2006, use filter() like so:
 
@@ -112,7 +112,7 @@ filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.
 
 
 
-#### Chaining filters
+##### Chaining filters
 
 > The result of refining a QuerySet is itself a QuerySet, so it's possible to chain refinements together. For example:
 
@@ -134,7 +134,7 @@ filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.
 
 
 
-#### Filtered QuerySets are unique
+##### Filtered QuerySets are unique
 
 > Each time you refine a QuerySet, you get a brand-new QuerySet that is in no way bound to the previous QuerySet. Each refinement creates a separate and distinct QuerySet that can be stored, used and reused.
 
@@ -142,7 +142,7 @@ filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.
 
 
 
-#### QuerySets are lazy
+##### QuerySets are lazy
 
 > QuerySets are lazy -- the act of creating a QuerySet doesn't involve any database activity. You can stack filters together all day long, and Django won't actually run the query until the QuerySet is evaluated. Take a look at this example:
 
@@ -340,7 +340,7 @@ contains
 
 
 
-#### Spanning multi-valued relationships
+##### Spanning multi-valued relationships
 
 [posting]({% post_url /posts/2018-01-24-Django_Spanning multi-valued relationships %}) 내용으로 대체
 
@@ -467,7 +467,7 @@ pk값 조회는 관계의 단계를 넘어서도 가능하다. 다음은 동일�
 
 (그러니까 첫번째와 두 번째 쿼리가 작동할 때 각각 데이터베이스를 치게 되는데, 아래쪽의 예시에서는 두번째 쿼리에서 첫번 째 쿼리의 캐시값을 재사용 하기 때문에 더 효율적이라는 이야기, 더 자세한 쿼리 최적화 관련해서는 다른 페이지의 관련 문서를 읽어봐야 할 것 같다. [[Database access optimization]](https://docs.djangoproject.com/en/2.0/topics/db/optimization/)
 
-**When QuerySets are not cached**
+##### When QuerySets are not cached
 
 > Querysets do not always cache their results. When evaluating only *part* of the queryset, the cache is checked, but if it is not populated then the items returned by the subsequent query are not cached. Specifically, this means that[limiting the queryset](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#limiting-querysets) using an array slice or an index will not populate the cache.
 
@@ -509,7 +509,7 @@ pk값 조회는 관계의 단계를 넘어서도 가능하다. 다음은 동일�
 
 
 
-#### Complex lookups with Q objects
+### Complex lookups with Q objects
 
 > keyword argument queries -- in [`filter()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter), etc. -- are "AND"ed together. If you need to execute more complex queries (for example, queries with `OR` statements), you can use [`Q objects`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.Q).
 >
@@ -605,7 +605,7 @@ filter(), exclude(), get()과 같이 키워드 인자를 가지는 검색 functi
 
 
 
-#### Deleting objects
+### Deleting objects
 
 > The delete method, conveniently, is named [`delete()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.delete). This method immediately deletes the object and returns the number of objects deleted and a dictionary with the number of deletions per object type. Example:
 >
@@ -655,7 +655,7 @@ cascade 동작은 `on_delete`인자를 통해서 ForeignKey에서 원하는 대�
 
 
 
-#### Copying model instances
+### Copying model instances
 
 > Although there is no built-in method for copying model instances, it is possible to easily create new instance with all fields' values copied. In the simplest case, you can just set `pk` to `None`. Using our blog example:
 >
@@ -715,3 +715,103 @@ cascade 동작은 `on_delete`인자를 통해서 ForeignKey에서 원하는 대�
 
 oto 필드의 경우, save() 전에 관계모델을 지정해 주어야하는데 oto필드의 연결된 모델간의 1대1 연결방식을 유지하기 위함입니다. 
 
+
+
+### Updating multiple objects at once
+
+> Sometimes you want to set a field to a particular value for all the objects in a [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet). You can do this with the [`update()`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.update) method. For example:
+>
+> ```python
+> # Update all the headlines with pub_date in 2007.
+> Entry.objects.filter(pub_date__year=2007).update(headline='Everything is the same')
+> ```
+
+당신의 하나의 쿼리문을 통해서 특정 변수를 필드개체에 입력할 수 있습니다. `update()`문을 활용하면 되는데 다음 예시와 같이 활용할 수 있다.
+
+> You can only set non-relation fields and [`ForeignKey`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey) fields using this method. To update a non-relation field, provide the new value as a constant. To update [`ForeignKey`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey) fields, set the new value to be the new model instance you want to point to. For example:
+>
+> ```python
+> >>> b = Blog.objects.get(pk=1)
+>
+> # Change every Entry so that it belongs to this Blog.
+> >>> Entry.objects.all().update(blog=b)
+> ```
+
+다른 모델과 관계 설정이 없는 일반 필드와, ForeignKey 필드에 `update()`메소드를 사용할 수 있습니다. 다른 모델과 관계 설정이 없는 필드의 경우 새로운 변수를 제공하면 됩니다. ForeignKey 필드의 경우 지정하고자 하는 새로운 모델 인스턴스에 새 변수를 지정할 수 있습니다. 
+
+> The `update()` method is applied instantly and returns the number of rows matched by the query (which may not be equal to the number of rows updated if some rows already have the new value). The only restriction on the [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) being updated is that it can only access one database table: the model's main table. You can filter based on related fields, but you can only update columns in the model's main table. Example:
+>
+> ```python
+> >>> b = Blog.objects.get(pk=1)
+>
+> # Update all the headlines belonging to this Blog.
+> >>> Entry.objects.select_related().filter(blog=b).update(headline='Everything is the same')
+> ```
+
+`update()`메소드는 즉시 적용되며 쿼리문에 의하여 매칭되는 행들의 숫자를 반환합니다(만약 다른 행에서 업데이트 하는 새로운 변수를 이미 가지고 있다면, 리턴하는 행의 숫자는 업데이트된 행의 숫자와 같지 않을 수 있습니다.). 업데이트 되는 쿼리문에 대한 유일한 제약사항은 하나의 데이터베이스 테이블에만 접근 가능하다는 것 입니다: 그 테이블은 해당 모델의 메인 테이블 입니다. 당신은 관계된 필드들을 기반으로 필터를 사용할 수 있습니다. 하지만 모델의 메인 테이블의 열만 새로 추가할 수 있습니다. 
+
+> Be aware that the `update()` method is converted directly to an SQL statement. It is a bulk operation for direct updates. It doesn't run any [`save()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save) methods on your models, or emit the `pre_save` or `post_save` signals (which are a consequence of calling [`save()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save)), or honor the [`auto_now`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.DateField.auto_now) field option. If you want to save every item in a [`QuerySet`](https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet) and make sure that the [`save()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save) method is called on each instance, you don't need any special function to handle that. Just loop over them and call [`save()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save):
+>
+> ```python
+> for item in my_queryset:
+>     item.save()
+> ```
+
+`update()`메소드가 직접적인 방식을 통해 SQL문으로 전환된다는 것을 명심하십시오. 이것은 바로 업데이트를 하기 위한 큰 규모의 작동입니다.  이것은 당신의 모델에서  `save()`메소드를 사용하지 않으며, `pre_save`나 `post_save`와 같은 시그널을 보내거나(둘다 `save()`메서드를 호출하기 위한 순서이다), `auto_now`필드의 혜택을 받지 않습니다. 만약 모든 아이템들을 하나의 쿼리셋으로 처리하고 싶고, `save()`메서드를 각각의 인스턴스마다 확실하게 호출 하고 싶다면, 다른 특별한 함수가 필요하지 않습니다. 그냥 루프를 돌면서 `save()`메서드를 호출하면 됩니다. 
+
+> Calls to update can also use [`F expressions`](https://docs.djangoproject.com/ko/1.11/ref/models/expressions/#django.db.models.F) to update one field based on the value of another field in the model. This is especially useful for incrementing counters based upon their current value. For example, to increment the pingback count for every entry in the blog:
+>
+> ```python
+> >>> Entry.objects.all().update(n_pingbacks=F('n_pingbacks') + 1)
+> ```
+
+다른 필드의 값에 기반하여 특정 필드의 인스턴스 값을 업데이트 하는 작업을  update를 호출과 `F_expressions`함께 사용해서 완성할 수 있습니다. 이것은 특별히 이미 존재하는 값을기반으로 하여 숫자를 증가시키는 데에 유용합니다.  
+
+
+
+### Related objects
+
+> When you define a relationship in a model (i.e., a [`ForeignKey`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey), [`OneToOneField`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.OneToOneField), or[`ManyToManyField`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ManyToManyField)), instances of that model will have a convenient API to access the related object(s).
+>
+> Using the models at the top of this page, for example, an `Entry` object `e` can get its associated `Blog`object by accessing the `blog` attribute: `e.blog`.
+>
+> (Behind the scenes, this functionality is implemented by Python [descriptors](https://docs.python.org/3/howto/descriptor.html). This shouldn't really matter to you, but we point it out here for the curious.)
+>
+> Django also creates API accessors for the "other" side of the relationship -- the link from the related model to the model that defines the relationship. For example, a `Blog` object `b` has access to a list of all related `Entry` objects via the `entry_set` attribute: `b.entry_set.all()`.
+>
+> All examples in this section use the sample `Blog`, `Author` and `Entry` models defined at the top of this page.
+
+만약 특정모델에 관계를 정의 했다면(ForeignKey, OneToOneField, 혹은 ManyToManyField), 해당 모델의 인스턴스는 관계된 모델에 접근하기 위한 편리한 API를 가질 것 입니다. 
+
+예를 들어 이페이지 꼭대기에 있는 모델을 사용할 경우, 하나의 Entry object 인 e는 blog라는 속성에 접근하는 것을 통하여 e와 연관된 Blog 오브젝트를 가질 수 있습니다. 
+
+(이러한 장면의 뒤에서, 해당 기능은  Python의 descriptors의 기능이 적용되었습니다. 이것은 크게 중요하지는 않지만 궁금한 사람들을 위해 남겨두었습니다.)
+
+장고역시 관계의 다른쪽 방향(관계설정의 대상이 되는 모델에서 관계설정이 정의된 모델로의 방향, 역참조)의 접근을 위한 API를 생성합니다. 예를 들자면 Blog 오브젝트인 b는 `entry_set`속성을 통해서(b.entry_set.all()) 관계설정이 된 모든 Entry오브젝트의 리스트에 접근한다. 
+
+이번섹션의 모든 예문은 페이지 가장 위에 있는 샘플인 Blog, Author 그리고 Entry 모델을 사용한다.
+
+#### One-to-many relationships
+
+##### Forward
+
+> If a model has a [`ForeignKey`](https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey), instances of that model will have access to the related (foreign) object via a simple attribute of the model.
+>
+> Example:
+>
+> ```python
+> >>> e = Entry.objects.get(id=2)
+> >>> e.blog # Returns the related Blog object.
+> ```
+
+만약 모델이 ForeignKey를 가졌다면, 해당 모델의 인스턴스는 간단한 모델 속성을 통하여 관계된(foreign)오브젝트로의 접근이 가능하다.
+
+> You can get and set via a foreign-key attribute. As you may expect, changes to the foreign key aren't saved to the database until you call [`save()`](https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save). Example:
+>
+> ```python
+> >>> e = Entry.objects.get(id=2)
+> >>> e.blog = some_blog
+> >>> e.save()
+> ```
+
+foreign-key 속성을 통해 값을 직접 값을 설정하거나 가져올 수 있습니다. 이미 예상하고 있듯이 foreign key를 바꾸는 것은 `save()`메서드를 호출하기 전까지는 데이터베이스에 저장되지 않습니다.

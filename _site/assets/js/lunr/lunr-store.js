@@ -150,7 +150,7 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9405%EC%9D%BC~2%EC%9B%9411%EC%9D%BC/",
         "teaser":null},{
         "title": "2월12일~2월18일",
-        "excerpt":"2월 12일 월요일오늘 한일  커니핸 교수의 Hello, Digital World 복습(잽터4 - 챕터7: 소프트웨어)","categories": ["til"],
+        "excerpt":"2월 12일 월요일오늘 한일  커니핸 교수의 Hello, Digital World 복습(잽터4 - 챕터7: 소프트웨어)2월 13일 화요일오늘 한일  커니핸 교수의 Hello, Digital World 복습(잽터8 - 챕터9: 통신, 인터넷)","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/",
         "teaser":null},{
