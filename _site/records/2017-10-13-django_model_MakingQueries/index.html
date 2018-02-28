@@ -267,7 +267,7 @@
 
 
 
-  21 minute read
+  25 minute read
 </p>
           
         </header>
@@ -281,9 +281,12 @@
               <ul class="toc__menu">
   <li><a href="#creating-objects">Creating objects</a></li>
   <li><a href="#saving-changes-to-objects">Saving changes to objects</a></li>
-  <li><a href="#saving-foreignkey-and-manytomanyfield-fields">Saving ForeignKey and ManyToManyField fields</a></li>
   <li><a href="#retrieving-objects">Retrieving objects</a></li>
-  <li><a href="#retrieving-specific-objects-with-filters">Retrieving specific objects with filters</a></li>
+  <li><a href="#complex-lookups-with-q-objects">Complex lookups with Q objects</a></li>
+  <li><a href="#deleting-objects">Deleting objects</a></li>
+  <li><a href="#copying-model-instances">Copying model instances</a></li>
+  <li><a href="#updating-multiple-objects-at-once">Updating multiple objects at once</a></li>
+  <li><a href="#related-objects">Related objects</a></li>
 </ul>
             </nav>
           </aside>
@@ -321,7 +324,7 @@
 
 <p>save() method는 이미 저장된 내용을 변경하는데에도 사용된다.</p>
 
-<h3 id="saving-foreignkey-and-manytomanyfield-fields">Saving <code class="highlighter-rouge">ForeignKey</code> and <code class="highlighter-rouge">ManyToManyField</code> fields</h3>
+<h4 id="saving-foreignkey-and-manytomanyfield-fields">Saving <code class="highlighter-rouge">ForeignKey</code> and <code class="highlighter-rouge">ManyToManyField</code> fields</h4>
 
 <blockquote>
   <p>Updating a ForeignKey field works exactly the same way as saving a normal field – simply assign an object of the right type to the field in question. This example updates the blog attribute of an Entry instance entry, assuming appropriate instances of Entry and Blog are already saved to the database (so we can retrieve them below):</p>
@@ -378,7 +381,7 @@
 
 <p>당신은 모델매니저를 사용함으로써 쿼리셋을 만들 수 있습니다. 각각의 모델은 적어도 하나 이상의 Manager를 가지며, 기본값으로 objects로 주어집니다. 예시와 같이 모델클래스를 통해서 바로 불러올 수 있습니다.</p>
 
-<h3 id="retrieving-specific-objects-with-filters">Retrieving specific objects with filters</h3>
+<h4 id="retrieving-specific-objects-with-filters">Retrieving specific objects with filters</h4>
 
 <blockquote>
   <p>For example, to get a QuerySet of blog entries from the year 2006, use filter() like so:</p>
@@ -396,7 +399,7 @@
 
 <p>filter() 사용에 있어서 예시로 나온 2가지는 같은 방식이다.</p>
 
-<h4 id="chaining-filters">Chaining filters</h4>
+<h5 id="chaining-filters">Chaining filters</h5>
 
 <blockquote>
   <p>The result of refining a QuerySet is itself a QuerySet, so it’s possible to chain refinements together. For example:</p>
@@ -419,7 +422,7 @@
 
 <p>예시에서 나온 쿼리셋은 데이터베이스에서 모든 엔트리를 가져온다. 그리고나서 filter를 추가하고 난후에 exclusion을 적용하고, 마지막으로 다시 filter를 적용한다. 결과적으로 쿼리셋은 ‘What’으로 시작하고, pub date가 2005년 1월 30일 부터 오늘미만의 객체를 가지고 있게 된다.</p>
 
-<h4 id="filtered-querysets-are-unique">Filtered QuerySets are unique</h4>
+<h5 id="filtered-querysets-are-unique">Filtered QuerySets are unique</h5>
 
 <blockquote>
   <p>Each time you refine a QuerySet, you get a brand-new QuerySet that is in no way bound to the previous QuerySet. Each refinement creates a separate and distinct QuerySet that can be stored, used and reused.</p>
@@ -427,7 +430,7 @@
 
 <p>쿼리셋을 걸러낼 때 마다 당시는 새로운 쿼리셋을 얻게 되며 그 쿼리셋은 이전 쿼리셋에 영향을 주지 않는다. 각각의 걸러내는 과정은 저장될 수 있고 재사용 될 수 있는 분리된 고유의 쿼리셋이다.</p>
 
-<h4 id="querysets-are-lazy">QuerySets are lazy</h4>
+<h5 id="querysets-are-lazy">QuerySets are lazy</h5>
 
 <blockquote>
   <p>QuerySets are lazy – the act of creating a QuerySet doesn’t involve any database activity. You can stack filters together all day long, and Django won’t actually run the query until the QuerySet is evaluated. Take a look at this example:</p>
@@ -628,7 +631,7 @@
 
 <p>예시에서는 연결된 author의 name이 빈 값인 entry와 연결된 blog를 반환한다.만약 이러한 결과를 원하지 않는 것이라면 아래와 같이 사용하면 된다.</p>
 
-<h4 id="spanning-multi-valued-relationships">Spanning multi-valued relationships</h4>
+<h5 id="spanning-multi-valued-relationships">Spanning multi-valued relationships</h5>
 
 <p><a href="/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">posting</a> 내용으로 대체</p>
 
@@ -757,7 +760,7 @@
 
 <p>(그러니까 첫번째와 두 번째 쿼리가 작동할 때 각각 데이터베이스를 치게 되는데, 아래쪽의 예시에서는 두번째 쿼리에서 첫번 째 쿼리의 캐시값을 재사용 하기 때문에 더 효율적이라는 이야기, 더 자세한 쿼리 최적화 관련해서는 다른 페이지의 관련 문서를 읽어봐야 할 것 같다. <a href="https://docs.djangoproject.com/en/2.0/topics/db/optimization/">[Database access optimization]</a></p>
 
-<p><strong>When QuerySets are not cached</strong></p>
+<h5 id="when-querysets-are-not-cached">When QuerySets are not cached</h5>
 
 <blockquote>
   <p>Querysets do not always cache their results. When evaluating only <em>part</em> of the queryset, the cache is checked, but if it is not populated then the items returned by the subsequent query are not cached. Specifically, this means that<a href="https://docs.djangoproject.com/ko/1.11/topics/db/queries/#limiting-querysets">limiting the queryset</a> using an array slice or an index will not populate the cache.</p>
@@ -802,7 +805,7 @@
 
 <p>(간단히 말해서 슬라이스나, 인덱스를 이용해서 쿼리를 날리는 경우 캐시되지 않기 때문에 주의하라는 내용)</p>
 
-<h4 id="complex-lookups-with-q-objects">Complex lookups with Q objects</h4>
+<h3 id="complex-lookups-with-q-objects">Complex lookups with Q objects</h3>
 
 <blockquote>
   <p>keyword argument queries – in <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.filter"><code class="highlighter-rouge">filter()</code></a>, etc. – are “AND”ed together. If you need to execute more complex queries (for example, queries with <code class="highlighter-rouge">OR</code> statements), you can use <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.Q"><code class="highlighter-rouge">Q objects</code></a>.</p>
@@ -899,7 +902,7 @@
 
 <p>(python은 function을 사용할 때 위치인자를 먼저 앞에두고 키워드 인자는 뒷쪽에 두는 순서로 사용해야만 한다는 이야기)</p>
 
-<h4 id="deleting-objects">Deleting objects</h4>
+<h3 id="deleting-objects">Deleting objects</h3>
 
 <blockquote>
   <p>The delete method, conveniently, is named <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.delete"><code class="highlighter-rouge">delete()</code></a>. This method immediately deletes the object and returns the number of objects deleted and a dictionary with the number of deletions per object type. Example:</p>
@@ -953,7 +956,7 @@
 
 <p><code class="highlighter-rouge">delete()</code>메서드는 Manager에서 파생되지 않은 유일한 쿼리셋 메서드라는 점을 기억하세요. 이거는 당신이 우발적으로 <code class="highlighter-rouge">Entry.objects.delete()</code>와 같이 요청해서 모든 엔트리를 지우게끔 하는 것을 방지하기 위한 장치입니다. 만약 모든 객체를 지우고 싶다면 전체 request 쿼리셋 문장을 명시해야 합니다.</p>
 
-<h4 id="copying-model-instances">Copying model instances</h4>
+<h3 id="copying-model-instances">Copying model instances</h3>
 
 <blockquote>
   <p>Although there is no built-in method for copying model instances, it is possible to easily create new instance with all fields’ values copied. In the simplest case, you can just set <code class="highlighter-rouge">pk</code> to <code class="highlighter-rouge">None</code>. Using our blog example:</p>
@@ -1016,6 +1019,111 @@
 
 <p>oto 필드의 경우, save() 전에 관계모델을 지정해 주어야하는데 oto필드의 연결된 모델간의 1대1 연결방식을 유지하기 위함입니다.</p>
 
+<h3 id="updating-multiple-objects-at-once">Updating multiple objects at once</h3>
+
+<blockquote>
+  <p>Sometimes you want to set a field to a particular value for all the objects in a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a>. You can do this with the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet.update"><code class="highlighter-rouge">update()</code></a> method. For example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># Update all the headlines with pub_date in 2007.</span>
+<span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">pub_date__year</span><span class="o">=</span><span class="mi">2007</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">headline</span><span class="o">=</span><span class="s">'Everything is the same'</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>당신의 하나의 쿼리문을 통해서 특정 변수를 필드개체에 입력할 수 있습니다. <code class="highlighter-rouge">update()</code>문을 활용하면 되는데 다음 예시와 같이 활용할 수 있다.</p>
+
+<blockquote>
+  <p>You can only set non-relation fields and <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey"><code class="highlighter-rouge">ForeignKey</code></a> fields using this method. To update a non-relation field, provide the new value as a constant. To update <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey"><code class="highlighter-rouge">ForeignKey</code></a> fields, set the new value to be the new model instance you want to point to. For example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c"># Change every Entry so that it belongs to this Blog.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">blog</span><span class="o">=</span><span class="n">b</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>다른 모델과 관계 설정이 없는 일반 필드와, ForeignKey 필드에 <code class="highlighter-rouge">update()</code>메소드를 사용할 수 있습니다. 다른 모델과 관계 설정이 없는 필드의 경우 새로운 변수를 제공하면 됩니다. ForeignKey 필드의 경우 지정하고자 하는 새로운 모델 인스턴스에 새 변수를 지정할 수 있습니다.</p>
+
+<blockquote>
+  <p>The <code class="highlighter-rouge">update()</code> method is applied instantly and returns the number of rows matched by the query (which may not be equal to the number of rows updated if some rows already have the new value). The only restriction on the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> being updated is that it can only access one database table: the model’s main table. You can filter based on related fields, but you can only update columns in the model’s main table. Example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">b</span> <span class="o">=</span> <span class="n">Blog</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">pk</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c"># Update all the headlines belonging to this Blog.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">select_related</span><span class="p">()</span><span class="o">.</span><span class="nb">filter</span><span class="p">(</span><span class="n">blog</span><span class="o">=</span><span class="n">b</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">headline</span><span class="o">=</span><span class="s">'Everything is the same'</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p><code class="highlighter-rouge">update()</code>메소드는 즉시 적용되며 쿼리문에 의하여 매칭되는 행들의 숫자를 반환합니다(만약 다른 행에서 업데이트 하는 새로운 변수를 이미 가지고 있다면, 리턴하는 행의 숫자는 업데이트된 행의 숫자와 같지 않을 수 있습니다.). 업데이트 되는 쿼리문에 대한 유일한 제약사항은 하나의 데이터베이스 테이블에만 접근 가능하다는 것 입니다: 그 테이블은 해당 모델의 메인 테이블 입니다. 당신은 관계된 필드들을 기반으로 필터를 사용할 수 있습니다. 하지만 모델의 메인 테이블의 열만 새로 추가할 수 있습니다.</p>
+
+<blockquote>
+  <p>Be aware that the <code class="highlighter-rouge">update()</code> method is converted directly to an SQL statement. It is a bulk operation for direct updates. It doesn’t run any <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save"><code class="highlighter-rouge">save()</code></a> methods on your models, or emit the <code class="highlighter-rouge">pre_save</code> or <code class="highlighter-rouge">post_save</code> signals (which are a consequence of calling <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save"><code class="highlighter-rouge">save()</code></a>), or honor the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.DateField.auto_now"><code class="highlighter-rouge">auto_now</code></a> field option. If you want to save every item in a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/querysets/#django.db.models.query.QuerySet"><code class="highlighter-rouge">QuerySet</code></a> and make sure that the <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save"><code class="highlighter-rouge">save()</code></a> method is called on each instance, you don’t need any special function to handle that. Just loop over them and call <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save"><code class="highlighter-rouge">save()</code></a>:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">my_queryset</span><span class="p">:</span>
+    <span class="n">item</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p><code class="highlighter-rouge">update()</code>메소드가 직접적인 방식을 통해 SQL문으로 전환된다는 것을 명심하십시오. 이것은 바로 업데이트를 하기 위한 큰 규모의 작동입니다.  이것은 당신의 모델에서  <code class="highlighter-rouge">save()</code>메소드를 사용하지 않으며, <code class="highlighter-rouge">pre_save</code>나 <code class="highlighter-rouge">post_save</code>와 같은 시그널을 보내거나(둘다 <code class="highlighter-rouge">save()</code>메서드를 호출하기 위한 순서이다), <code class="highlighter-rouge">auto_now</code>필드의 혜택을 받지 않습니다. 만약 모든 아이템들을 하나의 쿼리셋으로 처리하고 싶고, <code class="highlighter-rouge">save()</code>메서드를 각각의 인스턴스마다 확실하게 호출 하고 싶다면, 다른 특별한 함수가 필요하지 않습니다. 그냥 루프를 돌면서 <code class="highlighter-rouge">save()</code>메서드를 호출하면 됩니다.</p>
+
+<blockquote>
+  <p>Calls to update can also use <a href="https://docs.djangoproject.com/ko/1.11/ref/models/expressions/#django.db.models.F"><code class="highlighter-rouge">F expressions</code></a> to update one field based on the value of another field in the model. This is especially useful for incrementing counters based upon their current value. For example, to increment the pingback count for every entry in the blog:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="nb">all</span><span class="p">()</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">n_pingbacks</span><span class="o">=</span><span class="n">F</span><span class="p">(</span><span class="s">'n_pingbacks'</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>다른 필드의 값에 기반하여 특정 필드의 인스턴스 값을 업데이트 하는 작업을  update를 호출과 <code class="highlighter-rouge">F_expressions</code>함께 사용해서 완성할 수 있습니다. 이것은 특별히 이미 존재하는 값을기반으로 하여 숫자를 증가시키는 데에 유용합니다.</p>
+
+<h3 id="related-objects">Related objects</h3>
+
+<blockquote>
+  <p>When you define a relationship in a model (i.e., a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey"><code class="highlighter-rouge">ForeignKey</code></a>, <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.OneToOneField"><code class="highlighter-rouge">OneToOneField</code></a>, or<a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ManyToManyField"><code class="highlighter-rouge">ManyToManyField</code></a>), instances of that model will have a convenient API to access the related object(s).</p>
+
+  <p>Using the models at the top of this page, for example, an <code class="highlighter-rouge">Entry</code> object <code class="highlighter-rouge">e</code> can get its associated <code class="highlighter-rouge">Blog</code>object by accessing the <code class="highlighter-rouge">blog</code> attribute: <code class="highlighter-rouge">e.blog</code>.</p>
+
+  <p>(Behind the scenes, this functionality is implemented by Python <a href="https://docs.python.org/3/howto/descriptor.html">descriptors</a>. This shouldn’t really matter to you, but we point it out here for the curious.)</p>
+
+  <p>Django also creates API accessors for the “other” side of the relationship – the link from the related model to the model that defines the relationship. For example, a <code class="highlighter-rouge">Blog</code> object <code class="highlighter-rouge">b</code> has access to a list of all related <code class="highlighter-rouge">Entry</code> objects via the <code class="highlighter-rouge">entry_set</code> attribute: <code class="highlighter-rouge">b.entry_set.all()</code>.</p>
+
+  <p>All examples in this section use the sample <code class="highlighter-rouge">Blog</code>, <code class="highlighter-rouge">Author</code> and <code class="highlighter-rouge">Entry</code> models defined at the top of this page.</p>
+</blockquote>
+
+<p>만약 특정모델에 관계를 정의 했다면(ForeignKey, OneToOneField, 혹은 ManyToManyField), 해당 모델의 인스턴스는 관계된 모델에 접근하기 위한 편리한 API를 가질 것 입니다.</p>
+
+<p>예를 들어 이페이지 꼭대기에 있는 모델을 사용할 경우, 하나의 Entry object 인 e는 blog라는 속성에 접근하는 것을 통하여 e와 연관된 Blog 오브젝트를 가질 수 있습니다.</p>
+
+<p>(이러한 장면의 뒤에서, 해당 기능은  Python의 descriptors의 기능이 적용되었습니다. 이것은 크게 중요하지는 않지만 궁금한 사람들을 위해 남겨두었습니다.)</p>
+
+<p>장고역시 관계의 다른쪽 방향(관계설정의 대상이 되는 모델에서 관계설정이 정의된 모델로의 방향, 역참조)의 접근을 위한 API를 생성합니다. 예를 들자면 Blog 오브젝트인 b는 <code class="highlighter-rouge">entry_set</code>속성을 통해서(b.entry_set.all()) 관계설정이 된 모든 Entry오브젝트의 리스트에 접근한다.</p>
+
+<p>이번섹션의 모든 예문은 페이지 가장 위에 있는 샘플인 Blog, Author 그리고 Entry 모델을 사용한다.</p>
+
+<h4 id="one-to-many-relationships">One-to-many relationships</h4>
+
+<h5 id="forward">Forward</h5>
+
+<blockquote>
+  <p>If a model has a <a href="https://docs.djangoproject.com/ko/1.11/ref/models/fields/#django.db.models.ForeignKey"><code class="highlighter-rouge">ForeignKey</code></a>, instances of that model will have access to the related (foreign) object via a simple attribute of the model.</p>
+
+  <p>Example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">e</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="o">.</span><span class="n">blog</span> <span class="c"># Returns the related Blog object.</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>만약 모델이 ForeignKey를 가졌다면, 해당 모델의 인스턴스는 간단한 모델 속성을 통하여 관계된(foreign)오브젝트로의 접근이 가능하다.</p>
+
+<blockquote>
+  <p>You can get and set via a foreign-key attribute. As you may expect, changes to the foreign key aren’t saved to the database until you call <a href="https://docs.djangoproject.com/ko/1.11/ref/models/instances/#django.db.models.Model.save"><code class="highlighter-rouge">save()</code></a>. Example:</p>
+
+  <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;&gt;&gt;</span> <span class="n">e</span> <span class="o">=</span> <span class="n">Entry</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="o">.</span><span class="n">blog</span> <span class="o">=</span> <span class="n">some_blog</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">e</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</code></pre></div>  </div>
+</blockquote>
+
+<p>foreign-key 속성을 통해 값을 직접 값을 설정하거나 가져올 수 있습니다. 이미 예상하고 있듯이 foreign key를 바꾸는 것은 <code class="highlighter-rouge">save()</code>메서드를 호출하기 전까지는 데이터베이스에 저장되지 않습니다.</p>
 
         
       </section>
