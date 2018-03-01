@@ -9,19 +9,19 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>            1월22일~28일 - Record      Organize      Make it mine      </title>
-<meta name="description" content="1월 22일 월요일">
+<!-- begin _includes/seo.html --><title>            2월26일~3월02일 - Record      Organize      Make it mine      </title>
+<meta name="description" content="2월 28일 수요일">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Record|Organize|Make it mine">
-<meta property="og:title" content="1월22일~28일">
-<meta property="og:url" content="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/">
+<meta property="og:title" content="2월26일~3월02일">
+<meta property="og:url" content="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/">
 
 
-  <meta property="og:description" content="1월 22일 월요일">
+  <meta property="og:description" content="2월 28일 수요일">
 
 
 
@@ -40,7 +40,7 @@
   
 
 
-<link rel="canonical" href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/">
+<link rel="canonical" href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/">
 
 
 
@@ -211,15 +211,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="1월22일~28일">
-    <meta itemprop="description" content="1월 22일 월요일">
+    <meta itemprop="headline" content="2월26일~3월02일">
+    <meta itemprop="description" content="2월 28일 수요일">
     <meta itemprop="datePublished" content="January 22, 2018">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">1월22일~28일
+          <h1 class="page__title" itemprop="headline">2월26일~3월02일
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -235,114 +235,21 @@
 
       <section class="page__content" itemprop="text">
         
-        <h3 id="1월-22일-월요일">1월 22일 월요일</h3>
-
-<ol>
-  <li>Try-Django-Tutorial youtube 강의 9커밋까지 완료</li>
-  <li>하루3분 네트워크 독서</li>
-  <li>블로그 정리
-    <ul>
-      <li>about page 내용 작성 및 records 내용 정리
--&gt; 이전부터 쭉 작성해 왔던 것들인데 미완성 된 부분도 있고 구성에 일관성이 없어서 한번 다시 쭉 정리해야할 필요성을 느낌</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="1월-23일-화요일">1월 23일 화요일</h3>
-
-<ol>
-  <li>
-    <p>Try-Django-Tutorial youtube 강의 17커밋까지 완료</p>
-
-    <ul>
-      <li>
-        <p>class based view</p>
-      </li>
-      <li>
-        <p>template include, extends</p>
-      </li>
-      <li>
-        <p>model</p>
-      </li>
-      <li>
-        <p>Model 에서 DateTimeField 관련
-모델에 DateTimeField를 적용 시켰는데 admin page에 보이질 않는다. 동영상 강의 에서는 분명히 보이는데 내가 안보이는 거라서 검색을 해봤고 stackoverflow에 다음과 같은 솔루션을 얻었다.</p>
-
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>If you really want to see date in the admin panel, you can add readonly_fields in admin.py:
-
-class RatingAdmin(admin.ModelAdmin):
-    readonly_fields = ('date',)
-
-admin.site.register(Rating,RatingAdmin)
-Any field you specify will be added last after the editable fields. To control the order you can use the  fields options.
-
-Additional information is available from the Django docs.
-</code></pre></div>        </div>
-
-        <p><a href="https://stackoverflow.com/questions/6386172/datetimefield-doesnt-show-in-admin-system">답변링크</a></p>
-
-        <p>그리고 그대로 적용해 보았고, 수정할 수 없는 상태로 잘 나온다.
-장고 문서에 아래와 같이 나와있어서</p>
-
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>As currently implemented, setting auto_now or auto_now_add to True will cause the field to have editable=False and blank=True set.
-</code></pre></div>        </div>
-
-        <p>모델 속성을 다음과 같이 바꾸고</p>
-
-        <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>timestamp = models.DateTimeField(auto_now_add=True, editable=True, blank=True)
-updated = models.DateTimeField(auto_now=True, editable=True, blank=True)
-</code></pre></div>        </div>
-
-        <p>다시 admin에 나오나 확인해 봤는데 안나온다.
-auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 강제하는 것 같다.
-혹시 몰라서 모든 속성값을 지우고 admin에 나오나 해봤는데 나온다.</p>
-
-        <p>결국 auto_now_add, 와 auto_now 속성을 적용하고 admin에서 확인하기 위해서는 stackoverflow에 나온데로 admin 모듈에서 class로 설정해주는 방법이 현재로썬 최선인 것 같다.</p>
-      </li>
-      <li>
-        <p>query set</p>
-      </li>
-      <li>
-        <p>장고 문서 복습 : <a href="/records/2017-10-13-django_model_MakingQueries/">Making queries</a>, Templates(overview)</p>
-      </li>
-    </ul>
-  </li>
-  <li>
-    <p>하루3분 네트워크 교실</p>
-  </li>
-</ol>
-
-<h3 id="1월-24일-수요일">1월 24일 수요일</h3>
-
-<ol>
-  <li>장고 문서 복습 <a href="/records/2017-10-13-django_model_MakingQueries/">Making queries</a>, 관련내용 <a href="/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">posting</a></li>
-</ol>
-
-<h3 id="1월-25일-목요일">1월 25일 목요일</h3>
+        <h3 id="2월-28일-수요일">2월 28일 수요일</h3>
 
 <ul>
-  <li>몸이 아파서 집중도 잘 안되고 진도도 잘 안빠지는 하루였다.. 
-잘 이해되지 않는 부분을 꼼꼼히 챙겨가며 진도를 나가려 하니 원하는 만큼의 분량을 뽑아내지 못하는 일이 부지기수… try django tutorial의 경우 빠르게 만들어 나가는 노력이 더 필요하다.</li>
-  <li>git hub blog의 theme를 내가 원하는 모양으로 customizing 하는데에 있어서 css 때문에 어려움을 겪었다. 패스트 캠퍼스 초창기에 공부했던 sass같은 내용들이 잘 기억이 안나고 혼선이 생겨서, 장고문서 복습 이후에 온라인에 나와있는 강의를 빠르게 한번 들어보는 것도 괜찮을 것 같다.</li>
-  <li>그렇게 css를 배워서 bootstrap을 잘 쓰고 싶다는 욕망이 생김</li>
+  <li>한동한 til 작성에 미진했다. 한주씩 번갈아가며 아프고 나니 의욕 급상실…</li>
+  <li>아무것도 안한건 아니고 커니핸교수의 Hello Digital World2회독, 하루3분 네트워크교실2회독을 마무리 했다. 독후감이라도 써놔서 증거로 남겨야하나 싶다. 이렇게 공개적으로 써놓으니 누군가 보지도 않을것 같지만 뭔가 지키지도 못할 약속을 함부로 써놓기가 부담이 된다. (물론 이렇게 부담가지고 공부 열심히 하려고 블로그도 하는거지만…). 그래서 애매하게 마무으리…. 시간날 때 꼭 쓰는걸로! 비전공자 출신으로서 두 책에 굉장히 큰 도움을 받았다. 저자에게도 고맙고 시간날 때마다 두고 읽어봐도 좋을 것 같다.</li>
+  <li>중간에 못쓰는 날도 있긴 하지만 그래도 오뚜기처럼 다시 시작하고, 또 끊겨도 뻔뻔하게 다시 시작하는게 내 장점이라면 장점인 것 같다. (그래서 til 오늘부터 다시 시작하려구요.. ㅠㅋ)</li>
 </ul>
 
 <p><strong>오늘 한일</strong></p>
 
 <ol>
-  <li>장고 문서 복습 <a href="/records/2017-10-13-django_model_MakingQueries/">Making queries</a></li>
-  <li>try django tutorial 26커밋 까지 완성</li>
+  <li>알고리즘 문제 풀이 <a href="https://github.com/zooozoo/algorithm">(git hub)</a>
+개발자로서 취직하기 위해 어떤걸 해야할지 고민하던 찰나에 큰 깨달음을 얻어 알고리즘 문제를 한 두시간 씩 투자해서 하루에 한문제씩 풀어보려고 시작한건데 학원에서 할 때도 마찬가지 였지만 나는 시간이 오래걸린다. 힌트없이 풀려고 하니 그런건지 잘 모르겠지만 그래도 이렇게 풀고나면 시간이 너무 오래걸리는 관계로 1주일에 최소 2문제 기본  3문제씩 풀어보려고 한다. 오늘 했던 문제만 해도 문제를 잘못읽어서 더 어려운 방법을 소환하고 있다가 문제를 다시 고쳐 읽고는 내손으로 해결했다. 역시다 다른사람들의 문제풀이에서 감탄을 한번 한 후에 참고겸 해서 기록해 놓았다. 
+알고리즘 문제를 풀면서 의문점은 문제를 풀면서 문제를 해결하는데 들어가는 시간도 점점 줄어들지 의문이다. 어쨌든 알고리즘만 붙잡고 있을 수는 없기에 시간분배를 잘 해야겠다는 생각이 많이 들었다.</li>
 </ol>
-
-<h3 id="1월-26일-금요일">1월 26일 금요일</h3>
-
-<p><strong>오늘 한일</strong></p>
-
-<ol>
-  <li>장고 문서 복습 <a href="/records/2017-10-13-django_model_MakingQueries/">Making queries</a></li>
-  <li>try django tutorial 35커밋 까지 완성</li>
-</ol>
-
 
         
       </section>
@@ -381,11 +288,11 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
       
   <nav class="pagination">
     
-      <a href="https://zooozoo.github.io/posts/2018-01-17-atom/" class="pagination--pager" title="UX/UI fontsize customzing at atom editor
+      <a href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/" class="pagination--pager" title="2월12일~2월18일
 ">Previous</a>
     
     
-      <a href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9429%EC%9D%BC~2%EC%9B%9404%EC%9D%BC/" class="pagination--pager" title="1월29일~2월04일
+      <a href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" class="pagination--pager" title="전문가를 위한 파이썬
 ">Next</a>
     
   </nav>
@@ -475,35 +382,6 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
     
     <h2 class="archive__item-title" itemprop="headline">
       
-        <a href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/" rel="permalink">2월26일~3월02일
-</a>
-      
-    </h2>
-    
-      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
-
-
-
-
-  1 minute read
-</p>
-    
-    <p class="archive__item-excerpt" itemprop="description">2월 28일 수요일
-
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
         <a href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/" rel="permalink">2월12일~2월18일
 </a>
       
@@ -524,8 +402,38 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
 </div>
 
         
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9405%EC%9D%BC~2%EC%9B%9411%EC%9D%BC/" rel="permalink">2월05일~2월11일
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">2월 06일 화요일
+
+</p>
+  </article>
+</div>
+
+        
       </div>
     </div>
+  
   
 </div>
 
@@ -585,8 +493,8 @@ auto_now_add, 와 auto_now 속성값이 editable과 blank를 True 설정되게 �
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/til/1월22일~28일"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/til/2월26일~3월02일"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-02-20T23:18:34+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">Spanning multi-valued relationships</title><link href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-02-28T21:05:31+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">Spanning multi-valued relationships</title><link href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
 
 &lt;p&gt;해당 내용을 이미 알고 있고 스압을 느끼신다면 &lt;a href=&quot;https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django&quot;&gt;stackoverflow 의 답변&lt;/a&gt;으로 바로 가보시길…&lt;/p&gt;
 
@@ -211,7 +211,21 @@ Order of filter doesn’t matter we can also write above query as:&lt;/p&gt;
 
 &lt;p&gt;이해하고 다시 적은 내용이지만 다시 생각해 봐도 글로 설명하는 것 보다 예시를 통해 이해하는 편이 훨씬 도움이 되는 듯 하다.&lt;/p&gt;
 
-&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="django" /><summary type="html">장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/Fluent_Python</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">2월12일~2월18일</title><link href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/" rel="alternate" type="text/html" title="2월12일~2월18일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/">&lt;h3 id=&quot;2월-12일-월요일&quot;&gt;2월 12일 월요일&lt;/h3&gt;
+&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="django" /><summary type="html">장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/Fluent_Python</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">2월26일~3월02일</title><link href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/" rel="alternate" type="text/html" title="2월26일~3월02일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/">&lt;h3 id=&quot;2월-28일-수요일&quot;&gt;2월 28일 수요일&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;한동한 til 작성에 미진했다. 한주씩 번갈아가며 아프고 나니 의욕 급상실…&lt;/li&gt;
+  &lt;li&gt;아무것도 안한건 아니고 커니핸교수의 Hello Digital World2회독, 하루3분 네트워크교실2회독을 마무리 했다. 독후감이라도 써놔서 증거로 남겨야하나 싶다. 이렇게 공개적으로 써놓으니 누군가 보지도 않을것 같지만 뭔가 지키지도 못할 약속을 함부로 써놓기가 부담이 된다. (물론 이렇게 부담가지고 공부 열심히 하려고 블로그도 하는거지만…). 그래서 애매하게 마무으리…. 시간날 때 꼭 쓰는걸로! 비전공자 출신으로서 두 책에 굉장히 큰 도움을 받았다. 저자에게도 고맙고 시간날 때마다 두고 읽어봐도 좋을 것 같다.&lt;/li&gt;
+  &lt;li&gt;중간에 못쓰는 날도 있긴 하지만 그래도 오뚜기처럼 다시 시작하고, 또 끊겨도 뻔뻔하게 다시 시작하는게 내 장점이라면 장점인 것 같다. (그래서 til 오늘부터 다시 시작하려구요.. ㅠㅋ)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;오늘 한일&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;
+개발자로서 취직하기 위해 어떤걸 해야할지 고민하던 찰나에 큰 깨달음을 얻어 알고리즘 문제를 한 두시간 씩 투자해서 하루에 한문제씩 풀어보려고 시작한건데 학원에서 할 때도 마찬가지 였지만 나는 시간이 오래걸린다. 힌트없이 풀려고 하니 그런건지 잘 모르겠지만 그래도 이렇게 풀고나면 시간이 너무 오래걸리는 관계로 1주일에 최소 2문제 기본  3문제씩 풀어보려고 한다. 오늘 했던 문제만 해도 문제를 잘못읽어서 더 어려운 방법을 소환하고 있다가 문제를 다시 고쳐 읽고는 내손으로 해결했다. 역시다 다른사람들의 문제풀이에서 감탄을 한번 한 후에 참고겸 해서 기록해 놓았다. 
+알고리즘 문제를 풀면서 의문점은 문제를 풀면서 문제를 해결하는데 들어가는 시간도 점점 줄어들지 의문이다. 어쨌든 알고리즘만 붙잡고 있을 수는 없기에 시간분배를 잘 해야겠다는 생각이 많이 들었다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">2월 28일 수요일</summary></entry><entry><title type="html">2월12일~2월18일</title><link href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/" rel="alternate" type="text/html" title="2월12일~2월18일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/">&lt;h3 id=&quot;2월-12일-월요일&quot;&gt;2월 12일 월요일&lt;/h3&gt;
 
 &lt;p&gt;&lt;strong&gt;오늘 한일&lt;/strong&gt;&lt;/p&gt;
 
@@ -476,57 +490,4 @@ html, body, .tree-view, .tab-bar .tab {
 
 &lt;p&gt;누군가에겐 영감을 주고 스스로에겐 동기부여를 만드는 TIL 게시판이 되었으면 좋겠습니다.&lt;/p&gt;
 
-&lt;p&gt;-TIL을 시작하며-&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">초보몽키라는 이름의 블로그를 운영하고 계신 이현주님의 블로그를 보면 Today I Learned 라는 카테고리로 포스팅을 해놓았습니다.</summary></entry><entry><title type="html">Docker관련</title><link href="https://zooozoo.github.io/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" rel="alternate" type="text/html" title="Docker관련" /><published>2017-11-16T00:00:00+09:00</published><updated>2017-11-16T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/docker%EA%B4%80%EB%A0%A8</id><content type="html" xml:base="https://zooozoo.github.io/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/">&lt;h1 id=&quot;docker-세팅&quot;&gt;Docker 세팅&lt;/h1&gt;
-
-&lt;p&gt;도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run ubuntu:16.04
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker run --rm it ubuntu:16:04 /bin/bash
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.&lt;/p&gt;
-
-&lt;p&gt;Dockerfile.base 이미지 만드는 명령어&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker build -t base -f Dockerfile.base .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Dockerfile.base를 기준으로 우리가 쓸 도커(container) 만드는 명령어&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker build -t eb .
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;만든 이미지 확인 명령어&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker images
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;docker(Container) 실행시키는 명령어(예: eb)&lt;/p&gt;
-
-&lt;p&gt;(마지막의 &lt;code class=&quot;highlighter-rouge&quot;&gt;/bin/zsh&lt;/code&gt;은 &lt;code class=&quot;highlighter-rouge&quot;&gt;-it&lt;/code&gt;옵션으로 프로그램을 실행시키기 위해 입력해주는 것, &lt;code class=&quot;highlighter-rouge&quot;&gt;-it&lt;/code&gt;터미널 형식으로 연다는 뜻, &lt;code class=&quot;highlighter-rouge&quot;&gt;--rm&lt;/code&gt;옵션은 컨테이너가 꺼졌을 때 삭제한다는 의미)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run --rm -it eb /bin/zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;docker를 외부랑 연결시키기 위해서 옵션을 추가한 멸영어&lt;/p&gt;
-
-&lt;p&gt;(우리가 8012로 접근하면 docker는 80으로 받는다. 우리가 8013으로 접근하면 docker는  8000으로 받는다. 80번 포트와 8000포트를 둘다 테스트해보고 싶을 때 이런식으로 쓴다)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;sudo docker run --rm -it -p 8012:80 -p 8013:8000 eb /bin/zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;켜져있는 도커에 접속할 수 있는 명령어 (4317은 docker id)&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker exec -it 4317 /bin/zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;위와같은 명령어를 아래와 같이 접속도 가능하다.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker exec -it 4317 zsh
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;실행되고 있는 이미지 파일(container) 정보 확인하는 명령어&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker ps
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">Docker 세팅</summary></entry></feed>
+&lt;p&gt;-TIL을 시작하며-&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">초보몽키라는 이름의 블로그를 운영하고 계신 이현주님의 블로그를 보면 Today I Learned 라는 카테고리로 포스팅을 해놓았습니다.</summary></entry></feed>

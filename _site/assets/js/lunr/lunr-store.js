@@ -154,6 +154,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9412%EC%9D%BC~2%EC%9B%9418%EC%9D%BC/",
         "teaser":null},{
+        "title": "2월26일~3월02일",
+        "excerpt":"2월 28일 수요일 한동한 til 작성에 미진했다. 한주씩 번갈아가며 아프고 나니 의욕 급상실… 아무것도 안한건 아니고 커니핸교수의 Hello Digital World2회독, 하루3분 네트워크교실2회독을 마무리 했다. 독후감이라도 써놔서 증거로 남겨야하나 싶다. 이렇게 공개적으로 써놓으니 누군가 보지도 않을것 같지만 뭔가 지키지도 못할 약속을 함부로 써놓기가 부담이 된다. (물론 이렇게 부담가지고 공부 열심히 하려고...","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/",
+        "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
         "tags": [],
