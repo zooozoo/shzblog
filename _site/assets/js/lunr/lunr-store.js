@@ -168,4 +168,9 @@ var store = [{
         "excerpt":"장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)해당 내용을 이미 알고 있고 스압을 느끼신다면 stackoverflow 의 답변으로 바로 가보시길…해당 부분은 Spanning multi-valued relationships 라는 부분인데 ForeignKey나 Many-to-Many관계에있는 모델중에서 관계된 모델을 조건으로 해서 filtering...","categories": ["posts"],
         "tags": ["django"],
         "url": "https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/",
+        "teaser":null},{
+        "title": "Url과uri",
+        "excerpt":"그림으로 배우는 http &amp; network basic을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)먼저 무엇에 대한 약자인지 알아봅시다. URL - Uniform Resource Locator URI - Uniform Resource Identifier문자 그대로 해석해 보자면 URL은 “정형화된 리소스 위치표시” 라고 할 수...","categories": ["posts"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/posts/2018-03-03-URL%EA%B3%BCURI/",
         "teaser":null}]
