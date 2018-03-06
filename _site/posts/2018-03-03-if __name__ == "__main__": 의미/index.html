@@ -1,0 +1,623 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>            If name == “main”: 의미 - Record      Organize      Make it mine      </title>
+<meta name="description" content="if __name__ == &quot;__main__&quot;: 의미">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Record|Organize|Make it mine">
+<meta property="og:title" content="If name == “main”: 의미">
+<meta property="og:url" content="https://zooozoo.github.io/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/">
+
+
+  <meta property="og:description" content="if __name__ == &quot;__main__&quot;: 의미">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-03-03T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://zooozoo.github.io/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "zoozoo",
+      "url" : "https://zooozoo.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://zooozoo.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://zooozoo.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://zooozoo.github.io/">HOME</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/posts/" >POSTS</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/records/" >RECORDS</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/til/" >TIL</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/about/" >ABOUT</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+        
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+      <li>
+          <span class="nav__sub-title"> Post's Tags Nav</span>
+        <ul>
+          
+            
+            <li><a href="/tags/ide" class="">ide</a></li>
+          
+            
+            <li><a href="/tags/atom" class="">atom</a></li>
+          
+            
+            <li><a href="/tags/django" class="">django</a></li>
+          
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+      
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="If name == “main”: 의미">
+    <meta itemprop="description" content="if __name__ == &quot;__main__&quot;: 의미">
+    <meta itemprop="datePublished" content="March 03, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">If <strong>name</strong> == “<strong>main</strong>”: 의미
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="if-__name__--__main__-의미"><code class="highlighter-rouge">if __name__ == "__main__"</code>: 의미</h1>
+
+<p>해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.</p>
+
+<p>원래 처음의 생각은 검색으로 나온 정보를 내 언어로 다시 정리하려고 했다.(그래야 이해도 잘 되고, 내가 궁금한 부분을 명확하게 정리할 수 있기 때문이다)</p>
+
+<p>그러나 구글신은 이러한 나의 마음을 이미 알기라고 한듯 이미 미친듯이 잘 정리된 블로그를 소개해 주었다.</p>
+
+<p>그래도 내가 다시 정리하려고 했는데 다시보니 그 블로그 글을 똑같이 타이핑하는 것과 다름 없었다. 그래서 해당 블로그 글을 그대로 가져오고 출처를 남기기로 했다.</p>
+
+<p>그냥 링크만 남겨도 될 것 같지만 혹시나 그 글이 없어질 것을 염려했고, 내 저장소에 직접 남기고 싶었기 때문에 글을 복사해 왔다.</p>
+
+<p>아래는 해당 글과 링크</p>
+
+<p>출처: http://pinocc.tistory.com/175 [땅뚱 창고]</p>
+
+<hr />
+
+<p>참고 : <a href="http://stackoverflow.com/questions/419163/what-does-if-name-main-do">http://stackoverflow.com/questions/419163/what-does-if-name-main-do</a></p>
+
+<p>​         <a href="http://bytebaker.com/2008/07/30/python-namespaces/">http://bytebaker.com/2008/07/30/python-namespaces/</a></p>
+
+<p>파이썬 프로그래밍을 보다보면 아래와 같은 문장을 만나곤 한다. 정확하게 어떤 의미인지 알고 싶어 여기저기 검색한 내용을 정리했다.</p>
+
+<p><code class="highlighter-rouge">if __name__ == "__main__"</code></p>
+
+<p>이 문장을 이해하기 위해서는 파이썬의 namespace 라는 개념을 이해해야 한다. namespace 를 얘기하기 이전에 파이썬에서 name(변수명)이 의미하는 것을 생각해보자.</p>
+
+<p>아래와 같이 파이썬에서는 name 에 값을 줄 수 있다. 그리고 값 뿐 아니라 function 과 같은 형태도 name 을 줄 수 있다. 또한 동일한 name을 재사용할 수 있다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">i</span> <span class="o">=</span> <span class="mi">12</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+
+<span class="n">l</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+
+<span class="k">def</span> <span class="nf">foo</span><span class="p">():</span>
+
+<span class="k">print</span><span class="p">(</span><span class="s">"This is a function"</span><span class="p">)</span>
+
+<span class="n">f</span> <span class="o">=</span> <span class="n">foo</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="mi">12</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="s">"Hello World"</span>
+
+<span class="n">var</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>파이썬에서 names는 파이썬 객체 시스템과 함께 간다고 생각하면 된다. 즉 integer, string, list 및 function 도 모두 파이썬에서는 객체형태로 표현되고, name은 그 객체에 접근하기 위해 사용한다.</p>
+
+<p><strong>namespace 와 module</strong></p>
+
+<p>namespace 는 names 를 담을 수 있는 공간이라고 생각하면 된다. 파이썬에서 namespace 를 이해하기 위해서 파이썬 모듈에 대한 약간의 이해가 필요하다. 파이썬에서 module 은 파이썬 코드를 담고 있는 파일이다. 해당 파일에는 파이썬 클래스, 함수 또는 단순하게 names 의 리스트가 들어있을 수 있다.</p>
+
+<p>각 모듈은 자신만의 유일한 namespace 를 갖는다.(모듈의 namespace 이름은 보통 모듈의 파일이름과 같다.) 그래서 동일한 모듈내에서 동일한 이름을 가지는 클래스나 함수를 정의할 수 없다. 또한 모듈은 각각 완벽하게 독립적(isolated)이기 때문에(namespace 가 다르기 때문에), 두 모듈은 동일한 이름을 갖는 클래스나 함수를 정의할 수 있다.</p>
+
+<p><strong>import 와 namespace</strong></p>
+
+<p>import 명령을 가지고 namespace 에 대해서 조금 더 알아보도록 하자. module 을 import 하는 방법은 여러가지가 있다. 방법에 따라 namespace 가 달라 질 수가 있다.</p>
+
+<p>\1. import <module_name></module_name></p>
+
+<p>모듈을 import 하는 가장 간단한 방법이고, 일반적으로 추천되는 방법이다. 이렇게 import 를 하게 되면 module 의 name 을 prefix 로 사용함으로써 모듈의 namespace 에 접근할 수 있다.</p>
+
+<p>아래 예제에서 sys 는 모듈 이름이고, path 는 sys 모듈의 namespace 에 담겨있는 name 이다. 따라서 path 에 접근을 하기 위해서는 모듈 이름인 sys 를 prefix 로 붙여서 sys 모듈의 namespace 에 접근한 후에 사용해야 한다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span>
+
+<span class="p">[</span><span class="s">''</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">Lib</span><span class="err">\</span><span class="s">idlelib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Windows</span><span class="err">\</span><span class="s">system32</span><span class="err">\</span><span class="s">python34.zip'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">DLLs'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib</span><span class="err">\</span><span class="s">site-packages'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>\2. from <module_name> import &lt;name,&gt;</module_name></p>
+
+<p>모듈의 namespace 에서 import 에서 지정된 name 들을 직접 가져오도록 한다. 이렇게 하게 되면 import 이후에 지정한 name 들은 module 의 name을 prefix 로 지정하지 않고도 접근이 가능하다. 하지만, 이 경우에 module 에서 import 된 이름과 main script 에서 지정된 이름이 동일한 경우, 나중에 정의되는 이름으로 대체되어서 이전 것에 접근이 불가능하게 된다.</p>
+
+<p>단지 몇개의 name 만 필요하다고 명확하게 알고 있는 경우에 사용하는 것이 유용하다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">path</span>
+
+<span class="n">path</span>
+
+<span class="p">[</span><span class="s">''</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">Lib</span><span class="err">\</span><span class="s">idlelib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Windows</span><span class="err">\</span><span class="s">system32</span><span class="err">\</span><span class="s">python34.zip'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">DLLs'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib</span><span class="err">\</span><span class="s">site-packages'</span><span class="p">]</span>
+</code></pre></div></div>
+
+<p>\3. from <module_name> import *</module_name></p>
+
+<p>2 와 동일하지만, module 에 있는 모든 name 을 직접 현재 namespace 로 가져오게 된다. 이렇게 되면 namespace 가 섞이게 되어서 일반적으로 사용을 권장하지 않는다. 차라리 첫번째 타입(1번)의 import 를 사용하는 것이 좋다.</p>
+
+<p><strong>__main__ namespace</strong></p>
+
+<p>import 의 경우에 namespace 가 처리되는 것을 알아보았는데, import 가 아니고 파이썬 인터프리터가 최초로 파일을 읽어서 실행하는 경우를 살펴보자. 파이썬 인터프리터는 소스파일을 읽고, 그 안의 모든 코드를 실행하게 되는데, 코드를 실행하기 전에 특정한 변수값을 정의한다. 그중 하나가 <strong>name</strong> 이라는 변수를 <strong>main</strong> 으로 세팅을 한다.</p>
+
+<p>즉 python script.py 와 같이 직접 쉘에서 실행하는 경우에는 파이썬 인터프리터가 해당 script.py 모듈을 script 라는 namespace 가 아닌__main__ 이라는 namespace 로 간주하여 다루게 된다.</p>
+
+<p>따라서 처음에 궁금했던 아래 문장은 ‘만일 이 파일이 인터프리터에 의해서 실행되는 경우라면’ 이라는 의미를 갖는다.</p>
+
+<p><code class="highlighter-rouge">if __name__ == "__main__"</code></p>
+
+<p>즉 본인이 구현한 코드가 다른 파이썬 코드에 의해서 모듈로 import 될 경우도 있을 수 있고, 파이썬 인터프리터에 의해서 직접 실행될 경우도 있을 수 있는데, 위 코드는 인터프리터에 의해서 직접 실행될 경우에만 실행하도록 하고 싶은 코드 블럭이 있는 경우에 사용한다.</p>
+
+<p>아래 예제 코드와 결과를 보면 이해하기 쉽다.(참고: <a href="http://ibiblio.org/g2swap/byteofpython/read/module-name.html">http://ibiblio.org/g2swap/byteofpython/read/module-name.html</a>)</p>
+
+<p><code></code></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/usr/bin/python</span>
+<span class="c"># Filename: using_name.py</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">'This program is being run by itself'</span>
+<span class="k">else</span><span class="p">:</span>
+	<span class="k">print</span> <span class="s">'I am being imported from another module'</span>
+</code></pre></div></div>
+
+<output>
+
+```
+$ python using_name.py
+This program is being run by itself
+
+$ python
+&gt;&gt;&gt; import using_name
+I am being imported from another module
+&gt;&gt;&gt;
+
+```
+
+</output>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://zooozoo.github.io/categories/posts" class="page__taxonomy-item" rel="tag">posts</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-03-03T00:00:00+09:00">March 03, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://zooozoo.github.io/posts/2018-03-03-URL%EA%B3%BCURI/" class="pagination--pager" title="Url과uri
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a Comment</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/posts/2018-03-03-URL%EA%B3%BCURI/" rel="permalink">Url과uri
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">URL과 URI
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="permalink">Spanning multi-valued relationships
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  6 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">장고의 모델 문서를 공부하다가(Making Queries) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="permalink">전문가를 위한 파이썬
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  less than 1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/til/2018-01-22-2%EC%9B%9426%EC%9D%BC~3%EC%9B%9402%EC%9D%BC/" rel="permalink">2월26일~3월02일
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">2월 28일 수요일
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/zooozoo"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://zooozoo.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 zoozoo. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://zooozoo.github.io/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+
+  
+  
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://zooozoo.github.io/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/posts/if __name__ == "__main__": 의미"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hunzoos-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

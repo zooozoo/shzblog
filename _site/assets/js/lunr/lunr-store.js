@@ -170,7 +170,12 @@ var store = [{
         "url": "https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/",
         "teaser":null},{
         "title": "Url과uri",
-        "excerpt":"그림으로 배우는 http &amp; network basic을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)먼저 무엇에 대한 약자인지 알아봅시다. URL - Uniform Resource Locator URI - Uniform Resource Identifier문자 그대로 해석해 보자면 URL은 “정형화된 리소스 위치표시” 라고 할 수...","categories": ["posts"],
+        "excerpt":"URL과 URI그림으로 배우는 http &amp; network basic을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)먼저 무엇에 대한 약자인지 알아봅시다. URL - Uniform Resource Locator URI - Uniform Resource Identifier문자 그대로 해석해 보자면 URL은 “정형화된 리소스 위치표시” 라고 할...","categories": ["posts"],
         "tags": [],
         "url": "https://zooozoo.github.io/posts/2018-03-03-URL%EA%B3%BCURI/",
+        "teaser":null},{
+        "title": "If __name__ == \"__main__\": 의미",
+        "excerpt":"if __name__ == \"__main__\": 의미해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.원래 처음의 생각은 검색으로 나온 정보를 내 언어로 다시 정리하려고 했다.(그래야 이해도 잘 되고, 내가 궁금한 부분을 명확하게 정리할 수 있기 때문이다)그러나 구글신은 이러한 나의 마음을 이미 알기라고 한듯 이미 미친듯이 잘 정리된...","categories": ["posts"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/",
         "teaser":null}]
