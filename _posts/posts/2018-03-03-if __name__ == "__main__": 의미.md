@@ -16,9 +16,9 @@
 
 ------
 
-참고 : <http://stackoverflow.com/questions/419163/what-does-if-name-main-do>
+참고 : [http://stackoverflow.com/questions/419163/what-does-if-name-main-do](http://stackoverflow.com/questions/419163/what-does-if-name-main-do)
 
-​         <http://bytebaker.com/2008/07/30/python-namespaces/>
+​         [http://bytebaker.com/2008/07/30/python-namespaces/](http://bytebaker.com/2008/07/30/python-namespaces/)
 
 파이썬 프로그래밍을 보다보면 아래와 같은 문장을 만나곤 한다. 정확하게 어떤 의미인지 알고 싶어 여기저기 검색한 내용을 정리했다.
 
@@ -60,37 +60,37 @@ namespace 는 names 를 담을 수 있는 공간이라고 생각하면 된다. �
 
 import 명령을 가지고 namespace 에 대해서 조금 더 알아보도록 하자. module 을 import 하는 방법은 여러가지가 있다. 방법에 따라 namespace 가 달라 질 수가 있다.
 
-\1. import <module_name>
+1. import <module_name>
 
-모듈을 import 하는 가장 간단한 방법이고, 일반적으로 추천되는 방법이다. 이렇게 import 를 하게 되면 module 의 name 을 prefix 로 사용함으로써 모듈의 namespace 에 접근할 수 있다.
+   모듈을 import 하는 가장 간단한 방법이고, 일반적으로 추천되는 방법이다. 이렇게 import 를 하게 되면 module 의 name 을 prefix 로 사용함으로써 모듈의 namespace 에 접근할 수 있다.
 
-아래 예제에서 sys 는 모듈 이름이고, path 는 sys 모듈의 namespace 에 담겨있는 name 이다. 따라서 path 에 접근을 하기 위해서는 모듈 이름인 sys 를 prefix 로 붙여서 sys 모듈의 namespace 에 접근한 후에 사용해야 한다.
+   아래 예제에서 sys 는 모듈 이름이고, path 는 sys 모듈의 namespace 에 담겨있는 name 이다. 따라서 path 에 접근을 하기 위해서는 모듈 이름인 sys 를 prefix 로 붙여서 sys 모듈의 namespace 에 접근한 후에 사용해야 한다.
 
-```python
-import sys
+   ```python
+   import sys
 
-sys.path
+   sys.path
 
-['', 'C:\Python34\Lib\idlelib', 'C:\Windows\system32\python34.zip', 'C:\Python34\DLLs', 'C:\Python34\lib', 'C:\Python34', 'C:\Python34\lib\site-packages']
-```
+   ['', 'C:\Python34\Lib\idlelib', 'C:\Windows\system32\python34.zip', 'C:\Python34\DLLs', 'C:\Python34\lib', 'C:\Python34', 'C:\Python34\lib\site-packages']
+   ```
 
-\2. from <module_name> import <name,>
+2. from <module_name> import <name,>
 
-모듈의 namespace 에서 import 에서 지정된 name 들을 직접 가져오도록 한다. 이렇게 하게 되면 import 이후에 지정한 name 들은 module 의 name을 prefix 로 지정하지 않고도 접근이 가능하다. 하지만, 이 경우에 module 에서 import 된 이름과 main script 에서 지정된 이름이 동일한 경우, 나중에 정의되는 이름으로 대체되어서 이전 것에 접근이 불가능하게 된다.
+   모듈의 namespace 에서 import 에서 지정된 name 들을 직접 가져오도록 한다. 이렇게 하게 되면 import 이후에 지정한 name 들은 module 의 name을 prefix 로 지정하지 않고도 접근이 가능하다. 하지만, 이 경우에 module 에서 import 된 이름과 main script 에서 지정된 이름이 동일한 경우, 나중에 정의되는 이름으로 대체되어서 이전 것에 접근이 불가능하게 된다.
 
-단지 몇개의 name 만 필요하다고 명확하게 알고 있는 경우에 사용하는 것이 유용하다.
+   단지 몇개의 name 만 필요하다고 명확하게 알고 있는 경우에 사용하는 것이 유용하다.
 
-```python
-from sys import path
+   ```python
+   from sys import path
 
-path
+   path
 
-['', 'C:\Python34\Lib\idlelib', 'C:\Windows\system32\python34.zip', 'C:\Python34\DLLs', 'C:\Python34\lib', 'C:\Python34', 'C:\Python34\lib\site-packages']
-```
+   ['', 'C:\Python34\Lib\idlelib', 'C:\Windows\system32\python34.zip', 'C:\Python34\DLLs', 'C:\Python34\lib', 'C:\Python34', 'C:\Python34\lib\site-packages']
+   ```
 
-\3. from <module_name> import *
+3. from <module_name> import *
 
-2 와 동일하지만, module 에 있는 모든 name 을 직접 현재 namespace 로 가져오게 된다. 이렇게 되면 namespace 가 섞이게 되어서 일반적으로 사용을 권장하지 않는다. 차라리 첫번째 타입(1번)의 import 를 사용하는 것이 좋다.
+   2 와 동일하지만, module 에 있는 모든 name 을 직접 현재 namespace 로 가져오게 된다. 이렇게 되면 namespace 가 섞이게 되어서 일반적으로 사용을 권장하지 않는다. 차라리 첫번째 타입(1번)의 import 를 사용하는 것이 좋다.
 
 **__main__ namespace**
 
@@ -104,7 +104,9 @@ import 의 경우에 namespace 가 처리되는 것을 알아보았는데, impor
 
 즉 본인이 구현한 코드가 다른 파이썬 코드에 의해서 모듈로 import 될 경우도 있을 수 있고, 파이썬 인터프리터에 의해서 직접 실행될 경우도 있을 수 있는데, 위 코드는 인터프리터에 의해서 직접 실행될 경우에만 실행하도록 하고 싶은 코드 블럭이 있는 경우에 사용한다.
 
-아래 예제 코드와 결과를 보면 이해하기 쉽다.(참고: <http://ibiblio.org/g2swap/byteofpython/read/module-name.html>)
+아래 예제 코드와 결과를 보면 이해하기 쉽다.
+
+(참고: [http://ibiblio.org/g2swap/byteofpython/read/module-name.html](http://ibiblio.org/g2swap/byteofpython/read/module-name.html))
 
 <code>
 
