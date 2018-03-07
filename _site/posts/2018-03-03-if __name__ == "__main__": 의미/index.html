@@ -291,35 +291,41 @@
 
 <p>import 명령을 가지고 namespace 에 대해서 조금 더 알아보도록 하자. module 을 import 하는 방법은 여러가지가 있다. 방법에 따라 namespace 가 달라 질 수가 있다.</p>
 
-<p>\1. import <module_name></module_name></p>
+<ol>
+  <li>
+    <p>import <module_name></module_name></p>
 
-<p>모듈을 import 하는 가장 간단한 방법이고, 일반적으로 추천되는 방법이다. 이렇게 import 를 하게 되면 module 의 name 을 prefix 로 사용함으로써 모듈의 namespace 에 접근할 수 있다.</p>
+    <p>모듈을 import 하는 가장 간단한 방법이고, 일반적으로 추천되는 방법이다. 이렇게 import 를 하게 되면 module 의 name 을 prefix 로 사용함으로써 모듈의 namespace 에 접근할 수 있다.</p>
 
-<p>아래 예제에서 sys 는 모듈 이름이고, path 는 sys 모듈의 namespace 에 담겨있는 name 이다. 따라서 path 에 접근을 하기 위해서는 모듈 이름인 sys 를 prefix 로 붙여서 sys 모듈의 namespace 에 접근한 후에 사용해야 한다.</p>
+    <p>아래 예제에서 sys 는 모듈 이름이고, path 는 sys 모듈의 namespace 에 담겨있는 name 이다. 따라서 path 에 접근을 하기 위해서는 모듈 이름인 sys 를 prefix 로 붙여서 sys 모듈의 namespace 에 접근한 후에 사용해야 한다.</p>
 
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="nn">sys</span>
 
 <span class="n">sys</span><span class="o">.</span><span class="n">path</span>
 
 <span class="p">[</span><span class="s">''</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">Lib</span><span class="err">\</span><span class="s">idlelib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Windows</span><span class="err">\</span><span class="s">system32</span><span class="err">\</span><span class="s">python34.zip'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">DLLs'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib</span><span class="err">\</span><span class="s">site-packages'</span><span class="p">]</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>from <module_name> import &lt;name,&gt;</module_name></p>
 
-<p>\2. from <module_name> import &lt;name,&gt;</module_name></p>
+    <p>모듈의 namespace 에서 import 에서 지정된 name 들을 직접 가져오도록 한다. 이렇게 하게 되면 import 이후에 지정한 name 들은 module 의 name을 prefix 로 지정하지 않고도 접근이 가능하다. 하지만, 이 경우에 module 에서 import 된 이름과 main script 에서 지정된 이름이 동일한 경우, 나중에 정의되는 이름으로 대체되어서 이전 것에 접근이 불가능하게 된다.</p>
 
-<p>모듈의 namespace 에서 import 에서 지정된 name 들을 직접 가져오도록 한다. 이렇게 하게 되면 import 이후에 지정한 name 들은 module 의 name을 prefix 로 지정하지 않고도 접근이 가능하다. 하지만, 이 경우에 module 에서 import 된 이름과 main script 에서 지정된 이름이 동일한 경우, 나중에 정의되는 이름으로 대체되어서 이전 것에 접근이 불가능하게 된다.</p>
+    <p>단지 몇개의 name 만 필요하다고 명확하게 알고 있는 경우에 사용하는 것이 유용하다.</p>
 
-<p>단지 몇개의 name 만 필요하다고 명확하게 알고 있는 경우에 사용하는 것이 유용하다.</p>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">path</span>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">path</span>
 
 <span class="n">path</span>
 
 <span class="p">[</span><span class="s">''</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">Lib</span><span class="err">\</span><span class="s">idlelib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Windows</span><span class="err">\</span><span class="s">system32</span><span class="err">\</span><span class="s">python34.zip'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">DLLs'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34'</span><span class="p">,</span> <span class="s">'C:</span><span class="err">\</span><span class="s">Python34</span><span class="err">\</span><span class="s">lib</span><span class="err">\</span><span class="s">site-packages'</span><span class="p">]</span>
-</code></pre></div></div>
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>from <module_name> import *</module_name></p>
 
-<p>\3. from <module_name> import *</module_name></p>
-
-<p>2 와 동일하지만, module 에 있는 모든 name 을 직접 현재 namespace 로 가져오게 된다. 이렇게 되면 namespace 가 섞이게 되어서 일반적으로 사용을 권장하지 않는다. 차라리 첫번째 타입(1번)의 import 를 사용하는 것이 좋다.</p>
+    <p>2 와 동일하지만, module 에 있는 모든 name 을 직접 현재 namespace 로 가져오게 된다. 이렇게 되면 namespace 가 섞이게 되어서 일반적으로 사용을 권장하지 않는다. 차라리 첫번째 타입(1번)의 import 를 사용하는 것이 좋다.</p>
+  </li>
+</ol>
 
 <p><strong>__main__ namespace</strong></p>
 
@@ -333,7 +339,9 @@
 
 <p>즉 본인이 구현한 코드가 다른 파이썬 코드에 의해서 모듈로 import 될 경우도 있을 수 있고, 파이썬 인터프리터에 의해서 직접 실행될 경우도 있을 수 있는데, 위 코드는 인터프리터에 의해서 직접 실행될 경우에만 실행하도록 하고 싶은 코드 블럭이 있는 경우에 사용한다.</p>
 
-<p>아래 예제 코드와 결과를 보면 이해하기 쉽다.(참고: <a href="http://ibiblio.org/g2swap/byteofpython/read/module-name.html">http://ibiblio.org/g2swap/byteofpython/read/module-name.html</a>)</p>
+<p>아래 예제 코드와 결과를 보면 이해하기 쉽다.</p>
+
+<p>(참고: <a href="http://ibiblio.org/g2swap/byteofpython/read/module-name.html">http://ibiblio.org/g2swap/byteofpython/read/module-name.html</a>)</p>
 
 <p><code></code></p>
 
