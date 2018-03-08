@@ -1,12 +1,15 @@
 ---
-layout: archive
-title: "Portfolio"
+layout: splash
+title: "PORTFOLIO"
 permalink: /portfolio/
 author_profile: True
+explog:
+ - image_path: /assets/images/explog.jpg
+   title: "EXPLOG"
+   excerpt: "Fastcampus team poject"
+   url: /portfolio/explog/
+   btn_label: Read More
+   btn_class: btn--info
 ---
 
-<div class="grid__wrapper">
-  {% for post in site.categories.portfolio %}
-    {% include archive-single.html type="grid" %}
-  {% endfor %}
-</div>
+{% include feature_row id="explog" type="left"%}

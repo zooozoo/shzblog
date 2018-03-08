@@ -129,11 +129,6 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/",
         "teaser":null},{
-        "title": "Test",
-        "excerpt":"","categories": ["portfolio"],
-        "tags": [],
-        "url": "http://localhost:4000/portfolio/test/",
-        "teaser":"http://localhost:4000/assets/images/about.jpg"},{
         "title": "UX/UI fontsize customzing at atom editor",
         "excerpt":"아톰 에디터에서 UX/UI 글씨크기 바꾸기블로그 작성을 위해서 아톰 editor를 사용하는데왼쪽 프로젝트의 파일 목록이 나오는 부분과, 파일명을 보여주는 부분의 글씨가 너무 작아서불편함을 느끼고 있었다. 운영체제의 디스플레이 세팅을 통해서 글씨를 키워볼까 했는데다른 부분은 모두 만족하고 사용하고 있었기 때문에 건들이기 싫었고 atom의 글씨 크기만바꾸고 싶었다.그래서 검색!그리고 찾았다!! 아래는 해당 링크 https://github.com/atom/atom/issues/2530좀 더 자세히...","categories": ["posts"],
         "tags": ["ide","atom"],
@@ -188,4 +183,9 @@ var store = [{
         "excerpt":"if __name__ == \"__main__\": 의미해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.원래 처음의 생각은 검색으로 나온 정보를 내 언어로 다시 정리하려고 했다.(그래야 이해도 잘 되고, 내가 궁금한 부분을 명확하게 정리할 수 있기 때문이다)그러나 구글신은 이러한 나의 마음을 이미 알기라고 한듯 이미 미친듯이 잘 정리된...","categories": ["posts"],
         "tags": [],
         "url": "http://localhost:4000/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/",
-        "teaser":null}]
+        "teaser":null},{
+        "title": "explog",
+        "excerpt":"","categories": ["portfolio"],
+        "tags": [],
+        "url": "http://localhost:4000/portfolio/explog/",
+        "teaser":"http://localhost:4000/assets/images/explog.jpg"}]
