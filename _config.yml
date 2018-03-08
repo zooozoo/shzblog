@@ -247,6 +247,11 @@ compress_html:
   ignore:
     envs: development
 
+# collections:
+#   portfolio:
+#     output: true
+#     permalink: /:collection/:path/
+
 
 # Defaults
 defaults:
@@ -297,3 +302,12 @@ defaults:
       category: til
       sidebar:
         nav: "til"
+
+  - scope:
+      path: "_posts/portfolio"
+    values:
+      layout: single
+      author_profile: True
+      search: true
+      share: true
+      category: portfolio

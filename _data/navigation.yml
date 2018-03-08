@@ -8,6 +8,8 @@ main:
     url: /til/
   - title: "ABOUT"
     url: /about/
+  - title: "PORTFOLIO"
+    url: /portfolio/
 
 records:
   - title: Records
