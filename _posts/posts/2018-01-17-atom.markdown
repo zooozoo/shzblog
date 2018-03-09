@@ -1,6 +1,8 @@
 ---
 title: UX/UI fontsize customzing at atom editor
 tag: [ide, atom]
+excerpt: >-
+ 아톰 에디터에서 UX/UI 글씨크기 바꾸기
 ---
 
 

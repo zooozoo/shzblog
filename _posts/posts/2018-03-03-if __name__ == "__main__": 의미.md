@@ -1,3 +1,12 @@
+---
+title: >-
+ if __name__ == "__main__": 의미
+tag: python
+excerpt: >-
+ 해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.
+---
+
+
 # `if __name__ == "__main__"`: 의미
 
 해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.
@@ -123,8 +132,8 @@ else:
 <output>
 
 ```
-$ python using_name.py
 This program is being run by itself
+$ python using_name.py
 
 $ python
 >>> import using_name

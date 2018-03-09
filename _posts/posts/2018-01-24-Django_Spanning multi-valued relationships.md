@@ -1,6 +1,9 @@
 ---
 title: Spanning multi-valued relationships
 tag: django
+excerpt: >-
+ 장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)
+
 ---
 
 장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)
