@@ -6,7 +6,7 @@
   <label for="ac-toc">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle Menu" }}</label>
   <ul class="nav__items">
       <li>
-          <span class="nav__sub-title"> Post's Tags Nav</span>
+          <span class="nav__sub-title"> Posts Tags Nav</span>
         <ul>
           {% for tag in site.tags %}
             {% assign t = tag | first %}

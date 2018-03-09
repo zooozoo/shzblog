@@ -124,20 +124,20 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/til/2018-01-14-TIL/",
         "teaser":null},{
-        "title": "1월15일~21일",
+        "title": "1월15일~1월21일",
         "excerpt":"1월 15일 월요일 커니핸 교수의 hello digital world 공부1월 17일 수요일 커니핸 교수의 hello digital world 공부1월 19일 금요일 블로그 만들기 posts sidebar navigations에 자동으로 태그 목록 보여주도록 설정 개별 post 들어 갔을 때 sidebar가 제대로 표시되지 않았는데 header에 sidebar변수가 인식되지 않는 현상 발견-&gt; 형식에 맞는 새로운 sidebar html 파일을...","categories": ["til"],
         "tags": [],
-        "url": "http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~21%EC%9D%BC/",
+        "url": "http://localhost:4000/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~1%EC%9B%9421%EC%9D%BC/",
         "teaser":null},{
         "title": "UX/UI fontsize customzing at atom editor",
         "excerpt":"아톰 에디터에서 UX/UI 글씨크기 바꾸기블로그 작성을 위해서 아톰 editor를 사용하는데왼쪽 프로젝트의 파일 목록이 나오는 부분과, 파일명을 보여주는 부분의 글씨가 너무 작아서불편함을 느끼고 있었다. 운영체제의 디스플레이 세팅을 통해서 글씨를 키워볼까 했는데다른 부분은 모두 만족하고 사용하고 있었기 때문에 건들이기 싫었고 atom의 글씨 크기만바꾸고 싶었다.그래서 검색!그리고 찾았다!! 아래는 해당 링크 https://github.com/atom/atom/issues/2530좀 더 자세히...","categories": ["posts"],
         "tags": ["ide","atom"],
         "url": "http://localhost:4000/posts/2018-01-17-atom/",
         "teaser":null},{
-        "title": "1월22일~28일",
+        "title": "1월22일~1월28일",
         "excerpt":"1월 22일 월요일 Try-Django-Tutorial youtube 강의 9커밋까지 완료 하루3분 네트워크 독서 블로그 정리 about page 내용 작성 및 records 내용 정리-&gt; 이전부터 쭉 작성해 왔던 것들인데 미완성 된 부분도 있고 구성에 일관성이 없어서 한번 다시 쭉 정리해야할 필요성을 느낌 1월 23일 화요일 Try-Django-Tutorial youtube 강의 17커밋까지 완료 class based view...","categories": ["til"],
         "tags": [],
-        "url": "http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~28%EC%9D%BC/",
+        "url": "http://localhost:4000/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~1%EC%9B%9428%EC%9D%BC/",
         "teaser":null},{
         "title": "1월29일~2월04일",
         "excerpt":"1월 30일 화요일오늘 한일 Try-Django-Tutorial youtube 강의 42커밋까지 완료1월 31일 수요일오늘 한일 Try-Django-Tutorial youtube 강의 45커밋까지 완료 -&gt; 완성2월 01일 목요일오늘 한일 처음시작하는 파이썬 복습 135p2월 02일 금요일오늘 한일 처음시작하는 파이썬 복습클로져(closure)와 데커레이터(decorator)에 대해서 제대로 이해할 수 있었다. 참고한 블로그 링크클로져(closure)데커레이커(decorator) 결론적으로는 파이썬의 내부함수와, 클로져를 잘 이해하고 있어야 데커레이터를 이해할...","categories": ["til"],
@@ -184,8 +184,8 @@ var store = [{
         "tags": [],
         "url": "http://localhost:4000/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/",
         "teaser":null},{
-        "title": "explog",
-        "excerpt":"","categories": ["portfolio"],
+        "title": "EXPLOG",
+        "excerpt":"프로젝트명 : Explog 기간 : 2017.11.27 – 2018.01.12 역할 : 배포 / User authentication / Push notification 내용 :자신만의 여행을 기록하고 기록한 사진과 글을 다른 사람과 함께 공유하는 여행기SNS 애플리케이션 입니다. 사용기술 : Django를 활용하여 Rest Framework API서버를 구축하였습니다. 배포는 AWS의 Elasticbeanstalk을 활용하였으며 NginX와 Docker를 활용하여 배포했습니다. Elasticbeanstalk의 기본 구성은...","categories": ["portfolio"],
         "tags": [],
         "url": "http://localhost:4000/portfolio/explog/",
         "teaser":"http://localhost:4000/assets/images/explog.jpg"}]
