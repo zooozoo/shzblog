@@ -165,9 +165,14 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9405%EC%9D%BC~3%EC%9B%9409%EC%9D%BC/",
         "teaser":null},{
         "title": "3월12일~3월16일",
-        "excerpt":"3월 12일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 클린 코드를 위한 테스트 주도zo 개발(TDD) 5장 마지막 까지 (git hub)###3월 13일 화요일오늘 한일 알고리즘 문제 풀이 (git hub) 그림으로 배우는 http 완독3월 14일 수요일오늘 한일 알고리즘 문제 풀이 (git hub) 클린 코드를 위한 테스트 주도 개발(TDD) 6장 중간 (git hub)...","categories": ["til"],
+        "excerpt":"3월 12일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 클린 코드를 위한 테스트 주도 개발(TDD) 5장 마지막 까지 (git hub)###3월 13일 화요일오늘 한일 알고리즘 문제 풀이 (git hub) 그림으로 배우는 http 완독3월 14일 수요일오늘 한일 알고리즘 문제 풀이 (git hub) 클린 코드를 위한 테스트 주도 개발(TDD) 6장 중간 (git hub)...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9412%EC%9D%BC~3%EC%9B%9416%EC%9D%BC/",
+        "teaser":null},{
+        "title": "3월19일~3월23일",
+        "excerpt":"3월 19일 월요일오늘 한일  알고리즘 문제 풀이 (git hub)  클린 코드를 위한 테스트 주도 개발(TDD) 6장 마지막 까지 (git hub)  그림으로 배우는 http&amp;network basic 완독","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/",
         "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
@@ -196,6 +201,6 @@ var store = [{
         "teaser":"https://zooozoo.github.io/assets/images/explog.jpg"},{
         "title": "\\'하루 3분 네트워크 교실\\' 리뷰",
         "excerpt":"OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 커니핸 교수의 Hello Digital World라는 책을 읽었고, 책을...","categories": ["posts"],
-        "tags": ["책 리뷰"],
+        "tags": ["책리뷰"],
         "url": "https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/",
         "teaser":null}]
