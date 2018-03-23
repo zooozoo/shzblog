@@ -170,7 +170,7 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9412%EC%9D%BC~3%EC%9B%9416%EC%9D%BC/",
         "teaser":null},{
         "title": "3월19일~3월23일",
-        "excerpt":"3월 19일 월요일오늘 한일  알고리즘 문제 풀이 (git hub)  클린 코드를 위한 테스트 주도 개발(TDD) 6장 마지막 까지 (git hub)  그림으로 배우는 http&amp;network basic 완독","categories": ["til"],
+        "excerpt":"3월 19일 월요일오늘 한일  알고리즘 문제 풀이 (git hub)  클린 코드를 위한 테스트 주도 개발(TDD) 6장 마지막 까지 (git hub)  그림으로 배우는 http&amp;network basic 완독3월 20일 화요일오늘 한일  알고리즘 문제 풀이 (git hub)","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/",
         "teaser":null},{
