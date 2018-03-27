@@ -274,7 +274,7 @@
 
 
 
-  10 minute read
+  11 minute read
 </p>
           
         </header>
@@ -296,6 +296,8 @@
   <li><a href="#docker">Docker</a></li>
   <li><a href="#iaas-paas-saas">IaaS, PaaS, SaaS</a></li>
   <li><a href="#database-index">Database Index</a></li>
+  <li><a href="#osi-모델">OSI 모델</a></li>
+  <li><a href="#객체지향개발oop-4가지-특성">객체지향개발(OOP) 4가지 특성</a></li>
 </ul>
             </nav>
           </aside>
@@ -311,8 +313,17 @@
 <ul>
   <li>기본적인 질문 리스트에 대한 참고 사이트
  <a href="http://hahahoho5915.tistory.com/16">http://hahahoho5915.tistory.com/16</a></li>
-  <li>개별 항목 설명에 참고한 책, 사이트</li>
-  <li>책 :<code class="highlighter-rouge">커니핸 교수의 Hello, Digital World</code>, 제이펍 출판사</li>
+</ul>
+
+<p><strong>개별 항목 설명에 참고한 책, 사이트</strong></p>
+
+<ul>
+  <li>책 :
+    <ul>
+      <li><code class="highlighter-rouge">커니핸 교수의 Hello, Digital World</code> / 제이펍 출판사</li>
+      <li><code class="highlighter-rouge">하루3분 네트워크 교실</code> / 영진닷컴</li>
+    </ul>
+  </li>
   <li>Overloading과 Overriding에 대한 설명
     <ul>
       <li><a href="http://itpangpang.xyz/105">http://itpangpang.xyz/105</a></li>
@@ -629,11 +640,71 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   <li>DDL, DML, DCL
     <ul>
       <li>DDL - 데이터베이스의 스키마 객체를 생성, 변경, 제거하거나 권한의 부여나 박탈, 주석, 자료의 버림 등을 수행하는 문장의 집단을 의미한다.</li>
-      <li>DML - 스키마 객체의 데이터를 입력, 수정, 조회, 삭제 하거나 테이블에 잠금을 설정하거나 SQL문의 처리에 대한 절차에 대한 정보를 얻거나 PL/SQL 모듈을 호출하는 작업의 집단이다.</li>
+      <li>DML - 스키마 객체의 데이터를 입력, 수정, 조회, 삭제 하거나 테이블에 잠금을 설정하거나 SQL문의 처리에 대한 절차에 대한 정보를 얻거나 PL/-SQL 모듈을 호출하는 작업의 집단이다.</li>
       <li>DCL - 데이터를 제어하는 언어, 데이터의 보안, 무결성, 회복, 병행 수행제어 등을 정의하는데 사용</li>
     </ul>
   </li>
 </ul>
+
+<h3 id="osi-모델">OSI 모델</h3>
+
+<ul>
+  <li>
+    <p>각 단계별 설명</p>
+  </li>
+  <li>
+    <table>
+      <thead>
+        <tr>
+          <th>계층</th>
+          <th> </th>
+          <th>내용</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>7 계층</td>
+          <td>응용계층</td>
+          <td>사용자에게 네트워크 서비스를 제공한다.</td>
+        </tr>
+        <tr>
+          <td>6 계층</td>
+          <td>표현계층</td>
+          <td>데이터의 형식을 결정한다.</td>
+        </tr>
+        <tr>
+          <td>5 계층</td>
+          <td>세션계층</td>
+          <td>데이터의 송수신의 순서 등을 관리한다.</td>
+        </tr>
+        <tr>
+          <td>4 계층</td>
+          <td>전송계층</td>
+          <td>신뢰성이 높은(에러가 적은)전송을 시행한다.</td>
+        </tr>
+        <tr>
+          <td>3 계층</td>
+          <td>네트워크계층</td>
+          <td>전송 규칙과 수신처를 결정한다.</td>
+        </tr>
+        <tr>
+          <td>2 계층</td>
+          <td>데이터링크계층</td>
+          <td>인접기기 사이의 데이터 전송을 제어한다.</td>
+        </tr>
+        <tr>
+          <td>1 계층</td>
+          <td>물리계층</td>
+          <td>전기,기계적인 부분의 전송을 시행한다.</td>
+        </tr>
+      </tbody>
+    </table>
+  </li>
+</ul>
+
+<h3 id="객체지향개발oop-4가지-특성">객체지향개발(OOP) 4가지 특성</h3>
+
+<p>https://wayhome25.github.io/cs/2017/04/10/cs-11/</p>
 
         
       </section>

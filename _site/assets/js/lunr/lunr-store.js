@@ -174,6 +174,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/",
         "teaser":null},{
+        "title": "3월26일~3월30일",
+        "excerpt":"3월 26일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 기술면접 기술면접을 대비해서 공부도 조금 하고 그랬지만 부족함을 많이 느꼈다. 나름 컴퓨터공학 기초 책도 읽어보고 했지만(비록 간단한 내용들이긴 했지만), 면접봤던 회사에서는 더 디테일한 것들을 요구했다. 기본적으로 코드 잘 짜고, 프로젝트 투입 하자마자 알아서 잘 하는 사람을 뽑고싶은 기본적인 배경은 어떤 회사든지...","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9426%EC%9D%BC~3%EC%9B%9430%EC%9D%BC/",
+        "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
         "tags": [],

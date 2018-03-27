@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-03-26T13:12:45+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-03-26T21:09:43+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 올려가는 데에 도움이 되겠다는 생각을 가질 수 있었다. 단편적으로 ‘A는 B입니다.’라고 답변할 수도 있겠지만 한단계씩 더 깊이 물어보는 질문에 답변할 수 있으려면 기술에 대한 기본적인 지식과 이해가 있어야만 가능하기 때문이다.&lt;/p&gt;
 
@@ -9,8 +9,17 @@
 &lt;ul&gt;
   &lt;li&gt;기본적인 질문 리스트에 대한 참고 사이트
  &lt;a href=&quot;http://hahahoho5915.tistory.com/16&quot;&gt;http://hahahoho5915.tistory.com/16&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;개별 항목 설명에 참고한 책, 사이트&lt;/li&gt;
-  &lt;li&gt;책 :&lt;code class=&quot;highlighter-rouge&quot;&gt;커니핸 교수의 Hello, Digital World&lt;/code&gt;, 제이펍 출판사&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;개별 항목 설명에 참고한 책, 사이트&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;책 :
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;커니핸 교수의 Hello, Digital World&lt;/code&gt; / 제이펍 출판사&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;하루3분 네트워크 교실&lt;/code&gt; / 영진닷컴&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
   &lt;li&gt;Overloading과 Overriding에 대한 설명
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;http://itpangpang.xyz/105&quot;&gt;http://itpangpang.xyz/105&lt;/a&gt;&lt;/li&gt;
@@ -327,11 +336,71 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   &lt;li&gt;DDL, DML, DCL
     &lt;ul&gt;
       &lt;li&gt;DDL - 데이터베이스의 스키마 객체를 생성, 변경, 제거하거나 권한의 부여나 박탈, 주석, 자료의 버림 등을 수행하는 문장의 집단을 의미한다.&lt;/li&gt;
-      &lt;li&gt;DML - 스키마 객체의 데이터를 입력, 수정, 조회, 삭제 하거나 테이블에 잠금을 설정하거나 SQL문의 처리에 대한 절차에 대한 정보를 얻거나 PL/SQL 모듈을 호출하는 작업의 집단이다.&lt;/li&gt;
+      &lt;li&gt;DML - 스키마 객체의 데이터를 입력, 수정, 조회, 삭제 하거나 테이블에 잠금을 설정하거나 SQL문의 처리에 대한 절차에 대한 정보를 얻거나 PL/-SQL 모듈을 호출하는 작업의 집단이다.&lt;/li&gt;
       &lt;li&gt;DCL - 데이터를 제어하는 언어, 데이터의 보안, 무결성, 회복, 병행 수행제어 등을 정의하는데 사용&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">\‘하루 3분 네트워크 교실\’ 리뷰</title><link href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="alternate" type="text/html" title="\'하루 3분 네트워크 교실\' 리뷰" /><published>2018-03-18T00:00:00+09:00</published><updated>2018-03-18T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/">&lt;p&gt;&lt;img src=&quot;https://zooozoo.github.io/assets/images/PreviewResize.jpeg&quot; alt=&quot;책&quot; /&gt;&lt;/p&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;osi-모델&quot;&gt;OSI 모델&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;각 단계별 설명&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;계층&lt;/th&gt;
+          &lt;th&gt; &lt;/th&gt;
+          &lt;th&gt;내용&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;7 계층&lt;/td&gt;
+          &lt;td&gt;응용계층&lt;/td&gt;
+          &lt;td&gt;사용자에게 네트워크 서비스를 제공한다.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;6 계층&lt;/td&gt;
+          &lt;td&gt;표현계층&lt;/td&gt;
+          &lt;td&gt;데이터의 형식을 결정한다.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;5 계층&lt;/td&gt;
+          &lt;td&gt;세션계층&lt;/td&gt;
+          &lt;td&gt;데이터의 송수신의 순서 등을 관리한다.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;4 계층&lt;/td&gt;
+          &lt;td&gt;전송계층&lt;/td&gt;
+          &lt;td&gt;신뢰성이 높은(에러가 적은)전송을 시행한다.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;3 계층&lt;/td&gt;
+          &lt;td&gt;네트워크계층&lt;/td&gt;
+          &lt;td&gt;전송 규칙과 수신처를 결정한다.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;2 계층&lt;/td&gt;
+          &lt;td&gt;데이터링크계층&lt;/td&gt;
+          &lt;td&gt;인접기기 사이의 데이터 전송을 제어한다.&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;1 계층&lt;/td&gt;
+          &lt;td&gt;물리계층&lt;/td&gt;
+          &lt;td&gt;전기,기계적인 부분의 전송을 시행한다.&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;객체지향개발oop-4가지-특성&quot;&gt;객체지향개발(OOP) 4가지 특성&lt;/h3&gt;
+
+&lt;p&gt;https://wayhome25.github.io/cs/2017/04/10/cs-11/&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">\‘하루 3분 네트워크 교실\’ 리뷰</title><link href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="alternate" type="text/html" title="\'하루 3분 네트워크 교실\' 리뷰" /><published>2018-03-18T00:00:00+09:00</published><updated>2018-03-18T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/">&lt;p&gt;&lt;img src=&quot;https://zooozoo.github.io/assets/images/PreviewResize.jpeg&quot; alt=&quot;책&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;커니핸 교수의 Hello Digital World&lt;/code&gt;라는 책을 읽었고, 책을 다 읽고 난 후에는 통신과 관련된 책도 꼭 읽어봐야겠다는 마음을 가지게 되었다. 누구에게 강의를 들을 수 있는 것이 아니었기 때문에 어떤책을 골라야 할 지 막막함이 있었는데 학원 강사님게서 추천해주신 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP완벽 가이드&lt;/code&gt;라는 책을 조금 들쳐봤을 때에는 도저히 바로 시작하면 챕터 1에서 나가떨어질 것만 같아서 다른 책을 찾는 와중에 리뷰의 주인공인 &lt;code class=&quot;highlighter-rouge&quot;&gt;하루 3분 네트워크 교실&lt;/code&gt;이라는 책을 발견하게 되었다.&lt;/p&gt;
 
@@ -747,7 +816,15 @@ Order of filter doesn’t matter we can also write above query as:&lt;/p&gt;
 
 &lt;p&gt;이해하고 다시 적은 내용이지만 다시 생각해 봐도 글로 설명하는 것 보다 예시를 통해 이해하는 편이 훨씬 도움이 되는 듯 하다.&lt;/p&gt;
 
-&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="django" /><summary type="html">장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/Fluent_Python</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">3월19일~3월23일</title><link href="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/" rel="alternate" type="text/html" title="3월19일~3월23일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/">&lt;h3 id=&quot;3월-19일-월요일&quot;&gt;3월 19일 월요일&lt;/h3&gt;
+&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="django" /><summary type="html">장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/Fluent_Python</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">3월26일~3월30일</title><link href="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9426%EC%9D%BC~3%EC%9B%9430%EC%9D%BC/" rel="alternate" type="text/html" title="3월26일~3월30일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/3%EC%9B%9426%EC%9D%BC~3%EC%9B%9430%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9426%EC%9D%BC~3%EC%9B%9430%EC%9D%BC/">&lt;h3 id=&quot;3월-26일-월요일&quot;&gt;3월 26일 월요일&lt;/h3&gt;
+
+&lt;p&gt;오늘 한일&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;기술면접
+  기술면접을 대비해서 공부도 조금 하고 그랬지만 부족함을 많이 느꼈다. 나름 컴퓨터공학 기초 책도 읽어보고 했지만(비록 간단한 내용들이긴 했지만), 면접봤던 회사에서는 더 디테일한 것들을 요구했다. 기본적으로 코드 잘 짜고, 프로젝트 투입 하자마자 알아서 잘 하는 사람을 뽑고싶은 기본적인 배경은 어떤 회사든지 똑같다는 전제 하에 어떤 방법으로 그것을 가려 낼 것인지는 방법론적으로 다를 수 있는데, 이번에 면접봤던 회사는 나의 기준점을 상회했다. 이런걸 물어보고 뽑는구나 하는 생각도 들기도 했지만 한편으론 컴퓨터 공학 기초적인 지식에 대한 좀더 디테일한 공부가 필요하겠다는 생각이 들었다. 또 앞으로 계속 개발자로 먹고살려고 작정했는데 그 정도 공부하는 것도 나쁘지 않을 거라는 생각이 들었다. 어쨌든 이런 면접을 하나씩 보면서 공부해나가야 하는 방향을 하나씩 알게 되는 것 같다.&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">3월 26일 월요일</summary></entry><entry><title type="html">3월19일~3월23일</title><link href="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/" rel="alternate" type="text/html" title="3월19일~3월23일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9419%EC%9D%BC~3%EC%9B%9423%EC%9D%BC/">&lt;h3 id=&quot;3월-19일-월요일&quot;&gt;3월 19일 월요일&lt;/h3&gt;
 
 &lt;p&gt;오늘 한일&lt;/p&gt;
 
@@ -806,31 +883,4 @@ Order of filter doesn’t matter we can also write above query as:&lt;/p&gt;
 &lt;ol&gt;
   &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;클린 코드를 위한 테스트 주도 개발(TDD) 6장 중간 &lt;a href=&quot;https://github.com/zooozoo/TDD-practice1&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">3월 12일 월요일</summary></entry><entry><title type="html">3월05일~3월09일</title><link href="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9405%EC%9D%BC~3%EC%9B%9409%EC%9D%BC/" rel="alternate" type="text/html" title="3월05일~3월09일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/3%EC%9B%9405%EC%9D%BC~3%EC%9B%9409%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9405%EC%9D%BC~3%EC%9B%9409%EC%9D%BC/">&lt;h3 id=&quot;3월-05일-월요일&quot;&gt;3월 05일 월요일&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;오늘 한일&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;
-return과 break의 사용상의 차이점에 대해서 정리하고 포스팅 해야겠다.
-​&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;3월-06일-화요일&quot;&gt;3월 06일 화요일&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;오늘 한일&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;그림으로 배우는 http 
-6장 진행중&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&quot;3월-07일-수요일&quot;&gt;3월 07일 수요일&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;오늘 한일&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;
-&lt;code class=&quot;highlighter-rouge&quot;&gt;isdigit()&lt;/code&gt;메서드와 &lt;code class=&quot;highlighter-rouge&quot;&gt;isalph()&lt;/code&gt;메서드에 대해서 알게됨&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">3월 05일 월요일</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">3월 12일 월요일</summary></entry></feed>
