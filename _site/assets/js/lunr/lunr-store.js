@@ -180,9 +180,14 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-3%EC%9B%9426%EC%9D%BC~3%EC%9B%9430%EC%9D%BC/",
         "teaser":null},{
         "title": "4월02일~4월06일",
-        "excerpt":"3월 26일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 5장까지3월 27일 화요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub)3월 28일 수요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 12장까지 css 강의자료 복습...","categories": ["til"],
+        "excerpt":"4월 02일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 5장까지4월 03일 화요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub)4월 04일 수요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 12장까지 css 강의자료 복습...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9402%EC%9D%BC~4%EC%9B%9406%EC%9D%BC/",
+        "teaser":null},{
+        "title": "4월09일~4월13일",
+        "excerpt":"4월 09일 월요일오늘 한일  알고리즘 문제 풀이 (git hub)  컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (5장까지)4월 10일 화요일오늘 한일  개인 홈페이지 프로젝트(git hub)  컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (6장까지)4월 11일 수요일오늘 한일  개인 홈페이지 프로젝트(git hub)  컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (7장 중반까지)","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9409%EC%9D%BC~4%EC%9B%9413%EC%9D%BC/",
         "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
