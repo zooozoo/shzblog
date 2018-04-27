@@ -50,7 +50,7 @@ var store = [{
         "url": "https://zooozoo.github.io/records/2017-09-25-django/",
         "teaser":null},{
         "title": "Pycharm_shortcut",
-        "excerpt":"ctrl + shift + ffind in path : 프로젝트 안에서 단어 찾기alt + j같은 형식의 단어 다중선택ctrl + alt + u커서가 위치한 곳의 상속관계를 보여주는 미니맵shift + enter아래로 줄 추가하면서 커서이동ctrl + alt + enter위로 줄 추가하면서 커서이동","categories": ["records"],
+        "excerpt":"ctrl + shift + ffind in path : 프로젝트 안에서 단어 찾기alt + j같은 형식의 단어 다중선택ctrl + alt + u커서가 위치한 곳의 상속관계를 보여주는 미니맵shift + enter아래로 줄 추가하면서 커서이동ctrl + alt + enter위로 줄 추가하면서 커서이동ctrl + q해당 메서드에 대한 문서자료가 나온다(신기…)","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2017-09-25-pycharm_shortcut/",
         "teaser":null},{
@@ -185,7 +185,7 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9402%EC%9D%BC~4%EC%9B%9406%EC%9D%BC/",
         "teaser":null},{
         "title": "4월09일~4월13일",
-        "excerpt":"4월 09일 월요일오늘 한일  알고리즘 문제 풀이 (git hub)  컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (5장까지)4월 10일 화요일오늘 한일  개인 홈페이지 프로젝트(git hub)  컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (6장까지)4월 11일 수요일오늘 한일  개인 홈페이지 프로젝트(git hub)  컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (7장 중반까지)","categories": ["til"],
+        "excerpt":"4월 09일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (5장까지)4월 10일 화요일오늘 한일 개인 홈페이지 프로젝트(git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (6장까지)4월 11일 수요일오늘 한일 개인 홈페이지 프로젝트(git hub) 컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (7장 중반까지)4월 12일 목요일오늘...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9409%EC%9D%BC~4%EC%9B%9413%EC%9D%BC/",
         "teaser":null},{
@@ -215,7 +215,7 @@ var store = [{
         "url": "https://zooozoo.github.io/portfolio/explog/",
         "teaser":"https://zooozoo.github.io/assets/images/explog.jpg"},{
         "title": "Project-HP",
-        "excerpt":"참고한 사이트 모음      html 레이아웃 관련        프로젝트 Github : https://github.com/zooozoo/homepage-project  ","categories": ["portfolio"],
+        "excerpt":"참고한 사이트 모음      html 레이아웃 관련    프로젝트 Github : https://github.com/zooozoo/homepage-project  if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고얼마나 읽기 편한지와같은 문제가 고려되는데 else를 쓰기보다는 바로 return하는 방식이 더 좋다는 의견이 많다. 관련 논쟁 스택오버플로우 링크https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessaryhttps://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return","categories": ["portfolio"],
         "tags": [],
         "url": "https://zooozoo.github.io/portfolio/project-hp/",
         "teaser":"https://zooozoo.github.io/assets/images/comming-soon.jpg"},{
