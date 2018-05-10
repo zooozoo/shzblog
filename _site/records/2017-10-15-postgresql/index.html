@@ -195,6 +195,8 @@
           
             <li><a href="/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" class="">기술면접 준비</a></li>
           
+            <li><a href="/records/2018-03-23-NGINX/" class="">NGINX</a></li>
+          
             <li><a href="/records/2018-01-23-Fluent_Python/" class="">전문가를 위한 파이썬</a></li>
           
             <li><a href="/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="">Docker관련</a></li>
@@ -274,7 +276,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
           
         </header>
@@ -295,13 +297,16 @@
   <li><a href="#위의-특정-데이터베이스에-접속-후-관련-테이블-확인">위의 특정 데이터베이스에 접속 후 관련 테이블 확인</a></li>
   <li><a href="#테이블의-전체-내용-확인">테이블의 전체 내용 확인</a></li>
   <li><a href="#사용자-비밀번호-변경하기">사용자 비밀번호 변경하기</a></li>
+  <li><a href="#사용자-추가">사용자 추가</a></li>
+  <li><a href="#사용자-확인">사용자 확인</a></li>
+  <li><a href="#아마존-웹서비스-연결할-때">아마존 웹서비스 연결할 때</a></li>
 </ul>
             </nav>
           </aside>
         
         <h1 id="명령어-기록-ubuntu-1604">명령어 기록 (ubuntu-1604)</h1>
 
-<h3 id="데이터베이스-생성">데이터베이스 생성</h3>
+<h2 id="데이터베이스-생성">데이터베이스 생성</h2>
 <p>커맨드창 에서 ‘zoozoo’라는 계정 이름으로 <code class="highlighter-rouge">testname</code>이라는 데이터베이스를 생성</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>createdb testname --owner=zoozoo
 </code></pre></div></div>
@@ -310,44 +315,44 @@
 </code></pre></div></div>
 <p>데이터베이스 이름이 대문자인 경우 <code class="highlighter-rouge">""</code>(쌍따옴표)로 데이터베이스 이름을 감싸서 명령을 실행시켜야 실행이 된다.</p>
 
-<h3 id="기본생성된-사용자-이름으로-postgresql연결">기본생성된 사용자 이름으로 postgresql연결</h3>
+<h2 id="기본생성된-사용자-이름으로-postgresql연결">기본생성된 사용자 이름으로 postgresql연결</h2>
 
 <p>postgres 사용자로 psql을 실행하고 postgres 데이터베이스에 연결한다.</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u postgres psql
 </code></pre></div></div>
 
-<h3 id="postgres-사용자로-다른-데이터베이스-연결">postgres 사용자로 다른 데이터베이스 연결</h3>
+<h2 id="postgres-사용자로-다른-데이터베이스-연결">postgres 사용자로 다른 데이터베이스 연결</h2>
 
 <p>postgres 사용자로 psql을 실행하고 testdb 데이터베이스에 연결한다.</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u postgres psql testdb
 </code></pre></div></div>
 
-<h3 id="데이터베이스-삭제터미널-창에서">데이터베이스 삭제(터미널 창에서)</h3>
+<h2 id="데이터베이스-삭제터미널-창에서">데이터베이스 삭제(터미널 창에서)</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo -u postgres dropdb &lt;name&gt;
 </code></pre></div></div>
 <p>데이터베이스 접속 후 위와 같은 데이터베이스 삭제</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DROP DATABASE &lt;name&gt;
 </code></pre></div></div>
 
-<h3 id="데이터베이스-목록확인-데이터베이스-명령어">데이터베이스 목록확인 (데이터베이스 명령어)</h3>
+<h2 id="데이터베이스-목록확인-데이터베이스-명령어">데이터베이스 목록확인 (데이터베이스 명령어)</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>\ㅣ
 </code></pre></div></div>
 
-<h3 id="특정-데이터베이스에-접속">특정 데이터베이스에 접속</h3>
+<h2 id="특정-데이터베이스에-접속">특정 데이터베이스에 접속</h2>
 <p>ex) database명 instagram</p>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>psql instagram
 </code></pre></div></div>
 
-<h3 id="위의-특정-데이터베이스에-접속-후-관련-테이블-확인">위의 특정 데이터베이스에 접속 후 관련 테이블 확인</h3>
+<h2 id="위의-특정-데이터베이스에-접속-후-관련-테이블-확인">위의 특정 데이터베이스에 접속 후 관련 테이블 확인</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dt\
 </code></pre></div></div>
 
-<h3 id="테이블의-전체-내용-확인">테이블의 전체 내용 확인</h3>
+<h2 id="테이블의-전체-내용-확인">테이블의 전체 내용 확인</h2>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>select * from 테이블명
 </code></pre></div></div>
 
-<h3 id="사용자-비밀번호-변경하기">사용자 비밀번호 변경하기</h3>
+<h2 id="사용자-비밀번호-변경하기">사용자 비밀번호 변경하기</h2>
 
 <ol>
   <li><code class="highlighter-rouge">sudo -u postgres psql template1</code> 명령을 통해 데이터베이스 접속</li>
@@ -357,6 +362,27 @@
   </li>
   <li><code class="highlighter-rouge">sudo systemctl restart postgresql.service</code>명령을 통해 postgresql 재시작</li>
 </ol>
+
+<h2 id="사용자-추가">사용자 추가</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>CREATE USER example WITH PASSWORD 'tiger';
+</code></pre></div></div>
+
+<h2 id="사용자-확인">사용자 확인</h2>
+<ol>
+  <li><code class="highlighter-rouge">sudo -u postgres psql</code>로 데이터베이스 접속</li>
+  <li><code class="highlighter-rouge">select * from pg_shadow</code> 또는 <code class="highlighter-rouge">select * from pg_user</code>로 확인가능</li>
+</ol>
+
+<p><code class="highlighter-rouge">select * from pg_shadow</code>는 password를 포함하기 때문에 외부접근 불가능.</p>
+
+<p><a href="https://www.postgresql.org/docs/9.1/static/view-pg-shadow.html">아래는 문서의 설명</a></p>
+<blockquote>
+  <p>The view pg_shadow exists for backwards compatibility: it emulates a catalog that existed in PostgreSQL before version 8.1. It shows properties of all roles that are marked as rolcanlogin in pg_authid.
+The name stems from the fact that this table should not be readable by the public since it contains passwords. pg_user is a publicly readable view on pg_shadow that blanks out the password field.</p>
+</blockquote>
+
+<h2 id="아마존-웹서비스-연결할-때">아마존 웹서비스 연결할 때</h2>
+<p><code class="highlighter-rouge">psql --host=RDS서버 인스턴스를 만든 후 생성되는 url --user=유저이름 --port=5432 데이터베이스이름</code></p>
 
         
       </section>
@@ -460,6 +486,34 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="https://zooozoo.github.io/records/2018-03-23-NGINX/" rel="permalink">NGINX
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">NGINX를 공부하며 필요한 내용을 기록해 두었습니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
         <a href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="permalink">'하루 3분 네트워크 교실' 리뷰
 </a>
       
@@ -497,34 +551,6 @@
     <h2 class="archive__item-title" itemprop="headline">
       
         <a href="https://zooozoo.github.io/portfolio/project-hp/" rel="permalink">Project-HP
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">project portfolio
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://zooozoo.github.io/assets/images/explog.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://zooozoo.github.io/portfolio/explog/" rel="permalink">EXPLOG
 </a>
       
     </h2>

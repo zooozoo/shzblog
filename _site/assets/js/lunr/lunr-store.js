@@ -40,7 +40,7 @@ var store = [{
         "url": "https://zooozoo.github.io/records/2017-09-21-pycharm/",
         "teaser":null},{
         "title": "Cli",
-        "excerpt":"rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름 cp 복사대상파일경로 복사할위치 폴더안에 있는 모든 파일 복사하기cp -a /source/. /dest/ mv 기존이름 바꿀이름파일이동, 혹은 파일이름변경 가동되고 있는 서버...","categories": ["records"],
+        "excerpt":"rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름cp 복사대상파일경로 복사할위치폴더안에 있는 모든 파일 복사하기cp -a /source/. /dest/mv 기존이름 바꿀이름파일이동, 혹은 파일이름변경kill명령어에 관해 포스팅한 블로그링크http://rerethink.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-kill실행되고 있는 모든 프로세스...","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2017-09-25-CLI/",
         "teaser":null},{
@@ -115,7 +115,7 @@ var store = [{
         "url": "https://zooozoo.github.io/records/2017-11-16-ECS/",
         "teaser":null},{
         "title": "Docker관련",
-        "excerpt":"Docker 세팅도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.docker run ubuntu:16.04docker run --rm it ubuntu:16:04 /bin/bash켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.Dockerfile.base 이미지 만드는 명령어sudo docker build -t base -f Dockerfile.base .Dockerfile.base를 기준으로 우리가 쓸 도커(container)...","categories": ["records"],
+        "excerpt":"도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.docker run ubuntu:16.04docker run --rm it ubuntu:16:04 /bin/bash켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.Dockerfile.base 이미지 만드는 명령어sudo docker build -t base -f Dockerfile.base .Dockerfile.base를 기준으로 우리가 쓸 도커(container) 만드는...","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/",
         "teaser":null},{
@@ -189,6 +189,26 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9409%EC%9D%BC~4%EC%9B%9413%EC%9D%BC/",
         "teaser":null},{
+        "title": "4월16일~4월20일",
+        "excerpt":"4월 16일 월요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub)4월 17일 화요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub)4월 18일 수요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub)4월 19일 목요일오늘 한일 개인 홈페이지 프로젝트(git hub)4월 20일 금요일오늘 한일 알고리즘 문제 풀이...","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9416%EC%9D%BC~4%EC%9B%9420%EC%9D%BC/",
+        "teaser":null},{
+        "title": "4월23일~4월27일",
+        "excerpt":"4월 23일 월요일오늘 한일 개인 홈페이지 프로젝트(git hub)4월 24일 화요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub) NGINX 공부 링크4월 25일 수요일오늘 한일 개인 홈페이지 프로젝트(git hub) NGINX 공부 링크4월 26일 목요일오늘 한일 알고리즘 문제 풀이 (git hub) 개인 홈페이지 프로젝트(git hub)4월 27일 금요일오늘 한일 개인 홈페이지...","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9423%EC%9D%BC~4%EC%9B%9427%EC%9D%BC/",
+        "teaser":null},{
+        "title": "4월30일~5월04일",
+        "excerpt":"4월 30일 월요일오늘 한일  개인 홈페이지 프로젝트(git hub)5월 01일 화요일오늘 한일  개인 홈페이지 프로젝트(git hub)5월 02일 수요일오늘 한일  개인 홈페이지 프로젝트(git hub)5월 03일 목요일오늘 한일  개인 홈페이지 프로젝트(git hub)5월 04일 금요일오늘 한일  개인 홈페이지 프로젝트(git hub)","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9430%EC%9D%BC~5%EC%9B%9404%EC%9D%BC/",
+        "teaser":null},{
+        "title": "5월07일~5월11일",
+        "excerpt":"5월 07일 월요일오늘 한일  개인 홈페이지 프로젝트(git hub)5월 08일 화요일오늘 한일  개인 홈페이지 프로젝트(git hub)5월 09일 수요일오늘 한일  개인 홈페이지 프로젝트(git hub)","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC/",
+        "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
         "tags": [],
@@ -215,7 +235,7 @@ var store = [{
         "url": "https://zooozoo.github.io/portfolio/explog/",
         "teaser":"https://zooozoo.github.io/assets/images/explog.jpg"},{
         "title": "Project-HP",
-        "excerpt":"참고한 사이트 모음      html 레이아웃 관련    프로젝트 Github : https://github.com/zooozoo/homepage-project  if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고얼마나 읽기 편한지와같은 문제가 고려되는데 else를 쓰기보다는 바로 return하는 방식이 더 좋다는 의견이 많다. 관련 논쟁 스택오버플로우 링크https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessaryhttps://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return","categories": ["portfolio"],
+        "excerpt":"Custom Homepage Project www.news-collecter.com홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.참고한 사이트 모음 html 레이아웃 관련 프로젝트 Github : https://github.com/zooozoo/homepage-project if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고얼마나 읽기 편한지와같은 문제가 고려되는데...","categories": ["portfolio"],
         "tags": [],
         "url": "https://zooozoo.github.io/portfolio/project-hp/",
         "teaser":"https://zooozoo.github.io/assets/images/comming-soon.jpg"},{
@@ -223,6 +243,11 @@ var store = [{
         "excerpt":"OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 커니핸 교수의 Hello Digital World라는 책을 읽었고, 책을...","categories": ["posts"],
         "tags": ["책리뷰"],
         "url": "https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/",
+        "teaser":null},{
+        "title": "NGINX",
+        "excerpt":"생활코딩 Nginx강의아래의 내용은 egoing님이 강의하시는 opentutorials의 NGINX강의에서 발췌한 것 입니다.강의 링크1강 Nginx 소개 웹, 클라이언트와 서버간의 관계에 대한 설명 HTTP에 대한 소개 Web server -&gt; HTTP라고도 할 수 있다. 웹서버의 역사 아파치의 압도적인 점유율 그러나 최근들어서 점점 아파치의 점유율을 따라오고 있다. Nginx는 차세대 웹서버 - 더 적은 자원으로 더 빠르게...","categories": ["records"],
+        "tags": ["NGINX강의록"],
+        "url": "https://zooozoo.github.io/records/2018-03-23-NGINX/",
         "teaser":null},{
         "title": "기술면접 준비",
         "excerpt":"Intro면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 올려가는 데에 도움이 되겠다는 생각을 가질 수 있었다....","categories": ["records"],

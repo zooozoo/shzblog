@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-04-15T23:52:37+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-05-09T16:54:05+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 올려가는 데에 도움이 되겠다는 생각을 가질 수 있었다. 단편적으로 ‘A는 B입니다.’라고 답변할 수도 있겠지만 한단계씩 더 깊이 물어보는 질문에 답변할 수 있으려면 기술에 대한 기본적인 지식과 이해가 있어야만 가능하기 때문이다.&lt;/p&gt;
 
@@ -400,7 +400,167 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 
 &lt;h3 id=&quot;객체지향개발oop-4가지-특성&quot;&gt;객체지향개발(OOP) 4가지 특성&lt;/h3&gt;
 
-&lt;p&gt;https://wayhome25.github.io/cs/2017/04/10/cs-11/&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">\‘하루 3분 네트워크 교실\’ 리뷰</title><link href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="alternate" type="text/html" title="\'하루 3분 네트워크 교실\' 리뷰" /><published>2018-03-18T00:00:00+09:00</published><updated>2018-03-18T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/">&lt;p&gt;&lt;img src=&quot;https://zooozoo.github.io/assets/images/PreviewResize.jpeg&quot; alt=&quot;책&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;https://wayhome25.github.io/cs/2017/04/10/cs-11/&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">NGINX</title><link href="https://zooozoo.github.io/records/2018-03-23-NGINX/" rel="alternate" type="text/html" title="NGINX" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/NGINX</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-NGINX/">&lt;h2 id=&quot;생활코딩-nginx강의&quot;&gt;생활코딩 Nginx강의&lt;/h2&gt;
+
+&lt;p&gt;아래의 내용은 egoing님이 강의하시는 opentutorials의 NGINX강의에서 발췌한 것 입니다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://opentutorials.org/module/384/3462&quot;&gt;강의 링크&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;1강-nginx-소개&quot;&gt;1강 Nginx 소개&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;웹, 클라이언트와 서버간의 관계에 대한 설명&lt;/li&gt;
+  &lt;li&gt;HTTP에 대한 소개&lt;/li&gt;
+  &lt;li&gt;Web server -&amp;gt; HTTP라고도 할 수 있다.&lt;/li&gt;
+  &lt;li&gt;웹서버의 역사
+    &lt;ul&gt;
+      &lt;li&gt;아파치의 압도적인 점유율&lt;/li&gt;
+      &lt;li&gt;그러나 최근들어서 점점 아파치의 점유율을 따라오고 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nginx는 차세대 웹서버 - 더 적은 자원으로 더 빠르게 데이터를 서비스할 수 있는 경량화된 웹서버&lt;/li&gt;
+  &lt;li&gt;Document Root : &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/share/nginx/html/&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;설정파일: &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt; -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;default.conf&lt;/code&gt;에는 nginx의 기본 설정이 있다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;conf.d&lt;/code&gt;는 이름이 달라질 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;로그파일: &lt;code class=&quot;highlighter-rouge&quot;&gt;/var/log/nginx/&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;2강-nginx-컴파일&quot;&gt;2강 Nginx 컴파일&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;컴파일하는 방법, 의존성 등의 문제가있는 난이도가 있음&lt;/li&gt;
+  &lt;li&gt;Nginx 모듈을 컴파일을 통해서만 설치할 수 있기 때문에 알아두면 좋다&lt;/li&gt;
+  &lt;li&gt;Nginx는 세가지 버전이 있다.
+    &lt;ul&gt;
+      &lt;li&gt;안전버전 : 실제 배포할 때&lt;/li&gt;
+      &lt;li&gt;개발버전: 개발할 때 / 버그가 발생할 수 있다.&lt;/li&gt;
+      &lt;li&gt;레거시버전: 예전버전의 Nginx&lt;/li&gt;
+      &lt;li&gt;안전버전의 설치가 권장된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Nginx는 마스터 프로세스(Master Process)와 작업자 프로세스(Worker Process)를 가지고 있다.
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ps aux | grep nginx&lt;/code&gt;를 실행해보면 아래와 같은 프로세스가 떠있을 것이다.&lt;/li&gt;
+      &lt;li&gt;마스터 프로세스는 루트 계정으로 실행되면서 80, 443 포트의 소켓과의 통신을 담당한다.&lt;/li&gt;
+      &lt;li&gt;작업자 프로세스는 실제로 데이터를 처리하는 프로세스라고 할 수 있는데 이 프로세스를 핸들링할 사용자를 만들어야 한다. 일반적으로 웹서버의 워커 유저는 www-data를 사용한다. www-data를 만드는 법은 아래와 같다.&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;useradd --shell /usr/sbin/nologin www-data&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;3강-php-fpm-mysql-1&quot;&gt;3강 PHP-FPM-MYSQL 1&lt;/h2&gt;
+
+&lt;h3 id=&quot;cgi&quot;&gt;CGI&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CGI는 Common Gateway Interface의 약자로 웹서버와 외부 프로그램을 연결해주는 표준화된 프로토콜이다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1398.gif&quot; alt=&quot;cgi based server&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;fastcgi&quot;&gt;FastCGI&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;CGI 는 하나의 요청(Request)에 하나의 프로세스를 생성한다. 이것은 프로세스를 생성하고 삭제하는 과정에서 많은 부하가 발생한다. 당연히 느리다. 이를 개선하기 위해서 등장한 것이 FastCGI이다. FastCGI는 요청이 있을 때마다 프로세스가 만들어지는 것이 아니라 만들어진 프로세스가 계속해서 새로운 요청들을 처리한다. 덕분에 프로세스를 생성하고 제거하는데 들어가는 부하가 줄어든다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1397.gif&quot; alt=&quot;cgi based server&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;3강-php-fpm-mysql-2&quot;&gt;3강 PHP-FPM-MYSQL 2&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;FPM, 과 MYSQL을 설치를 한 후에는 Nginx를 설정해 줘야 하는데 설정파일은 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/conf.d/default.conf&lt;/code&gt; 이거나 &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx/sites-available/default&lt;/code&gt;에 있다.&lt;/li&gt;
+  &lt;li&gt;socker - fastcgi_pass는 php-fpm과 NGINX를 연결하기 위한 인터페이스를 지정하는 것.&lt;/li&gt;
+  &lt;li&gt;Upstream Module - Upstream Module는 NGINX를 일종의 부하분배장치(Load Balancer)로 이용할 수 있게 해주는 NGINX의 모듈이다. 자세한 내용은 Upstream Module를 참고한다. &lt;a href=&quot;http://opentutorials.org/module/384/4328&quot;&gt;Upstream Module 바로가기&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;4강-php-fpm-mysql-3&quot;&gt;4강 PHP-FPM-MYSQL 3&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PHP를 Nginx와 독립된 별도의 서버에 설치하여 연결하는 것을 설명&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;5강-nginx-환경설정&quot;&gt;5강 NGINX 환경설정&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Nginx 설정파일은 conf 디렉토리 아래에 위치하고, 설치 바업에 따라서 설정파일의 위치가 다를 수 있다.&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;컴파일을 통해 설치할 경우 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/usr/local/nginx/conf&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get&lt;/code&gt;을 이용해서 우분투에 설치할 경우 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;/etc/nginx&lt;/code&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;설정파일 위치를 찾는 명령어
+&lt;code class=&quot;highlighter-rouge&quot;&gt;sudo find / -name nginx.conf&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;설정파일의 역할&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;nginx.conf : 메인 설정 파일.&lt;/li&gt;
+      &lt;li&gt;fcgi.conf : FastCGI 환경설정 파일&lt;/li&gt;
+      &lt;li&gt;sites-enabled : 활성화된 사이트들의 설정 파일들이 위치. 아파치에서는 Virtual host의 설정에 해당한다. 기본적으로 존재하지 않을수도 있다. 이 디렉토리를 직접 만들어서 사용하는 방법은 &lt;a href=&quot;http://opentutorials.org/module/384/4529&quot;&gt;가상 호스팅&lt;/a&gt;편에서 알아본다.&lt;/li&gt;
+      &lt;li&gt;sites-available : 비활성화된 사이트들의 설정 파일들이 위치&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;아래의 Nginx 메인 환경설정 파일인 &lt;code class=&quot;highlighter-rouge&quot;&gt;nginx.conf&lt;/code&gt;의 내용을 파해치며 Nginx의 환경설정을 이해해 나가보자&lt;/p&gt;
+
+    &lt;div class=&quot;language-nginx highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;worker_processes&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;events&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;worker_connections&lt;/span&gt;  &lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;http&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;include&lt;/span&gt;       &lt;span class=&quot;s&quot;&gt;mime.types&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;kn&quot;&gt;server&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;kn&quot;&gt;listen&lt;/span&gt;       &lt;span class=&quot;mi&quot;&gt;80&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;kn&quot;&gt;location&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;kn&quot;&gt;root&lt;/span&gt;   &lt;span class=&quot;s&quot;&gt;html&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;kn&quot;&gt;index&lt;/span&gt;  &lt;span class=&quot;s&quot;&gt;index.html&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;index.htm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+        &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;h3 id=&quot;core-모듈-설정&quot;&gt;Core 모듈 설정&lt;/h3&gt;
+
+    &lt;p&gt;위의 예의 work_processes와 같은 지시자 설정 파일 최상단에 위치하면서 nginx의 기본적인 동작 방식을 정의한다. 여기서 사용되는 지시어들은 다른 곳에서 사용되지 않는다. &lt;a href=&quot;http://opentutorials.org/module/384/4533&quot;&gt;코어모듈 지시어 사전&lt;/a&gt;을 참고하자.&lt;/p&gt;
+
+    &lt;h3 id=&quot;http-블록&quot;&gt;http 블록&lt;/h3&gt;
+
+    &lt;p&gt;http 블록은 이후에 소개할 server, location의 루트 블록이라고 할 수 있고, 여기서 설정된 값을 하위 블록들은 상속한다. http 블록은 여러개를 사용할 수 있지만 관리상의 이슈로 한번만 사용하는 것을 권장한다.&lt;/p&gt;
+
+    &lt;p&gt;http, server, location 블록은 계층구조를 가지고 있다. 많은 지시어가 각각의 블록에서 동시에 사용할 수 있는데, http의 내용은 server의 기본값이 되고, server의 지시어는 location의 기본값이 된다. 그리고 하위의 블록에서 선언된 지시어는 상위의 선언을 무시하고 적용된다.&lt;/p&gt;
+
+    &lt;h3 id=&quot;server-블록&quot;&gt;server 블록&lt;/h3&gt;
+
+    &lt;p&gt;server 블록은 하나의 웹사이트를 선언하는데 사용된다. 가상 호스팅(Virtual Host)의 개념이다. 예를들어 하나의 서버로 http://opentutorials.org 과 http://egoing.net 을 동시에 운영하고 싶은 경우 사용할 수 있는 방법이다. 가상 호스팅에 대한 자세한 내용은 &lt;a href=&quot;http://opentutorials.org/module/384/4529&quot;&gt;가상 호스팅 수업&lt;/a&gt;을 참고하자.&lt;/p&gt;
+
+    &lt;h3 id=&quot;location-블록&quot;&gt;location 블록&lt;/h3&gt;
+
+    &lt;p&gt;location 블록은 server 블록 안에 등장하면서 특정 URL을 처리하는 방법을 정의한다. 이를테면 http://opentutorials.org/course/1 과 http://opentutorials.org/module/1 로 접근하는 요청을 다르게 처리하고 싶을 때 사용한다.&lt;/p&gt;
+
+    &lt;h3 id=&quot;events-블록&quot;&gt;events 블록&lt;/h3&gt;
+
+    &lt;p&gt;이벤트 블록은 주로 네트워크의 동작방법과 관련된 설정값을 가진다. 이벤트 블록의 지시어들은 이벤트 블록에서만 사용할 수 있고, http, server, location와는 상속관계를 갖지 않는다. 이벤트 모듈 지시어에 대한 설명은 &lt;a href=&quot;http://opentutorials.org/module/384/4534&quot;&gt;이벤트 모듈 지시어 사전&lt;/a&gt;을 참고한다.&lt;/p&gt;
+
+    &lt;h3 id=&quot;설정-파일의-반영&quot;&gt;설정 파일의 반영&lt;/h3&gt;
+
+    &lt;p&gt;설정 파일의 내용을 변경한 후에는 이를 NGINX에 반영해야 하는데 아래와 같이 reload 명령을 이용한다. restart를 이용해도 되지만 권장되지 않는다.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;forward-proxy와-reverse-proxy의-차이&quot;&gt;Forward proxy와 Reverse proxy의 차이&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&quot;&gt;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;vps란&quot;&gt;VPS란?&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;http://library.gabia.com/contents/infrahosting/3594&quot;&gt;http://library.gabia.com/contents/infrahosting/3594&lt;/a&gt;&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><category term="NGINX강의록" /><summary type="html">NGINX를 공부하며 필요한 내용을 기록해 두었습니다.</summary></entry><entry><title type="html">\‘하루 3분 네트워크 교실\’ 리뷰</title><link href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="alternate" type="text/html" title="\'하루 3분 네트워크 교실\' 리뷰" /><published>2018-03-18T00:00:00+09:00</published><updated>2018-03-18T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/">&lt;p&gt;&lt;img src=&quot;https://zooozoo.github.io/assets/images/PreviewResize.jpeg&quot; alt=&quot;책&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;커니핸 교수의 Hello Digital World&lt;/code&gt;라는 책을 읽었고, 책을 다 읽고 난 후에는 통신과 관련된 책도 꼭 읽어봐야겠다는 마음을 가지게 되었다. 누구에게 강의를 들을 수 있는 것이 아니었기 때문에 어떤책을 골라야 할 지 막막함이 있었는데 학원 강사님게서 추천해주신 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP완벽 가이드&lt;/code&gt;라는 책을 조금 들쳐봤을 때에는 도저히 바로 시작하면 챕터 1에서 나가떨어질 것만 같아서 다른 책을 찾는 와중에 리뷰의 주인공인 &lt;code class=&quot;highlighter-rouge&quot;&gt;하루 3분 네트워크 교실&lt;/code&gt;이라는 책을 발견하게 되었다.&lt;/p&gt;
 
@@ -414,7 +574,11 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 
 &lt;p&gt;저자가 일본인인데 저자가 쓴 다른 책들도 있어서 혹시 번역된게 있으면 사서 볼려고 했는데 없어서 아쉬웠다. 이 책을 읽은 후에는 같은 출판사에서 쓴 &lt;code class=&quot;highlighter-rouge&quot;&gt;그림으로 배우는 HTTP Network Basic&lt;/code&gt;도 사서 읽어봤는데 http를 최대한 쉽게 설명하려고 하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;하루 3분 네트워크 교실&lt;/code&gt;을 읽기 전에 먼저 읽었다면 조금 답답하게 읽었을 것 같다는 생각을 했었다.&lt;/p&gt;
 
-&lt;p&gt;저자의 다른 책도 번역되서 나왔으면 좋겠다는 바람과 함께 리뷰를 마친다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="책리뷰" /><summary type="html">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.</summary></entry><entry><title type="html">Project-HP</title><link href="https://zooozoo.github.io/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/project-hp</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/project-hp/">&lt;h2 id=&quot;참고한-사이트-모음&quot;&gt;참고한 사이트 모음&lt;/h2&gt;
+&lt;p&gt;저자의 다른 책도 번역되서 나왔으면 좋겠다는 바람과 함께 리뷰를 마친다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="책리뷰" /><summary type="html">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.</summary></entry><entry><title type="html">Project-HP</title><link href="https://zooozoo.github.io/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/project-hp</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/project-hp/">&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;www.news-collecter.com&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
+주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;참고한-사이트-모음&quot;&gt;참고한 사이트 모음&lt;/h2&gt;
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://www.codeproject.com/Articles/546960/HTML-Quick-Start-Web-Application&quot;&gt;html 레이아웃 관련&lt;/a&gt;&lt;/p&gt;
@@ -424,7 +588,188 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 얼마나 읽기 편한지와같은 문제가 고려되는데 else를 쓰기보다는 바로 return하는 방식이 더 좋다는 의견이 많다. 관련 논쟁 스택오버플로우 링크
 &lt;a href=&quot;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&quot;&gt;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&lt;/a&gt;
 &lt;a href=&quot;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&quot;&gt;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">EXPLOG</title><link href="https://zooozoo.github.io/portfolio/explog/" rel="alternate" type="text/html" title="EXPLOG" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/explog</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/explog/">&lt;!-- Courtesy of embedresponsively.com //--&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;다음-단계&quot;&gt;다음 단계&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;user가 선택한 뉴스만 기억해서 보여주도록 main 템플렛 수정&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;나중에-해야할-일&quot;&gt;나중에 해야할 일&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;header 파트 레이아웃 리팩터링 필요
+-&amp;gt; 부트스트랩 레이아웃 사용해서 해결&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;크롤링한 데이터에서 ‘문답’과 같은 요소들 없애기
+-&amp;gt; 글자수에 조건을 걸어서 해결&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;nav에 news_select_section에서 한글로 언론사이름 보여줄 수 있게 수정
+-&amp;gt; filed에 verbose name 설정하고, index.html의 card header 부분에 field.name을 field.value로 변경해서 해결&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;main에 checkbox form에 initial data 전달하는거 더 효율적으로 할 수 있는지 살펴보기
+-&amp;gt; model form 이기 때문에 데이터베이스에서 가져온 모델 인스턴스를 전달함으로써 initiated된 폼을 사용할 수 있음&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;에러가 나면 데이터베이스에 있는 내용을 끌어올 수 있도록 만들기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;news-select-section에 있는 checkbox를 1열 래이아웃으로 바꾸기&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;산발적으로 발생하는 에러 잡기
+에러&lt;/p&gt;
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
+    title=soup.find('div', class_='topNews').a.text,
+  AttributeError: 'NoneType' object has no attribute 'a'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;개발과정에-대한-기록&quot;&gt;개발과정에 대한 기록&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;aws계정 생성
+    &lt;ol&gt;
+      &lt;li&gt;IAM 유저와, 보안그룹 생성&lt;/li&gt;
+      &lt;li&gt;aws cli를 활용해 기본정보 등록&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;local 에서 postgres 연결 확인&lt;/li&gt;
+  &lt;li&gt;settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리&lt;/li&gt;
+  &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기
+    &lt;ul&gt;
+      &lt;li&gt;docker를 만드는 과정에서 있었던 일
+  docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.
+  ```docker
+  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
+
+&lt;p&gt;E: Unable to fetch some archives, maybe run apt-get update or try with –fix-missing?
+  The command ‘/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev’ returned a non-zero code: 100&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
+  [관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
+
+  설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
+
+5. elasticbeanstalk 구축하기
+  * 키페어 profile 설정문제
+    awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
+    `export AWS_PROFILE=user2`명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
+    [관련링크](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html)
+  * eb cli 환경에서 키페어 profile 설정문제
+
+  * elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정
+    * 삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; `dpkg -l | grep -i docker` 명령어로 설치된 `docker-ce`확인후에 삭제
+      [관련링크](https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
+    * 특정버전의 docker를 설치 [관련링크](https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
+  * docker를 재설치 해도 같은문제가 발생했고, 문제는 `.gitignore`에 `Dockerfile`이 포함되어 있기 때문이었다. -&amp;gt; `.ebignore`추가
+  * 결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.
+
+6. 한글 깨짐현상
+ * Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
+  [http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90](http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90)
+  [http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping](http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping)
+ * 더 간단한 해결책 발견
+  `request.text` -&amp;gt; 값을 `unicode`로 가져옴
+  `request.content` -&amp;gt; 값을 `str`형으로 가져옴
+  `str`형으로 가져오면 간단하게 문자를 사용할 수 있다.
+  참고한 블로그
+  [http://pwnbit.kr/85](http://pwnbit.kr/85)
+
+7. `requests.exceptions.TooManyRedirects: Exceeded 30 redirects.` 에러 관련
+
+8. 문자열에 탭이나, 줄바꿈 문자 제거하는 것
+  [stackoverflow 답변](https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116)
+  위의 답변들 중에 나는 아래의 방법으로 해결
+  ```python
+  &amp;gt;&amp;gt;&amp;gt; import re
+  &amp;gt;&amp;gt;&amp;gt; myString=&quot;I want to Remove all white \t spaces, new lines \n and tabs \t&quot;
+  &amp;gt;&amp;gt;&amp;gt; re.sub('\s+',' ',myString)
+  'I want to Remove all white spaces, new lines and tabs '
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기
+  &lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
+  다만 난 답변을 찾다가 django forms의 widget설정에서 readonly 옵션을 넣어봤더니 disabled와 같은 모습으로 템플릿에 나와서 그대로 사용했다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅
+  django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.
+  아래는 내가 적용했던 세팅
+  ```
+  import os
+  import django&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;os.environ.setdefault(“DJANGO_SETTINGS_MODULE”, “my_homepage.settings”)
+  django.setup()&lt;/p&gt;
+
+&lt;p&gt;from main.models import NewsTitle
+  ```
+  &lt;a href=&quot;https://stackoverflow.com/questions/15048963/alternative-to-the-deprecated-setup-environ-for-one-off-django-scripts?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;참고한 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;celery 를 활용하여 크롤링한 데이터 저장하기&lt;/li&gt;
+  &lt;li&gt;celery beat를 활용 -&amp;gt; 폐기
+    주기적으로 크롤링을 작동시켜서 크롤링한 데이터를 저장하려 했으나 elasticbeanstalk와 docker를 활용하여 배포할 경우 auto scaling시에 문제가 발생할 수 있다. (같은 ec2가 여러개 생길경우 인스턴스 갯수 마다 beat가 따로 동작하기 때문에 크롤링이 중복되는 문제 발생)
+    -&amp;gt; 데이터 생성시간을 체크해서 일정시간이 지나지 않았으면 작동하지않게 할 수도 있다. -&amp;gt; que요청과 시간을 확인하는 로직은 항상 들어가야 하기 때문에 delay보다 자원이 더 낭비될 가능성이 크다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;celery delay 활용
+    created time field를 활용해 request마다 데이터베이스의 크롤링 데이터가 stale 한 경우 delay로 크롤링작업 실행. concurrency 문제가 발생할 수 있기 때문에 celery task 작동시에 database lock을 사용한다.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;celery docker에서 작동해보기 -&amp;gt; 폐기&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;default user는 locallhost환경으로만 접속가능하기 때문에 새로운 user를 만들어 줘야 한다.
+    &lt;code class=&quot;highlighter-rouge&quot;&gt;rabbitmqctl add_user username password&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;aws sqs를 활용하여 celery를 사용하기로 함
+  celery 실행시 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하라고 함, &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt; 을 설치하기 위해선 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 해당 명령어를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
+  &lt;a href=&quot;https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing&quot;&gt;pycurl 설치관련 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;elasticbeanstalk에서 내 도메인 이름 사용하기&lt;/li&gt;
+  &lt;li&gt;route53 등록전 name서버를 aws로 교체
+  &lt;a href=&quot;http://wingsnote.com/57&quot;&gt;참고 블로그&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;route53에서 내 도메인과 elb 도메인 연결하기
+  &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/customdomains.html&quot;&gt;route 53 설명서&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">EXPLOG</title><link href="https://zooozoo.github.io/portfolio/explog/" rel="alternate" type="text/html" title="EXPLOG" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/explog</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/explog/">&lt;!-- Courtesy of embedresponsively.com //--&gt;
 &lt;div class=&quot;responsive-video-container&quot;&gt;
 
   &lt;iframe src=&quot;https://www.youtube.com/embed/n_dV5jrGEx4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -826,83 +1171,26 @@ Order of filter doesn’t matter we can also write above query as:&lt;/p&gt;
 
 &lt;p&gt;이해하고 다시 적은 내용이지만 다시 생각해 봐도 글로 설명하는 것 보다 예시를 통해 이해하는 편이 훨씬 도움이 되는 듯 하다.&lt;/p&gt;
 
-&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="django" /><summary type="html">장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/Fluent_Python</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">4월09일~4월13일</title><link href="https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9409%EC%9D%BC~4%EC%9B%9413%EC%9D%BC/" rel="alternate" type="text/html" title="4월09일~4월13일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/4%EC%9B%9409%EC%9D%BC~4%EC%9B%9413%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9409%EC%9D%BC~4%EC%9B%9413%EC%9D%BC/">&lt;h2 id=&quot;4월-09일-월요일&quot;&gt;4월 09일 월요일&lt;/h2&gt;
-
-&lt;p&gt;오늘 한일&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (5장까지)&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4월-10일-화요일&quot;&gt;4월 10일 화요일&lt;/h2&gt;
+&lt;p&gt;잘 이해가 안된다면 stackoverflow의 답변을 차근차근 읽어내려 간다면 충분히 이해할 수 있을 것 같다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="django" /><summary type="html">장고의 모델 문서를 공부하다가[(Making Queries)](https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships) 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하... 내 시간...)</summary></entry><entry><title type="html">전문가를 위한 파이썬</title><link href="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/" rel="alternate" type="text/html" title="전문가를 위한 파이썬" /><published>2018-01-23T00:00:00+09:00</published><updated>2018-01-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/Fluent_Python</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-01-23-Fluent_Python/"></content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html"></summary></entry><entry><title type="html">5월07일~5월11일</title><link href="https://zooozoo.github.io/til/2018-01-22-5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC/" rel="alternate" type="text/html" title="5월07일~5월11일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC/">&lt;h2 id=&quot;5월-07일-월요일&quot;&gt;5월 07일 월요일&lt;/h2&gt;
 
 &lt;p&gt;오늘 한일&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (6장까지)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;4월-11일-수요일&quot;&gt;4월 11일 수요일&lt;/h2&gt;
+&lt;h2 id=&quot;5월-08일-화요일&quot;&gt;5월 08일 화요일&lt;/h2&gt;
 
 &lt;p&gt;오늘 한일&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;컴퓨터 사이언스 부트캠프 with 파이썬 독서 2회독 (7장 중반까지)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h2 id=&quot;4월-12일-목요일&quot;&gt;4월 12일 목요일&lt;/h2&gt;
+&lt;h2 id=&quot;5월-09일-수요일&quot;&gt;5월 09일 수요일&lt;/h2&gt;
 
 &lt;p&gt;오늘 한일&lt;/p&gt;
 
 &lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4월-12일-금요일&quot;&gt;4월 12일 금요일&lt;/h2&gt;
-
-&lt;p&gt;오늘 한일&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">4월 09일 월요일</summary></entry><entry><title type="html">4월02일~4월06일</title><link href="https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9402%EC%9D%BC~4%EC%9B%9406%EC%9D%BC/" rel="alternate" type="text/html" title="4월02일~4월06일" /><published>2018-01-22T00:00:00+09:00</published><updated>2018-01-22T00:00:00+09:00</updated><id>https://zooozoo.github.io/til/4%EC%9B%9402%EC%9D%BC~4%EC%9B%9406%EC%9D%BC</id><content type="html" xml:base="https://zooozoo.github.io/til/2018-01-22-4%EC%9B%9402%EC%9D%BC~4%EC%9B%9406%EC%9D%BC/">&lt;h2 id=&quot;4월-02일-월요일&quot;&gt;4월 02일 월요일&lt;/h2&gt;
-
-&lt;p&gt;오늘 한일&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;컴퓨터 사이언스 부트캠프 with 파이썬 독서 5장까지&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4월-03일-화요일&quot;&gt;4월 03일 화요일&lt;/h2&gt;
-
-&lt;p&gt;오늘 한일&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4월-04일-수요일&quot;&gt;4월 04일 수요일&lt;/h2&gt;
-
-&lt;p&gt;오늘 한일&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;컴퓨터 사이언스 부트캠프 with 파이썬 독서 12장까지&lt;/li&gt;
-  &lt;li&gt;css 강의자료 복습 -&amp;gt; 개인 홈페이지에 적용 하기 위해서&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&quot;4월-05일-목요일&quot;&gt;4월 05일 목요일&lt;/h2&gt;
-
-&lt;p&gt;오늘 한일&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;알고리즘 문제 풀이 &lt;a href=&quot;https://github.com/zooozoo/algorithm&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;개인 홈페이지 프로젝트&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;(git hub)&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">4월 02일 월요일</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="til" /><summary type="html">5월 07일 월요일</summary></entry></feed>

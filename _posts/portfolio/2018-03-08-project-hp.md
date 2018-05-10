@@ -5,7 +5,7 @@ title: Project-HP
 excerpt: project portfolio
 ---
 
-## Custom Homepage Project [www.news-collecter.com](www.news-collecter.com)
+## Custom Homepage Project [www.news-collecter.com](https://www.news-collecter.com/)
 홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
 주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.
 
@@ -64,9 +64,12 @@ excerpt: project portfolio
 2. local 에서 postgres 연결 확인
 3. settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리
 4. RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기
+
   * docker를 만드는 과정에서 있었던 일
+
   docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.
-  ```docker
+
+  ```
   E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
 
   E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
@@ -98,6 +101,7 @@ excerpt: project portfolio
   E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
   The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
   ```
+
   대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
   [관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 

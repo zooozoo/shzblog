@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>            Cli - Record      Organize      Make it mine      </title>
-<meta name="description" content="  rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름">
+<meta name="description" content="rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://zooozoo.github.io/records/2017-09-25-CLI/">
 
 
-  <meta property="og:description" content="  rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름">
+  <meta property="og:description" content="rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름">
 
 
 
@@ -195,6 +195,8 @@
           
             <li><a href="/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" class="">기술면접 준비</a></li>
           
+            <li><a href="/records/2018-03-23-NGINX/" class="">NGINX</a></li>
+          
             <li><a href="/records/2018-01-23-Fluent_Python/" class="">전문가를 위한 파이썬</a></li>
           
             <li><a href="/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="">Docker관련</a></li>
@@ -259,7 +261,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Cli">
-    <meta itemprop="description" content="  rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름">
+    <meta itemprop="description" content="rm -r 폴더이름or파일이름폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. ex) rm -rf 폴더이름or파일이름">
     <meta itemprop="datePublished" content="September 25, 2017">
     
 
@@ -274,7 +276,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
           
         </header>
@@ -285,76 +287,121 @@
           <aside class="sidebar__right">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
-              
+              <ul class="toc__menu">
+  <li><a href="#rm--r-폴더이름or파일이름">rm -r 폴더이름or파일이름</a></li>
+  <li><a href="#cp-복사대상파일경로-복사할위치">cp 복사대상파일경로 복사할위치</a></li>
+  <li><a href="#폴더안에-있는-모든-파일-복사하기">폴더안에 있는 모든 파일 복사하기</a></li>
+  <li><a href="#mv-기존이름-바꿀이름">mv 기존이름 바꿀이름</a></li>
+  <li><a href="#kill명령어에-관해-포스팅한-블로그링크">kill명령어에 관해 포스팅한 블로그링크</a></li>
+  <li><a href="#실행되고-있는-모든-프로세스-확인">실행되고 있는 모든 프로세스 확인</a></li>
+  <li><a href="#실행되고-있는-프로세스-확인">실행되고 있는 프로세스 확인</a></li>
+  <li><a href="#실행되고-있는-프로세스-죽이기">실행되고 있는 프로세스 죽이기</a></li>
+  <li><a href="#가동되고-있는-서버-확인">가동되고 있는 서버 확인</a></li>
+  <li><a href="#서버죽이기예시">서버죽이기(예시)</a></li>
+  <li><a href="#port8000과-연결되어-있는-모든-서버를-kill한다">port8000과 연결되어 있는 모든 서버를 kill한다.</a></li>
+  <li><a href="#zsh-사용시-입력하고-있는-라인-전체-삭제하기">(zsh 사용시) 입력하고 있는 라인 전체 삭제하기</a></li>
+  <li><a href="#가상환경-해제">가상환경 해제</a></li>
+  <li><a href="#하드-용량-확인">하드 용량 확인</a></li>
+  <li><a href="#파일이름-바꾸기">파일이름 바꾸기</a></li>
+  <li><a href="#터미널창에서-현재-있는-디렉토리-열기">터미널창에서 현재 있는 디렉토리 열기</a></li>
+  <li><a href="#환경변수-설정관련">환경변수 설정관련</a></li>
+  <li><a href="#apt-get으로-설치한-패키지-삭제하기">apt-get으로 설치한 패키지 삭제하기</a></li>
+  <li><a href="#apt-get으로-설치한-패키지리스트-확인하기">apt-get으로 설치한 패키지리스트 확인하기</a></li>
+  <li><a href="#python-버전-확인-명령어">python 버전 확인 명령어</a></li>
+  <li><a href="#pip-버전-확인-명령어">pip 버전 확인 명령어</a></li>
+</ul>
             </nav>
           </aside>
         
-        <ul>
-  <li>
-    <p>rm -r 폴더이름or파일이름
-폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,
+        <h2 id="rm--r-폴더이름or파일이름">rm -r 폴더이름or파일이름</h2>
+<p>폴더를 지울 때는 -r 옵션을 넣어야 지워진다.(폴더안에 폴더가 있으면 또 지워야 되니까 리커시브 옵션) ,
 지울껀지 물어보는데 f 옵션을 주어서 물어보지 않게 바로 지울 수 있다. <code class="highlighter-rouge">ex) rm -rf 폴더이름or파일이름</code></p>
-  </li>
-  <li>
-    <p>cp 복사대상파일경로 복사할위치</p>
-  </li>
-  <li>
-    <p>폴더안에 있는 모든 파일 복사하기
-<code class="highlighter-rouge">cp -a /source/. /dest/</code></p>
-  </li>
-  <li>
-    <p>mv 기존이름 바꿀이름
-파일이동, 혹은 파일이름변경</p>
-  </li>
-  <li>가동되고 있는 서버 확인
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps -ax | grep runserver
-</code></pre></div>    </div>
-  </li>
-  <li>서버죽이기(예시)
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 21884
-</code></pre></div>    </div>
-  </li>
-  <li>port8000과 연결되어 있는 모든 서버를 kill한다.
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo fuser -k 8000/tcp
-</code></pre></div>    </div>
-  </li>
-  <li>(zsh 사용시) 입력하고 있는 라인 전체 삭제하기
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl + u
-</code></pre></div>    </div>
-  </li>
-  <li>가상환경 해제
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv local --unset
-</code></pre></div>    </div>
-  </li>
-  <li>하드 용량 확인
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df -h -t
-</code></pre></div>    </div>
-    <p><code class="highlighter-rouge">-h</code> 옵션은 human-readable 의 약자로 GB 혹은 MB 단위로 용량을 보여준다.
-<code class="highlighter-rouge">-t</code> 옵션은 파일 시스템의 종류까지 출력해 준다.</p>
-  </li>
-  <li>파일이름 바꾸기
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv old-file-name new-file-name
-</code></pre></div>    </div>
-  </li>
-  <li>터미널창에서 현재 있는 디렉토리 열기
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nautilus .
-</code></pre></div>    </div>
-  </li>
-  <li>환경변수 설정관련
-```
-export 명령어를 이용해서 환경변수를 확인 및 수정할수 있다.
-export
--&gt; 환경변수 리스트를 보여준다.
-export 변수명=변수값
--&gt; 해당 변수명에 변수값을 등록한다.
-echo $변수명
--&gt; 변수명에 해당하는 환경변수값을 보여준다.
-export 변수명=$변수명:변수값
--&gt; 변수명에 변수값을 추가한다</li>
-</ul>
 
-<p>```
-<a href="http://akaseon.tistory.com/50">출처</a></p>
+<h2 id="cp-복사대상파일경로-복사할위치">cp 복사대상파일경로 복사할위치</h2>
+
+<h2 id="폴더안에-있는-모든-파일-복사하기">폴더안에 있는 모든 파일 복사하기</h2>
+<p><code class="highlighter-rouge">cp -a /source/. /dest/</code></p>
+
+<h2 id="mv-기존이름-바꿀이름">mv 기존이름 바꿀이름</h2>
+<p>파일이동, 혹은 파일이름변경</p>
+
+<h2 id="kill명령어에-관해-포스팅한-블로그링크"><code class="highlighter-rouge">kill</code>명령어에 관해 포스팅한 블로그링크</h2>
+<p><a href="http://rerethink.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-kill">http://rerethink.tistory.com/entry/%EB%A6%AC%EB%88%85%EC%8A%A4-kill</a></p>
+
+<h2 id="실행되고-있는-모든-프로세스-확인">실행되고 있는 모든 프로세스 확인</h2>
+<p><code class="highlighter-rouge">ps aux</code></p>
+
+<h2 id="실행되고-있는-프로세스-확인">실행되고 있는 프로세스 확인</h2>
+<p><code class="highlighter-rouge">ps -e | grep example</code></p>
+
+<h2 id="실행되고-있는-프로세스-죽이기">실행되고 있는 프로세스 죽이기</h2>
+<p><code class="highlighter-rouge">kill -9 프로세스id</code></p>
+
+<h2 id="가동되고-있는-서버-확인">가동되고 있는 서버 확인</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ps -ax | grep runserver
+</code></pre></div></div>
+
+<h2 id="서버죽이기예시">서버죽이기(예시)</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -9 21884
+</code></pre></div></div>
+
+<h2 id="port8000과-연결되어-있는-모든-서버를-kill한다">port8000과 연결되어 있는 모든 서버를 kill한다.</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo fuser -k 8000/tcp
+</code></pre></div></div>
+
+<h2 id="zsh-사용시-입력하고-있는-라인-전체-삭제하기">(zsh 사용시) 입력하고 있는 라인 전체 삭제하기</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ctrl + u
+</code></pre></div></div>
+
+<h2 id="가상환경-해제">가상환경 해제</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pyenv local --unset
+</code></pre></div></div>
+
+<h2 id="하드-용량-확인">하드 용량 확인</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>df -h -t
+</code></pre></div></div>
+<p><code class="highlighter-rouge">-h</code> 옵션은 human-readable 의 약자로 GB 혹은 MB 단위로 용량을 보여준다.
+<code class="highlighter-rouge">-t</code> 옵션은 파일 시스템의 종류까지 출력해 준다.</p>
+
+<h2 id="파일이름-바꾸기">파일이름 바꾸기</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>mv old-file-name new-file-name
+</code></pre></div></div>
+
+<h2 id="터미널창에서-현재-있는-디렉토리-열기">터미널창에서 현재 있는 디렉토리 열기</h2>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>nautilus .
+</code></pre></div></div>
+
+<h2 id="환경변수-설정관련">환경변수 설정관련</h2>
+
+<p>export 명령어를 이용해서 환경변수를 확인 및 수정할수 있다.
+<code class="highlighter-rouge">export</code>
+-&gt; 환경변수 리스트를 보여준다.
+<code class="highlighter-rouge">export 변수명=변수값</code><code class="highlighter-rouge">
+-&gt; 해당 변수명에 변수값을 등록한다.
+</code>echo $변수명<code class="highlighter-rouge">
+-&gt; 변수명에 해당하는 환경변수값을 보여준다.
+`export 변수명=$변수명:변수값</code>
+-&gt; 변수명에 변수값을 추가한다</p>
+
+<p><a href="http://akaseon.tistory.com/50">출처</a></p>
+
+<h2 id="apt-get으로-설치한-패키지-삭제하기"><code class="highlighter-rouge">apt-get</code>으로 설치한 패키지 삭제하기</h2>
+<p><code class="highlighter-rouge">apt-get remove packagename</code></p>
+
+<p>패키지를 삭제하는 명령어, 하지만 해당 패키지를 설치하면서 함께 설치된 읜존관계에 있는 다른 패키지는 남아있다.</p>
+
+<p><code class="highlighter-rouge">apt-get purge packagename or apt-get remove --purge packagename</code>
+삭제하는 패키지와 관련된 모든것을 삭제한다.
+<a href="https://askubuntu.com/questions/187888/what-is-the-correct-way-to-completely-remove-an-application">출처</a></p>
+
+<h2 id="apt-get으로-설치한-패키지리스트-확인하기"><code class="highlighter-rouge">apt-get</code>으로 설치한 패키지리스트 확인하기</h2>
+<p><code class="highlighter-rouge">apt list --installed</code></p>
+
+<h2 id="python-버전-확인-명령어">python 버전 확인 명령어</h2>
+<p><code class="highlighter-rouge">python -V</code></p>
+
+<h2 id="pip-버전-확인-명령어">pip 버전 확인 명령어</h2>
+<p><code class="highlighter-rouge">pip --version</code></p>
 
         
       </section>
@@ -458,6 +505,34 @@ export 변수명=$변수명:변수값
     
     <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="https://zooozoo.github.io/records/2018-03-23-NGINX/" rel="permalink">NGINX
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">NGINX를 공부하며 필요한 내용을 기록해 두었습니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
         <a href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="permalink">'하루 3분 네트워크 교실' 리뷰
 </a>
       
@@ -495,34 +570,6 @@ export 변수명=$변수명:변수값
     <h2 class="archive__item-title" itemprop="headline">
       
         <a href="https://zooozoo.github.io/portfolio/project-hp/" rel="permalink">Project-HP
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">project portfolio
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://zooozoo.github.io/assets/images/explog.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://zooozoo.github.io/portfolio/explog/" rel="permalink">EXPLOG
 </a>
       
     </h2>

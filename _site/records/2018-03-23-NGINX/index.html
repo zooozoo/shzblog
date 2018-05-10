@@ -1,0 +1,756 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.9.0 by Michael Rose
+  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>            NGINX - Record      Organize      Make it mine      </title>
+<meta name="description" content="NGINX를 공부하며 필요한 내용을 기록해 두었습니다.">
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Record|Organize|Make it mine">
+<meta property="og:title" content="NGINX">
+<meta property="og:url" content="https://zooozoo.github.io/records/2018-03-23-NGINX/">
+
+
+  <meta property="og:description" content="NGINX를 공부하며 필요한 내용을 기록해 두었습니다.">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2018-03-23T00:00:00+09:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://zooozoo.github.io/records/2018-03-23-NGINX/">
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    {
+      "@context" : "http://schema.org",
+      "@type" : "Person",
+      "name" : "zoozoo",
+      "url" : "https://zooozoo.github.io",
+      "sameAs" : null
+    }
+  </script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="https://zooozoo.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Record|Organize|Make it mine Feed">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="https://zooozoo.github.io/assets/css/main.css">
+
+<!--[if lte IE 9]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use http://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+  </head>
+
+  <body class="layout--single">
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    <div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="https://zooozoo.github.io/">HOME</a>
+        <ul class="visible-links">
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/posts/" >POSTS</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/records/" >RECORDS</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/til/" >TIL</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/about/" >ABOUT</a>
+            </li>
+          
+            
+            <li class="masthead__menu-item">
+              <a href="https://zooozoo.github.io/portfolio/" >PORTFOLIO</a>
+            </li>
+          
+        </ul>
+        
+        <button class="search__toggle" type="button">
+          <svg class="icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.99 16">
+            <path d="M15.5,13.12L13.19,10.8a1.69,1.69,0,0,0-1.28-.55l-0.06-.06A6.5,6.5,0,0,0,5.77,0,6.5,6.5,0,0,0,2.46,11.59a6.47,6.47,0,0,0,7.74.26l0.05,0.05a1.65,1.65,0,0,0,.5,1.24l2.38,2.38A1.68,1.68,0,0,0,15.5,13.12ZM6.4,2A4.41,4.41,0,1,1,2,6.4,4.43,4.43,0,0,1,6.4,2Z" transform="translate(-.01)"></path>
+          </svg>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+  
+    
+      
+      
+      
+    
+    
+      
+        
+
+<nav class="nav__list">
+  
+  <input id="ac-toc" name="accordion-toc" type="checkbox" />
+  <label for="ac-toc">Toggle Menu</label>
+  <ul class="nav__items">
+      <li>
+          <span class="nav__sub-title">
+          
+            records
+          
+          </span>
+        <ul>
+          
+            <li><a href="/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" class="">기술면접 준비</a></li>
+          
+            <li><a href="/records/2018-03-23-NGINX/" class="">NGINX</a></li>
+          
+            <li><a href="/records/2018-01-23-Fluent_Python/" class="">전문가를 위한 파이썬</a></li>
+          
+            <li><a href="/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="">Docker관련</a></li>
+          
+            <li><a href="/records/2017-11-16-ECS/" class="">Ecs</a></li>
+          
+            <li><a href="/records/2017-10-15-postgresql/" class="">Postgresql</a></li>
+          
+            <li><a href="/records/2017-10-14-dajngo_querySet_method/" class="">Dajngo_queryset_method</a></li>
+          
+            <li><a href="/records/2017-10-13-django_model_fieldtype-/" class="">Django_model_fieldtype</a></li>
+          
+            <li><a href="/records/2017-10-13-django_model_MakingQueries/" class="">Django_model_makingqueries</a></li>
+          
+            <li><a href="/records/2017-10-10-django_document/" class="">Django_document</a></li>
+          
+            <li><a href="/records/2017-10-09-welcome-to-jekyll/" class="">Test!</a></li>
+          
+            <li><a href="/records/2017-10-03-SQL/" class="">Sql</a></li>
+          
+            <li><a href="/records/2017-09-30-ubuntu_%EC%84%A4%EC%A0%95%EA%B4%80%EB%A0%A8/" class="">Ubuntu_설정관련</a></li>
+          
+            <li><a href="/records/2017-09-30-ubuntu_shortcut/" class="">Ubuntu_shortcut</a></li>
+          
+            <li><a href="/records/2017-09-30-atom_settings/" class="">Atom_settings</a></li>
+          
+            <li><a href="/records/2017-09-28-localkey,%20publickey,%EA%B9%83%ED%97%99%20%EA%B4%80%EB%A0%A8/" class="">Localkey, publickey,깃헙 관련</a></li>
+          
+            <li><a href="/records/2017-09-25-pycharm_shortcut/" class="">Pycharm_shortcut</a></li>
+          
+            <li><a href="/records/2017-09-25-django/" class="">Django</a></li>
+          
+            <li><a href="/records/2017-09-25-CLI/" class="">Cli</a></li>
+          
+            <li><a href="/records/2017-09-21-pycharm/" class="">Pycharm</a></li>
+          
+            <li><a href="/records/2017-09-14-vim%EA%B4%80%EB%A0%A8/" class="">Vim관련</a></li>
+          
+            <li><a href="/records/2017-09-14-python_script/" class="">Python_script</a></li>
+          
+            <li><a href="/records/2017-09-13-pyenv,virtualenv/" class="">Pyenv,virtualenv</a></li>
+          
+            <li><a href="/records/2017-09-12-python/" class="">Python</a></li>
+          
+            <li><a href="/records/2017-09-11-git/" class="">Git</a></li>
+          
+            <li><a href="/records/2017-09-09-html/" class="">Html</a></li>
+          
+            <li><a href="/records/2017-09-09-css/" class="">Css</a></li>
+          
+        </ul>
+      </li>
+  </ul>
+</nav>
+
+      
+    
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <meta itemprop="headline" content="NGINX">
+    <meta itemprop="description" content="NGINX를 공부하며 필요한 내용을 기록해 두었습니다.">
+    <meta itemprop="datePublished" content="March 23, 2018">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 class="page__title" itemprop="headline">NGINX
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#생활코딩-nginx강의">생활코딩 Nginx강의</a></li>
+  <li><a href="#1강-nginx-소개">1강 Nginx 소개</a></li>
+  <li><a href="#2강-nginx-컴파일">2강 Nginx 컴파일</a></li>
+  <li><a href="#3강-php-fpm-mysql-1">3강 PHP-FPM-MYSQL 1</a>
+    <ul>
+      <li><a href="#cgi">CGI</a></li>
+      <li><a href="#fastcgi">FastCGI</a></li>
+    </ul>
+  </li>
+  <li><a href="#3강-php-fpm-mysql-2">3강 PHP-FPM-MYSQL 2</a></li>
+  <li><a href="#4강-php-fpm-mysql-3">4강 PHP-FPM-MYSQL 3</a></li>
+  <li><a href="#5강-nginx-환경설정">5강 NGINX 환경설정</a>
+    <ul>
+      <li><a href="#core-모듈-설정">Core 모듈 설정</a></li>
+      <li><a href="#http-블록">http 블록</a></li>
+      <li><a href="#server-블록">server 블록</a></li>
+      <li><a href="#location-블록">location 블록</a></li>
+      <li><a href="#events-블록">events 블록</a></li>
+      <li><a href="#설정-파일의-반영">설정 파일의 반영</a></li>
+    </ul>
+  </li>
+  <li><a href="#forward-proxy와-reverse-proxy의-차이">Forward proxy와 Reverse proxy의 차이</a></li>
+  <li><a href="#vps란">VPS란?</a></li>
+</ul>
+            </nav>
+          </aside>
+        
+        <h2 id="생활코딩-nginx강의">생활코딩 Nginx강의</h2>
+
+<p>아래의 내용은 egoing님이 강의하시는 opentutorials의 NGINX강의에서 발췌한 것 입니다.</p>
+
+<p><a href="https://opentutorials.org/module/384/3462">강의 링크</a></p>
+
+<h2 id="1강-nginx-소개">1강 Nginx 소개</h2>
+
+<ul>
+  <li>웹, 클라이언트와 서버간의 관계에 대한 설명</li>
+  <li>HTTP에 대한 소개</li>
+  <li>Web server -&gt; HTTP라고도 할 수 있다.</li>
+  <li>웹서버의 역사
+    <ul>
+      <li>아파치의 압도적인 점유율</li>
+      <li>그러나 최근들어서 점점 아파치의 점유율을 따라오고 있다.</li>
+    </ul>
+  </li>
+  <li>Nginx는 차세대 웹서버 - 더 적은 자원으로 더 빠르게 데이터를 서비스할 수 있는 경량화된 웹서버</li>
+  <li>Document Root : <code class="highlighter-rouge">/usr/share/nginx/html/</code></li>
+  <li>설정파일: <code class="highlighter-rouge">/etc/nginx/</code>
+    <ul>
+      <li><code class="highlighter-rouge">conf.d</code> -&gt; <code class="highlighter-rouge">default.conf</code>에는 nginx의 기본 설정이 있다.</li>
+      <li><code class="highlighter-rouge">conf.d</code>는 이름이 달라질 수 있다.</li>
+    </ul>
+  </li>
+  <li>로그파일: <code class="highlighter-rouge">/var/log/nginx/</code></li>
+</ul>
+
+<h2 id="2강-nginx-컴파일">2강 Nginx 컴파일</h2>
+
+<ul>
+  <li>컴파일하는 방법, 의존성 등의 문제가있는 난이도가 있음</li>
+  <li>Nginx 모듈을 컴파일을 통해서만 설치할 수 있기 때문에 알아두면 좋다</li>
+  <li>Nginx는 세가지 버전이 있다.
+    <ul>
+      <li>안전버전 : 실제 배포할 때</li>
+      <li>개발버전: 개발할 때 / 버그가 발생할 수 있다.</li>
+      <li>레거시버전: 예전버전의 Nginx</li>
+      <li>안전버전의 설치가 권장된다.</li>
+    </ul>
+  </li>
+  <li>Nginx는 마스터 프로세스(Master Process)와 작업자 프로세스(Worker Process)를 가지고 있다.
+    <ul>
+      <li><code class="highlighter-rouge">ps aux | grep nginx</code>를 실행해보면 아래와 같은 프로세스가 떠있을 것이다.</li>
+      <li>마스터 프로세스는 루트 계정으로 실행되면서 80, 443 포트의 소켓과의 통신을 담당한다.</li>
+      <li>작업자 프로세스는 실제로 데이터를 처리하는 프로세스라고 할 수 있는데 이 프로세스를 핸들링할 사용자를 만들어야 한다. 일반적으로 웹서버의 워커 유저는 www-data를 사용한다. www-data를 만드는 법은 아래와 같다.</li>
+      <li><code class="highlighter-rouge">useradd --shell /usr/sbin/nologin www-data</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="3강-php-fpm-mysql-1">3강 PHP-FPM-MYSQL 1</h2>
+
+<h3 id="cgi">CGI</h3>
+
+<ul>
+  <li>CGI는 Common Gateway Interface의 약자로 웹서버와 외부 프로그램을 연결해주는 표준화된 프로토콜이다.</li>
+</ul>
+
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1398.gif" alt="cgi based server" /></p>
+
+<h3 id="fastcgi">FastCGI</h3>
+
+<ul>
+  <li>CGI 는 하나의 요청(Request)에 하나의 프로세스를 생성한다. 이것은 프로세스를 생성하고 삭제하는 과정에서 많은 부하가 발생한다. 당연히 느리다. 이를 개선하기 위해서 등장한 것이 FastCGI이다. FastCGI는 요청이 있을 때마다 프로세스가 만들어지는 것이 아니라 만들어진 프로세스가 계속해서 새로운 요청들을 처리한다. 덕분에 프로세스를 생성하고 제거하는데 들어가는 부하가 줄어든다.</li>
+</ul>
+
+<p><img src="https://s3.ap-northeast-2.amazonaws.com/opentutorials-user-file/module/384/1397.gif" alt="cgi based server" /></p>
+
+<h2 id="3강-php-fpm-mysql-2">3강 PHP-FPM-MYSQL 2</h2>
+
+<ul>
+  <li>FPM, 과 MYSQL을 설치를 한 후에는 Nginx를 설정해 줘야 하는데 설정파일은 <code class="highlighter-rouge">/etc/nginx/conf.d/default.conf</code> 이거나 <code class="highlighter-rouge">/etc/nginx/sites-available/default</code>에 있다.</li>
+  <li>socker - fastcgi_pass는 php-fpm과 NGINX를 연결하기 위한 인터페이스를 지정하는 것.</li>
+  <li>Upstream Module - Upstream Module는 NGINX를 일종의 부하분배장치(Load Balancer)로 이용할 수 있게 해주는 NGINX의 모듈이다. 자세한 내용은 Upstream Module를 참고한다. <a href="http://opentutorials.org/module/384/4328">Upstream Module 바로가기</a></li>
+</ul>
+
+<h2 id="4강-php-fpm-mysql-3">4강 PHP-FPM-MYSQL 3</h2>
+
+<ul>
+  <li>PHP를 Nginx와 독립된 별도의 서버에 설치하여 연결하는 것을 설명</li>
+</ul>
+
+<h2 id="5강-nginx-환경설정">5강 NGINX 환경설정</h2>
+
+<ul>
+  <li>
+    <p>Nginx 설정파일은 conf 디렉토리 아래에 위치하고, 설치 바업에 따라서 설정파일의 위치가 다를 수 있다.</p>
+
+    <ul>
+      <li>컴파일을 통해 설치할 경우 -&gt; <code class="highlighter-rouge">/usr/local/nginx/conf</code></li>
+      <li><code class="highlighter-rouge">apt-get</code>을 이용해서 우분투에 설치할 경우 -&gt; <code class="highlighter-rouge">/etc/nginx</code></li>
+    </ul>
+  </li>
+  <li>
+    <p>설정파일 위치를 찾는 명령어
+<code class="highlighter-rouge">sudo find / -name nginx.conf</code></p>
+  </li>
+  <li>
+    <p>설정파일의 역할</p>
+
+    <ul>
+      <li>nginx.conf : 메인 설정 파일.</li>
+      <li>fcgi.conf : FastCGI 환경설정 파일</li>
+      <li>sites-enabled : 활성화된 사이트들의 설정 파일들이 위치. 아파치에서는 Virtual host의 설정에 해당한다. 기본적으로 존재하지 않을수도 있다. 이 디렉토리를 직접 만들어서 사용하는 방법은 <a href="http://opentutorials.org/module/384/4529">가상 호스팅</a>편에서 알아본다.</li>
+      <li>sites-available : 비활성화된 사이트들의 설정 파일들이 위치</li>
+    </ul>
+  </li>
+  <li>
+    <p>아래의 Nginx 메인 환경설정 파일인 <code class="highlighter-rouge">nginx.conf</code>의 내용을 파해치며 Nginx의 환경설정을 이해해 나가보자</p>
+
+    <div class="language-nginx highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">worker_processes</span>  <span class="mi">1</span><span class="p">;</span>
+<span class="k">events</span> <span class="p">{</span>
+    <span class="kn">worker_connections</span>  <span class="mi">1024</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="k">http</span> <span class="p">{</span>
+    <span class="kn">include</span>       <span class="s">mime.types</span><span class="p">;</span>
+    <span class="kn">server</span> <span class="p">{</span>
+        <span class="kn">listen</span>       <span class="mi">80</span><span class="p">;</span>
+        <span class="kn">location</span> <span class="n">/</span> <span class="p">{</span>
+            <span class="kn">root</span>   <span class="s">html</span><span class="p">;</span>
+            <span class="kn">index</span>  <span class="s">index.html</span> <span class="s">index.htm</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+
+</code></pre></div>    </div>
+
+    <h3 id="core-모듈-설정">Core 모듈 설정</h3>
+
+    <p>위의 예의 work_processes와 같은 지시자 설정 파일 최상단에 위치하면서 nginx의 기본적인 동작 방식을 정의한다. 여기서 사용되는 지시어들은 다른 곳에서 사용되지 않는다. <a href="http://opentutorials.org/module/384/4533">코어모듈 지시어 사전</a>을 참고하자.</p>
+
+    <h3 id="http-블록">http 블록</h3>
+
+    <p>http 블록은 이후에 소개할 server, location의 루트 블록이라고 할 수 있고, 여기서 설정된 값을 하위 블록들은 상속한다. http 블록은 여러개를 사용할 수 있지만 관리상의 이슈로 한번만 사용하는 것을 권장한다.</p>
+
+    <p>http, server, location 블록은 계층구조를 가지고 있다. 많은 지시어가 각각의 블록에서 동시에 사용할 수 있는데, http의 내용은 server의 기본값이 되고, server의 지시어는 location의 기본값이 된다. 그리고 하위의 블록에서 선언된 지시어는 상위의 선언을 무시하고 적용된다.</p>
+
+    <h3 id="server-블록">server 블록</h3>
+
+    <p>server 블록은 하나의 웹사이트를 선언하는데 사용된다. 가상 호스팅(Virtual Host)의 개념이다. 예를들어 하나의 서버로 http://opentutorials.org 과 http://egoing.net 을 동시에 운영하고 싶은 경우 사용할 수 있는 방법이다. 가상 호스팅에 대한 자세한 내용은 <a href="http://opentutorials.org/module/384/4529">가상 호스팅 수업</a>을 참고하자.</p>
+
+    <h3 id="location-블록">location 블록</h3>
+
+    <p>location 블록은 server 블록 안에 등장하면서 특정 URL을 처리하는 방법을 정의한다. 이를테면 http://opentutorials.org/course/1 과 http://opentutorials.org/module/1 로 접근하는 요청을 다르게 처리하고 싶을 때 사용한다.</p>
+
+    <h3 id="events-블록">events 블록</h3>
+
+    <p>이벤트 블록은 주로 네트워크의 동작방법과 관련된 설정값을 가진다. 이벤트 블록의 지시어들은 이벤트 블록에서만 사용할 수 있고, http, server, location와는 상속관계를 갖지 않는다. 이벤트 모듈 지시어에 대한 설명은 <a href="http://opentutorials.org/module/384/4534">이벤트 모듈 지시어 사전</a>을 참고한다.</p>
+
+    <h3 id="설정-파일의-반영">설정 파일의 반영</h3>
+
+    <p>설정 파일의 내용을 변경한 후에는 이를 NGINX에 반영해야 하는데 아래와 같이 reload 명령을 이용한다. restart를 이용해도 되지만 권장되지 않는다.</p>
+  </li>
+</ul>
+
+<h2 id="forward-proxy와-reverse-proxy의-차이">Forward proxy와 Reverse proxy의 차이</h2>
+<p><a href="https://www.lesstif.com/pages/viewpage.action?pageId=21430345">https://www.lesstif.com/pages/viewpage.action?pageId=21430345</a></p>
+
+<h2 id="vps란">VPS란?</h2>
+<p><a href="http://library.gabia.com/contents/infrahosting/3594">http://library.gabia.com/contents/infrahosting/3594</a></p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://zooozoo.github.io/tags/nginx%EA%B0%95%EC%9D%98%EB%A1%9D" class="page__taxonomy-item" rel="tag">NGINX강의록</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="https://zooozoo.github.io/categories/records" class="page__taxonomy-item" rel="tag">records</a>
+    
+    </span>
+  </p>
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-03-23T00:00:00+09:00">March 23, 2018</time></p>
+        
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" class="pagination--pager" title="'하루 3분 네트워크 교실' 리뷰
+">Previous</a>
+    
+    
+      <a href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" class="pagination--pager" title="기술면접 준비
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <h4 class="page__comments-title">Leave a Comment</h4>
+      <section id="disqus_thread"></section>
+    
+</div>
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You May Also Enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="permalink">기술면접 준비
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  12 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="permalink">'하루 3분 네트워크 교실' 리뷰
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  1 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://zooozoo.github.io/assets/images/comming-soon.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/portfolio/project-hp/" rel="permalink">Project-HP
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">project portfolio
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+      <div class="archive__item-teaser">
+        <img src=
+          
+            "https://zooozoo.github.io/assets/images/explog.jpg"
+          
+          alt="">
+      </div>
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="https://zooozoo.github.io/portfolio/explog/" rel="permalink">EXPLOG
+</a>
+      
+    </h2>
+    
+    <p class="archive__item-excerpt" itemprop="description">project portfolio
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap">
+  <input type="text" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  <div id="results" class="results"></div>
+</div>
+      </div>
+    
+
+    <div class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+    
+    
+    
+      <li><a href="https://github.com/zooozoo"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+    
+    
+    
+    <li><a href="https://zooozoo.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2018 zoozoo. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="https://zooozoo.github.io/assets/js/main.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"></script>
+
+
+
+  
+  
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr.min.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-store.js"></script>
+  <script defer src="https://zooozoo.github.io/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+    
+  <script>
+    var disqus_config = function () {
+      this.page.url = "https://zooozoo.github.io/records/2018-03-23-NGINX/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/records/NGINX"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://hunzoos-blog.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  
+
+
+
+  </body>
+</html>

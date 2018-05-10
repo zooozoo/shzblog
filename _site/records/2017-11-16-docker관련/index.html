@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>            Docker관련 - Record      Organize      Make it mine      </title>
-<meta name="description" content="Docker 세팅">
+<meta name="description" content="도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.">
 
 
 
@@ -21,7 +21,7 @@
 <meta property="og:url" content="https://zooozoo.github.io/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/">
 
 
-  <meta property="og:description" content="Docker 세팅">
+  <meta property="og:description" content="도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.">
 
 
 
@@ -195,6 +195,8 @@
           
             <li><a href="/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" class="">기술면접 준비</a></li>
           
+            <li><a href="/records/2018-03-23-NGINX/" class="">NGINX</a></li>
+          
             <li><a href="/records/2018-01-23-Fluent_Python/" class="">전문가를 위한 파이썬</a></li>
           
             <li><a href="/records/2017-11-16-docker%EA%B4%80%EB%A0%A8/" class="">Docker관련</a></li>
@@ -259,7 +261,7 @@
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
     <meta itemprop="headline" content="Docker관련">
-    <meta itemprop="description" content="Docker 세팅">
+    <meta itemprop="description" content="도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.">
     <meta itemprop="datePublished" content="November 16, 2017">
     
 
@@ -285,14 +287,23 @@
           <aside class="sidebar__right">
             <nav class="toc">
               <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> Contents</h4></header>
-              
+              <ul class="toc__menu">
+  <li><a href="#도커를-처음-설치하고-나서-다음-명령어로-우분투-이미지를-다운받고-해당-운영체제를-실행할-수-있다">도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.</a></li>
+  <li><a href="#켜진-도커환경-안에서는-처음부터-root권한이-주어지기-때문에-sudo입력-없이도-여러가지-설치-명령을-실행시킬-수-있다">켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.</a></li>
+  <li><a href="#dockerfilebase-이미지-만드는-명령어">Dockerfile.base 이미지 만드는 명령어</a></li>
+  <li><a href="#dockerfilebase를-기준으로-우리가-쓸-도커container-만드는-명령어">Dockerfile.base를 기준으로 우리가 쓸 도커(container) 만드는 명령어</a></li>
+  <li><a href="#만든-이미지-확인-명령어">만든 이미지 확인 명령어</a></li>
+  <li><a href="#dockercontainer-실행시키는-명령어예-eb">docker(Container) 실행시키는 명령어(예: eb)</a></li>
+  <li><a href="#docker를-외부랑-연결시키기-위해서-옵션을-추가한-멸영어">docker를 외부랑 연결시키기 위해서 옵션을 추가한 멸영어</a></li>
+  <li><a href="#켜져있는-도커에-접속할-수-있는-명령어-4317은-docker-id">켜져있는 도커에 접속할 수 있는 명령어 (4317은 docker id)</a></li>
+  <li><a href="#위와같은-명령어를-아래와-같이-접속도-가능하다">위와같은 명령어를 아래와 같이 접속도 가능하다.</a></li>
+  <li><a href="#실행되고-있는-이미지-파일container-정보-확인하는-명령어">실행되고 있는 이미지 파일(container) 정보 확인하는 명령어</a></li>
+  <li><a href="#docker-hub에-내-이미지-push-하기">docker hub에 내 이미지 push 하기</a></li>
+</ul>
             </nav>
           </aside>
         
-        
-<h1 id="docker-세팅">Docker 세팅</h1>
-
-<p>도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.</p>
+        <h3 id="도커를-처음-설치하고-나서-다음-명령어로-우분투-이미지를-다운받고-해당-운영체제를-실행할-수-있다">도커를 처음 설치하고 나서 다음 명령어로 우분투 이미지를 다운받고 해당 운영체제를 실행할 수 있다.</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run ubuntu:16.04
 </code></pre></div></div>
@@ -300,49 +311,52 @@
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker run --rm it ubuntu:16:04 /bin/bash
 </code></pre></div></div>
 
-<p>켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.</p>
+<h3 id="켜진-도커환경-안에서는-처음부터-root권한이-주어지기-때문에-sudo입력-없이도-여러가지-설치-명령을-실행시킬-수-있다">켜진 도커환경 안에서는 처음부터 root권한이 주어지기 때문에 sudo입력 없이도 여러가지 설치 명령을 실행시킬 수 있다.</h3>
 
-<p>Dockerfile.base 이미지 만드는 명령어</p>
+<h3 id="dockerfilebase-이미지-만드는-명령어">Dockerfile.base 이미지 만드는 명령어</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker build -t base -f Dockerfile.base .
 </code></pre></div></div>
 
-<p>Dockerfile.base를 기준으로 우리가 쓸 도커(container) 만드는 명령어</p>
+<h3 id="dockerfilebase를-기준으로-우리가-쓸-도커container-만드는-명령어">Dockerfile.base를 기준으로 우리가 쓸 도커(container) 만드는 명령어</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker build -t eb .
 </code></pre></div></div>
 
-<p>만든 이미지 확인 명령어</p>
+<h3 id="만든-이미지-확인-명령어">만든 이미지 확인 명령어</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker images
 </code></pre></div></div>
 
-<p>docker(Container) 실행시키는 명령어(예: eb)</p>
-
-<p>(마지막의 <code class="highlighter-rouge">/bin/zsh</code>은 <code class="highlighter-rouge">-it</code>옵션으로 프로그램을 실행시키기 위해 입력해주는 것, <code class="highlighter-rouge">-it</code>터미널 형식으로 연다는 뜻, <code class="highlighter-rouge">--rm</code>옵션은 컨테이너가 꺼졌을 때 삭제한다는 의미)</p>
+<h3 id="dockercontainer-실행시키는-명령어예-eb">docker(Container) 실행시키는 명령어(예: eb)</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run --rm -it eb /bin/zsh
 </code></pre></div></div>
+<p>(마지막의 <code class="highlighter-rouge">/bin/zsh</code>은 <code class="highlighter-rouge">-it</code>옵션으로 프로그램을 실행시키기 위해 입력해주는 것, <code class="highlighter-rouge">-it</code>터미널 형식으로 연다는 뜻, <code class="highlighter-rouge">--rm</code>옵션은 컨테이너가 꺼졌을 때 삭제한다는 의미)</p>
 
-<p>docker를 외부랑 연결시키기 위해서 옵션을 추가한 멸영어</p>
+<h3 id="docker를-외부랑-연결시키기-위해서-옵션을-추가한-멸영어">docker를 외부랑 연결시키기 위해서 옵션을 추가한 멸영어</h3>
 
 <p>(우리가 8012로 접근하면 docker는 80으로 받는다. 우리가 8013으로 접근하면 docker는  8000으로 받는다. 80번 포트와 8000포트를 둘다 테스트해보고 싶을 때 이런식으로 쓴다)</p>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>sudo docker run --rm -it -p 8012:80 -p 8013:8000 eb /bin/zsh
 </code></pre></div></div>
 
-<p>켜져있는 도커에 접속할 수 있는 명령어 (4317은 docker id)</p>
+<h3 id="켜져있는-도커에-접속할-수-있는-명령어-4317은-docker-id">켜져있는 도커에 접속할 수 있는 명령어 (4317은 docker id)</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -it 4317 /bin/zsh
 </code></pre></div></div>
 
-<p>위와같은 명령어를 아래와 같이 접속도 가능하다.</p>
+<h3 id="위와같은-명령어를-아래와-같이-접속도-가능하다">위와같은 명령어를 아래와 같이 접속도 가능하다.</h3>
 
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker exec -it 4317 zsh
 </code></pre></div></div>
 
-<p>실행되고 있는 이미지 파일(container) 정보 확인하는 명령어</p>
+<h3 id="실행되고-있는-이미지-파일container-정보-확인하는-명령어">실행되고 있는 이미지 파일(container) 정보 확인하는 명령어</h3>
 <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker ps
+</code></pre></div></div>
+
+<h3 id="docker-hub에-내-이미지-push-하기">docker hub에 내 이미지 push 하기</h3>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker push zoozoo/base
 </code></pre></div></div>
 
         
@@ -447,6 +461,34 @@
     
     <h2 class="archive__item-title" itemprop="headline">
       
+        <a href="https://zooozoo.github.io/records/2018-03-23-NGINX/" rel="permalink">NGINX
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">NGINX를 공부하며 필요한 내용을 기록해 두었습니다.
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
         <a href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="permalink">'하루 3분 네트워크 교실' 리뷰
 </a>
       
@@ -484,34 +526,6 @@
     <h2 class="archive__item-title" itemprop="headline">
       
         <a href="https://zooozoo.github.io/portfolio/project-hp/" rel="permalink">Project-HP
-</a>
-      
-    </h2>
-    
-    <p class="archive__item-excerpt" itemprop="description">project portfolio
-</p>
-  </article>
-</div>
-
-        
-          
-
-
-
-<div class="grid__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-    
-      <div class="archive__item-teaser">
-        <img src=
-          
-            "https://zooozoo.github.io/assets/images/explog.jpg"
-          
-          alt="">
-      </div>
-    
-    <h2 class="archive__item-title" itemprop="headline">
-      
-        <a href="https://zooozoo.github.io/portfolio/explog/" rel="permalink">EXPLOG
 </a>
       
     </h2>
