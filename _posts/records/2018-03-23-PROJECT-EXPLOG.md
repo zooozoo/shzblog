@@ -135,12 +135,14 @@ urlpatterns = [
 acc_active_email.html
 
 ```
-\{% autoescape off %\}
+{% raw %}
+{% autoescape off %}
 Hi {{ user.username }},
 Please click on the link to confirm your registration,
 
 http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
 {% endautoescape %}
+{% endraw %}
 ```
 
 
