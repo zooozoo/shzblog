@@ -238,7 +238,7 @@ var store = [{
         "excerpt":"Custom Homepage Project www.news-collecter.com홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.참고한 사이트 모음 html 레이아웃 관련 프로젝트 Github : https://github.com/zooozoo/homepage-project if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고얼마나 읽기 편한지와같은 문제가 고려되는데...","categories": ["portfolio"],
         "tags": [],
         "url": "https://zooozoo.github.io/portfolio/project-hp/",
-        "teaser":"https://zooozoo.github.io/assets/images/comming-soon.jpg"},{
+        "teaser":"https://zooozoo.github.io/assets/images/news-collecter.jpg"},{
         "title": "\\'하루 3분 네트워크 교실\\' 리뷰",
         "excerpt":"OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 커니핸 교수의 Hello Digital World라는 책을 읽었고, 책을...","categories": ["posts"],
         "tags": ["책리뷰"],
