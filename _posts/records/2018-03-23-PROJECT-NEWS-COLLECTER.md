@@ -133,11 +133,14 @@
 8. 문자열에 탭이나, 줄바꿈 문자 제거하는 것
   [stackoverflow 답변](https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116)
   위의 답변들 중에 나는 아래의 방법으로 해결
+
   ```python
+
   >>> import re
   >>> myString="I want to Remove all white \t spaces, new lines \n and tabs \t"
   >>> re.sub('\s+',' ',myString)
   'I want to Remove all white spaces, new lines and tabs '
+  
   ```
 
 9. `input`태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기
