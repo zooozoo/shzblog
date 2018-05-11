@@ -135,7 +135,7 @@ urlpatterns = [
 acc_active_email.html
 
 ```
-{% autoescape off %}
+\{% autoescape off %\}
 Hi {{ user.username }},
 Please click on the link to confirm your registration,
 
