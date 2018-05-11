@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-05-09T16:54:05+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-05-10T23:29:40+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 올려가는 데에 도움이 되겠다는 생각을 가질 수 있었다. 단편적으로 ‘A는 B입니다.’라고 답변할 수도 있겠지만 한단계씩 더 깊이 물어보는 질문에 답변할 수 있으려면 기술에 대한 기본적인 지식과 이해가 있어야만 가능하기 때문이다.&lt;/p&gt;
 
@@ -574,7 +574,7 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 
 &lt;p&gt;저자가 일본인인데 저자가 쓴 다른 책들도 있어서 혹시 번역된게 있으면 사서 볼려고 했는데 없어서 아쉬웠다. 이 책을 읽은 후에는 같은 출판사에서 쓴 &lt;code class=&quot;highlighter-rouge&quot;&gt;그림으로 배우는 HTTP Network Basic&lt;/code&gt;도 사서 읽어봤는데 http를 최대한 쉽게 설명하려고 하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;하루 3분 네트워크 교실&lt;/code&gt;을 읽기 전에 먼저 읽었다면 조금 답답하게 읽었을 것 같다는 생각을 했었다.&lt;/p&gt;
 
-&lt;p&gt;저자의 다른 책도 번역되서 나왔으면 좋겠다는 바람과 함께 리뷰를 마친다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="책리뷰" /><summary type="html">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.</summary></entry><entry><title type="html">Project-HP</title><link href="https://zooozoo.github.io/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/project-hp</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/project-hp/">&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;www.news-collecter.com&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;저자의 다른 책도 번역되서 나왔으면 좋겠다는 바람과 함께 리뷰를 마친다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="책리뷰" /><summary type="html">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.</summary></entry><entry><title type="html">Project-HP</title><link href="https://zooozoo.github.io/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/project-hp</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/project-hp/">&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
 주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
 
@@ -642,100 +642,113 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   &lt;/li&gt;
   &lt;li&gt;local 에서 postgres 연결 확인&lt;/li&gt;
   &lt;li&gt;settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리&lt;/li&gt;
-  &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기
+  &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;docker를 만드는 과정에서 있었던 일&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]
+
+  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+  The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;대략 이런 에러였는데 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update&lt;/code&gt;부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 &lt;code class=&quot;highlighter-rouge&quot;&gt;--no-cache&lt;/code&gt;명령어를 붙여주면 된다.
+  &lt;a href=&quot;https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련 답변내용 link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;설치중에 &lt;code class=&quot;highlighter-rouge&quot;&gt;debconf: delaying package configuration, since apt-utils is not installed&lt;/code&gt;이런 에러가 있었는데 해당 내용이 &lt;a href=&quot;https://github.com/phusion/baseimage-docker/issues/319&quot;&gt;링크&lt;/a&gt;에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;elasticbeanstalk 구축하기
     &lt;ul&gt;
-      &lt;li&gt;docker를 만드는 과정에서 있었던 일
-  docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.
-  ```docker
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/li&gt;
+      &lt;li&gt;키페어 profile 설정문제
+ awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
+ &lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_PROFILE=user2&lt;/code&gt;명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
+ &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;eb cli 환경에서 키페어 profile 설정문제&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]&lt;/p&gt;
-
-&lt;p&gt;E: Unable to fetch some archives, maybe run apt-get update or try with –fix-missing?
-  The command ‘/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev’ returned a non-zero code: 100&lt;/p&gt;
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
-  [관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
-
-  설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
-
-5. elasticbeanstalk 구축하기
-  * 키페어 profile 설정문제
-    awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
-    `export AWS_PROFILE=user2`명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
-    [관련링크](https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html)
-  * eb cli 환경에서 키페어 profile 설정문제
-
-  * elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정
-    * 삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; `dpkg -l | grep -i docker` 명령어로 설치된 `docker-ce`확인후에 삭제
-      [관련링크](https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
-    * 특정버전의 docker를 설치 [관련링크](https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
-  * docker를 재설치 해도 같은문제가 발생했고, 문제는 `.gitignore`에 `Dockerfile`이 포함되어 있기 때문이었다. -&amp;gt; `.ebignore`추가
-  * 결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.
-
-6. 한글 깨짐현상
- * Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
-  [http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90](http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90)
-  [http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping](http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping)
- * 더 간단한 해결책 발견
-  `request.text` -&amp;gt; 값을 `unicode`로 가져옴
-  `request.content` -&amp;gt; 값을 `str`형으로 가져옴
-  `str`형으로 가져오면 간단하게 문자를 사용할 수 있다.
-  참고한 블로그
-  [http://pwnbit.kr/85](http://pwnbit.kr/85)
-
-7. `requests.exceptions.TooManyRedirects: Exceeded 30 redirects.` 에러 관련
-
-8. 문자열에 탭이나, 줄바꿈 문자 제거하는 것
-  [stackoverflow 답변](https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116)
-  위의 답변들 중에 나는 아래의 방법으로 해결
-  ```python
-  &amp;gt;&amp;gt;&amp;gt; import re
-  &amp;gt;&amp;gt;&amp;gt; myString=&quot;I want to Remove all white \t spaces, new lines \n and tabs \t&quot;
-  &amp;gt;&amp;gt;&amp;gt; re.sub('\s+',' ',myString)
-  'I want to Remove all white spaces, new lines and tabs '
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정
+    &lt;ul&gt;
+      &lt;li&gt;삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg -l | grep -i docker&lt;/code&gt; 명령어로 설치된 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-ce&lt;/code&gt;확인후에 삭제
+&lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;특정버전의 docker를 설치 &lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;docker를 재설치 해도 같은문제가 발생했고, 문제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;이 포함되어 있기 때문이었다. -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.ebignore&lt;/code&gt;추가&lt;/li&gt;
+  &lt;li&gt;결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;ol&gt;
+  &lt;li&gt;한글 깨짐현상
+    &lt;ul&gt;
+      &lt;li&gt;Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
+  &lt;a href=&quot;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&quot;&gt;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&lt;/a&gt;
+  &lt;a href=&quot;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&quot;&gt;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;더 간단한 해결책 발견
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.text&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt;로 가져옴
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.content&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져옴
+  &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져오면 간단하게 문자를 사용할 수 있다.
+  참고한 블로그
+  &lt;a href=&quot;http://pwnbit.kr/85&quot;&gt;http://pwnbit.kr/85&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests.exceptions.TooManyRedirects: Exceeded 30 redirects.&lt;/code&gt; 에러 관련&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;문자열에 탭이나, 줄바꿈 문자 제거하는 것
+  &lt;a href=&quot;https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116&quot;&gt;stackoverflow 답변&lt;/a&gt;
+  위의 답변들 중에 나는 아래의 방법으로 해결
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I want to Remove all white &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; spaces, new lines &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and tabs &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
+  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s+'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;s&quot;&gt;'I want to Remove all white spaces, new lines and tabs '&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기
   &lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
   다만 난 답변을 찾다가 django forms의 widget설정에서 readonly 옵션을 넣어봤더니 disabled와 같은 모습으로 템플릿에 나와서 그대로 사용했다.&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅
+  &lt;li&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅
   django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.
   아래는 내가 적용했던 세팅
   ```
   import os
-  import django&lt;/p&gt;
-  &lt;/li&gt;
+  import django&lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;p&gt;os.environ.setdefault(“DJANGO_SETTINGS_MODULE”, “my_homepage.settings”)
