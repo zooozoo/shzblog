@@ -1,6 +1,6 @@
 ---
 header:
-  teaser: /assets/images/comming-soon.jpg
+  teaser: /assets/images/news-collecter.jpg
 title: Project-HP
 excerpt: project portfolio
 ---

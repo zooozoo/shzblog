@@ -249,6 +249,16 @@ var store = [{
         "tags": ["NGINX강의록"],
         "url": "https://zooozoo.github.io/records/2018-03-23-NGINX/",
         "teaser":null},{
+        "title": "Project Explog",
+        "excerpt":"나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.11-21 화요일서버 사전세팅관련 도커만들기 postgresql rds 연결 boto3 s3연결11-22 수요일 installed apps에 corsheaders 추가하고 사용하는 것 확인해보기 다른 도메인에서 우리쪽 자원을 요청할 때 그걸 허용하기 위해서 추가해 놓은 것 settings.py 수정 base.py base.py facebook 관련설정 일단 주석처리 base.py database관련 설정 삭제 local.py...","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/",
+        "teaser":null},{
+        "title": "Project News Collecter",
+        "excerpt":"나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.Custom Homepage Project www.news-collecter.com홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.참고한 사이트 모음 html 레이아웃 관련 프로젝트 Github : https://github.com/zooozoo/homepage-project if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나...","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/",
+        "teaser":null},{
         "title": "기술면접 준비",
         "excerpt":"Intro면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 올려가는 데에 도움이 되겠다는 생각을 가질 수 있었다....","categories": ["records"],
         "tags": [],
