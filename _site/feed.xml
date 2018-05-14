@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-05-11T14:39:03+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-05-14T16:35:18+09:00</updated><id>http://localhost:4000/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">기술면접 준비</title><link href="http://localhost:4000/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="기술면접 준비" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="http://localhost:4000/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 올려가는 데에 도움이 되겠다는 생각을 가질 수 있었다. 단편적으로 ‘A는 B입니다.’라고 답변할 수도 있겠지만 한단계씩 더 깊이 물어보는 질문에 답변할 수 있으려면 기술에 대한 기본적인 지식과 이해가 있어야만 가능하기 때문이다.&lt;/p&gt;
 
@@ -400,10 +400,10 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 
 &lt;h3 id=&quot;객체지향개발oop-4가지-특성&quot;&gt;객체지향개발(OOP) 4가지 특성&lt;/h3&gt;
 
-&lt;p&gt;https://wayhome25.github.io/cs/2017/04/10/cs-11/&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
+&lt;p&gt;https://wayhome25.github.io/cs/2017/04/10/cs-11/&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="http://localhost:4000/records/2018-03-23-PROJECT-NEWS-COLLECTER/" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/records/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="http://localhost:4000/records/2018-03-23-PROJECT-NEWS-COLLECTER/">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
 
-&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
+&lt;p&gt;&lt;strong&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/strong&gt;
+홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
 주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
 
 &lt;h2 id=&quot;참고한-사이트-모음&quot;&gt;참고한 사이트 모음&lt;/h2&gt;
@@ -421,7 +421,7 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 &lt;h2 id=&quot;다음-단계&quot;&gt;다음 단계&lt;/h2&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;user가 선택한 뉴스만 기억해서 보여주도록 main 템플렛 수정&lt;/li&gt;
+  &lt;li&gt;user과 화면에서 동적으로 언론사 배치순서를 조정할 수 있도록 만들기&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&quot;나중에-해야할-일&quot;&gt;나중에 해야할 일&lt;/h2&gt;
@@ -461,160 +461,182 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
 
 &lt;h2 id=&quot;개발과정에-대한-기록&quot;&gt;개발과정에 대한 기록&lt;/h2&gt;
 
+&lt;h3 id=&quot;배포를-위한-기본-세팅&quot;&gt;배포를 위한 기본 세팅&lt;/h3&gt;
 &lt;ol&gt;
-  &lt;li&gt;aws계정 생성
-    &lt;ol&gt;
-      &lt;li&gt;IAM 유저와, 보안그룹 생성&lt;/li&gt;
-      &lt;li&gt;aws cli를 활용해 기본정보 등록&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
+  &lt;li&gt;aws계정 생성&lt;/li&gt;
+  &lt;li&gt;IAM 유저와, 보안그룹 생성&lt;/li&gt;
+  &lt;li&gt;aws cli를 활용해 기본정보 등록&lt;/li&gt;
   &lt;li&gt;local 에서 postgres 연결 확인&lt;/li&gt;
   &lt;li&gt;settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리&lt;/li&gt;
   &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;docker를 만드는 과정에서 있었던 일&lt;/li&gt;
-&lt;/ul&gt;
+&lt;h3 id=&quot;docker를-만드는-과정에서-있었던-일&quot;&gt;docker를 만드는 과정에서 있었던 일&lt;/h3&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.
 
-&lt;p&gt;docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.&lt;/p&gt;
+```
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]
 
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]
+E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
+The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
+```
 
-  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-  The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
+대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
+[관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa)
+
+설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;대략 이런 에러였는데 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update&lt;/code&gt;부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 &lt;code class=&quot;highlighter-rouge&quot;&gt;--no-cache&lt;/code&gt;명령어를 붙여주면 된다.
-  &lt;a href=&quot;https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련 답변내용 link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;설치중에 &lt;code class=&quot;highlighter-rouge&quot;&gt;debconf: delaying package configuration, since apt-utils is not installed&lt;/code&gt;이런 에러가 있었는데 해당 내용이 &lt;a href=&quot;https://github.com/phusion/baseimage-docker/issues/319&quot;&gt;링크&lt;/a&gt;에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;elasticbeanstalk 구축하기
-    &lt;ul&gt;
-      &lt;li&gt;키페어 profile 설정문제
- awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
- &lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_PROFILE=user2&lt;/code&gt;명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
- &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;eb cli 환경에서 키페어 profile 설정문제&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ol&gt;
+&lt;h3 id=&quot;elasticbeanstalk-구축하기&quot;&gt;elasticbeanstalk 구축하기&lt;/h3&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정
+  &lt;li&gt;
+    &lt;p&gt;키페어 profile 설정문제&lt;/p&gt;
+
+    &lt;p&gt;awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
+&lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_PROFILE=user2&lt;/code&gt;명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
+&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html&quot;&gt;관련링크&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;eb cli 환경에서 키페어 profile 설정문제&lt;/p&gt;
+
+    &lt;p&gt;eb cli를 사용 할 경우 추가적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_EB_PROFILE=user2&lt;/code&gt; 명령을 통해 eb default 환경변수를 설정해 주어야만 한다
+&lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/eb-cli3-configuration.html#eb-cli3-profile&quot;&gt;관련링크&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정&lt;/p&gt;
+
     &lt;ul&gt;
       &lt;li&gt;삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg -l | grep -i docker&lt;/code&gt; 명령어로 설치된 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-ce&lt;/code&gt;확인후에 삭제
 &lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
       &lt;li&gt;특정버전의 docker를 설치 &lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-  &lt;li&gt;docker를 재설치 해도 같은문제가 발생했고, 문제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;이 포함되어 있기 때문이었다. -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.ebignore&lt;/code&gt;추가&lt;/li&gt;
-  &lt;li&gt;결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;docker를 재설치 해도 같은문제가 발생했고, 문제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;이 포함되어 있기 때문이었다. -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.ebignore&lt;/code&gt;추가&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;ol&gt;
-  &lt;li&gt;한글 깨짐현상
-    &lt;ul&gt;
-      &lt;li&gt;Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
+&lt;h3 id=&quot;request-한글-깨짐현상&quot;&gt;request 한글 깨짐현상&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
   &lt;a href=&quot;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&quot;&gt;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&lt;/a&gt;
   &lt;a href=&quot;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&quot;&gt;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;더 간단한 해결책 발견
+  &lt;li&gt;더 간단한 해결책 발견
   &lt;code class=&quot;highlighter-rouge&quot;&gt;request.text&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt;로 가져옴
   &lt;code class=&quot;highlighter-rouge&quot;&gt;request.content&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져옴
   &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져오면 간단하게 문자를 사용할 수 있다.
   참고한 블로그
   &lt;a href=&quot;http://pwnbit.kr/85&quot;&gt;http://pwnbit.kr/85&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests.exceptions.TooManyRedirects: Exceeded 30 redirects.&lt;/code&gt; 에러 관련&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;문자열에 탭이나, 줄바꿈 문자 제거하는 것
-  &lt;a href=&quot;https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116&quot;&gt;stackoverflow 답변&lt;/a&gt;
-  위의 답변들 중에 나는 아래의 방법으로 해결
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;requestsexceptionstoomanyredirects-exceeded-30-redirects-에러-관련&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests.exceptions.TooManyRedirects: Exceeded 30 redirects.&lt;/code&gt; 에러 관련&lt;/h3&gt;
+
+&lt;h3 id=&quot;문자열에-탭이나-줄바꿈-문자-제거하는-것&quot;&gt;문자열에 탭이나, 줄바꿈 문자 제거하는 것&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116&quot;&gt;stackoverflow 답변&lt;/a&gt;
+  위의 답변들 중에 나는 아래의 방법으로 해결&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I want to Remove all white &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; spaces, new lines &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and tabs &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
   &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s+'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
   &lt;span class=&quot;s&quot;&gt;'I want to Remove all white spaces, new lines and tabs '&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기
-  &lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;input태그를-disabled-처럼-보이게-만들고-readonly-처럼-사용하기&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
   다만 난 답변을 찾다가 django forms의 widget설정에서 readonly 옵션을 넣어봤더니 disabled와 같은 모습으로 템플릿에 나와서 그대로 사용했다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅
-  django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.
-  아래는 내가 적용했던 세팅
-  ```
-  import os
-  import django&lt;/li&gt;
-&lt;/ol&gt;
 
-&lt;p&gt;os.environ.setdefault(“DJANGO_SETTINGS_MODULE”, “my_homepage.settings”)
-  django.setup()&lt;/p&gt;
+&lt;h3 id=&quot;crawler_testpy-python-script에서-django의-model-을-import하여-실행하기-위한-세팅&quot;&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅&lt;/h3&gt;
 
-&lt;p&gt;from main.models import NewsTitle
-  ```
-  &lt;a href=&quot;https://stackoverflow.com/questions/15048963/alternative-to-the-deprecated-setup-environ-for-one-off-django-scripts?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;참고한 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.&lt;/p&gt;
 
+&lt;p&gt;아래는 내가 적용했던 세팅&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  import os
+  import django
+
+  os.environ.setdefault(&quot;DJANGO_SETTINGS_MODULE&quot;, &quot;my_homepage.settings&quot;)
+  django.setup()
+
+  from main.models import NewsTitle
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/15048963/alternative-to-the-deprecated-setup-environ-for-one-off-django-scripts?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;참고한 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;celery-를-활용하여-크롤링한-데이터-저장하기&quot;&gt;celery 를 활용하여 크롤링한 데이터 저장하기&lt;/h3&gt;
 &lt;ol&gt;
-  &lt;li&gt;celery 를 활용하여 크롤링한 데이터 저장하기&lt;/li&gt;
   &lt;li&gt;celery beat를 활용 -&amp;gt; 폐기
     주기적으로 크롤링을 작동시켜서 크롤링한 데이터를 저장하려 했으나 elasticbeanstalk와 docker를 활용하여 배포할 경우 auto scaling시에 문제가 발생할 수 있다. (같은 ec2가 여러개 생길경우 인스턴스 갯수 마다 beat가 따로 동작하기 때문에 크롤링이 중복되는 문제 발생)
     -&amp;gt; 데이터 생성시간을 체크해서 일정시간이 지나지 않았으면 작동하지않게 할 수도 있다. -&amp;gt; que요청과 시간을 확인하는 로직은 항상 들어가야 하기 때문에 delay보다 자원이 더 낭비될 가능성이 크다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;celery delay 활용
-    created time field를 활용해 request마다 데이터베이스의 크롤링 데이터가 stale 한 경우 delay로 크롤링작업 실행. concurrency 문제가 발생할 수 있기 때문에 celery task 작동시에 database lock을 사용한다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;celery docker에서 작동해보기 -&amp;gt; 폐기&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;default user는 locallhost환경으로만 접속가능하기 때문에 새로운 user를 만들어 줘야 한다.
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;rabbitmqctl add_user username password&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;aws sqs를 활용하여 celery를 사용하기로 함
-  celery 실행시 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하라고 함, &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt; 을 설치하기 위해선 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 해당 명령어를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
+  &lt;li&gt;celery delay 활용
+    created time field를 활용해 request마다 데이터베이스의 크롤링 데이터가 stale 한 경우 delay로 크롤링작업 실행. concurrency 문제가 발생할 수 있기 때문에 celery task 작동시에 database lock을 사용한다.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;celery-docker에서-작동해보기---폐기&quot;&gt;celery docker에서 작동해보기 -&amp;gt; 폐기&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;default user는 locallhost환경으로만 접속가능하기 때문에 새로운 user를 만들어 줘야 한다.
+    &lt;code class=&quot;highlighter-rouge&quot;&gt;rabbitmqctl add_user username password&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;aws-sqs를-활용하여-celery를-사용하기로-함&quot;&gt;aws sqs를 활용하여 celery를 사용하기로 함&lt;/h3&gt;
+&lt;p&gt;celery 실행시 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하라고 함, &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt; 을 설치하기 위해선 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 해당 명령어를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
   &lt;a href=&quot;https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing&quot;&gt;pycurl 설치관련 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;elasticbeanstalk에서 내 도메인 이름 사용하기&lt;/li&gt;
+
+&lt;h3 id=&quot;elasticbeanstalk에서-내-도메인-이름-사용하기&quot;&gt;elasticbeanstalk에서 내 도메인 이름 사용하기&lt;/h3&gt;
+&lt;ol&gt;
   &lt;li&gt;route53 등록전 name서버를 aws로 교체
   &lt;a href=&quot;http://wingsnote.com/57&quot;&gt;참고 블로그&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;route53에서 내 도메인과 elb 도메인 연결하기
   &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/customdomains.html&quot;&gt;route 53 설명서&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">Project Explog</title><link href="https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/" rel="alternate" type="text/html" title="Project Explog" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/PROJECT-EXPLOG</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/">&lt;h1 id=&quot;나의-여행기-기록-sns-explog를-개발하며-기록해-놓은-자료입니다&quot;&gt;나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.&lt;/h1&gt;
+&lt;/ol&gt;
 
-&lt;h1 id=&quot;11-21-화요일&quot;&gt;11-21 화요일&lt;/h1&gt;
+&lt;h3 id=&quot;request-수정하기&quot;&gt;request 수정하기&lt;/h3&gt;
+&lt;p&gt;경향신문 크롤러에서 요청하면 산발적으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;page not found&lt;/code&gt;를 response 하는 경우가 발생했다. 이럴경우 기존에 beautifulsoup으로 크롤링 하는 구조에서
+  아래와 같은 에러를 뿜게된다.
+  에러&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
+      title=soup.find('div', class_='topNews').a.text,
+    AttributeError: 'NoneType' object has no attribute 'a'
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;try, except문으로 해결하려 했으나 조금 더 검색해 보니 request할 때 브라우저에서 확인하는 것과 같은 page를 받기 위해서는 header에 관련 내용을 함께
+  요청해야 한다는 것을 알게 되었다.
+  &lt;a href=&quot;https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;stackoverflow 답변&lt;/a&gt;
+  아래와 같이 request의 header에 관련내용을 추가해 줌으로써 브라우져에서 확인하는 것과 같은 response를 받게 되었다.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;n&quot;&gt;user_agent&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'User-Agent'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user_agent&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;req&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;requests&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'http://www.khan.co.kr/'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;headers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">Project Explog</title><link href="http://localhost:4000/records/2018-03-23-PROJECT-EXPLOG/" rel="alternate" type="text/html" title="Project Explog" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/records/PROJECT-EXPLOG</id><content type="html" xml:base="http://localhost:4000/records/2018-03-23-PROJECT-EXPLOG/">&lt;h1 id=&quot;나의-여행기-기록-sns-explog를-개발하며-기록해-놓은-자료입니다&quot;&gt;나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.&lt;/h1&gt;
 
-&lt;h3 id=&quot;서버-사전세팅관련&quot;&gt;서버 사전세팅관련&lt;/h3&gt;
+&lt;h2 id=&quot;11-21-화요일&quot;&gt;11-21 화요일&lt;/h2&gt;
+
+&lt;p&gt;&lt;strong&gt;서버 사전세팅관련&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;도커만들기&lt;/li&gt;
@@ -622,7 +644,7 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   &lt;li&gt;boto3 s3연결&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;11-22-수요일&quot;&gt;11-22 수요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-22-수요일&quot;&gt;11-22 수요일&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -664,7 +686,7 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;11-23-목요일&quot;&gt;11-23 목요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-23-목요일&quot;&gt;11-23 목요일&lt;/h2&gt;
 
 &lt;ul&gt;
   &lt;li&gt;환경변수 설정관련 명령어 기록
@@ -674,9 +696,9 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;11-24-금요일&quot;&gt;11-24 금요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-24-금요일&quot;&gt;11-24 금요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;기획-확정되기-전이라도-할-수-있는-것들&quot;&gt;기획 확정되기 전이라도 할 수 있는 것들&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;기획 확정되기 전이라도 할 수 있는 것들&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;member앱 만들기
@@ -691,76 +713,77 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;11-27-월요일&quot;&gt;11-27 월요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-27-월요일&quot;&gt;11-27 월요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;이메일-인증-구글에서-허용하는-설전-전까지의-기록&quot;&gt;이메일 인증 구글에서 허용하는 설전 전까지의 기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이메일 인증 구글에서 허용하는 설전 전까지의 기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;apis.py&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class Signup(APIView):
-    def post(self, request, *args, **kwargs):
-        serializer = SignupSerializer(data = request.data)
-        if serializer.is_valid():
-            # user = serializer.validated_data
-            # user.is_active = False
-            serializer.save()
-            user_pk = serializer.data['pk']
-            user = User.objects.get(pk=user_pk)
-            user.is_active = False
-            current_site = get_current_site(request)
-            message = render_to_string('acc_active_email.html', {
-                'user': user,
-                'domain': current_site.domain,
-                'uid': urlsafe_base64_encode(force_bytes(user_pk)),
-                'token': account_activation_token.make_token(user),
-            })
-            mail_subject = 'Activate your blog account.'
-            to_email = user.email
-            email = EmailMessage(mail_subject, message, to=[to_email])
-            email.send()
-            return Response(user.is_active)
-            # return Response(serializer.data)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Signup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;APIView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;SignupSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_valid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;# user = serializer.validated_data&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;# user.is_active = False&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;user_pk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'pk'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_active&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;current_site&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_current_site&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;render_to_string&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'acc_active_email.html'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'user'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'domain'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;current_site&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;domain&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'uid'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;urlsafe_base64_encode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;force_bytes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user_pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)),&lt;/span&gt;
+                &lt;span class=&quot;s&quot;&gt;'token'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account_activation_token&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;make_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+            &lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;mail_subject&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Activate your blog account.'&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;to_email&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;email&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;EmailMessage&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mail_subject&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;message&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;to_email&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;email&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_active&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;c&quot;&gt;# return Response(serializer.data)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;errors&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;status&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;HTTP_400_BAD_REQUEST&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-def activate(request, uidb64, token):
-    try:
-        uid = force_text(urlsafe_base64_decode(uidb64))
-        user = User.objects.get(pk=uid)
-    except(TypeError, ValueError, OverflowError, User.DoesNotExist):
-        user = None
-    if user is not None and account_activation_token.check_token(user, token):
-        user.is_active = True
-        user.save()
-        # login(request, user)
-        # return redirect('home')
-        return Response('Thank you for your email confirmation. Now you can login your account.')
-    else:
-        return Response('Activation link is invalid!')
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;uidb64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;uid&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;force_text&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;urlsafe_base64_decode&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uidb64&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;uid&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;except&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;ValueError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;OverflowError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;DoesNotExist&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;and&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;account_activation_token&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;check_token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_active&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;save&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# login(request, user)&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# return redirect('home')&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Thank you for your email confirmation. Now you can login your account.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Activation link is invalid!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;tokens.py&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from django.contrib.auth.tokens import PasswordResetTokenGenerator
-from django.utils import six
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.contrib.auth.tokens&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PasswordResetTokenGenerator&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.utils&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;six&lt;/span&gt;
 
-class AccountActivationTokenGenerator(PasswordResetTokenGenerator):
-    def _make_hash_value(self, user, timestamp):
-        return (six.text_type(user.pk) + six.text_type(timestamp)) +  six.text_type(user.is_active)
+&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;AccountActivationTokenGenerator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PasswordResetTokenGenerator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_make_hash_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;six&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;six&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;timestamp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;  &lt;span class=&quot;n&quot;&gt;six&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;text_type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_active&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-account_activation_token = AccountActivationTokenGenerator()
+
+&lt;span class=&quot;n&quot;&gt;account_activation_token&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;AccountActivationTokenGenerator&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;urls.py&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;from django.conf.urls import url
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;django.conf.urls&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;
 
-from .apis import LoginView, Signup, activate
+&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;.apis&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LoginView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Signup&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activate&lt;/span&gt;
 
-urlpatterns = [
-    url(r'^login/$', LoginView.as_view(), name='login'),
-    url(r'^signup/$', Signup.as_view(), name='signup'),
-    url(r'^activate/(?P&amp;lt;uidb64&amp;gt;[0-9A-Za-z_\-]+)/(?P&amp;lt;token&amp;gt;[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$', activate, name='activate'),
-]
+&lt;span class=&quot;n&quot;&gt;urlpatterns&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'^login/$'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;LoginView&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as_view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'login'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'^signup/$'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Signup&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as_view&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(),&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'signup'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;url&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;r'^activate/(?P&amp;lt;uidb64&amp;gt;[0-9A-Za-z_\-]+)/(?P&amp;lt;token&amp;gt;[0-9A-Za-z]{1,13}-[0-9A-Za-z]{1,20})/$'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;activate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'activate'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;acc_active_email.html&lt;/p&gt;
@@ -775,16 +798,16 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;회의&quot;&gt;회의&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;회의&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;회원가입시 사용 필드&lt;/p&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;email, nickname, imgprofile
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;11-28-화요일&quot;&gt;11-28 화요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-28-화요일&quot;&gt;11-28 화요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;token-auth-duration--관련조사&quot;&gt;token auth duration  관련조사&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;token auth duration  관련조사&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/22943050/how-long-is-token-valid-django-rest-framework&quot;&gt;스택오버플로우 토큰인증 기간&lt;/a&gt;&lt;/p&gt;
 
@@ -796,23 +819,23 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
   &lt;li&gt;강사님 조언 : throtting은 token auth duration customizing 관련해서 사용하는 기능이 아니다. 스택오버플로우에 나와있는 것 처럼 해야하는데 앱을 하나 새로 만들어서 토큰 데이터베이스에 로직을 통하여 특정순간의 시간을 기록하고 해당 시간을 기준으로 해서 인증 만료 기한을 설정할 수 있다. 설정하기 까다로운 점들이 있기 때문에 extra 기능으로 생각해서 진행하는게 좋다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;알아봐야-할-것들&quot;&gt;알아봐야 할 것들&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;알아봐야 할 것들&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;corsheaders : 강의 때 했던 프로젝트에 보면 installed apps에 corsheaders가 추가 되어있는데 어떨 때 사용하는거고 우리 프로젝트에 필요한건지 확인해보기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;팀원들의-의견을-들어봐야-할-것들&quot;&gt;팀원들의 의견을 들어봐야 할 것들&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;팀원들의 의견을 들어봐야 할 것들&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;post list의 pagination&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;강사님-동영상에-settingspy-에-login_url--memberlogin-기록한-이유&quot;&gt;강사님 동영상에 settings.py 에 LOGIN_URL = ‘member:login’ 기록한 이유&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;강사님 동영상에 settings.py 에 LOGIN_URL = ‘member:login’ 기록한 이유&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;The URL where requests are redirected for login, especially when using the &lt;a href=&quot;https://docs.djangoproject.com/en/1.11/topics/auth/default/#django.contrib.auth.decorators.login_required&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;login_required()&lt;/code&gt;&lt;/a&gt;decorator.&lt;/p&gt;
 
-&lt;h3 id=&quot;post-관련-기록&quot;&gt;Post 관련 기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Post 관련 기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;author를 username으로 바꾸는 방법 관련 링크
@@ -846,7 +869,7 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
   &lt;li&gt;사진 크기 한도 적어줘야함&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;post-api-body입력정보&quot;&gt;Post api body입력정보&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Post api body입력정보&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;post-create: 입력정보 / authorization 필요
@@ -884,9 +907,9 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;11-29-수요일&quot;&gt;11-29 수요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-29-수요일&quot;&gt;11-29 수요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;팀원들의-의견을-들어봐야-할-것들어제꺼에-이어서&quot;&gt;팀원들의 의견을 들어봐야 할 것들(어제꺼에 이어서)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;팀원들의 의견을 들어봐야 할 것들(어제꺼에 이어서)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;post list의 pagination&lt;/li&gt;
@@ -894,7 +917,7 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
   &lt;li&gt;올리사진을 한번에 묶음으로 보여주는 걸 앱쪽에서 해줄 수는 없는지&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;오늘-작업한-내용&quot;&gt;오늘 작업한 내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 작업한 내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -939,75 +962,75 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;기록&quot;&gt;기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;post text에 author permission 추가하는거 시도할 때 썼던 코드.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PostTextSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serializers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ModelSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-    &lt;span class=&quot;n&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializerMethodField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;PostTextSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serializers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ModelSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;n&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;SerializerMethodField&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 
-    &lt;span class=&quot;n&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Meta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-        &lt;span class=&quot;k&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PostText&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
-            &lt;span class=&quot;s1&quot;&gt;'pk'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;s1&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;s1&quot;&gt;'content'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;s1&quot;&gt;'created_at'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;s1&quot;&gt;'post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
-            &lt;span class=&quot;s1&quot;&gt;'author'&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;Meta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;model&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PostText&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;fields&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;'pk'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;'content'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;'created_at'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;'post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;s&quot;&gt;'author'&lt;/span&gt;
         &lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-    &lt;span class=&quot;n&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;post_pk&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;post_qs&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;author&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UserSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_qs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,).&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
-        &lt;span class=&quot;n&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;author&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get_author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post_pk&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post_qs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;pk&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_pk&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;author&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;UserSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_qs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;author&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;validate(self, data) 메서드에서 date를 print 해보면&lt;code class=&quot;highlighter-rouge&quot;&gt;OrderedDict([('title', 'text test1'), ('content', 'test11111'), ('post', &amp;lt;Post: Post object&amp;gt;)])&lt;/code&gt;이렇게 나오고 author 필드가 나오지 않아서, post의 author와 text의 author를 비교할 수 없다.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    def validate(self, data):
-        print(data)
-        post_author = data['post']
-        text_author = self.context['request.user']
-        # text_author = data['author']
-        if post_author == text_author:
-            return data
-        raise serializers.ValidationError('해당 post의 작성자만 글을 작성할 수 있습니다.')
-        print(data)
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post_author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;text_author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'request.user'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;c&quot;&gt;# text_author = data['author']&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post_author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;text_author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ValidationError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'해당 post의 작성자만 글을 작성할 수 있습니다.'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;위의 내용을 아래의 방법으로 실마리를 찾아가는중, 현재로선 if 논리가 전혀 먹히지 않음&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        def validate(self, data):
-        print(data)
-        post = data['post']
-        post_author = post.author
-        request_user = self.context['request']
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;        &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;validate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;post_author&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;author&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;request_user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;context&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'request'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 
-        print(type(post_author))
-        print(type(request_user.user))
-        print(post_author)
-        print(request_user.user)
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-        if str(post_author) == str(request_user):
-            return data
-        else:
-            raise serializers.ValidationError()
+        &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_author&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;request_user&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serializers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ValidationError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;위의 오류 발생시 프린트 되는 내용&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;OrderedDict([('title', 'text test1'), ('content', 'test11111'), ('post', &amp;lt;Post: Post object&amp;gt;)])
-&amp;lt;class 'member.models.User'&amp;gt;
-&amp;lt;class 'member.models.User'&amp;gt;
-shz@gmail.com
-shz@gmail.com
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;OrderedDict&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;([(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'title'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'text test1'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'content'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'test11111'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'post'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Post&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)])&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;lt;class '&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;member&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;models&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&amp;gt;&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;shz@gmail.com&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;shz@gmail.com&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;이슈&quot;&gt;이슈&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;request user가 포스트의 author가 아니면 해당 포스트가 가지고 있는 text를 작성하지 못하도록 막고 싶은데 잘 안된다.&lt;/li&gt;
@@ -1016,9 +1039,9 @@ shz@gmail.com
 
 &lt;p&gt;크리에잇 테스트부터 시작하면 된다.&lt;/p&gt;
 
-&lt;h1 id=&quot;11-30-목요일&quot;&gt;11-30 목요일&lt;/h1&gt;
+&lt;h2 id=&quot;11-30-목요일&quot;&gt;11-30 목요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;작업내용-model-리모델링&quot;&gt;작업내용 (model 리모델링)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;작업내용 (model 리모델링)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;post create&lt;/li&gt;
@@ -1026,86 +1049,86 @@ shz@gmail.com
   &lt;li&gt;subpost create&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;회의-1&quot;&gt;회의&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;회의&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;password - 하나만 받기&lt;/li&gt;
   &lt;li&gt;구성을  User 안에 토큰값 넣기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h1 id=&quot;12-3-일요일&quot;&gt;12-3 일요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-3-일요일&quot;&gt;12-3 일요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;user-가-작성한-post-list-가져오기-성공-apispy-기록&quot;&gt;user 가 작성한 post list 가져오기 성공 apis.py 기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;user 가 작성한 post list 가져오기 성공 apis.py 기록&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;class GetUserProfile(APIView):
-    def get(self, request, *args, **kwargs):
-        user = request.user
-        posts = user.post_set.all()
-        return_data = []
-        print(posts)
-        for post in posts:
-            serializer = PostSerializer(post)
-            return_data.append(serializer.data)
-        return Response(return_data)
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;nc&quot;&gt;GetUserProfile&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;APIView&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;get&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;kwargs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;request&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post_set&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+        &lt;span class=&quot;n&quot;&gt;return_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;post&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;posts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;PostSerializer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;post&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+            &lt;span class=&quot;n&quot;&gt;return_data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;append&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;serializer&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+        &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Response&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;return_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;tocken-auth-logout-stackoverflow-answer&quot;&gt;Tocken auth logout stackoverflow answer&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Tocken auth logout stackoverflow answer&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;https://stackoverflow.com/questions/30739352/django-rest-framework-token-authentication-logout&lt;/p&gt;
 
-&lt;h3 id=&quot;날씨정보를-가져와서-보여주려고-한다면-다음의-블로그의-3번-을-다시-읽어보자&quot;&gt;날씨정보를 가져와서 보여주려고 한다면 다음의 블로그의 3번 을 다시 읽어보자&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;날씨정보를 가져와서 보여주려고 한다면 다음의 블로그의 3번 을 다시 읽어보자&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;http://swchoi06.tistory.com/entry/%EC%93%B8%EB%A7%8C%ED%95%9C-%EB%82%A0%EC%94%A8-API&lt;/p&gt;
 
-&lt;h1 id=&quot;12-4-월요일&quot;&gt;12-4 월요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-4-월요일&quot;&gt;12-4 월요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;팔로잉팔로우-기능-관련-인스타그램-예시&quot;&gt;팔로잉/팔로우 기능 관련 인스타그램 예시&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;팔로잉/팔로우 기능 관련 인스타그램 예시&lt;/strong&gt;&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;In [3]: u1 = User.objects.create(username='석헌주', age=30)
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'석헌주'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-In [4]: u2 = User.objects.create(username='이한영', age=30)
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'이한영'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-In [5]: u3 = User.objects.create(username='이경', age=30)
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'이경'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-In [6]: u4 = User.objects.create(username='한재중', age=30)
-
-
-In [7]: Relation.objects.create(from_user=u1, to_user=u2)
-Out[7]: &amp;lt;Relation: Relation (from: 석헌주, to: 이한영)&amp;gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;username&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'한재중'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
 
-In [17]: u1.followers.all()
-Out[17]: &amp;lt;QuerySet []&amp;gt;
-
-In [19]: u2.followers.all()
-Out[19]: &amp;lt;QuerySet [&amp;lt;User: 석헌주&amp;gt;]&amp;gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;석헌주&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이한영&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 
 
-In [23]: Relation.objects.create(from_user=u2, to_user=u1)
-Out[23]: &amp;lt;Relation: Relation (from: 이한영, to: 석헌주)&amp;gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;followers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QuerySet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;followers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QuerySet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;석헌주&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 
 
-In [24]: u1.following_user_relations.all()
-Out[24]: &amp;lt;QuerySet [&amp;lt;Relation: Relation (from: 석헌주, to: 이한영)&amp;gt;, &amp;lt;Relation: Relation (from: 석헌주, to: 이경)&amp;gt;]&amp;gt;
-
-In [25]: u1.follower_relations.all()
-Out[25]: &amp;lt;QuerySet [&amp;lt;Relation: Relation (from: 이한영, to: 석헌주)&amp;gt;]&amp;gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;objects&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;create&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;from_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이한영&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;석헌주&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 
 
-In [26]: u1.following_user.all()
-Out[26]: &amp;lt;QuerySet [&amp;lt;User: 이한영&amp;gt;, &amp;lt;User: 이경&amp;gt;]&amp;gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;following_user_relations&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QuerySet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;석헌주&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이한영&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;석헌주&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이경&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 
-In [27]: u1.followers.all()
-Out[27]: &amp;lt;QuerySet [&amp;lt;User: 이한영&amp;gt;]&amp;gt;
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;follower_relations&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QuerySet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Relation&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;from&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이한영&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;to&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;석헌주&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;following_user&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QuerySet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이한영&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이경&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;In&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;u1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;followers&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;all&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Out&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;QuerySet&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;User&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;이한영&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 
 
 
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;12-5-화요일&quot;&gt;12-5 화요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-5-화요일&quot;&gt;12-5 화요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;오늘-작업할-것&quot;&gt;오늘 작업할 것&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 작업할 것&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;팔로우/팔로잉 기능 완성하기
@@ -1119,18 +1142,14 @@ Out[27]: &amp;lt;QuerySet [&amp;lt;User: 이한영&amp;gt;]&amp;gt;
       &lt;li&gt;자기 자신을 follow 할 수 있는 부분을 막아야함&lt;/li&gt;
       &lt;li&gt;to_user의 pk가 존재하지 않는 user instance 일경우 나오는 에러를 잡아야 한다
         &lt;ul&gt;
-          &lt;li&gt;받은 pk값(integer)를 활용해 User instance인지 확인할 수 있는 방법에 관한 구글 서치 내용
-            &lt;ul&gt;
-              &lt;li&gt;​&lt;/li&gt;
-            &lt;/ul&gt;
-          &lt;/li&gt;
+          &lt;li&gt;받은 pk값(integer)를 활용해 User instance인지 확인할 수 있는 방법에 관한 구글 서치 내용&lt;/li&gt;
         &lt;/ul&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;새로-알게-된점&quot;&gt;새로 알게 된점&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;새로 알게 된점&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;serializer context&lt;/strong&gt;&lt;/p&gt;
 
@@ -1152,9 +1171,9 @@ self.context['request'].user -&amp;gt; request한 user를 반환
 
 &lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/26943985/custom-error-messages-in-django-rest-framework-serializer&quot;&gt;관련답변 stackoverflow&lt;/a&gt; -&amp;gt; 실패함&lt;/p&gt;
 
-&lt;h1 id=&quot;12-6-수요일&quot;&gt;12-6 수요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-6-수요일&quot;&gt;12-6 수요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;deploy-할-때-internal-server-error-해결한-기록&quot;&gt;deploy 할 때 internal server error 해결한 기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;deploy 할 때 internal server error 해결한 기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;uwsgi 에러 로그&lt;/p&gt;
 
@@ -1234,10 +1253,11 @@ __init.py__를 추가한 이후에 작동함
 
 &lt;p&gt;더 알게된 점&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;uwsgi 에러 로그를 확인할 때 가장 아랫쪽에 나온 요청처리관련 에러로그를 포함하여 윗쪽에 상세하게 적혀있는 에러로그를 확인하면 좀더 수월하게 에러내용을 확인할 수 있다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;uwsgi 에러 로그를 확인할 때 가장 아랫쪽에 나온 요청처리관련 에러로그를 포함하여 윗쪽에 상세하게 적혀있는 에러로그를 확인하면 좀더 수월하게 에러내용을 확인할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;h3 id=&quot;프로필-페이지에-해야할-작업-목록&quot;&gt;프로필 페이지에 해야할 작업 목록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;프로필 페이지에 해야할 작업 목록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;사진&lt;/li&gt;
@@ -1278,9 +1298,9 @@ like_post = {
   &lt;li&gt;나를 팔로우한 사람 리스트 보여주는 url&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-7-목요일&quot;&gt;12-7 목요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-7-목요일&quot;&gt;12-7 목요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;오늘-할-일&quot;&gt;오늘 할 일&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 할 일&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;프로필 url 구조 확정되면 프로필 기능 만들기
@@ -1296,29 +1316,29 @@ like_post = {
   &lt;li&gt;user 정보 수정 기능 만들기&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;언팔-관련해서-알아둘-점&quot;&gt;언팔 관련해서 알아둘 점&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;언팔 관련해서 알아둘 점&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;user.following_users.first().delete()&lt;/code&gt; 이런식으로 delete를 하게 되면 &lt;code class=&quot;highlighter-rouge&quot;&gt;user.following_users.first()&lt;/code&gt;명령이 User object를 불러오기 때문에 user를 삭제 하게 된다. 왜냐하면 &lt;code class=&quot;highlighter-rouge&quot;&gt;following_users&lt;/code&gt;가 User테이블에 정의된 field이기 때문이다.&lt;/p&gt;
 
 &lt;p&gt;관계를 삭제하기 위해서는 m2m으로 연결괸 intermediate테이블의 필드를 불러와야 한다. 따라서 &lt;code class=&quot;highlighter-rouge&quot;&gt;user.following_user_relations.first().delete()&lt;/code&gt;와 같은 방식으로 언팔로우 기능을 만들어 낼 수 있다.&lt;/p&gt;
 
-&lt;h3 id=&quot;user-password-변경과-관련된-참고-자료&quot;&gt;User password 변경과 관련된 참고 자료&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;User password 변경과 관련된 참고 자료&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;https://stackoverflow.com/questions/38845051/how-to-update-user-password-in-django-rest-framework&lt;/p&gt;
 
-&lt;h1 id=&quot;12-8-금요일&quot;&gt;12-8 금요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-8-금요일&quot;&gt;12-8 금요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;이미지파일-변경시-기존에-있던-사진-삭제하는-방법-관련-유용한-답변&quot;&gt;이미지파일 변경시 기존에 있던 사진 삭제하는 방법 관련 유용한 답변&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이미지파일 변경시 기존에 있던 사진 삭제하는 방법 관련 유용한 답변&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;https://stackoverflow.com/questions/16041232/django-delete-filefield&lt;/p&gt;
 
-&lt;h3 id=&quot;이미지파일-용량제한-걸어둘-수-있는-방법에-관한-유용한-답변&quot;&gt;이미지파일 용량제한 걸어둘 수 있는 방법에 관한 유용한 답변&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이미지파일 용량제한 걸어둘 수 있는 방법에 관한 유용한 답변&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;https://stackoverflow.com/questions/38842053/how-to-check-the-file-size-limit-in-django&lt;/p&gt;
 
 &lt;p&gt;https://www.google.co.kr/search?newwindow=1&amp;amp;ei=s5UqWsq6D8r_8QXpoIzgAw&amp;amp;q=django+size+image&amp;amp;oq=django+_size&amp;amp;gs_l=psy-ab.3.4.0i19k1l2j0i30i19k1l6j0i8i30i19k1l2.285284.296298.0.302801.15.13.2.0.0.0.261.1619.0j8j1.9.0….0…1c.1j4.64.psy-ab..5.8.1281…0j0i67k1j0i13i30k1j0i13k1.0.3YSiz1jgxvU&lt;/p&gt;
 
-&lt;h3 id=&quot;오늘-할-일-1&quot;&gt;오늘 할 일&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 할 일&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;password 변경하는거까지 만들고 api 작성, 배포 -&amp;gt; ** 테스트를 해봐야 하지만 거의 완성 **&lt;/li&gt;
@@ -1339,7 +1359,7 @@ like_post = {
   &lt;li&gt;user 정보 수정 기능 만들기&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;하면서-새로-알게된-점&quot;&gt;하면서 새로 알게된 점&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;하면서 새로 알게된 점&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;serializer에서 field validation을 사용했는데 validation을 통과하지 못했을 경우 return으로 serializer.VAlidationErrors를 돌려주면 필드에 오류내용이 들어간 체로 is_valid를 통과하여 해당 데이터가 아래와 같이 serializer.data에 담겨진다. return 으로 어떤 값을 돌려주게 되면 해당 필드에 그 내용이 그대로 전달된다.&lt;/p&gt;
 
@@ -1362,9 +1382,9 @@ like_post = {
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;12-11-월요일&quot;&gt;12-11 월요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-11-월요일&quot;&gt;12-11 월요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;오늘-할일&quot;&gt;오늘 할일&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 할일&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;following, user profile, password, api 새로 적은거 올리기&lt;/li&gt;
@@ -1374,9 +1394,9 @@ like_post = {
   &lt;li&gt;현재 접속한 user가 해당 포스트에 좋아요를 눌렀는지 아닌지 확인하기&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-12-화요일&quot;&gt;12-12 화요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-12-화요일&quot;&gt;12-12 화요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;psot-테스트-중-기록&quot;&gt;psot 테스트 중 기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;psot 테스트 중 기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;post delete update 에서
@@ -1411,14 +1431,14 @@ like_post = {
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;오늘-할일-1&quot;&gt;오늘 할일&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 할일&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;user image profile default image 적용시키기&lt;/li&gt;
   &lt;li&gt;로그인 할 때 server error 나는 부분확인해서 처리하기 -&amp;gt; 수정완료&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;이슈사항&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;default image를 설정하려고 했는데 s3를 함께 사용하는 상테에서 어떻게 해야하는지 잘 모르겠음
@@ -1437,9 +1457,9 @@ https://stackoverflow.com/questions/6351636/provide-a-default-profile-picture-if
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-13-수요일&quot;&gt;12-13 수요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-13-수요일&quot;&gt;12-13 수요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;오늘-할일-2&quot;&gt;오늘 할일&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;오늘 할일&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;user image profile default image 적용시키기
@@ -1452,21 +1472,21 @@ filefield, fieldfile, storage 를 확인해 보고 강사님 코드 이해하고
   &lt;li&gt;image file 용량 제한 -&amp;gt; 완성&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;이슈사항-1&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;에러코드를 추가하는 부분에 있어서 exception을 custom 하는 부분이 많아서 어려움이 있음&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;알게-된것&quot;&gt;알게 된것&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;알게 된것&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;장고 문서에서 확인한 것은 아니지만 stackoverflow 에서의 답변에서 유추해 보면&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;megabyte_limit = 2.0
-            if filesize &amp;gt; megabyte_limit*1024*1024:
-                raise ValidationError(&quot;Max file size is %sMB&quot; % str(megabyte_limit))
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;megabyte_limit&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2.0&lt;/span&gt;
+            &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;filesize&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;megabyte_limit&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;*&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1024&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+                &lt;span class=&quot;k&quot;&gt;raise&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ValidationError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Max file size is &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;sMB&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;megabyte_limit&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;p&gt;1024를 2번 곱한 값이 MB 단위가 되는것으로 보아 기본 debug에서 int로 표시된 값을 1바이트로 유추해 볼 수 있다.&lt;/p&gt;
@@ -1475,9 +1495,9 @@ filefield, fieldfile, storage 를 확인해 보고 강사님 코드 이해하고
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-19-화요일&quot;&gt;12-19 화요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-19-화요일&quot;&gt;12-19 화요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;금일-이슈사항&quot;&gt;금일 이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;금일 이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;user profile 관련
@@ -1491,14 +1511,14 @@ author 정보만 빼고 나머지 정보는 post list 정보와 똑같이 보여
 잘 적용이 안되었는데 수정한 내용으로 다음 배포 때 잘 되나 다시 확인&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;강사님께-물어볼-사항&quot;&gt;강사님께 물어볼 사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;강사님께 물어볼 사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;혹시 git merge시에 indent가 흩으러져 있는 경우가 있었는지&lt;/li&gt;
   &lt;li&gt;사진파일 용량 제한 관련해서 nginx 설정을 ebextentsions에&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;금일-작업내용&quot;&gt;금일 작업내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;금일 작업내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;nginx 용량제한 관련 수정 및 배포&lt;/li&gt;
@@ -1507,9 +1527,9 @@ author 정보만 빼고 나머지 정보는 post list 정보와 똑같이 보여
   &lt;li&gt;user profile update 오류 해결, 및 profile update, password update, following api 에러 response refactoring&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-20-수요일&quot;&gt;12-20 수요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-20-수요일&quot;&gt;12-20 수요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;금일-작업내용-1&quot;&gt;금일 작업내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;금일 작업내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;다른 사람의 userprofile 정보도 볼 수 있도록 url 추가 및 api 문서 작성 -&amp;gt; userprofile api 문서 update 요청 해야함
@@ -1520,13 +1540,13 @@ author 정보만 빼고 나머지 정보는 post list 정보와 똑같이 보여
 -&amp;gt; 완료&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;이슈사항-2&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;user following 정보를 어떤식으로 보여줘야 할 지 앞쪽과 협의후에 진행해야 함&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-21-목요일&quot;&gt;12-21 목요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-21-목요일&quot;&gt;12-21 목요일&lt;/h2&gt;
 
 &lt;p&gt;금일 작업내용&lt;/p&gt;
 
@@ -1545,9 +1565,9 @@ author 정보만 빼고 나머지 정보는 post list 정보와 똑같이 보여
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12-27-수요일&quot;&gt;12-27 수요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-27-수요일&quot;&gt;12-27 수요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;회의-2&quot;&gt;회의&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;회의&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;user profile 쪽 post 의 순서를 최신작성 글이 가장 위에 올라갈 수 있도록 -&amp;gt; order&lt;/li&gt;
@@ -1556,21 +1576,21 @@ author 정보만 빼고 나머지 정보는 post list 정보와 똑같이 보여
   &lt;li&gt;좋아요에 푸시알람 주기&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;꿀팁&quot;&gt;꿀팁&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;꿀팁&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mindnode&lt;/code&gt; 라는 마인드맵을 그려주는 프로그램이 있다.&lt;/p&gt;
 
 &lt;p&gt;대체제로 &lt;code class=&quot;highlighter-rouge&quot;&gt;FreeMind&lt;/code&gt;라는 프로그램이 있다.&lt;/p&gt;
 
-&lt;h3 id=&quot;금일-작업내용-2&quot;&gt;금일 작업내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;금일 작업내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;user profile post의 순서를 최신작성 들이 위에 올라갈 수 있도록 ordering&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;12--28-목요일&quot;&gt;12- 28 목요일&lt;/h1&gt;
+&lt;h2 id=&quot;12--28-목요일&quot;&gt;12- 28 목요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;배포전-변경사항-정리&quot;&gt;배포전 변경사항 정리&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;배포전 변경사항 정리&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;post 에서 title max_length 수정 (30 -&amp;gt; 60)&lt;/li&gt;
@@ -1580,7 +1600,7 @@ author 정보만 빼고 나머지 정보는 post list 정보와 똑같이 보여
   &lt;li&gt;user profile 쪽에 post list랑 liked posts를 최신순으로 정렬&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;이슈사항-3&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;배포시 ebextensions에 nginx 관련 설정을 해줬는데 강사님께 받은 소스와 , 스택오버플로우에서 알아낸 소스 둘다 502 bad gateway 에러를 뿜었다. 관련 error log 는 다음과 같다&lt;/p&gt;
 
@@ -1645,17 +1665,17 @@ http {
            client_max_body_size 5M;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h1 id=&quot;12-20-토요일&quot;&gt;12-20 토요일&lt;/h1&gt;
+&lt;h2 id=&quot;12-20-토요일&quot;&gt;12-20 토요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;작업내용&quot;&gt;작업내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;작업내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;following 에서 response data가 int 형식으로 되도록 수정&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;1-2-화요일&quot;&gt;1-2 화요일&lt;/h1&gt;
+&lt;h2 id=&quot;1-2-화요일&quot;&gt;1-2 화요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;해야할-일&quot;&gt;해야할 일&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;해야할 일&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;다른 사람 user profile 확인하는 url 에서 요청한 사람의 follow following 숫자를 가져오는 문제 확인하고 수정
@@ -1666,7 +1686,7 @@ http {
 -&amp;gt; dhksfy&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;배포내용-정리&quot;&gt;배포내용 정리&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;배포내용 정리&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -1680,58 +1700,58 @@ http {
   &lt;li&gt;
     &lt;p&gt;following의 url 에서 response 의 value 값이 integer로 올 수 있도록 수정&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;from_user&quot;: 1,
-    &quot;to_user&quot;: 2
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;from_user&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;to_user&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;post reply create 요청시 응답 다음과 같이 올 수 있또록 수정&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;pk&quot;: 1,
-    &quot;post&quot;: 1,
-    &quot;author&quot;: {
-        &quot;pk&quot;: 1,
-        &quot;username&quot;: &quot;zoozoo&quot;,
-        &quot;email&quot;: &quot;shz@gmail.com&quot;,
-        &quot;img_profile&quot;: &quot;/media/user/5.jpg&quot;,
-        &quot;token&quot;: &quot;e9f446816d19ba6a356024ed2c83eba1ebc49ed6&quot;
-    },
-    &quot;content&quot;: &quot;testestes&quot;,
-    &quot;created_at&quot;: &quot;2018-01-02 15:06&quot;
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;author&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;zoozoo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;email&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;shz@gmail.com&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;img_profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/media/user/5.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;token&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;e9f446816d19ba6a356024ed2c83eba1ebc49ed6&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;testestes&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;created_at&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;2018-01-02 15:06&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;post detail에서 path는 0번째 순서를 가지고 text, photo 는 순서대로 정렬되게끔 수정(다음은 post detail의 예시)&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;post_content&quot;: [
-        {
-            &quot;post&quot;: 2,
-            &quot;order&quot;: 3,
-            &quot;content_type&quot;: &quot;path&quot;,
-            &quot;content&quot;: {
-                &quot;pk&quot;: 1,
-                &quot;lat&quot;: 111,
-                &quot;lng&quot;: 222
-            }
-        }
-    ]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post_content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;post&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;order&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;content_type&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;path&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;content&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;lat&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;111&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+                &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;lng&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;222&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;행아웃&quot;&gt;행아웃&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;행아웃&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;이미지를 보내고 두번째 이미지를 보내면 첫번째 이미지가 두번째 이미지로 변경됨&lt;/p&gt;
 
 &lt;h1 id=&quot;01-03-수요일&quot;&gt;01-03 수요일&lt;/h1&gt;
 
-&lt;h3 id=&quot;elb-get-요청-관련-health-check&quot;&gt;elb get 요청 관련 (health check)&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;elb get 요청 관련 (health check)&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;nginx access.log 에 아래와 같이 health check 요청이 몇초 간격으로 요청됨&lt;/p&gt;
 
@@ -1764,14 +1784,14 @@ http {
 
 &lt;p&gt;https://serverfault.com/questions/518220/nginx-solution-for-aws-amazon-elb-health-checks-return-200-without-if -&amp;gt; nginx 설정&lt;/p&gt;
 
-&lt;h3 id=&quot;배포내용&quot;&gt;배포내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;배포내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;user profile 에서 response 데이터 중에 user가 작성한 post list, 좋아요 누른 post list 에 각 post img의 default img를 보여줄 수 있게 수정&lt;/li&gt;
   &lt;li&gt;요청하는 user가 follow 하는 사람들의 post list를 보여주는 url 추가 &lt;code class=&quot;highlighter-rouge&quot;&gt;/post/follow/&lt;/code&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;push-notification&quot;&gt;push notification&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;push notification&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;앱쪽에서 준비해야할 사항들&lt;/p&gt;
 
@@ -1779,29 +1799,29 @@ http {
   &lt;li&gt;디바이스에 해당하는 토큰&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;1-5-금요일&quot;&gt;1-5 금요일&lt;/h1&gt;
+&lt;h2 id=&quot;1-5-금요일&quot;&gt;1-5 금요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;push-notification-관련-기록&quot;&gt;push notification 관련 기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;push notification 관련 기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;패키지의 send_message 메소드를 사용할 때 어떤 key 값을 사용할 수 있는지 내부 함수를 뜯어 봤는데 다음과 같이 확인할 수 있었고 실험 결과 다음 함수의 attribute를 사용하면 된다.&lt;/p&gt;
 
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;def _apns_prepare(
-	token, alert, application_id=None, badge=None, sound=None, category=None,
-	content_available=False, action_loc_key=None, loc_key=None, loc_args=[],
-	extra={}, mutable_content=False, thread_id=None, url_args=None):
-		if action_loc_key or loc_key or loc_args:
-			apns2_alert = apns2_payload.PayloadAlert(
-				body=alert if alert else {}, body_localized_key=loc_key,
-				body_localized_args=loc_args, action_localized_key=action_loc_key)
-		else:
-			apns2_alert = alert
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;_apns_prepare&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;application_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;badge&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sound&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;content_available&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action_loc_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loc_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loc_args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[],&lt;/span&gt;
+	&lt;span class=&quot;n&quot;&gt;extra&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mutable_content&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;False&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;url_args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;None&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action_loc_key&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loc_key&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;or&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;loc_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;apns2_alert&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apns2_payload&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;PayloadAlert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;body&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;alert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alert&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{},&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;body_localized_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;body_localized_args&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;loc_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;action_localized_key&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;action_loc_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+		&lt;span class=&quot;k&quot;&gt;else&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;apns2_alert&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;alert&lt;/span&gt;
 
-			if callable(badge):
-				badge = badge(token)
+			&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;callable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;badge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+				&lt;span class=&quot;n&quot;&gt;badge&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;badge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;token&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-		return apns2_payload.Payload(
-			apns2_alert, badge, sound, content_available, mutable_content, category,
-			url_args, custom=extra, thread_id=thread_id)
+		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;apns2_payload&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Payload&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;apns2_alert&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;badge&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;sound&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;content_available&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;mutable_content&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;category&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
+			&lt;span class=&quot;n&quot;&gt;url_args&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;custom&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;extra&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;thread_id&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;thread_id&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;test로 send_message 사용했을 때 최종적으로 원하던 구조&lt;/p&gt;
@@ -1815,20 +1835,20 @@ http {
 
 &lt;p&gt;알람 나가는 시점 좋아요&lt;/p&gt;
 
-&lt;h1 id=&quot;1-6-토요일&quot;&gt;1-6 토요일&lt;/h1&gt;
+&lt;h2 id=&quot;1-6-토요일&quot;&gt;1-6 토요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;이슈사항-4&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;device token을 저장할 경우 잘 저장되었다는 response, 혹은 잘 저장되지 않았다는 response를 돌려줘야 할지… -&amp;gt; 만약에 돌려준다고 하면 기존의 response 에서 하나가 추가되기 때문에 미리 같이 이야기를 해야만 한다.
 여러가지 선택사항중에 가장 간단한 방법중의 하나는 token 정보만 넘겨주고 (device-token 을 key값으로 하고 token 값을 value로 해서 데이터를 넘겨준다) response는 지금과 같이 그대로 받는 것&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;기록-1&quot;&gt;기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;민준님께 받은 토큰 값&lt;code class=&quot;highlighter-rouge&quot;&gt;19bfe0b5d0363186cbf5482225d341701c7f53f1ef67186537e6e88a1d4e7ea7&lt;/code&gt;&lt;/p&gt;
 
-&lt;h3 id=&quot;금일-작업&quot;&gt;금일 작업&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;금일 작업&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;ios 기기의 device token을 받아서 저장 할 수 있는 기능 추가
@@ -1836,16 +1856,16 @@ http {
   &lt;li&gt;좋아요 버튼 누르면 날아가는 로직까지 만들어 놓음&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;남은-작업&quot;&gt;남은 작업&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;남은 작업&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;pem 파일을 비밀번호 없어도 사용할 수 있게끔 만들어야 함
 (shell 에서 비밀번호 입력해야 할 경우 python에서 어떻게 처리할 수 있는지도 한번 알아보면 좋을 것 같다)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;1-7-일요일&quot;&gt;1-7 일요일&lt;/h1&gt;
+&lt;h2 id=&quot;1-7-일요일&quot;&gt;1-7 일요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;기록-2&quot;&gt;기록&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;기록&lt;/strong&gt;&lt;/p&gt;
 
 &lt;p&gt;push notification 작업을 하는중 pem 파일의 비밀번호 제거 하는 명령을 한 뒤에  다음과 같은 에러 발생&lt;/p&gt;
 
@@ -1858,16 +1878,16 @@ http {
 
 &lt;p&gt;위의 답변에 나온 방법으로 문제 해결함&lt;/p&gt;
 
-&lt;h3 id=&quot;이슈사항-5&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;push notification에 대한 정보 기록이 필요함 -&amp;gt; 좋아요 누른사람 정보, 어떤포스트 인지&lt;/li&gt;
   &lt;li&gt;badge정보를 저장할 공간이 필요함 badge 를 저장하고 해당정보를 보내줘야함&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h1 id=&quot;1-8-월요일&quot;&gt;1-8 월요일&lt;/h1&gt;
+&lt;h2 id=&quot;1-8-월요일&quot;&gt;1-8 월요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;금일-작업-1&quot;&gt;금일 작업&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;금일 작업&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;badge 정보를 쌓아나갈 수 있는 model과 model method만들고 api에 적용
@@ -1880,7 +1900,7 @@ http {
 update 할 api 문서 : login, sign up, reset-badge, push list, liked post(올바르지 않은 토큰 넣었을 때 error 냄)&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;변경사항&quot;&gt;변경사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;변경사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;login과 sign up 시에 &lt;code class=&quot;highlighter-rouge&quot;&gt;device-token&lt;/code&gt;이라는 key값을 추가하면 apns device 객체를 생성하도록 함 (response data는 기존과 같다)&lt;/li&gt;
@@ -1894,9 +1914,9 @@ update 할 api 문서 : login, sign up, reset-badge, push list, liked post(올�
 
 &lt;p&gt;api 문서는 작성중입니다.&lt;/p&gt;
 
-&lt;h1 id=&quot;1-9-화요일&quot;&gt;1-9 화요일&lt;/h1&gt;
+&lt;h2 id=&quot;1-9-화요일&quot;&gt;1-9 화요일&lt;/h2&gt;
 
-&lt;h3 id=&quot;작업내용-1&quot;&gt;작업내용&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;작업내용&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -1914,14 +1934,14 @@ device token은 unique true 라서 같은 디바이스 토큰이 들어가지 �
   &lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;프로젝트-마무리-해야할-것들&quot;&gt;프로젝트 마무리 해야할 것들&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;프로젝트 마무리 해야할 것들&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;elb health check 관련 해결&lt;/li&gt;
   &lt;li&gt;nginx 사진용량 사이즈 조정&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&quot;이슈사항-6&quot;&gt;이슈사항&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;이슈사항&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -1931,10 +1951,10 @@ device token은 unique true 라서 같은 디바이스 토큰이 들어가지 �
 인증된 user가 patch요청,
 key 값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;badge&lt;/code&gt; value값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;integer&lt;/code&gt; 보내면 요청한 user의 badge정보 세팅되고 아래와 같이 response&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;badge&quot;: 2
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;badge&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;디바이스토큰 세팅 할 수 있는 api &lt;code class=&quot;highlighter-rouge&quot;&gt;/push/device-token/&lt;/code&gt;&lt;/p&gt;
@@ -1943,11 +1963,11 @@ key 값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;badge&lt;/code&gt;
 인증된 user가 patch요청,
 key 값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;device-token&lt;/code&gt; value값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;디바이스 토큰값&lt;/code&gt; 보내면 요청한 user의 device token값이 보낸 요청으로 세팅되고 아래와 같이 response&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;registration_id&quot;: &quot;qwer&quot;
-}
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;registration_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;qwer&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
 
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;registration_id&lt;/code&gt; 에 해당되는 &lt;code class=&quot;highlighter-rouge&quot;&gt;qwer&lt;/code&gt;이 토큰값&lt;/p&gt;
   &lt;/li&gt;
@@ -1955,23 +1975,23 @@ key 값으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;device-token&lt;/c
     &lt;p&gt;login, sign up 시에 response 로 device token 값 response로 보여주기
 apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰&lt;/p&gt;
 
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;{
-    &quot;pk&quot;: 1,
-    &quot;username&quot;: &quot;zoozoo&quot;,
-    &quot;email&quot;: &quot;shz@gmail.com&quot;,
-    &quot;img_profile&quot;: &quot;/media/user/5.jpg&quot;,
-    &quot;token&quot;: &quot;e9f446816d19ba6a356024ed2c83eba1ebc49ed6&quot;,
-    &quot;apnsdevice_set&quot;: [
-        {
-            &quot;registration_id&quot;: &quot;1310df61f0d3b1fc94324600ae5ebf75be6a859278b1e3ebe1110111dae86d4f&quot;
-        }
-    ]
-}
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;div class=&quot;language-json highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;pk&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;zoozoo&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;email&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;shz@gmail.com&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;img_profile&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;/media/user/5.jpg&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;token&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;e9f446816d19ba6a356024ed2c83eba1ebc49ed6&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;apnsdevice_set&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+            &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;registration_id&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;1310df61f0d3b1fc94324600ae5ebf75be6a859278b1e3ebe1110111dae86d4f&quot;&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+        &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+    &lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
 
     &lt;p&gt;​&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">NGINX</title><link href="https://zooozoo.github.io/records/2018-03-23-NGINX/" rel="alternate" type="text/html" title="NGINX" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/NGINX</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-NGINX/">&lt;h2 id=&quot;생활코딩-nginx강의&quot;&gt;생활코딩 Nginx강의&lt;/h2&gt;
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">나의 여행기 기록 SNS EXPLOG를 개발하며 기록해 놓은 자료입니다.</summary></entry><entry><title type="html">NGINX</title><link href="http://localhost:4000/records/2018-03-23-NGINX/" rel="alternate" type="text/html" title="NGINX" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>http://localhost:4000/records/NGINX</id><content type="html" xml:base="http://localhost:4000/records/2018-03-23-NGINX/">&lt;h2 id=&quot;생활코딩-nginx강의&quot;&gt;생활코딩 Nginx강의&lt;/h2&gt;
 
 &lt;p&gt;아래의 내용은 egoing님이 강의하시는 opentutorials의 NGINX강의에서 발췌한 것 입니다.&lt;/p&gt;
 
@@ -2131,7 +2151,7 @@ apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&quot;&gt;https://www.lesstif.com/pages/viewpage.action?pageId=21430345&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id=&quot;vps란&quot;&gt;VPS란?&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;http://library.gabia.com/contents/infrahosting/3594&quot;&gt;http://library.gabia.com/contents/infrahosting/3594&lt;/a&gt;&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><category term="NGINX강의록" /><summary type="html">NGINX를 공부하며 필요한 내용을 기록해 두었습니다.</summary></entry><entry><title type="html">\‘하루 3분 네트워크 교실\’ 리뷰</title><link href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="alternate" type="text/html" title="\'하루 3분 네트워크 교실\' 리뷰" /><published>2018-03-18T00:00:00+09:00</published><updated>2018-03-18T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/">&lt;p&gt;&lt;img src=&quot;https://zooozoo.github.io/assets/images/PreviewResize.jpeg&quot; alt=&quot;책&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://library.gabia.com/contents/infrahosting/3594&quot;&gt;http://library.gabia.com/contents/infrahosting/3594&lt;/a&gt;&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><category term="NGINX강의록" /><summary type="html">NGINX를 공부하며 필요한 내용을 기록해 두었습니다.</summary></entry><entry><title type="html">\‘하루 3분 네트워크 교실\’ 리뷰</title><link href="http://localhost:4000/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" rel="alternate" type="text/html" title="\'하루 3분 네트워크 교실\' 리뷰" /><published>2018-03-18T00:00:00+09:00</published><updated>2018-03-18T00:00:00+09:00</updated><id>http://localhost:4000/posts/%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0</id><content type="html" xml:base="http://localhost:4000/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/">&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/PreviewResize.jpeg&quot; alt=&quot;책&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 &lt;code class=&quot;highlighter-rouge&quot;&gt;커니핸 교수의 Hello Digital World&lt;/code&gt;라는 책을 읽었고, 책을 다 읽고 난 후에는 통신과 관련된 책도 꼭 읽어봐야겠다는 마음을 가지게 되었다. 누구에게 강의를 들을 수 있는 것이 아니었기 때문에 어떤책을 골라야 할 지 막막함이 있었는데 학원 강사님게서 추천해주신 &lt;code class=&quot;highlighter-rouge&quot;&gt;HTTP완벽 가이드&lt;/code&gt;라는 책을 조금 들쳐봤을 때에는 도저히 바로 시작하면 챕터 1에서 나가떨어질 것만 같아서 다른 책을 찾는 와중에 리뷰의 주인공인 &lt;code class=&quot;highlighter-rouge&quot;&gt;하루 3분 네트워크 교실&lt;/code&gt;이라는 책을 발견하게 되었다.&lt;/p&gt;
 
@@ -2145,215 +2165,35 @@ apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰&lt;/p&gt;
 
 &lt;p&gt;저자가 일본인인데 저자가 쓴 다른 책들도 있어서 혹시 번역된게 있으면 사서 볼려고 했는데 없어서 아쉬웠다. 이 책을 읽은 후에는 같은 출판사에서 쓴 &lt;code class=&quot;highlighter-rouge&quot;&gt;그림으로 배우는 HTTP Network Basic&lt;/code&gt;도 사서 읽어봤는데 http를 최대한 쉽게 설명하려고 하지만 &lt;code class=&quot;highlighter-rouge&quot;&gt;하루 3분 네트워크 교실&lt;/code&gt;을 읽기 전에 먼저 읽었다면 조금 답답하게 읽었을 것 같다는 생각을 했었다.&lt;/p&gt;
 
-&lt;p&gt;저자의 다른 책도 번역되서 나왔으면 좋겠다는 바람과 함께 리뷰를 마친다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="책리뷰" /><summary type="html">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.</summary></entry><entry><title type="html">Project-HP</title><link href="https://zooozoo.github.io/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/project-hp</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/project-hp/">&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;저자의 다른 책도 번역되서 나왔으면 좋겠다는 바람과 함께 리뷰를 마친다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="책리뷰" /><summary type="html">OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다.</summary></entry><entry><title type="html">Project-HP</title><link href="http://localhost:4000/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>http://localhost:4000/portfolio/project-hp</id><content type="html" xml:base="http://localhost:4000/portfolio/project-hp/">&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
 &lt;p&gt;홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
 주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
 
-&lt;h2 id=&quot;참고한-사이트-모음&quot;&gt;참고한 사이트 모음&lt;/h2&gt;
 &lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;https://www.codeproject.com/Articles/546960/HTML-Quick-Start-Web-Application&quot;&gt;html 레이아웃 관련&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;프로젝트 Github : https://github.com/zooozoo/homepage-project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나 기능적인 부분에서 차이는 없고
-얼마나 읽기 편한지와같은 문제가 고려되는데 else를 쓰기보다는 바로 return하는 방식이 더 좋다는 의견이 많다. 관련 논쟁 스택오버플로우 링크
-&lt;a href=&quot;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&quot;&gt;https://stackoverflow.com/questions/14844531/is-it-preferable-to-use-an-else-in-python-when-its-not-necessary&lt;/a&gt;
-&lt;a href=&quot;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&quot;&gt;https://stackoverflow.com/questions/9191388/it-is-more-efficient-to-use-if-return-return-or-if-else-return&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;다음-단계&quot;&gt;다음 단계&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;user가 선택한 뉴스만 기억해서 보여주도록 main 템플렛 수정&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;나중에-해야할-일&quot;&gt;나중에 해야할 일&lt;/h2&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;header 파트 레이아웃 리팩터링 필요
--&amp;gt; 부트스트랩 레이아웃 사용해서 해결&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;크롤링한 데이터에서 ‘문답’과 같은 요소들 없애기
--&amp;gt; 글자수에 조건을 걸어서 해결&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;nav에 news_select_section에서 한글로 언론사이름 보여줄 수 있게 수정
--&amp;gt; filed에 verbose name 설정하고, index.html의 card header 부분에 field.name을 field.value로 변경해서 해결&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;main에 checkbox form에 initial data 전달하는거 더 효율적으로 할 수 있는지 살펴보기
--&amp;gt; model form 이기 때문에 데이터베이스에서 가져온 모델 인스턴스를 전달함으로써 initiated된 폼을 사용할 수 있음&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;에러가 나면 데이터베이스에 있는 내용을 끌어올 수 있도록 만들기&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;news-select-section에 있는 checkbox를 1열 래이아웃으로 바꾸기&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;산발적으로 발생하는 에러 잡기
-에러&lt;/p&gt;
-    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  File &quot;/home/zoozoo/projects/project-hp/my_homepage/main/utils.py&quot;, line 230, in khan_news_title
-    title=soup.find('div', class_='topNews').a.text,
-  AttributeError: 'NoneType' object has no attribute 'a'
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&quot;개발과정에-대한-기록&quot;&gt;개발과정에 대한 기록&lt;/h2&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;aws계정 생성
-    &lt;ol&gt;
-      &lt;li&gt;IAM 유저와, 보안그룹 생성&lt;/li&gt;
-      &lt;li&gt;aws cli를 활용해 기본정보 등록&lt;/li&gt;
-    &lt;/ol&gt;
-  &lt;/li&gt;
-  &lt;li&gt;local 에서 postgres 연결 확인&lt;/li&gt;
-  &lt;li&gt;settings 를 패키지로 만들고 deploy 와 dev용 setting 모듈 분리&lt;/li&gt;
-  &lt;li&gt;RDS, S3와 연결되고 로컬에서 80번port로 접속 가능한 docker만들기&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;docker를 만드는 과정에서 있었던 일&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;docker를 만드는 과정에서 basedocker를 새로 구성할 필요가 있어서 간단하게 새 명령어를 집어넣고 새로 buil를 하는데 pyenv를 의존성문제를 해결하기 위한 구성을 다울로드 하는 과정에 에러가 발생했다.&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/t/tzdata/tzdata_2016j-0ubuntu0.16.04_all.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/i/icu/libicu55_55.1-7ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/libx/libxml2/libxml2_2.9.3+dfsg1-1ubuntu0.3_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://security.ubuntu.com/ubuntu/pool/main/c/curl/curl_7.47.0-1ubuntu2.4_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-amdgpu1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-intel1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-nouveau2_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/libd/libdrm/libdrm-radeon1_2.4.76-1~ubuntu16.04.1_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libglapi-mesa_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-dri_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/m/mesa/libgl1-mesa-glx_17.0.7-0ubuntu0.16.04.2_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.0.2g-1ubuntu4.8_amd64.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Failed to fetch http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-doc_1.0.2g-1ubuntu4.8_all.deb  404  Not Found [IP: 91.189.88.152 80]
-
-  E: Unable to fetch some archives, maybe run apt-get update or try with --fix-missing?
-  The command '/bin/sh -c apt-get install -y make build-essential             libssl-dev zlib1g-dev libbz2-dev             libreadline-dev libsqlite3-dev wget             curl llvm libncurses5-dev libncursesw5-dev             xz-utils tk-dev' returned a non-zero code: 100
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;대략 이런 에러였는데 &lt;code class=&quot;highlighter-rouge&quot;&gt;apt-get update&lt;/code&gt;부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 &lt;code class=&quot;highlighter-rouge&quot;&gt;--no-cache&lt;/code&gt;명령어를 붙여주면 된다.
-  &lt;a href=&quot;https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련 답변내용 link&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;설치중에 &lt;code class=&quot;highlighter-rouge&quot;&gt;debconf: delaying package configuration, since apt-utils is not installed&lt;/code&gt;이런 에러가 있었는데 해당 내용이 &lt;a href=&quot;https://github.com/phusion/baseimage-docker/issues/319&quot;&gt;링크&lt;/a&gt;에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;elasticbeanstalk 구축하기
+  &lt;li&gt;프로젝트명 : News-Collecter&lt;/li&gt;
+  &lt;li&gt;기간 : 2018.03.09 – 2018.05.11&lt;/li&gt;
+  &lt;li&gt;내용 :
+수많은 언론사가 뉴스를 만들어 냅니다. 뉴스의 소비자들은 각각의 언론사의 뉴스 취사선택에 따라 영향을 받기 마련입니다. 예를들면 언론사는 어떤 사항을 뉴스거리로 보도할 것인지, 혹은 같은 사항이라도 어떤 단어를 선택해서 제목을 뽑을 것인지에 따라 뉴스 소비자들은 해당 사항에 대해서 긍정 혹은 부정적인 영향을 받게 됩니다. 정보의 호수속에서 균형잡힌 시각을 얻기위해서는 여러 언론사들의 헤드라인 선정이나, 사안에 대한 논조 등을 비교해 가면서 볼 수 있어야 하는데 기존 포탈에서는 뉴스를 보여주는 것이 목적이 아닌지라 이러한 역할을 하기에는 한계점이 있다고 생각했습니다. 그래서 광고나 검색을 위한 포탈이 아닌 한눈에 여러 언론사의 헤드라인을 모아서 볼 수 있는 일종의 뉴스 포탈을 통해 특정 사안에 대한 각 언론사별 논조를 비교하거나, 뉴스의 취사선택에서 어떤 차이점을 보이는지 확인하며 나만의 생각을 가질 수 있는데 도움을주는 페이지를 만들고자 했습니다.&lt;/li&gt;
+  &lt;li&gt;사용기술 :
     &lt;ul&gt;
-      &lt;li&gt;키페어 profile 설정문제
- awscli에서 사용하는 기본 프로파일은 환경변수로 설정되어 있다.
- &lt;code class=&quot;highlighter-rouge&quot;&gt;export AWS_PROFILE=user2&lt;/code&gt;명령을 통해 환경변수를 설정함으로써 매번 profile을 지정하지 않아도 된다.
- &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/cli/latest/userguide/cli-multiple-profiles.html&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;eb cli 환경에서 키페어 profile 설정문제&lt;/li&gt;
+      &lt;li&gt;Django, uwsgi, nginx를 사용해 웹서버를 구축했습니다.&lt;/li&gt;
+      &lt;li&gt;Django Template, CSS와 Bootstrap을 활용해 웹 페이지를 구현했습니다.&lt;/li&gt;
+      &lt;li&gt;request와 beautiful soup을 사용해서 언론과 포탈의 뉴스 타이틀을 가져왔습니다. 각 언론사
+별로HTML구조가 다르기 때문에 언론사별 메소드를 구현하였고 bulk_create 쿼리를
+활용하기 위해 class로 구현했습니다.&lt;/li&gt;
+      &lt;li&gt;Celery와 AWS Simple Queue Service를 활용하여 지정한 시간 간격으로 메시지큐의 요청을
+통해 각 언론사 뉴스타이틀을 가져오게끔 구성해 놓았습니다.&lt;/li&gt;
+      &lt;li&gt;Supervisor를 활용해 배포된 상태에서 Nginx와 wsgi, Celery를 자동으로 백그라운드에서
+실행시키도록 구성했습니다.&lt;/li&gt;
+      &lt;li&gt;Docker와 AWS Elastic beanstalk을 활용해 배포작업을 진행하였습니다.&lt;/li&gt;
+      &lt;li&gt;Route53을 활용해 도메인 이름을 부여하고 AWS의 Certificate Manager 서비스를 활용해
+SSL인증서를 발급받고 적용했습니다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;elasticbeanstalk에서 최신버전의 docker를 지원하지 않아 발생하는 문제라고 생각 -&amp;gt; docker를 삭제하고 다시 설치하기로 결정
-    &lt;ul&gt;
-      &lt;li&gt;삭제하려고 하는데 docker를 찾지 못함 -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg -l | grep -i docker&lt;/code&gt; 명령어로 설치된 &lt;code class=&quot;highlighter-rouge&quot;&gt;docker-ce&lt;/code&gt;확인후에 삭제
-&lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;특정버전의 docker를 설치 &lt;a href=&quot;https://askubuntu.com/questions/935569/how-to-completely-uninstall-docker?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;관련링크&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;docker를 재설치 해도 같은문제가 발생했고, 문제는 &lt;code class=&quot;highlighter-rouge&quot;&gt;.gitignore&lt;/code&gt;에 &lt;code class=&quot;highlighter-rouge&quot;&gt;Dockerfile&lt;/code&gt;이 포함되어 있기 때문이었다. -&amp;gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;.ebignore&lt;/code&gt;추가&lt;/li&gt;
-  &lt;li&gt;결론적으로는 docker의 버전이 다른게 문제가 되는지는 정확하기 확인하진 못했지만 그래도 일단 버전을 맞추는게 좋을 것으로 판단된다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;한글 깨짐현상
-    &lt;ul&gt;
-      &lt;li&gt;Beautifulsoup 에서 깨지는걸로 생각했는데, request모듈에서의 encoding문제였다. 참고한 블로그와 사이트
-  &lt;a href=&quot;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&quot;&gt;http://sfixer.tistory.com/entry/python3-beautifulsoup-%ED%95%9C%EA%B8%80-%EA%B9%A8%EC%A7%90&lt;/a&gt;
-  &lt;a href=&quot;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&quot;&gt;http://pythonstudy.xyz/python/article/403-%ED%8C%8C%EC%9D%B4%EC%8D%AC-Web-Scraping&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;더 간단한 해결책 발견
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.text&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;unicode&lt;/code&gt;로 가져옴
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;request.content&lt;/code&gt; -&amp;gt; 값을 &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져옴
-  &lt;code class=&quot;highlighter-rouge&quot;&gt;str&lt;/code&gt;형으로 가져오면 간단하게 문자를 사용할 수 있다.
-  참고한 블로그
-  &lt;a href=&quot;http://pwnbit.kr/85&quot;&gt;http://pwnbit.kr/85&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests.exceptions.TooManyRedirects: Exceeded 30 redirects.&lt;/code&gt; 에러 관련&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;문자열에 탭이나, 줄바꿈 문자 제거하는 것
-  &lt;a href=&quot;https://stackoverflow.com/questions/10711116/strip-spaces-tabs-newlines-python/10711166#comment25234743_10711116&quot;&gt;stackoverflow 답변&lt;/a&gt;
-  위의 답변들 중에 나는 아래의 방법으로 해결
-    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;re&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I want to Remove all white &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; spaces, new lines &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\n&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; and tabs &lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\t&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;
-  &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;re&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sub&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;err&quot;&gt;\&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;s+'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;myString&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;s&quot;&gt;'I want to Remove all white spaces, new lines and tabs '&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;input&lt;/code&gt;태그를 disabled 처럼 보이게 만들고 readonly 처럼 사용하기
-  &lt;a href=&quot;https://stackoverflow.com/questions/7743208/making-a-text-input-field-look-disabled-but-act-readonly&quot;&gt;stackoverflow 답변&lt;/a&gt;처럼 해결 할 수도 있을 것 같다.
-  다만 난 답변을 찾다가 django forms의 widget설정에서 readonly 옵션을 넣어봤더니 disabled와 같은 모습으로 템플릿에 나와서 그대로 사용했다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;crawler_test.py python script에서 django의 model 을 import하여 실행하기 위한 세팅
-  django 자체를 import해서 어떤 환경변수를 설정해줘야만 사용할 수 있다.
-  아래는 내가 적용했던 세팅
-  ```
-  import os
-  import django&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;os.environ.setdefault(“DJANGO_SETTINGS_MODULE”, “my_homepage.settings”)
-  django.setup()&lt;/p&gt;
-
-&lt;p&gt;from main.models import NewsTitle
-  ```
-  &lt;a href=&quot;https://stackoverflow.com/questions/15048963/alternative-to-the-deprecated-setup-environ-for-one-off-django-scripts?utm_medium=organic&amp;amp;utm_source=google_rich_qa&amp;amp;utm_campaign=google_rich_qa&quot;&gt;참고한 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
-
-&lt;ol&gt;
-  &lt;li&gt;celery 를 활용하여 크롤링한 데이터 저장하기&lt;/li&gt;
-  &lt;li&gt;celery beat를 활용 -&amp;gt; 폐기
-    주기적으로 크롤링을 작동시켜서 크롤링한 데이터를 저장하려 했으나 elasticbeanstalk와 docker를 활용하여 배포할 경우 auto scaling시에 문제가 발생할 수 있다. (같은 ec2가 여러개 생길경우 인스턴스 갯수 마다 beat가 따로 동작하기 때문에 크롤링이 중복되는 문제 발생)
-    -&amp;gt; 데이터 생성시간을 체크해서 일정시간이 지나지 않았으면 작동하지않게 할 수도 있다. -&amp;gt; que요청과 시간을 확인하는 로직은 항상 들어가야 하기 때문에 delay보다 자원이 더 낭비될 가능성이 크다.&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;celery delay 활용
-    created time field를 활용해 request마다 데이터베이스의 크롤링 데이터가 stale 한 경우 delay로 크롤링작업 실행. concurrency 문제가 발생할 수 있기 때문에 celery task 작동시에 database lock을 사용한다.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;celery docker에서 작동해보기 -&amp;gt; 폐기&lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;default user는 locallhost환경으로만 접속가능하기 때문에 새로운 user를 만들어 줘야 한다.
-    &lt;code class=&quot;highlighter-rouge&quot;&gt;rabbitmqctl add_user username password&lt;/code&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;aws sqs를 활용하여 celery를 사용하기로 함
-  celery 실행시 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하라고 함, &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt; 을 설치하기 위해선 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 해당 명령어를 통해 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
-  &lt;a href=&quot;https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing&quot;&gt;pycurl 설치관련 stackoverflow 답변&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;elasticbeanstalk에서 내 도메인 이름 사용하기&lt;/li&gt;
-  &lt;li&gt;route53 등록전 name서버를 aws로 교체
-  &lt;a href=&quot;http://wingsnote.com/57&quot;&gt;참고 블로그&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;route53에서 내 도메인과 elb 도메인 연결하기
-  &lt;a href=&quot;https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/customdomains.html&quot;&gt;route 53 설명서&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">EXPLOG</title><link href="https://zooozoo.github.io/portfolio/explog/" rel="alternate" type="text/html" title="EXPLOG" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/explog</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/explog/">&lt;!-- Courtesy of embedresponsively.com //--&gt;
+  &lt;li&gt;Github - &lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;https://github.com/zooozoo/homepage-project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;프로젝트 도메인 &lt;a href=&quot;http://www.news-collecter.com&quot;&gt;http://www.news-collecter.com&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;진행사항 기록 &lt;a href=&quot;https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/&quot;&gt;https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">EXPLOG</title><link href="http://localhost:4000/portfolio/explog/" rel="alternate" type="text/html" title="EXPLOG" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>http://localhost:4000/portfolio/explog</id><content type="html" xml:base="http://localhost:4000/portfolio/explog/">&lt;!-- Courtesy of embedresponsively.com //--&gt;
 &lt;div class=&quot;responsive-video-container&quot;&gt;
 
   &lt;iframe src=&quot;https://www.youtube.com/embed/n_dV5jrGEx4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
@@ -2364,10 +2204,23 @@ apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰&lt;/p&gt;
   &lt;li&gt;프로젝트명 : Explog&lt;/li&gt;
   &lt;li&gt;기간 : 2017.11.27 – 2018.01.12&lt;/li&gt;
   &lt;li&gt;역할 : 배포 / User authentication / Push notification&lt;/li&gt;
-  &lt;li&gt;내용 :자신만의 여행을 기록하고 기록한 사진과 글을 다른 사람과 함께 공유하는 여행기SNS 애플리케이션 입니다.&lt;/li&gt;
-  &lt;li&gt;사용기술 : Django를 활용하여 Rest Framework API서버를 구축하였습니다. 배포는 AWS의 Elasticbeanstalk을 활용하였으며 NginX와 Docker를 활용하여 배포했습니다. Elasticbeanstalk의 기본 구성은 애플리케이션을 구동하는 EC2, RDS서버(Postgresql), 동적파일과 정적파일을 보관할 S3 Storage를 연동하여 배포하였으며 엘라스틱 로드벨런서를 통해서 동적으로 EC2서버를 확장할 수 있도록 되어있습니다.&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://github.com/zooozoo/Team-project&quot;&gt;프로젝트 Github : https://github.com/zooozoo/Team-project&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">if __name__ == “__main__”: 의미</title><link href="https://zooozoo.github.io/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/" rel="alternate" type="text/html" title="if __name__ == &quot;__main__&quot;: 의미" /><published>2018-03-03T00:00:00+09:00</published><updated>2018-03-03T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/">&lt;h1 id=&quot;if-__name__--__main__-의미&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if __name__ == &quot;__main__&quot;&lt;/code&gt;: 의미&lt;/h1&gt;
+  &lt;li&gt;내용 : 자신만의 여행을 기록하고 기록한 사진과 글을 다른 사람과 함께 공유하는 여행기SNS 애플리케이션 입니다. 아무 사진을 올리는 것 보다 자신의 이야기가 담긴 사진과 내용을 여러사람들과 공유할 수 있는 SNS를 만들고자 했습니다. 여행은 자신의 이야기를 가장 잘 담아낼 수 있다고 생각했고, 자신의 여행기를 담아 주변사람과 공유하고 다른 사람의 여행기를 참고할 수 있으면 좋겠다는 생각에 만들게 된 애플리케이션 입니다.&lt;/li&gt;
+  &lt;li&gt;사용기술 :
+    &lt;ul&gt;
+      &lt;li&gt;django, nginx, uwsgi, supervisor를 활용해 서버를 구축했습니다.&lt;/li&gt;
+      &lt;li&gt;안드로이드, IOS기기와 데이터를 주고받기 위해서 Django Restframework 를 사용해 rest API 를 구현했습니다.&lt;/li&gt;
+      &lt;li&gt;Postgresql 을 이용해 모델을 구축했습니다. Django AbstractUser 모델을 활용해 User 모델을 구현했고,
+post 모델과의 m2m 관게를 활용해서 ‘ 좋아요 ’ 기능과 ‘ 팔로우 ’ 기능을 만들었습니다. 배포과정에서는
+AWS RDS 를 사용하여 데이터베이스를 구축했습니다.&lt;/li&gt;
+      &lt;li&gt;Django-push-notifications 를 활용하여 push 알람 기능을 구축했습니다.&lt;/li&gt;
+      &lt;li&gt;AWS Elasticbeanstalk 와 Docker 를 활용하여 배포했습니다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Github - &lt;a href=&quot;https://github.com/zooozoo/Team-project&quot;&gt;https://github.com/zooozoo/Team-project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;API(git book) - &lt;a href=&quot;https://gangbok119.gitbooks.io/explog-api/content/&quot;&gt;https://gangbok119.gitbooks.io/explog-api/content/&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;작동 동영상 - &lt;a href=&quot;https://www.youtube.com/watch?v=n_dV5jrGEx4&amp;amp;t=31s&quot;&gt;https://www.youtube.com/watch?v=n_dV5jrGEx4&amp;amp;t=31s&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;진행사항 기록 - &lt;a href=&quot;https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/&quot;&gt;https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">if __name__ == “__main__”: 의미</title><link href="http://localhost:4000/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/" rel="alternate" type="text/html" title="if __name__ == &quot;__main__&quot;: 의미" /><published>2018-03-03T00:00:00+09:00</published><updated>2018-03-03T00:00:00+09:00</updated><id>http://localhost:4000/posts/if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8</id><content type="html" xml:base="http://localhost:4000/posts/2018-03-03-if%20__name__%20==%20%22__main__%22:%20%EC%9D%98%EB%AF%B8/">&lt;h1 id=&quot;if-__name__--__main__-의미&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;if __name__ == &quot;__main__&quot;&lt;/code&gt;: 의미&lt;/h1&gt;
 
 &lt;p&gt;해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.&lt;/p&gt;
 
@@ -2503,7 +2356,7 @@ I am being imported from another module
 &amp;gt;&amp;gt;&amp;gt;
 
 ```
-&lt;/output&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="python" /><summary type="html">해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.</summary></entry><entry><title type="html">URL과 URI</title><link href="https://zooozoo.github.io/posts/2018-03-03-URL%EA%B3%BCURI/" rel="alternate" type="text/html" title="URL과 URI" /><published>2018-03-03T00:00:00+09:00</published><updated>2018-03-03T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/URL%EA%B3%BCURI</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-03-03-URL%EA%B3%BCURI/">&lt;h1 id=&quot;url과-uri&quot;&gt;URL과 URI&lt;/h1&gt;
+&lt;/output&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="python" /><summary type="html">해당내용을 패스트캠퍼스 수업시간에 한번 들은적이 있는데 다시보면 헷갈리고 명확하게 개념을 이해하고 싶어서 구글검색을 감행했다.</summary></entry><entry><title type="html">URL과 URI</title><link href="http://localhost:4000/posts/2018-03-03-URL%EA%B3%BCURI/" rel="alternate" type="text/html" title="URL과 URI" /><published>2018-03-03T00:00:00+09:00</published><updated>2018-03-03T00:00:00+09:00</updated><id>http://localhost:4000/posts/URL%EA%B3%BCURI</id><content type="html" xml:base="http://localhost:4000/posts/2018-03-03-URL%EA%B3%BCURI/">&lt;h1 id=&quot;url과-uri&quot;&gt;URL과 URI&lt;/h1&gt;
 
 &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;그림으로 배우는 http &amp;amp; network basic&lt;/code&gt;을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다…)&lt;/p&gt;
 
@@ -2542,7 +2395,7 @@ I am being imported from another module
 
 &lt;p&gt;&lt;a href=&quot;https://blog.lael.be/post/61&quot;&gt;https://blog.lael.be/post/61&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="network" /><summary type="html">`그림으로 배우는 http &amp; network basic`을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다...)</summary></entry><entry><title type="html">Spanning multi-valued relationships</title><link href="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="https://zooozoo.github.io/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ko.wikipedia.org/wiki/%ED%86%B5%ED%95%A9_%EC%9E%90%EC%9B%90_%EC%8B%9D%EB%B3%84%EC%9E%90&quot;&gt;위키백과&lt;/a&gt;&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="network" /><summary type="html">`그림으로 배우는 http &amp; network basic`을 공부하다가 URL과 URI에 대한 이야기가 나와서 해당 내용에 대한 정확한 개념을 잡고 기록으로 남겨놓으려 한다. (물론 구글에 치면 진짜 잘나온다...)</summary></entry><entry><title type="html">Spanning multi-valued relationships</title><link href="http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/" rel="alternate" type="text/html" title="Spanning multi-valued relationships" /><published>2018-01-24T00:00:00+09:00</published><updated>2018-01-24T00:00:00+09:00</updated><id>http://localhost:4000/posts/Django_Spanning%20multi-valued%20relationships</id><content type="html" xml:base="http://localhost:4000/posts/2018-01-24-Django_Spanning%20multi-valued%20relationships/">&lt;p&gt;장고의 모델 문서를 공부하다가&lt;a href=&quot;https://docs.djangoproject.com/ko/1.11/topics/db/queries/#spanning-multi-valued-relationships&quot;&gt;(Making Queries)&lt;/a&gt; 이전에 패캠에서 수업들을 때 한번 이해 했던 내용인데 다시보니 너무 헷갈려서 폭풍써치를 감행했고 비로소 이해를 하게 되었다. (하… 내 시간…)&lt;/p&gt;
 
 &lt;p&gt;해당 내용을 이미 알고 있고 스압을 느끼신다면 &lt;a href=&quot;https://stackoverflow.com/questions/5542874/difference-between-filter-with-multiple-arguments-and-chain-filter-in-django&quot;&gt;stackoverflow 의 답변&lt;/a&gt;으로 바로 가보시길…&lt;/p&gt;
 

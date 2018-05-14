@@ -4,7 +4,7 @@
 
 ## 11-21 화요일
 
-#### 서버 사전세팅관련
+**서버 사전세팅관련**
 
 * 도커만들기
 * postgresql rds 연결
@@ -49,7 +49,7 @@
 
 ## 11-24 금요일
 
-#### 기획 확정되기 전이라도 할 수 있는 것들
+**기획 확정되기 전이라도 할 수 있는 것들**
 
 * member앱 만들기
   * signup, login, logout, 기능
@@ -60,11 +60,11 @@
 
 ## 11-27 월요일
 
-#### 이메일 인증 구글에서 허용하는 설전 전까지의 기록
+**이메일 인증 구글에서 허용하는 설전 전까지의 기록**
 
 apis.py
 
-```
+```python
 class Signup(APIView):
     def post(self, request, *args, **kwargs):
         serializer = SignupSerializer(data = request.data)
@@ -108,7 +108,7 @@ def activate(request, uidb64, token):
 
 tokens.py
 
-```
+```python
 from django.contrib.auth.tokens import PasswordResetTokenGenerator
 from django.utils import six
 
@@ -116,12 +116,13 @@ class AccountActivationTokenGenerator(PasswordResetTokenGenerator):
     def _make_hash_value(self, user, timestamp):
         return (six.text_type(user.pk) + six.text_type(timestamp)) +  six.text_type(user.is_active)
 
+
 account_activation_token = AccountActivationTokenGenerator()
 ```
 
 urls.py
 
-```
+```python
 from django.conf.urls import url
 
 from .apis import LoginView, Signup, activate
@@ -148,7 +149,7 @@ http://{{ domain }}{% url 'member:activate' uidb64=uid token=token %}
 
 
 
-#### 회의
+**회의**
 
 회원가입시 사용 필드
 
@@ -160,7 +161,7 @@ email, nickname, imgprofile
 
 ## 11-28 화요일
 
-#### token auth duration  관련조사
+**token auth duration  관련조사**
 
 [스택오버플로우 토큰인증 기간](https://stackoverflow.com/questions/22943050/how-long-is-token-valid-django-rest-framework)
 
@@ -170,19 +171,19 @@ email, nickname, imgprofile
 
 * 강사님 조언 : throtting은 token auth duration customizing 관련해서 사용하는 기능이 아니다. 스택오버플로우에 나와있는 것 처럼 해야하는데 앱을 하나 새로 만들어서 토큰 데이터베이스에 로직을 통하여 특정순간의 시간을 기록하고 해당 시간을 기준으로 해서 인증 만료 기한을 설정할 수 있다. 설정하기 까다로운 점들이 있기 때문에 extra 기능으로 생각해서 진행하는게 좋다.
 
-#### 알아봐야 할 것들
+**알아봐야 할 것들**
 
 * corsheaders : 강의 때 했던 프로젝트에 보면 installed apps에 corsheaders가 추가 되어있는데 어떨 때 사용하는거고 우리 프로젝트에 필요한건지 확인해보기
 
-#### 팀원들의 의견을 들어봐야 할 것들
+**팀원들의 의견을 들어봐야 할 것들**
 
 * post list의 pagination
 
-#### 강사님 동영상에 settings.py 에 LOGIN_URL = 'member:login' 기록한 이유
+**강사님 동영상에 settings.py 에 LOGIN_URL = 'member:login' 기록한 이유**
 
 The URL where requests are redirected for login, especially when using the [`login_required()`](https://docs.djangoproject.com/en/1.11/topics/auth/default/#django.contrib.auth.decorators.login_required)decorator.
 
-#### Post 관련 기록
+**Post 관련 기록**
 
 * author를 username으로 바꾸는 방법 관련 링크
   * http://www.django-rest-framework.org/api-guide/relations/#reverse-relations
@@ -204,7 +205,7 @@ The URL where requests are redirected for login, especially when using the [`log
 
 * 사진 크기 한도 적어줘야함
 
-#### Post api body입력정보
+**Post api body입력정보**
 
 * post-create: 입력정보 / authorization 필요
   * author(user의 pk값), title, start_date(반드시 `2017-11-28T02:01:00+09:00`형식이어야 함)
@@ -227,14 +228,14 @@ The URL where requests are redirected for login, especially when using the [`log
 
 ## 11-29 수요일
 
-#### 팀원들의 의견을 들어봐야 할 것들(어제꺼에 이어서)
+**팀원들의 의견을 들어봐야 할 것들(어제꺼에 이어서)**
 
 - post list의 pagination
 - 사진 한번에 올릴 수 있는 갯수(나는 최대 10장정도 생각하고 있음)
 - 올리사진을 한번에 묶음으로 보여주는 걸 앱쪽에서 해줄 수는 없는지
 
 
-#### 오늘 작업한 내용
+**오늘 작업한 내용**
 
 * post list
 
@@ -260,11 +261,11 @@ The URL where requests are redirected for login, especially when using the [`log
   * author정보를 확인하는 로직은 없다.
 
 
-#### 기록
+**기록**
 
 post text에 author permission 추가하는거 시도할 때 썼던 코드.
 
-```
+```python
 class PostTextSerializer(serializers.ModelSerializer):
     author = serializers.SerializerMethodField()
 
@@ -289,7 +290,7 @@ class PostTextSerializer(serializers.ModelSerializer):
 
 validate(self, data) 메서드에서 date를 print 해보면`OrderedDict([('title', 'text test1'), ('content', 'test11111'), ('post', <Post: Post object>)])`이렇게 나오고 author 필드가 나오지 않아서, post의 author와 text의 author를 비교할 수 없다.
 
-```
+```python
     def validate(self, data):
         print(data)
         post_author = data['post']
@@ -303,7 +304,7 @@ validate(self, data) 메서드에서 date를 print 해보면`OrderedDict([('titl
 
 위의 내용을 아래의 방법으로 실마리를 찾아가는중, 현재로선 if 논리가 전혀 먹히지 않음
 
-```
+```python
         def validate(self, data):
         print(data)
         post = data['post']
@@ -323,7 +324,7 @@ validate(self, data) 메서드에서 date를 print 해보면`OrderedDict([('titl
 
 위의 오류 발생시 프린트 되는 내용
 
-```
+```python
 OrderedDict([('title', 'text test1'), ('content', 'test11111'), ('post', <Post: Post object>)])
 <class 'member.models.User'>
 <class 'member.models.User'>
@@ -334,7 +335,7 @@ shz@gmail.com
 
 
 
-#### 이슈
+**이슈**
 
 * request user가 포스트의 author가 아니면 해당 포스트가 가지고 있는 text를 작성하지 못하도록 막고 싶은데 잘 안된다.
 * 모델링에 문제가 있음을 발견 -> 해결방법으로는 사진 올리기 버튼을 누르면 photo item 테이블을 자동으로 생성하게 하고 다른 url에서 해당 photo item필드와 foreignkey로 연결해서 사진을 upload한다.
@@ -346,7 +347,7 @@ shz@gmail.com
 
 ## 11-30 목요일
 
-#### 작업내용 (model 리모델링)
+**작업내용 (model 리모델링)**
 
 * post create
 * post list
@@ -354,7 +355,7 @@ shz@gmail.com
 
 
 
-#### 회의
+**회의**
 
 * password - 하나만 받기
 * 구성을  User 안에 토큰값 넣기
@@ -363,9 +364,9 @@ shz@gmail.com
 
 ## 12-3 일요일
 
-#### user 가 작성한 post list 가져오기 성공 apis.py 기록
+**user 가 작성한 post list 가져오기 성공 apis.py 기록**
 
-```
+```python
 class GetUserProfile(APIView):
     def get(self, request, *args, **kwargs):
         user = request.user
@@ -379,11 +380,11 @@ class GetUserProfile(APIView):
 
 ```
 
-#### Tocken auth logout stackoverflow answer
+**Tocken auth logout stackoverflow answer**
 
 https://stackoverflow.com/questions/30739352/django-rest-framework-token-authentication-logout
 
-#### 날씨정보를 가져와서 보여주려고 한다면 다음의 블로그의 3번 을 다시 읽어보자
+**날씨정보를 가져와서 보여주려고 한다면 다음의 블로그의 3번 을 다시 읽어보자**
 
 http://swchoi06.tistory.com/entry/%EC%93%B8%EB%A7%8C%ED%95%9C-%EB%82%A0%EC%94%A8-API
 
@@ -391,9 +392,9 @@ http://swchoi06.tistory.com/entry/%EC%93%B8%EB%A7%8C%ED%95%9C-%EB%82%A0%EC%94%A8
 
 ## 12-4 월요일
 
-#### 팔로잉/팔로우 기능 관련 인스타그램 예시
+**팔로잉/팔로우 기능 관련 인스타그램 예시**
 
-```
+```python
 In [3]: u1 = User.objects.create(username='석헌주', age=30)
 
 In [4]: u2 = User.objects.create(username='이한영', age=30)
@@ -439,7 +440,7 @@ Out[27]: <QuerySet [<User: 이한영>]>
 
 ## 12-5 화요일
 
-#### 오늘 작업할 것
+**오늘 작업할 것**
 
 * 팔로우/팔로잉 기능 완성하기
   * 모델 만들고 기능확인
@@ -448,11 +449,11 @@ Out[27]: <QuerySet [<User: 이한영>]>
   * 자기 자신을 follow 할 수 있는 부분을 막아야함
   * to_user의 pk가 존재하지 않는 user instance 일경우 나오는 에러를 잡아야 한다
     * 받은 pk값(integer)를 활용해 User instance인지 확인할 수 있는 방법에 관한 구글 서치 내용
-      * ​
 
 
 
-#### 새로 알게 된점
+
+**새로 알게 된점**
 
 **serializer context**
 
@@ -480,7 +481,7 @@ self.context['request'].user -> request한 user를 반환
 
 ## 12-6 수요일
 
-#### deploy 할 때 internal server error 해결한 기록
+**deploy 할 때 internal server error 해결한 기록**
 
 uwsgi 에러 로그
 
@@ -562,13 +563,13 @@ https://stackoverflow.com/questions/28205264/django-app-improperly-configured-th
 
 더 알게된 점
 
-```
-uwsgi 에러 로그를 확인할 때 가장 아랫쪽에 나온 요청처리관련 에러로그를 포함하여 윗쪽에 상세하게 적혀있는 에러로그를 확인하면 좀더 수월하게 에러내용을 확인할 수 있다.
-```
+
+> uwsgi 에러 로그를 확인할 때 가장 아랫쪽에 나온 요청처리관련 에러로그를 포함하여 윗쪽에 상세하게 적혀있는 에러로그를 확인하면 좀더 수월하게 에러내용을 확인할 수 있다.
 
 
 
-#### 프로필 페이지에 해야할 작업 목록
+
+**프로필 페이지에 해야할 작업 목록**
 
 1. 사진
 2. 팔로워 팔로잉 수
@@ -613,7 +614,7 @@ like_post = {
 
 ## 12-7 목요일
 
-#### 오늘 할 일
+**오늘 할 일**
 
 1. 프로필 url 구조 확정되면 프로필 기능 만들기
    * url 구조 확정되면 바로 만들기
@@ -621,7 +622,7 @@ like_post = {
    * 만들어진 url로 다시 요청을 하면 언팔을 하도록 할지 아니면 url 하나를 더 만들어서 언팔기능을 구현할지 상의 후 진행
 3. user 정보 수정 기능 만들기
 
-#### 언팔 관련해서 알아둘 점
+**언팔 관련해서 알아둘 점**
 
 `user.following_users.first().delete()` 이런식으로 delete를 하게 되면 `user.following_users.first()`명령이 User object를 불러오기 때문에 user를 삭제 하게 된다. 왜냐하면 `following_users`가 User테이블에 정의된 field이기 때문이다.
 
@@ -629,7 +630,7 @@ like_post = {
 
 
 
-#### User password 변경과 관련된 참고 자료
+**User password 변경과 관련된 참고 자료**
 
 https://stackoverflow.com/questions/38845051/how-to-update-user-password-in-django-rest-framework
 
@@ -637,17 +638,17 @@ https://stackoverflow.com/questions/38845051/how-to-update-user-password-in-djan
 
 ## 12-8 금요일
 
-#### 이미지파일 변경시 기존에 있던 사진 삭제하는 방법 관련 유용한 답변
+**이미지파일 변경시 기존에 있던 사진 삭제하는 방법 관련 유용한 답변**
 
 https://stackoverflow.com/questions/16041232/django-delete-filefield
 
-#### 이미지파일 용량제한 걸어둘 수 있는 방법에 관한 유용한 답변
+**이미지파일 용량제한 걸어둘 수 있는 방법에 관한 유용한 답변**
 
 https://stackoverflow.com/questions/38842053/how-to-check-the-file-size-limit-in-django
 
 https://www.google.co.kr/search?newwindow=1&ei=s5UqWsq6D8r_8QXpoIzgAw&q=django+size+image&oq=django+_size&gs_l=psy-ab.3.4.0i19k1l2j0i30i19k1l6j0i8i30i19k1l2.285284.296298.0.302801.15.13.2.0.0.0.261.1619.0j8j1.9.0....0...1c.1j4.64.psy-ab..5.8.1281...0j0i67k1j0i13i30k1j0i13k1.0.3YSiz1jgxvU
 
-#### 오늘 할 일
+**오늘 할 일**
 
 1. password 변경하는거까지 만들고 api 작성, 배포 -> ** 테스트를 해봐야 하지만 거의 완성 **
 2. 팔로잉 팔로워 리스트 만들기
@@ -663,7 +664,7 @@ https://www.google.co.kr/search?newwindow=1&ei=s5UqWsq6D8r_8QXpoIzgAw&q=django+s
 
 
 
-#### 하면서 새로 알게된 점
+**하면서 새로 알게된 점**
 
 serializer에서 field validation을 사용했는데 validation을 통과하지 못했을 경우 return으로 serializer.VAlidationErrors를 돌려주면 필드에 오류내용이 들어간 체로 is_valid를 통과하여 해당 데이터가 아래와 같이 serializer.data에 담겨진다. return 으로 어떤 값을 돌려주게 되면 해당 필드에 그 내용이 그대로 전달된다.
 
@@ -692,7 +693,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12-11 월요일
 
-#### 오늘 할일
+**오늘 할일**
 
 1. following, user profile, password, api 새로 적은거 올리기
 2. following/follower list api 문서 작성 -> user 정보를 몽땅 주는걸로 수정 한 내용 적용해서 작성
@@ -704,7 +705,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12-12 화요일
 
-#### psot 테스트 중 기록
+**psot 테스트 중 기록**
 
 1. post delete update 에서
    * 해당 post pk값이 없을 경우 500 서버에러
@@ -722,13 +723,13 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 
 
-#### 오늘 할일
+**오늘 할일**
 
 1. user image profile default image 적용시키기
 2. 로그인 할 때 server error 나는 부분확인해서 처리하기 -> 수정완료
 
 
-#### 이슈사항
+**이슈사항**
 
 1. default image를 설정하려고 했는데 s3를 함께 사용하는 상테에서 어떻게 해야하는지 잘 모르겠음
    * 도움이 될 법한 url
@@ -743,7 +744,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12-13 수요일
 
-#### 오늘 할일
+**오늘 할일**
 
 1. user image profile default image 적용시키기
    * 트러블 슈팅
@@ -752,17 +753,17 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 2. image file 용량 제한 -> 완성
 
 
-#### 이슈사항
+**이슈사항**
 
 1. 에러코드를 추가하는 부분에 있어서 exception을 custom 하는 부분이 많아서 어려움이 있음
 
 
 
-#### 알게 된것
+**알게 된것**
 
 1. 장고 문서에서 확인한 것은 아니지만 stackoverflow 에서의 답변에서 유추해 보면
 
-   ```
+   ```python
    megabyte_limit = 2.0
                if filesize > megabyte_limit*1024*1024:
                    raise ValidationError("Max file size is %sMB" % str(megabyte_limit))
@@ -777,7 +778,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12-19 화요일
 
-#### 금일 이슈사항
+**금일 이슈사항**
 
 1. user profile 관련
    * user가 작성한 post 목록 보여줄 때 post list 구조랑 똑같이 보여달라는 요청이 있었음 -> 행아웃 미팅 후 처리
@@ -787,13 +788,13 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
    잘 적용이 안되었는데 수정한 내용으로 다음 배포 때 잘 되나 다시 확인
 
 
-#### 강사님께 물어볼 사항
+**강사님께 물어볼 사항**
 
 * 혹시 git merge시에 indent가 흩으러져 있는 경우가 있었는지
 * 사진파일 용량 제한 관련해서 nginx 설정을 ebextentsions에
 
 
-#### 금일 작업내용
+**금일 작업내용**
 
 1. nginx 용량제한 관련 수정 및 배포
 2. token 확인하는 url 기능 api 문서 작성
@@ -806,7 +807,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12-20 수요일
 
-#### 금일 작업내용
+**금일 작업내용**
 
 1. 다른 사람의 userprofile 정보도 볼 수 있도록 url 추가 및 api 문서 작성 -> userprofile api 문서 update 요청 해야함
    -> 완료
@@ -815,7 +816,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 3. like psot api의 response 관련 수정요청 -> 내가 수정하고 변경내용 강복이한테 메시지 남겨놓음
    -> 완료
 
-#### 이슈사항
+**이슈사항**
 
 1. user following 정보를 어떤식으로 보여줘야 할 지 앞쪽과 협의후에 진행해야 함
 
@@ -836,7 +837,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12-27 수요일
 
-#### 회의
+**회의**
 
 * user profile 쪽 post 의 순서를 최신작성 글이 가장 위에 올라갈 수 있도록 -> order
 * user profile 쪽 post pagination 알아보기 -> 보류하고 순서만 수정
@@ -844,13 +845,13 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 * 좋아요에 푸시알람 주기
 
 
-#### 꿀팁
+**꿀팁**
 
 `mindnode` 라는 마인드맵을 그려주는 프로그램이 있다.
 
 대체제로 `FreeMind`라는 프로그램이 있다.
 
-#### 금일 작업내용
+**금일 작업내용**
 
 1. user profile post의 순서를 최신작성 들이 위에 올라갈 수 있도록 ordering
 
@@ -859,7 +860,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 ## 12- 28 목요일
 
-#### 배포전 변경사항 정리
+**배포전 변경사항 정리**
 
 1. post 에서 title max_length 수정 (30 -> 60)
 2. created_at `2017-12-12T13:15:32.909751+09:00`에서 ->  `17-12-12-24:00`
@@ -869,7 +870,7 @@ is_valid 를 통과하지 못하게 하고 관련 에러를 serializer.errors에
 
 
 
-#### 이슈사항
+**이슈사항**
 
 배포시 ebextensions에 nginx 관련 설정을 해줬는데 강사님께 받은 소스와 , 스택오버플로우에서 알아낸 소스 둘다 502 bad gateway 에러를 뿜었다. 관련 error log 는 다음과 같다
 
@@ -943,7 +944,7 @@ files:
 
 ## 12-20 토요일
 
-#### 작업내용
+**작업내용**
 
 1. following 에서 response data가 int 형식으로 되도록 수정
 
@@ -951,7 +952,7 @@ files:
 
 ## 1-2 화요일
 
-#### 해야할 일
+**해야할 일**
 
 1. 다른 사람 user profile 확인하는 url 에서 요청한 사람의 follow following 숫자를 가져오는 문제 확인하고 수정
    -> 수정완료
@@ -960,7 +961,7 @@ files:
 3. 변경사항 확인하고 배포후 공지
    -> dhksfy
 
-#### 배포내용 정리
+**배포내용 정리**
 
 1. 다른 사람 user profile 확인하는 url 에서 요청한 사람의 follow following 숫자를 가져오는 문제
    -> 요청한 url의 pk값을 기준으로 follow following 숫자를 가져오도록 수정
@@ -970,7 +971,7 @@ files:
 
 3. following의 url 에서 response 의 value 값이 integer로 올 수 있도록 수정
 
-   ```
+   ```json
    {
        "from_user": 1,
        "to_user": 2
@@ -979,7 +980,7 @@ files:
 
 4. post reply create 요청시 응답 다음과 같이 올 수 있또록 수정
 
-   ```
+   ```json
    {
        "pk": 1,
        "post": 1,
@@ -997,7 +998,7 @@ files:
 
 5. post detail에서 path는 0번째 순서를 가지고 text, photo 는 순서대로 정렬되게끔 수정(다음은 post detail의 예시)
 
-   ```
+   ```json
    {
        "post_content": [
            {
@@ -1017,7 +1018,7 @@ files:
 
 
 
-#### 행아웃
+**행아웃**
 
 이미지를 보내고 두번째 이미지를 보내면 첫번째 이미지가 두번째 이미지로 변경됨
 
@@ -1025,7 +1026,7 @@ files:
 
 # 01-03 수요일
 
-#### elb get 요청 관련 (health check)
+**elb get 요청 관련 (health check)**
 
 nginx access.log 에 아래와 같이 health check 요청이 몇초 간격으로 요청됨
 
@@ -1061,14 +1062,14 @@ https://serverfault.com/questions/518220/nginx-solution-for-aws-amazon-elb-healt
 
 
 
-#### 배포내용
+**배포내용**
 
 1. user profile 에서 response 데이터 중에 user가 작성한 post list, 좋아요 누른 post list 에 각 post img의 default img를 보여줄 수 있게 수정
 2. 요청하는 user가 follow 하는 사람들의 post list를 보여주는 url 추가 `/post/follow/`
 
 
 
-#### push notification
+**push notification**
 
 앱쪽에서 준비해야할 사항들
 
@@ -1078,11 +1079,11 @@ https://serverfault.com/questions/518220/nginx-solution-for-aws-amazon-elb-healt
 
 ## 1-5 금요일
 
-#### push notification 관련 기록
+**push notification 관련 기록**
 
 패키지의 send_message 메소드를 사용할 때 어떤 key 값을 사용할 수 있는지 내부 함수를 뜯어 봤는데 다음과 같이 확인할 수 있었고 실험 결과 다음 함수의 attribute를 사용하면 된다.
 
-```
+```python
 def _apns_prepare(
 	token, alert, application_id=None, badge=None, sound=None, category=None,
 	content_available=False, action_loc_key=None, loc_key=None, loc_args=[],
@@ -1118,25 +1119,25 @@ In [46]: test.send_message(message={"title":"Game Request", "body": "Bob wants t
 
 ## 1-6 토요일
 
-#### 이슈사항
+**이슈사항**
 
 1. device token을 저장할 경우 잘 저장되었다는 response, 혹은 잘 저장되지 않았다는 response를 돌려줘야 할지... -> 만약에 돌려준다고 하면 기존의 response 에서 하나가 추가되기 때문에 미리 같이 이야기를 해야만 한다.
    여러가지 선택사항중에 가장 간단한 방법중의 하나는 token 정보만 넘겨주고 (device-token 을 key값으로 하고 token 값을 value로 해서 데이터를 넘겨준다) response는 지금과 같이 그대로 받는 것
 
-#### 기록
+**기록**
 
 민준님께 받은 토큰 값`19bfe0b5d0363186cbf5482225d341701c7f53f1ef67186537e6e88a1d4e7ea7`
 
 
 
-#### 금일 작업
+**금일 작업**
 
 1. ios 기기의 device token을 받아서 저장 할 수 있는 기능 추가
    -> login, sign up 시에 `device-token`이라는 key값을 추가하면 해당 key값을 활용해 해당 user와 관련된 APNSdevice 객체를 저장한다. 현재로써는 각 user는 하나의 device token만 가짐
 2. 좋아요 버튼 누르면 날아가는 로직까지 만들어 놓음
 
 
-#### 남은 작업
+**남은 작업**
 
 1. pem 파일을 비밀번호 없어도 사용할 수 있게끔 만들어야 함
    (shell 에서 비밀번호 입력해야 할 경우 python에서 어떻게 처리할 수 있는지도 한번 알아보면 좋을 것 같다)
@@ -1144,7 +1145,7 @@ In [46]: test.send_message(message={"title":"Game Request", "body": "Bob wants t
 
 ## 1-7 일요일
 
-#### 기록
+**기록**
 
 push notification 작업을 하는중 pem 파일의 비밀번호 제거 하는 명령을 한 뒤에  다음과 같은 에러 발생
 
@@ -1160,7 +1161,7 @@ https://stackoverflow.com/questions/10069351/enter-pem-pass-phrase-just-once#
 
 
 
-#### 이슈사항
+**이슈사항**
 
 1. push notification에 대한 정보 기록이 필요함 -> 좋아요 누른사람 정보, 어떤포스트 인지
 2. badge정보를 저장할 공간이 필요함 badge 를 저장하고 해당정보를 보내줘야함
@@ -1170,7 +1171,7 @@ https://stackoverflow.com/questions/10069351/enter-pem-pass-phrase-just-once#
 
 ## 1-8 월요일
 
-#### 금일 작업
+**금일 작업**
 
 1. badge 정보를 쌓아나갈 수 있는 model과 model method만들고 api에 적용
    -> 완료
@@ -1182,7 +1183,7 @@ https://stackoverflow.com/questions/10069351/enter-pem-pass-phrase-just-once#
    update 할 api 문서 : login, sign up, reset-badge, push list, liked post(올바르지 않은 토큰 넣었을 때 error 냄)
 
 
-#### 변경사항
+**변경사항**
 
 1. login과 sign up 시에 `device-token`이라는 key값을 추가하면 apns device 객체를 생성하도록 함 (response data는 기존과 같다)
 2. 올바른 device token이 입력되어 있다면 다른 누군가가 내가 작성한 post에 좋아요 버튼을 눌렀을 경우 push notification이 날라오고, badge값은 좋아요가 눌러질 때마다 1씩 추가되도록 setting 되어 있음
@@ -1198,7 +1199,7 @@ api 문서는 작성중입니다.
 
 ## 1-9 화요일
 
-#### 작업내용
+**작업내용**
 
 1. 배포후 발생한 문제 해결
    device token은 unique true 라서 같은 디바이스 토큰이 들어가지 못함
@@ -1215,14 +1216,14 @@ api 문서는 작성중입니다.
 
 
 
-#### 프로젝트 마무리 해야할 것들
+**프로젝트 마무리 해야할 것들**
 
 1. elb health check 관련 해결
 2. nginx 사진용량 사이즈 조정
 
 
 
-#### 이슈사항
+**이슈사항**
 
 1. 뱃지 넘버를 세팅할 수 있는 api  `/push/set-badge/`
 
@@ -1230,7 +1231,7 @@ api 문서는 작성중입니다.
    인증된 user가 patch요청,
    key 값으로 `badge` value값으로 `integer` 보내면 요청한 user의 badge정보 세팅되고 아래와 같이 response
 
-   ```
+   ```json
    {
        "badge": 2
    }
@@ -1242,7 +1243,7 @@ api 문서는 작성중입니다.
    인증된 user가 patch요청,
    key 값으로 `device-token` value값으로 `디바이스 토큰값` 보내면 요청한 user의 device token값이 보낸 요청으로 세팅되고 아래와 같이 response
 
-   ```
+   ```json
    {
        "registration_id": "qwer"
    }
@@ -1254,7 +1255,7 @@ api 문서는 작성중입니다.
 3. login, sign up 시에 response 로 device token 값 response로 보여주기
    apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰
 
-   ```
+   ```json
    {
        "pk": 1,
        "username": "zoozoo",
