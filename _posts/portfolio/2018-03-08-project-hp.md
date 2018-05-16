@@ -10,6 +10,9 @@ excerpt: project portfolio
 주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.
 
 
+![프로젝트 작동영상 gif]({{ "/assets/images/news-collecter-resize-compres.gif" | absolute_url }})
+
+
 * 프로젝트명 : News-Collecter
 * 기간 : 2018.03.09 – 2018.05.11
 * 내용 :
