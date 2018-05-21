@@ -22,6 +22,8 @@
 
 * user과 화면에서 동적으로 언론사 배치순서를 조정할 수 있도록 만들기
 
+* task.py 에서 버전 삭제로직 변경해야함 -> 전체를 삭제하는 것이 아닌 특정 버전 이하는 모두 삭제할 수 있게끔
+
 
 
 ## 나중에 해야할 일
@@ -101,7 +103,7 @@
     대략 이런 에러였는데 `apt-get update`부분을 살펴보니 이전에 같은 태그명으로 생성했던 적이 있어서 캐시를 사용해 build 하는 것을 확인했다. 캐쉬를 쓰지 않고 생으로 docker를 빌드하기 위한 명령어는 `--no-cache`명령어를 붙여주면 된다.
     [관련 답변내용 link](https://stackoverflow.com/questions/35594987/how-to-force-docker-for-clean-build-of-an-image?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
 
-    설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
+    설치중에 `debconf: delaying package configuration, since apt-utils is not installed`이런 에러가 있었는데 해당 내용이 [링크](https://github.com/phusion/baseimage-docker/issues/319)에서 논의된 적이 있었고 일단 빌드가 완성되는 것으로 보아 별 문제가 없다고 판단 계속 진행하도록 하겠다. (추후 무슨 문제가 생겼을 경우 해결하기 위한 기록)
 
 ### elasticbeanstalk 구축하기
 
@@ -181,7 +183,7 @@
     `rabbitmqctl add_user username password`
 
 ### aws sqs를 활용하여 celery를 사용하기로 함
-  celery 실행시 `pycurl`을 설치하라고 함, `pycurl` 을 설치하기 위해선 `sudo apt-get install libcurl4-openssl-dev` 해당 명령어를 통해 `libcurl4-openssl-dev`라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
+  celery 실행시 `pycurl`을 설치하라고 함, `pycurl` 을 설치하기 위해선 `sudo apt-get install libcurl4-openssl-dev` 명령어를 통해 `libcurl4-openssl-dev`라는걸 설치해야만 함 설치후 로컬환경에서 잘 작동
   [pycurl 설치관련 stackoverflow 답변](https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing)
 
 ### elasticbeanstalk에서 내 도메인 이름 사용하기
@@ -204,7 +206,13 @@
   [stackoverflow 답변](https://stackoverflow.com/questions/27652543/how-to-use-python-requests-to-fake-a-browser-visit?utm_medium=organic&utm_source=google_rich_qa&utm_campaign=google_rich_qa)
   아래와 같이 request의 header에 관련내용을 추가해 줌으로써 브라우져에서 확인하는 것과 같은 response를 받게 되었다.
   ```python
-  user_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
+    user_agent = 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.101 Safari/537.36'
     headers = {'User-Agent': user_agent}
     req = requests.get('http://www.khan.co.kr/', headers=headers)
   ```
+
+### elasticbeanstalk single docker 플랫폼에서 cloudwatch logs 사용하여 로그 남기기
+
+  * elasticbeanstalk에서 ec2 인스턴스의 로그를 확인하기 위한 기본 방법은 설명서 나와있다.
+    [Elastic Beanstalk 환경의 Amazon EC2 인스턴스의 로그 보기](https://docs.aws.amazon.com/ko_kr/elasticbeanstalk/latest/dg/using-features.logging.html)
+  * cloudwatch log를 사용하기 위해서는 2가지 방법중 하나를 선택해야만 한다.
