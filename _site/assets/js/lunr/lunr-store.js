@@ -239,6 +239,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/portfolio/project-hp/",
         "teaser":"https://zooozoo.github.io/assets/images/news-collecter.jpg"},{
+        "title": "celery와 aws sqs사용할 때 pycurl설치문제",
+        "excerpt":"celery 를 sqs와 함께 사용하기 위한 전반적인 내용은 아래 url에 내용이 설명되어 있다.celery 공식문서celery와 sqs를 연결하면서 해결했던 몇가지 문제들을 기록해 둔다.(비록 간단한 문제들이지만) broker url 만들기 처음 broker url을 만들 때, json파일로 만들어져 있는 access id와 secret key를 아래와 같이 가져와 broker url을 만들고 celery를 실행했는데 ValueError: invalid literal for...","categories": ["posts"],
+        "tags": ["sqs","celery"],
+        "url": "https://zooozoo.github.io/posts/2018-03-18-celery%EC%99%80%20aws%20sqs%EC%82%AC%EC%9A%A9%ED%95%A0%20%EB%95%8C%20pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C/",
+        "teaser":null},{
         "title": "\\'하루 3분 네트워크 교실\\' 리뷰",
         "excerpt":"OKKY에서 였나 비전공 신입 개발자에게 필요한 역량 1등으로 꼽았던게 네트워크에 관한 지식이었다. 사실 학원에서 공부할 때에 통 통신 원리에 대한 근원적인 궁금증은 있었지만, 그 궁금증을 해결해 줄 지식이 네트워크 공부에 있는지는 잘 모르고 있었다. 학원을 마치고 컴퓨터공학에 대해서 공부를 맛보기라도 해보자는 마음으로 커니핸 교수의 Hello Digital World라는 책을 읽었고, 책을...","categories": ["posts"],
         "tags": ["책리뷰"],

@@ -9,38 +9,38 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>            UX/UI fontsize customzing at atom editor - Record      Organize      Make it mine      </title>
-<meta name="description" content="아톰 에디터에서 UX/UI 글씨크기 바꾸기">
+<!-- begin _includes/seo.html --><title>            celery와 aws sqs사용할 때 pycurl설치문제 - Record      Organize      Make it mine      </title>
+<meta name="description" content="celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다.">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Record|Organize|Make it mine">
-<meta property="og:title" content="UX/UI fontsize customzing at atom editor">
-<meta property="og:url" content="https://zooozoo.github.io/posts/2018-01-17-atom/">
+<meta property="og:title" content="celery와 aws sqs사용할 때 pycurl설치문제">
+<meta property="og:url" content="https://zooozoo.github.io/posts/2018-03-18-celery%EC%99%80%20aws%20sqs%EC%82%AC%EC%9A%A9%ED%95%A0%20%EB%95%8C%20pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C/">
 
 
-  <meta property="og:description" content="아톰 에디터에서 UX/UI 글씨크기 바꾸기">
-
-
-
-
-
-
-
-  <meta property="article:published_time" content="2018-01-17T00:00:00+09:00">
+  <meta property="og:description" content="celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다.">
 
 
 
 
 
-  
+
+
+  <meta property="article:published_time" content="2018-03-18T00:00:00+09:00">
+
+
+
+
 
   
 
+  
 
-<link rel="canonical" href="https://zooozoo.github.io/posts/2018-01-17-atom/">
+
+<link rel="canonical" href="https://zooozoo.github.io/posts/2018-03-18-celery%EC%99%80%20aws%20sqs%EC%82%AC%EC%9A%A9%ED%95%A0%20%EB%95%8C%20pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C/">
 
 
 
@@ -229,15 +229,15 @@
 
 
   <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
-    <meta itemprop="headline" content="UX/UI fontsize customzing at atom editor">
-    <meta itemprop="description" content="아톰 에디터에서 UX/UI 글씨크기 바꾸기">
-    <meta itemprop="datePublished" content="January 17, 2018">
+    <meta itemprop="headline" content="celery와 aws sqs사용할 때 pycurl설치문제">
+    <meta itemprop="description" content="celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다.">
+    <meta itemprop="datePublished" content="March 18, 2018">
     
 
     <div class="page__inner-wrap">
       
         <header>
-          <h1 class="page__title" itemprop="headline">UX/UI fontsize customzing at atom editor
+          <h1 class="page__title" itemprop="headline">celery와 aws sqs사용할 때 pycurl설치문제
 </h1>
           
             <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
@@ -245,7 +245,7 @@
 
 
 
-  less than 1 minute read
+  1 minute read
 </p>
           
         </header>
@@ -253,30 +253,49 @@
 
       <section class="page__content" itemprop="text">
         
-        <h3 id="아톰-에디터에서-uxui-글씨크기-바꾸기">아톰 에디터에서 UX/UI 글씨크기 바꾸기</h3>
+        <p>celery 를 sqs와 함께 사용하기 위한 전반적인 내용은 아래 url에 내용이 설명되어 있다.
+<a href="http://docs.celeryproject.org/en/latest/getting-started/brokers/sqs.html">celery 공식문서</a></p>
 
-<p>블로그 작성을 위해서 아톰 editor를 사용하는데
-왼쪽 프로젝트의 파일 목록이 나오는 부분과, 파일명을 보여주는 부분의 글씨가 너무 작아서
-불편함을 느끼고 있었다. 운영체제의 디스플레이 세팅을 통해서 글씨를 키워볼까 했는데
-다른 부분은 모두 만족하고 사용하고 있었기 때문에 건들이기 싫었고 atom의 글씨 크기만
-바꾸고 싶었다.</p>
+<p>celery와 sqs를 연결하면서 해결했던 몇가지 문제들을 기록해 둔다.(비록 간단한 문제들이지만)</p>
 
-<p>그래서 검색!</p>
+<ol>
+  <li>broker url 만들기
+  처음 broker url을 만들 때, json파일로 만들어져 있는 <code class="highlighter-rouge">access id</code>와 <code class="highlighter-rouge">secret key</code>를
+  아래와 같이 가져와 broker url을 만들고 celery를 실행했는데 <code class="highlighter-rouge">ValueError: invalid literal for int() with base 10: '2kDlXtkl9pGy2vxgJOcrLhsGMU4dKzpAzw'</code>라는 에러가 났다.
+  ```
+  AWS_ACCESS_KEY_ID = config_secret_common[‘aws’][‘AWS_ACCESS_KEY_ID’]
+  AWS_SECRET_ACCESS_KEY = config_secret_common[‘aws’][‘AWS_SECRET_ACCESS_KEY’]</li>
+</ol>
 
-<p>그리고 찾았다!! 아래는 해당 링크
- <a href="https://github.com/atom/atom/issues/2530">https://github.com/atom/atom/issues/2530</a></p>
+<p>CELERY_BROKER_URL = f”sqs://{AWS_ACCESS_KEY_ID}:{AWS_SECRET_ACCESS_KEY}@”</p>
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  에러내용을 바탕으로 해결책을 찾았는데 다해결하고 난 다음에야 들어온 문서내용
 
-<p>좀 더 자세히 설명을 남기자면 메뉴에서 settings를 찾아 들어가면
-왼쪽 메뉴 맨 밑에 <code class="highlighter-rouge">Open Config Folder</code>라는 버튼이 있다. 해당 버튼을 누르면 아톰설정을
-입맛에 맞게 customizing 할 수 있는 폴더 구성이 나오는데 fontsize를 바꾸기 위해서는 가장
-밑에 있는 <code class="highlighter-rouge">styles.less</code>파일을 열고 아래 코드를 붙여넣기 하면 된다.
-(글씨 크기는 본인이 원하는 만큼 알아서 적용하자)</p>
+  &gt; If you specify AWS credentials in the broker URL, then please keep in mind that
+  &gt; the secret access key may contain unsafe characters that need to be URL encoded.
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>@font-size: 15px;
-html, body, .tree-view, .tab-bar .tab {
-  font-size: @font-size;
-}
+  사실 먼저 읽었던 내용이었는데 그때는 이게 무슨말인지 잘 몰랐었다. 어쨌건 검색을 통해 아래와 같이
+  broker url을 구성해 문제를 해결 할 수 있었다.
+  (stackoverflow에서 찾았는데 url을 잃어버렸다... 에러내용을 그대로 복붙해서 찾아냈다.)
+  ```python
+  AWS_ACCESS_KEY_ID = config_secret_common['aws']['AWS_ACCESS_KEY_ID']
+  AWS_SECRET_ACCESS_KEY = config_secret_common['aws']['AWS_SECRET_ACCESS_KEY']
+  aws_access_key_id = urllib.parse.quote(f'{AWS_ACCESS_KEY_ID}', safe='')
+  aws_secret_access_key = urllib.parse.quote(f'{AWS_SECRET_ACCESS_KEY}', safe='')
+
+  CELERY_BROKER_URL = f"sqs://{aws_access_key_id}:{aws_secret_access_key}@"
 </code></pre></div></div>
+<p>url용 문자로 인코딩 하기 위하여 모듈을 활용해 인코딩을 새로 해주는 것으로 이해
+  <a href="https://docs.python.org/3/library/urllib.parse.html#url-quoting">URL Quoting, python 문서</a></p>
+
+<ol>
+  <li><code class="highlighter-rouge">pycurl</code>설치하기
+  1번을 마친 후 다시 실행하면 <code class="highlighter-rouge">Unrecoverable error: ImportError('The curl client requires the pycurl library.',)</code>이런 에러가 나온다.
+  그래서 <code class="highlighter-rouge">pycurl</code>을 <code class="highlighter-rouge">pip install pycurl</code>명령어를 실행하면 <code class="highlighter-rouge">__main__.ConfigurationError: Could not run curl-config: [Errno 2] No such file or directory</code>와 같은 에러가 난다.</li>
+</ol>
+
+<p>google신 검색결과 <a href="https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing">pycurl 설치관련 stackoverflow 답변</a>을 얻었다.</p>
+
+<p>결론은 <code class="highlighter-rouge">sudo apt-get install libcurl4-openssl-dev</code> 명령어로 <code class="highlighter-rouge">libcurl4-openssl-dev</code>를 설치해 주고 <code class="highlighter-rouge">pip install pycurl</code>로 <code class="highlighter-rouge">pycurl</code>을 설치하면 된다.</p>
 
         
       </section>
@@ -297,11 +316,11 @@ html, body, .tree-view, .tab-bar .tab {
     
       
       
-      <a href="https://zooozoo.github.io/tags/atom" class="page__taxonomy-item" rel="tag">atom</a><span class="sep">, </span>
+      <a href="https://zooozoo.github.io/tags/celery" class="page__taxonomy-item" rel="tag">celery</a><span class="sep">, </span>
     
       
       
-      <a href="https://zooozoo.github.io/tags/ide" class="page__taxonomy-item" rel="tag">ide</a>
+      <a href="https://zooozoo.github.io/tags/sqs" class="page__taxonomy-item" rel="tag">sqs</a>
     
     </span>
   </p>
@@ -329,7 +348,7 @@ html, body, .tree-view, .tab-bar .tab {
 
 
         
-          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-01-17T00:00:00+09:00">January 17, 2018</time></p>
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2018-03-18T00:00:00+09:00">March 18, 2018</time></p>
         
       </footer>
 
@@ -338,11 +357,11 @@ html, body, .tree-view, .tab-bar .tab {
       
   <nav class="pagination">
     
-      <a href="https://zooozoo.github.io/til/2018-01-15-1%EC%9B%9415%EC%9D%BC~1%EC%9B%9421%EC%9D%BC/" class="pagination--pager" title="1월15일~1월21일
+      <a href="https://zooozoo.github.io/portfolio/project-hp/" class="pagination--pager" title="Project-HP
 ">Previous</a>
     
     
-      <a href="https://zooozoo.github.io/til/2018-01-22-1%EC%9B%9422%EC%9D%BC~1%EC%9B%9428%EC%9D%BC/" class="pagination--pager" title="1월22일~1월28일
+      <a href="https://zooozoo.github.io/posts/2018-03-18-%ED%95%98%EB%A3%A83%EB%B6%84%20%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%20%EA%B5%90%EC%8B%A4%20%EB%A6%AC%EB%B7%B0/" class="pagination--pager" title="'하루 3분 네트워크 교실' 리뷰
 ">Next</a>
     
   </nav>
@@ -542,8 +561,8 @@ html, body, .tree-view, .tab-bar .tab {
     
   <script>
     var disqus_config = function () {
-      this.page.url = "https://zooozoo.github.io/posts/2018-01-17-atom/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/posts/atom"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "https://zooozoo.github.io/posts/2018-03-18-celery%EC%99%80%20aws%20sqs%EC%82%AC%EC%9A%A9%ED%95%A0%20%EB%95%8C%20pycurl%EC%84%A4%EC%B9%98%EB%AC%B8%EC%A0%9C/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/posts/celery와 aws sqs사용할 때 pycurl설치문제"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
