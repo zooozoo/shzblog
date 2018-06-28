@@ -209,6 +209,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC/",
         "teaser":null},{
+        "title": "6월25일~6월29일",
+        "excerpt":"6월 26일 수요일오늘 한일  생활코딩 web2 javascript강의 완강링크  TIL에 대한 생각  til의 목적은 오늘 무엇을 배웠는지 적는 것 인데 내가 무엇을 배웠다는 것 자체가 애매할 때가 있다. 배움의 범위가 광범위 하긴 한데 어느정도 항상 정리해서 적어낼 수 있도록 노력해 보아야 겠다.","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-6%EC%9B%9425%EC%9D%BC~6%EC%9B%9429%EC%9D%BC/",
+        "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
         "tags": [],
@@ -264,8 +269,18 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/",
         "teaser":null},{
-        "title": "기술면접 준비",
+        "title": "면접준비!",
         "excerpt":"Intro면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있었다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 향상시키는 데에 도움이 되겠다는 생각을 가질 수 있었다....","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/",
+        "teaser":null},{
+        "title": "독하게시작하는 c프로그래 강의 노트",
+        "excerpt":"제1장 c프로그래밍 입문오류해결 사례f7키를 통해서 빌드할 때 아래와 같은 에러 발생 c:\\apiexam\\firsts\\firsts\\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에 추가하시겠습니까? 검색을 통해 문제 해결 링크 해결방법 프로젝트의 솔루션 탐색기 창에서 마우스 오른쪽 단추로 프로젝트 이름을 클릭한 다음 속성을 클릭합니다. 왼쪽 창에서...","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-24-%EB%8F%85%ED%95%98%EA%B2%8C%EC%8B%9C%EC%9E%91%ED%95%98%EB%8A%94c%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/",
+        "teaser":null},{
+        "title": "생활코딩 web2 javascript 강의 노트",
+        "excerpt":"수업을 시작하며 w3s의 자바스크립트를 한번 훑어 본 후 1.5배속으로 강의를 빠르게 들었다. 이미 조금씩 맛을 본 상황이어서 빠르게 볼 수 있었던 것 같다. 수업 중 기억하고 싶은 것들을 적어 놓았다.2. 수업의 목적 실습을 통해 문법을 익혀간다. 자바스크립트는 사용자와 상호작용하기 위한 언어 자바스크립트는 html을 제어하는 언어 웹페이지를 동적으로 만들어줌3. html과 js의...","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript/",
         "teaser":null}]
