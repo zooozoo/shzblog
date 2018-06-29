@@ -210,7 +210,7 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC/",
         "teaser":null},{
         "title": "6월25일~6월29일",
-        "excerpt":"6월 26일 수요일오늘 한일  생활코딩 web2 javascript강의 완강링크  TIL에 대한 생각  til의 목적은 오늘 무엇을 배웠는지 적는 것 인데 내가 무엇을 배웠다는 것 자체가 애매할 때가 있다. 배움의 범위가 광범위 하긴 한데 어느정도 항상 정리해서 적어낼 수 있도록 노력해 보아야 겠다.","categories": ["til"],
+        "excerpt":"6월 26일 화요일오늘 한일 생활코딩 web2 javascript강의 완강링크 TIL에 대한 생각 til의 목적은 오늘 무엇을 배웠는지 적는 것 인데 내가 무엇을 배웠다는 것 자체가 애매할 때가 있다. 배움의 범위가 광범위 하긴 한데 어느정도 항상 정리해서 적어낼 수 있도록 노력해 보아야 겠다.6월 27일 수요일오늘 한일 표준 입출력 두 번째 부터 연산자...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-6%EC%9B%9425%EC%9D%BC~6%EC%9B%9429%EC%9D%BC/",
         "teaser":null},{
@@ -244,6 +244,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/portfolio/project-hp/",
         "teaser":"https://zooozoo.github.io/assets/images/news-collecter.jpg"},{
+        "title": "Imagine",
+        "excerpt":"홈스쿨링 미술교습소 ‘상상’의 소개와 소통공간을 만들어 나가고 있습니다.","categories": ["portfolio"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/portfolio/sangsang/",
+        "teaser":"https://zooozoo.github.io/assets/images/comming-soon.jpg"},{
         "title": "celery와 aws sqs사용할 때 pycurl설치문제",
         "excerpt":"celery 를 sqs와 함께 사용하기 위한 전반적인 내용은 아래 url에 내용이 설명되어 있다.celery 공식문서celery와 sqs를 연결하면서 해결했던 몇가지 문제들을 기록해 둔다.(비록 간단한 문제들이지만) broker url 만들기 처음 broker url을 만들 때, json파일로 만들어져 있는 access id와 secret key를 아래와 같이 가져와 broker url을 만들고 celery를 실행했는데 ValueError: invalid literal for...","categories": ["posts"],
         "tags": ["sqs","celery"],
@@ -268,6 +273,11 @@ var store = [{
         "excerpt":"나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.Custom Homepage Project www.news-collecter.com홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.참고한 사이트 모음 html 레이아웃 관련 프로젝트 Github : https://github.com/zooozoo/homepage-project if statement에서 else를 쓰는게 좋은지 아니면 그냥 return 하는게 좋은지에 관한 이야기, 속도나...","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/",
+        "teaser":null},{
+        "title": "Project Sangsang",
+        "excerpt":"작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.찾아보지 않고도 기억하고 싶은 부트스트랩 클래스 .sr-only문서에 보면 아래와 같이 확인할 수 있다. Use screenreader utilities to hide elements on all devices except screen readers. 페이지에 label 없이 input태그를 사용하려고 할 때 스크린리더와 관련된 문제가 생길 수 있다. 스크린리더가 페이지를 읽어 나갈 때...","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-SANGSANG/",
         "teaser":null},{
         "title": "면접준비!",
         "excerpt":"Intro면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있었다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 향상시키는 데에 도움이 되겠다는 생각을 가질 수 있었다....","categories": ["records"],

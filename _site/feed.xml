@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-06-26T22:23:50+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">생활코딩 web2 javascript 강의 노트</title><link href="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript/" rel="alternate" type="text/html" title="생활코딩 web2 javascript 강의 노트" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript/">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-06-28T21:57:58+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">생활코딩 web2 javascript 강의 노트</title><link href="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript/" rel="alternate" type="text/html" title="생활코딩 web2 javascript 강의 노트" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript/">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;w3s의 자바스크립트를 한번 훑어 본 후 1.5배속으로 강의를 빠르게 들었다.&lt;/li&gt;
@@ -490,7 +490,7 @@ while(i &amp;lt; coworkers.length){
 
 &lt;h3 id=&quot;오류해결-사례&quot;&gt;오류해결 사례&lt;/h3&gt;
 
-&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;키를 통해서 빌드할 때 아래와 같은 에러 발생&lt;/p&gt;
+&lt;h4 id=&quot;f7키를-통해서-빌드할-때-아래와-같은-에러-발생&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;키를 통해서 빌드할 때 아래와 같은 에러 발생&lt;/h4&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;c:\apiexam\firsts\firsts\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에 추가하시겠습니까?&lt;/p&gt;
@@ -512,13 +512,27 @@ while(i &amp;lt; coworkers.length){
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;h4 id=&quot;dll파일의-기호pdb파일을-찾지-못해-발생하는-오류&quot;&gt;dll파일의 기호(pdb파일)을 찾지 못해 발생하는 오류&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;참고 블로그 &lt;a href=&quot;http://singleton.tistory.com/370&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;해결방법
+    &lt;ul&gt;
+      &lt;li&gt;메뉴방의 디버그 -&amp;gt; 옵션 -&amp;gt; 기호 -&amp;gt; Microsft 기호 서버 체크&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;강의-중-기록사항&quot;&gt;강의 중 기록사항&lt;/h3&gt;
 
 &lt;p&gt;강의중 나온 단축키 설명&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f7&lt;/code&gt;  : 빌드&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f5&lt;/code&gt; : 디버그모드로 실행&lt;/li&gt;
   &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;ctrl&lt;/code&gt; + &lt;code class=&quot;highlighter-rouge&quot;&gt;f5&lt;/code&gt; : 디버깅 하지 않고 실행 (내용을 확이할 수 있도록 실행 결과가 창에 떠있음)&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f9&lt;/code&gt; : 포지션브레이크보인트 설정&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;alt + 6&lt;/code&gt; : 메모리 확인도&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;f10&lt;/code&gt; : 프로시저단위 실행&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h1 id=&quot;제3장-표준-입출력-도구-첫-번째&quot;&gt;제3장 표준 입/출력 도구 첫 번째&lt;/h1&gt;
@@ -626,7 +640,7 @@ while(i &amp;lt; coworkers.length){
   &lt;/li&gt;
   &lt;li&gt;논버퍼드 I/O
     &lt;ul&gt;
-      &lt;li&gt;_getch()&lt;/li&gt;
+      &lt;li&gt;_ getch()&lt;/li&gt;
       &lt;li&gt;버퍼에서 정보를 읽어오는 것이 아니라, 하드웨어 에서의 인터럽트를 즉시wait하고 있음&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
@@ -641,12 +655,178 @@ while(i &amp;lt; coworkers.length){
 &lt;h1 id=&quot;3장-두-번째&quot;&gt;3장 두 번째&lt;/h1&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;자주 물어보는 질문
+  &lt;li&gt;주 내용은 전 시간에 배운 내용들을 디버깅 메모리 툴로 메모리를 직접 확인하는 것들을 했다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;scan_f()&lt;/code&gt;함수를 사용할 때 버퍼에 남아있는 enter를 제거 하기 위해서 윈도우에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;fflush(stdin);&lt;/code&gt;을 사용한다. 리눅스에서는 다른 함수를 사용한다.&lt;/li&gt;
+  &lt;li&gt;문자열은 상수화된 문자의 배열이라고 보면 된다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;4강-연산자-기본---첫-번째&quot;&gt;4강 연산자 기본 - 첫 번째&lt;/h1&gt;
+&lt;p&gt;pdf 167페이지&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;c언어 프로그램의 구조
+    &lt;ol&gt;
+      &lt;li&gt;항 - item&lt;/li&gt;
+      &lt;li&gt;구문 - &lt;code class=&quot;highlighter-rouge&quot;&gt;~~;&lt;/code&gt;, statement
+        &lt;ul&gt;
+          &lt;li&gt;구문의 흐름을 context라고 한다.&lt;/li&gt;
+          &lt;li&gt;흐름을 갈아타는게 context swiching&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;블록스코프 - &lt;code class=&quot;highlighter-rouge&quot;&gt;{}&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;함수&lt;/li&gt;
+      &lt;li&gt;함수가 binding(연결)되어서 프로그램이 된다.&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex) 3 + 4 + 5 = 12
     &lt;ul&gt;
-      &lt;li&gt;putchar(“\n”)&lt;/li&gt;
+      &lt;li&gt;3 + 4 = 7 -&amp;gt; 먼저 연산되는데 결과로 나오는 7은 연산의 임시결과&lt;/li&gt;
+      &lt;li&gt;최종결과 12가 나온 후에 임시결과 7은 삭제된다.&lt;/li&gt;
+      &lt;li&gt;7이 필요하다면 변수에 담아서 저장해야 한다.&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">컴퓨터 구조를 이해하기 위해 c언어라는 산을 한번 넘어보고 싶었습니다. 그 산을 넘는 첫 번째 과정입니다.</summary></entry><entry><title type="html">면접준비!</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="면접준비!" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;=&lt;/code&gt; 단순대입 연산자
+    &lt;ul&gt;
+      &lt;li&gt;copy &amp;amp; overwrite 를 꼭 기억하자&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;a=10;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;a
+        &lt;ul&gt;
+          &lt;li&gt;변수, l-value&lt;/li&gt;
+          &lt;li&gt;l-value는 left-value라는 의미와 함께 location-value라는 의미&lt;/li&gt;
+          &lt;li&gt;메모리의 위치를 지정하는 ‘위치지정자’&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;int a, b=3;&lt;/code&gt; 일 때 &lt;code class=&quot;highlighter-rouge&quot;&gt;a=b;&lt;/code&gt; a에 b(3)를 대입해보자
+    &lt;ul&gt;
+      &lt;li&gt;3이라는 값이 copy되어서 a로 넘어간다.&lt;/li&gt;
+      &lt;li&gt;a는 기존값과 상관없지만 3으로 overwrite된다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;이형자료간의 연산, 형승격(type promotion)
+    &lt;ul&gt;
+      &lt;li&gt;a + 1 의 결과가 무엇으로 표현 될 것 인가의 문제&lt;/li&gt;
+      &lt;li&gt;결국 char + int 가 되는데 결과는 ‘표현범위’가 큰 형식이 결과로 나온다.&lt;/li&gt;
+      &lt;li&gt;char은 1바이트, int는 4바이트, 따라서 결과의 표현은 int가 된다.&lt;/li&gt;
+      &lt;li&gt;ex) 123.45 + 1 의 결과
+        &lt;ul&gt;
+          &lt;li&gt;double(실수) + int&lt;/li&gt;
+          &lt;li&gt;double이 표현범위가 넓으므로 결과는 double이 된다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;곱하기와 나누기
+    &lt;ul&gt;
+      &lt;li&gt;곱하기는 별 어려움이 없는데 나누기는 까다로운 점이 있다.&lt;/li&gt;
+      &lt;li&gt;ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;5/2&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;int/int 이기 때문에 결과가 int로 나와야 연산되는데 결과가 실수&lt;/li&gt;
+          &lt;li&gt;따라서 소수점 이하가 절사된다.&lt;/li&gt;
+          &lt;li&gt;결과는 2.5가 아니라 2가 된다&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;5/2.0&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;int/double 이기 때문에 결과가 double로 나와야함&lt;/li&gt;
+          &lt;li&gt;결과는 double형식의 2.5가 된다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;형식을 맞춘다는게 c언어에서는 중요합니다.&lt;/li&gt;
+  &lt;li&gt;나머지 연산자
+    &lt;ul&gt;
+      &lt;li&gt;나누기 연산자와 내부적인 것은 같다.&lt;/li&gt;
+      &lt;li&gt;ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;7%2&lt;/code&gt;
+        &lt;ul&gt;
+          &lt;li&gt;결과는 1이 된다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;만약 몫과 나머지를 구하려면 &lt;code class=&quot;highlighter-rouge&quot;&gt;/연산, %연산&lt;/code&gt;을 활용해 2번 연산을 해야합니다&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;컴퓨터는 어떻게 나눌까?
+    &lt;ul&gt;
+      &lt;li&gt;ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;7/2&lt;/code&gt;
+        &lt;ol&gt;
+          &lt;li&gt;7-2&lt;/li&gt;
+          &lt;li&gt;5-2&lt;/li&gt;
+          &lt;li&gt;3-1&lt;/li&gt;
+          &lt;li&gt;1
+            &lt;ul&gt;
+              &lt;li&gt;위의 3번까지의 연산이 총3번 -&amp;gt; 몫3&lt;/li&gt;
+              &lt;li&gt;나머지 1&lt;/li&gt;
+              &lt;li&gt;따라서 0으로 나누는 것은 무한루프를 돌기 때문에 0으로 나누는 것은 오류를 낸다&lt;/li&gt;
+            &lt;/ul&gt;
+          &lt;/li&gt;
+        &lt;/ol&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;제4강-두-번째&quot;&gt;제4강 두 번째&lt;/h1&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;값교환 ex) &lt;code class=&quot;highlighter-rouge&quot;&gt;int a=3, b=4, tmp;&lt;/code&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;tmp = a;&lt;/code&gt; tmp에 a의 값을 저장해 놓고&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;a = b;&lt;/code&gt; a에 b의 값을 할당&lt;/li&gt;
+      &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;b = tmp;&lt;/code&gt; b의 tmp의 값을 할당, tmp는 a의 값을 가지고 있으니까&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;복합대입 - 산술연산자나 비트연산자를 합쳐서 하나의 연산자로 만든 것
+    &lt;ul&gt;
+      &lt;li&gt;ex)
+        &lt;ul&gt;
+          &lt;li&gt;c&lt;code class=&quot;highlighter-rouge&quot;&gt;
+int a = 0;
+a = a + 1;
+&lt;/code&gt;
+이름이 a인 변수의 값을 불러와서 그 변수에 1을 더하는 것, 그리고 그 결과를 a에 대입
+줄여서 다음과 같이 표현할 수 있다. &lt;code class=&quot;highlighter-rouge&quot;&gt;a += 1;&lt;/code&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;주의사항
+        &lt;ul&gt;
+          &lt;li&gt;누적을 하기 위해서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;int a = 0;&lt;/code&gt;과 같이 반드시 변수를 0으로 초기화 시켜줘야 한다.&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;형변환 연산자
+    &lt;ul&gt;
+      &lt;li&gt;강제 형변환&lt;/li&gt;
+      &lt;li&gt;정보가 왜곡되는 현상이 벌어진다.&lt;/li&gt;
+      &lt;li&gt;메모리는 1바이트 단위로 있고 각 바이트별로 주소가 붙어있게 된다. 그런데 4바이트를 int로 지정하게 된다면 이것을 형변환 하게 된다면 메모리주송 대한 변환 없이 해석 방법이 바뀌게 된다. 이러한 것을 강제 형변환 이라고 하며 정보가 왜곡될 우려가 있다.(오동작의 가능성이 있다)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;단항 증감 연산자
+    &lt;ul&gt;
+      &lt;li&gt;c```
+int a = 0;
+a = a + 1;
+a += 1;
+``
+위의 예시는 다음과 같다
+&lt;code class=&quot;highlighter-rouge&quot;&gt;++a;&lt;/code&gt;(전위식) 혹은 &lt;code class=&quot;highlighter-rouge&quot;&gt;a++&lt;/code&gt;(후위식)&lt;/li&gt;
+      &lt;li&gt;누산되는 증감폭이 1이기 때문에 계수로 보면 된다.&lt;/li&gt;
+      &lt;li&gt;반복문에서 몇번이나 연산됬는지 계수 세는 경우 주로 사용됨&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;비트연산자
+    &lt;ul&gt;
+      &lt;li&gt;각각의바이트를 비트단위로 논리연산을 통해 결과를 내놓는 것&lt;/li&gt;
+      &lt;li&gt;shift 연산의 경우 &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;&amp;lt; &amp;gt;&amp;gt;&lt;/code&gt;각각의 방향으로 비트를 옮겨서 연산하는 것&lt;/li&gt;
+      &lt;li&gt;대효적인 활용예는 ‘마스크연산’&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">컴퓨터 구조를 이해하기 위해 c언어라는 산을 한번 넘어보고 싶었습니다. 그 산을 넘는 첫 번째 과정입니다. 언어 그 자체보다 컴퓨터구조를 공부하는데에 도움이 되는 방향으로 공부합니다.</summary></entry><entry><title type="html">면접준비!</title><link href="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/" rel="alternate" type="text/html" title="면접준비!" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/">&lt;h1 id=&quot;intro&quot;&gt;Intro&lt;/h1&gt;
 
 &lt;p&gt;면접을 위해 따로 공부하는 것 보다는, 열심히 공부한 내용을 바탕으로 면접에서 내 능력을 잘 보여주는 것을 더 선호한다. 면접을 위한 공부가 취업 말고는 무슨 필요가 있겠냐는 생각을 가지고 있었다. 그런데 개발자로 이직하기 위해서 면접을 준비하면서 느낀점은 기술면접의 경우 면접준비 자체가 내 실력을 향상시키는 데에 도움이 되겠다는 생각을 가질 수 있었다. 단편적으로 ‘A는 B입니다.’라고 답변할 수도 있겠지만 한단계씩 더 깊이 물어보는 질문에 답변할 수 있으려면 기술에 대한 더 깊은 지식이 필요하기 때문이다.&lt;/p&gt;
 
@@ -1077,7 +1257,54 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
       &lt;li&gt;다형성의 쉬운 예제는 Java의 오버로딩이다. 오버로딩은 같은 의미지만 매개변수의 데이터타입이 무엇이냐에 따라서 다른 메소드가 호출되는 방식이다. &lt;a href=&quot;https://opentutorials.org/course/1223/6127&quot;&gt;참고&lt;/a&gt; (참고로 파이썬은 오버로딩을 허용하지 않는다.)&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
+&lt;/ol&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">면접 준비를 단순히 면접만 준비하기 위한 것이 아니라, 개발자로서 일하기 위해 알고 있어야할 기본 지식들을 잘 공부할 수 있는 기회로서 면접준비 시간을 가져갈 생각이다.</summary></entry><entry><title type="html">Project Sangsang</title><link href="https://zooozoo.github.io/records/2018-03-23-PROJECT-SANGSANG/" rel="alternate" type="text/html" title="Project Sangsang" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/PROJECT-SANGSANG</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-PROJECT-SANGSANG/">&lt;h1 id=&quot;작은방-미술-교습소-상상-홈페이지를-만들며-남긴-기록입니다&quot;&gt;작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.&lt;/h1&gt;
+
+&lt;h2 id=&quot;찾아보지-않고도-기억하고-싶은-부트스트랩-클래스&quot;&gt;찾아보지 않고도 기억하고 싶은 부트스트랩 클래스&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;.sr-only&lt;/code&gt;
+&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/screenreaders/&quot;&gt;문서&lt;/a&gt;에 보면 아래와 같이 확인할 수 있다.
+    &lt;blockquote&gt;
+      &lt;p&gt;Use screenreader utilities to hide elements on all devices except screen readers.&lt;/p&gt;
+    &lt;/blockquote&gt;
+
+    &lt;p&gt;페이지에 label 없이 input태그를 사용하려고 할 때 스크린리더와 관련된 문제가 생길 수 있다. 스크린리더가 페이지를 읽어 나갈 때 input태그에 label을 붙이지 않는다면 온란을 겪기 때문에 label을 붙여줘야 한다. 그래서 위와같은 문제를 &lt;code class=&quot;highlighter-rouge&quot;&gt;sr_only&lt;/code&gt;클래스를 통해 해결해주는 것&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;mt-4&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;my-5&lt;/code&gt; &lt;code class=&quot;highlighter-rouge&quot;&gt;mb-1&lt;/code&gt; 등
+    &lt;ul&gt;
+      &lt;li&gt;bootstrap의 spacing utilities에서 확인할 수 있다.&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/spacing/&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;첫 번째 단어는 mrgin과 padding을 구분하고 두 번째 단어는 방향을 가리킨다.&lt;/li&gt;
+      &lt;li&gt;숫자는 정도의 차이를 가리킨다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;w-25&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;h-50&lt;/code&gt;등
+    &lt;ul&gt;
+      &lt;li&gt;sizing에서 확인할 수 있다.&lt;a href=&quot;https://getbootstrap.com/docs/4.0/utilities/sizing//&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;요소의 크기를 조절 할 수 있는 도구&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;fa&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;fa-book&lt;/code&gt;등
+    &lt;ul&gt;
+      &lt;li&gt;bootstrap아이콘을 사용하는 태그(font awesome icon)&lt;/li&gt;
+      &lt;li&gt;mdb &lt;a href=&quot;https://mdbootstrap.com/content/icons-list/&quot;&gt;문서&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;화면에서-보여주는-것-중에-이름을-몰라서-검색이-어려웠던-웹-테크닉&quot;&gt;화면에서 보여주는 것 중에 이름을 몰라서 검색이 어려웠던 웹 테크닉&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Parallax(시차를 이용한 효과)
+    &lt;ul&gt;
+      &lt;li&gt;스크롤 하면 아래에 있는 요소가 위의 요소를 덮어나가는 것 같이 보이게 하는 기술&lt;/li&gt;
+      &lt;li&gt;생활코딩에서 알려주는 웹 레시피에 관련 설명 &lt;a href=&quot;https://opentutorials.org/module/2398/13856&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;기본적으로 css에서 background의 이미지를 고정 시켜서 효과를 내는 것&lt;/li&gt;
+      &lt;li&gt;mdb의 랜딩페이지 튜토리얼 에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;background: url(&quot;./bg.jpg&quot;)no-repeat center center fixed;&lt;/code&gt;와 같이 background를 fixed 효과를 넣음으로서 parallax효과를 주었다.&lt;/li&gt;
+      &lt;li&gt;생활코딩이나 w3s에서는&lt;code class=&quot;highlighter-rouge&quot;&gt;background-attachment: fixed;&lt;/code&gt;를 적용시켜서 관련 효과를 적용하는 방법을 선택했다.&lt;/li&gt;
+      &lt;li&gt;랜딩페이지 튜토리얼의 방법은 속성으로 적용하는 방법이다. &lt;a href=&quot;https://www.w3schools.com/css/css_background.asp&quot;&gt;w3s에서 css background에 관한 설명 링크&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/strong&gt;
 홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
@@ -2897,61 +3124,4 @@ apnsdevice_set 안에 있는 registrations_id 의 value값이 토큰&lt;/p&gt;
 
 &lt;p&gt;google신 검색결과 &lt;a href=&quot;https://stackoverflow.com/questions/23937933/could-not-run-curl-config-errno-2-no-such-file-or-directory-when-installing&quot;&gt;pycurl 설치관련 stackoverflow 답변&lt;/a&gt;을 얻었다.&lt;/p&gt;
 
-&lt;p&gt;결론은 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 명령어로 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;를 설치해 주고 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install pycurl&lt;/code&gt;로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하면 된다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="sqs" /><category term="celery" /><summary type="html">celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다.</summary></entry><entry><title type="html">Project-HP</title><link href="https://zooozoo.github.io/portfolio/project-hp/" rel="alternate" type="text/html" title="Project-HP" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/project-hp</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/project-hp/">&lt;h2 id=&quot;custom-homepage-project-wwwnews-collectercom&quot;&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/h2&gt;
-&lt;p&gt;홈페이지로 쓰고자 직접 제작한 웹사이트 입니다.
-주기적으로 포탈과 언론사의 메인 기사 제목을 10개정도씩 가져와 한 화면에 보여주는 사이트입니다.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://zooozoo.github.io/assets/images/news-collecter-resize-compres.gif&quot; alt=&quot;프로젝트 작동영상 gif&quot; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;프로젝트명 : News-Collecter&lt;/li&gt;
-  &lt;li&gt;기간 : 2018.03.09 – 2018.05.11&lt;/li&gt;
-  &lt;li&gt;내용 :
-수많은 언론사가 뉴스를 만들어 냅니다. 뉴스의 소비자들은 각각의 언론사의 뉴스 취사선택에 따라 영향을 받기 마련입니다. 예를들면 언론사는 어떤 사항을 뉴스거리로 보도할 것인지, 혹은 같은 사항이라도 어떤 단어를 선택해서 제목을 뽑을 것인지에 따라 뉴스 소비자들은 해당 사항에 대해서 긍정 혹은 부정적인 영향을 받게 됩니다. 정보의 호수속에서 균형잡힌 시각을 얻기위해서는 여러 언론사들의 헤드라인 선정이나, 사안에 대한 논조 등을 비교해 가면서 볼 수 있어야 하는데 기존 포탈에서는 뉴스를 보여주는 것이 목적이 아닌지라 이러한 역할을 하기에는 한계점이 있다고 생각했습니다. 그래서 광고나 검색을 위한 포탈이 아닌 한눈에 여러 언론사의 헤드라인을 모아서 볼 수 있는 일종의 뉴스 포탈을 통해 특정 사안에 대한 각 언론사별 논조를 비교하거나, 뉴스의 취사선택에서 어떤 차이점을 보이는지 확인하며 나만의 생각을 가질 수 있는데 도움을주는 페이지를 만들고자 했습니다.&lt;/li&gt;
-  &lt;li&gt;사용기술 :
-    &lt;ul&gt;
-      &lt;li&gt;Django, uwsgi, nginx를 사용해 웹서버를 구축했습니다.&lt;/li&gt;
-      &lt;li&gt;Django Template, CSS와 Bootstrap을 활용해 웹 페이지를 구현했습니다.&lt;/li&gt;
-      &lt;li&gt;request와 beautiful soup을 사용해서 언론과 포탈의 뉴스 타이틀을 가져왔습니다. 각 언론사
-별로HTML구조가 다르기 때문에 언론사별 메소드를 구현하였고 bulk_create 쿼리를
-활용하기 위해 class로 구현했습니다.&lt;/li&gt;
-      &lt;li&gt;Celery와 AWS Simple Queue Service를 활용하여 지정한 시간 간격으로 메시지큐의 요청을
-통해 각 언론사 뉴스타이틀을 가져오게끔 구성해 놓았습니다.&lt;/li&gt;
-      &lt;li&gt;Supervisor를 활용해 배포된 상태에서 Nginx와 wsgi, Celery를 자동으로 백그라운드에서
-실행시키도록 구성했습니다.&lt;/li&gt;
-      &lt;li&gt;Docker와 AWS Elastic beanstalk을 활용해 배포작업을 진행하였습니다.&lt;/li&gt;
-      &lt;li&gt;Route53을 활용해 도메인 이름을 부여하고 AWS의 Certificate Manager 서비스를 활용해
-SSL인증서를 발급받고 적용했습니다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Github - &lt;a href=&quot;https://github.com/zooozoo/homepage-project&quot;&gt;https://github.com/zooozoo/homepage-project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;프로젝트 도메인 &lt;a href=&quot;http://www.news-collecter.com&quot;&gt;http://www.news-collecter.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;진행사항 기록 &lt;a href=&quot;https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/&quot;&gt;https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry><entry><title type="html">EXPLOG</title><link href="https://zooozoo.github.io/portfolio/explog/" rel="alternate" type="text/html" title="EXPLOG" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/explog</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/explog/">&lt;!-- Courtesy of embedresponsively.com //--&gt;
-&lt;div class=&quot;responsive-video-container&quot;&gt;
-
-  &lt;iframe src=&quot;https://www.youtube.com/embed/n_dV5jrGEx4&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
-
-&lt;/div&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;프로젝트명 : Explog&lt;/li&gt;
-  &lt;li&gt;기간 : 2017.11.27 – 2018.01.12&lt;/li&gt;
-  &lt;li&gt;역할 : 배포 / User authentication / Push notification&lt;/li&gt;
-  &lt;li&gt;내용 : 자신만의 여행을 기록하고 기록한 사진과 글을 다른 사람과 함께 공유하는 여행기SNS 애플리케이션 입니다. 아무 사진을 올리는 것 보다 자신의 이야기가 담긴 사진과 내용을 여러사람들과 공유할 수 있는 SNS를 만들고자 했습니다. 여행은 자신의 이야기를 가장 잘 담아낼 수 있다고 생각했고, 자신의 여행기를 담아 주변사람과 공유하고 다른 사람의 여행기를 참고할 수 있으면 좋겠다는 생각에 만들게 된 애플리케이션 입니다.&lt;/li&gt;
-  &lt;li&gt;사용기술 :
-    &lt;ul&gt;
-      &lt;li&gt;django, nginx, uwsgi, supervisor를 활용해 서버를 구축했습니다.&lt;/li&gt;
-      &lt;li&gt;안드로이드, IOS기기와 데이터를 주고받기 위해서 Django Restframework 를 사용해 rest API 를 구현했습니다.&lt;/li&gt;
-      &lt;li&gt;Postgresql 을 이용해 모델을 구축했습니다. Django AbstractUser 모델을 활용해 User 모델을 구현했고,
-post 모델과의 m2m 관게를 활용해서 ‘ 좋아요 ’ 기능과 ‘ 팔로우 ’ 기능을 만들었습니다. 배포과정에서는
-AWS RDS 를 사용하여 데이터베이스를 구축했습니다.&lt;/li&gt;
-      &lt;li&gt;Django-push-notifications 를 활용하여 push 알람 기능을 구축했습니다.&lt;/li&gt;
-      &lt;li&gt;AWS Elasticbeanstalk 와 Docker 를 활용하여 배포했습니다.&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Github - &lt;a href=&quot;https://github.com/zooozoo/Team-project&quot;&gt;https://github.com/zooozoo/Team-project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;API(git book) - &lt;a href=&quot;https://gangbok119.gitbooks.io/explog-api/content/&quot;&gt;https://gangbok119.gitbooks.io/explog-api/content/&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;작동 동영상 - &lt;a href=&quot;https://www.youtube.com/watch?v=n_dV5jrGEx4&amp;amp;t=31s&quot;&gt;https://www.youtube.com/watch?v=n_dV5jrGEx4&amp;amp;t=31s&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;진행사항 기록 - &lt;a href=&quot;https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/&quot;&gt;https://zooozoo.github.io/records/2018-03-23-PROJECT-EXPLOG/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry></feed>
+&lt;p&gt;결론은 &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt-get install libcurl4-openssl-dev&lt;/code&gt; 명령어로 &lt;code class=&quot;highlighter-rouge&quot;&gt;libcurl4-openssl-dev&lt;/code&gt;를 설치해 주고 &lt;code class=&quot;highlighter-rouge&quot;&gt;pip install pycurl&lt;/code&gt;로 &lt;code class=&quot;highlighter-rouge&quot;&gt;pycurl&lt;/code&gt;을 설치하면 된다.&lt;/p&gt;</content><author><name>Seok Hun Zoo</name></author><category term="posts" /><category term="sqs" /><category term="celery" /><summary type="html">celery와 sqs를 연결하여 사용할 때 pycurl을 설치할 때 발생한 문제와 해결책에 대한 내용입니다.</summary></entry><entry><title type="html">Imagine</title><link href="https://zooozoo.github.io/portfolio/sangsang/" rel="alternate" type="text/html" title="Imagine" /><published>2018-03-08T00:00:00+09:00</published><updated>2018-03-08T00:00:00+09:00</updated><id>https://zooozoo.github.io/portfolio/sangsang</id><content type="html" xml:base="https://zooozoo.github.io/portfolio/sangsang/">&lt;h1 id=&quot;홈스쿨링-미술교습소-상상의-소개와-소통공간을-만들어-나가고-있습니다&quot;&gt;홈스쿨링 미술교습소 ‘상상’의 소개와 소통공간을 만들어 나가고 있습니다.&lt;/h1&gt;</content><author><name>Seok Hun Zoo</name></author><category term="portfolio" /><summary type="html">project portfolio</summary></entry></feed>
