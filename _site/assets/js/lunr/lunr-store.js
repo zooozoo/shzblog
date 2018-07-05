@@ -275,7 +275,7 @@ var store = [{
         "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/",
         "teaser":null},{
         "title": "Project Sangsang",
-        "excerpt":"작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.찾아보지 않고도 기억하고 싶은 부트스트랩 클래스 .sr-only문서에 보면 아래와 같이 확인할 수 있다. Use screenreader utilities to hide elements on all devices except screen readers. 페이지에 label 없이 input태그를 사용하려고 할 때 스크린리더와 관련된 문제가 생길 수 있다. 스크린리더가 페이지를 읽어 나갈 때...","categories": ["records"],
+        "excerpt":"작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.진행사항에 대한 기록 mdb free로 적용 안되는 기술 중 하나가 smmoth scroll, 대신에 w3s에서 알려주는 방법을 적용하면 됨찾아보지 않고도 기억하고 싶은 부트스트랩 클래스 .sr-only문서에 보면 아래와 같이 확인할 수 있다. Use screenreader utilities to hide elements on all devices except screen readers. 페이지에...","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-23-PROJECT-SANGSANG/",
         "teaser":null},{
@@ -293,4 +293,9 @@ var store = [{
         "excerpt":"수업을 시작하며 w3s의 자바스크립트를 한번 훑어 본 후 1.5배속으로 강의를 빠르게 들었다. 이미 조금씩 맛을 본 상황이어서 빠르게 볼 수 있었던 것 같다. 수업 중 기억하고 싶은 것들을 적어 놓았다.2. 수업의 목적 실습을 통해 문법을 익혀간다. 자바스크립트는 사용자와 상호작용하기 위한 언어 자바스크립트는 html을 제어하는 언어 웹페이지를 동적으로 만들어줌3. html과 js의...","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web2%20javascript/",
+        "teaser":null},{
+        "title": "생활코딩 web3 Ajax 강의 노트",
+        "excerpt":"수업을 시작하며 ajax를 빠르게 알아보고 진행하는 프로젝트에 적용해보고자 해서 w3s 튜토리얼을 훑어본 후 생활코딩 강의도 빠르게 보면서 기본 개념들을 익혀 나가는 것이 목적1. 수업소개 페이지 전체를 리로딩하지 않고 부분적으로 새로운 정보를 서버와 교환하기 위해 고안된 기술2-1. 수업의 목적 사용자 입장에서는 필요한 부분만 변환되기 때문에 사용성 증대 서버와 웹브라우저의 자원을 절약할...","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax/",
         "teaser":null}]
