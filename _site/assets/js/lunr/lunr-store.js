@@ -210,9 +210,14 @@ var store = [{
         "url": "https://zooozoo.github.io/til/2018-01-22-5%EC%9B%9407%EC%9D%BC~5%EC%9B%9411%EC%9D%BC/",
         "teaser":null},{
         "title": "6월25일~6월29일",
-        "excerpt":"6월 26일 화요일오늘 한일 생활코딩 web2 javascript강의 완강링크 TIL에 대한 생각 til의 목적은 오늘 무엇을 배웠는지 적는 것 인데 내가 무엇을 배웠다는 것 자체가 애매할 때가 있다. 배움의 범위가 광범위 하긴 한데 어느정도 항상 정리해서 적어낼 수 있도록 노력해 보아야 겠다.6월 27일 수요일오늘 한일 표준 입출력 두 번째 부터 연산자...","categories": ["til"],
+        "excerpt":"6월 26일 화요일오늘 한일 생활코딩 web2 javascript강의 완강링크 TIL에 대한 생각 til의 목적은 오늘 무엇을 배웠는지 적는 것 인데 내가 무엇을 배웠다는 것 자체가 애매할 때가 있다. 배움의 범위가 광범위 하긴 한데 어느정도 항상 정리해서 적어낼 수 있도록 노력해 보아야 겠다.6월 27일 수요일오늘 한일 독하게 시작하는 c프로그래밍 - 표준 입출력...","categories": ["til"],
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-6%EC%9B%9425%EC%9D%BC~6%EC%9B%9429%EC%9D%BC/",
+        "teaser":null},{
+        "title": "7월02일~7월06일",
+        "excerpt":"7월 3일 화요일오늘 한일 프로젝트 상상 선생님 소개패이지 레이아웃 및 멘트 구상 github7월 4일 수요일오늘 한일 프로젝트 상상 gallery section 레이아웃 github 독하게 시작하는 c프로그래밍 - 기본제어문 링크7월 5일 목요일오늘 한일 프로젝트 상상 gallery section image effect 추가 github 독하게 시작하는 c프로그래밍 - 반복문, 배열 링크 알고리즘 문제 풀이 (git...","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-7%EC%9B%9402%EC%9D%BC~7%EC%9B%9406%EC%9D%BC/",
         "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-06-29T20:49:57+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">생활코딩 web3 Ajax 강의 노트</title><link href="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax/" rel="alternate" type="text/html" title="생활코딩 web3 Ajax 강의 노트" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax/">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.0">Jekyll</generator><link href="https://zooozoo.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://zooozoo.github.io/" rel="alternate" type="text/html" /><updated>2018-07-05T22:46:20+09:00</updated><id>https://zooozoo.github.io/</id><title type="html">Record|Organize|Make it mine</title><subtitle>My programming study blog and I hope it help someone who struggling with code</subtitle><author><name>Seok Hun Zoo</name></author><entry><title type="html">생활코딩 web3 Ajax 강의 노트</title><link href="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax/" rel="alternate" type="text/html" title="생활코딩 web3 Ajax 강의 노트" /><published>2018-03-24T00:00:00+09:00</published><updated>2018-03-24T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax/">&lt;h1 id=&quot;수업을-시작하며&quot;&gt;수업을 시작하며&lt;/h1&gt;
 
 &lt;ul&gt;
   &lt;li&gt;ajax를 빠르게 알아보고 진행하는 프로젝트에 적용해보고자 해서 w3s 튜토리얼을 훑어본 후 생활코딩 강의도 빠르게 보면서 기본 개념들을 익혀 나가는 것이 목적&lt;/li&gt;
@@ -1508,6 +1508,28 @@ INDEX를 해당 컬럼에 주게 되면 초기 Table생성시 만들어진 MYD, 
       &lt;li&gt;랜딩페이지 튜토리얼의 방법은 속성으로 적용하는 방법이다. &lt;a href=&quot;https://www.w3schools.com/css/css_background.asp&quot;&gt;w3s에서 css background에 관한 설명 링크&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;css-margin과-padding의-차이&quot;&gt;CSS margin과 padding의 차이&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;둘다 여백을 활용하기 위한 공간&lt;/li&gt;
+  &lt;li&gt;태그요소의 비어있는 공간을 넣어줄 때 사용한다&lt;/li&gt;
+  &lt;li&gt;border를 기준으로 padding은 border의 안쪽에 위치, margin은 border의 바깥쪽에 위치
+    &lt;ul&gt;
+      &lt;li&gt;border는 box에서 경계면을 의미하며 경계면 안쪽은 콘텐츠에 포함된 영역이다.(background에 포함된 영역이 padding)&lt;/li&gt;
+      &lt;li&gt;요소 경계면의 안쪽에 여백을 주느냐(padding), 요소 경계면의 바깥쪽에 여백을 주느냐(margin)에 따라 사용법을 구분할 수 있다.&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;콘텐츠를 제외한 나머지 영역을 margin으로 보면 된다.&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://veamcamp.com/cookbook/padding_margin/&quot;&gt;참고 사이트&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;div안에-있는-요소를-정렬하기수평정렬&quot;&gt;div안에 있는 요소를 정렬하기(수평정렬)&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;align속성을 사용해서 정렬할 수 있다.&lt;/li&gt;
+  &lt;li&gt;예) &lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;lt;div align=&quot;center&quot;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;w3s의 내용설명 &lt;a href=&quot;https://www.w3schools.com/tags/att_div_align.asp&quot;&gt;링크&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content><author><name>Seok Hun Zoo</name></author><category term="records" /><summary type="html">작은방 미술 교습소 ‘상상’ 홈페이지를 만들며 남긴 기록입니다.</summary></entry><entry><title type="html">Project News Collecter</title><link href="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/" rel="alternate" type="text/html" title="Project News Collecter" /><published>2018-03-23T00:00:00+09:00</published><updated>2018-03-23T00:00:00+09:00</updated><id>https://zooozoo.github.io/records/PROJECT-NEWS-COLLECTER</id><content type="html" xml:base="https://zooozoo.github.io/records/2018-03-23-PROJECT-NEWS-COLLECTER/">&lt;h1 id=&quot;나만의-뉴스-스탠드-news-collecter-프로젝트를-진행하며-기록해-놓은-자료입니다&quot;&gt;나만의 뉴스 스탠드 NEWS-COLLECTER 프로젝트를 진행하며 기록해 놓은 자료입니다.&lt;/h1&gt;
 
 &lt;p&gt;&lt;strong&gt;Custom Homepage Project &lt;a href=&quot;https://www.news-collecter.com/&quot;&gt;www.news-collecter.com&lt;/a&gt;&lt;/strong&gt;
