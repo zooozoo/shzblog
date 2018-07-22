@@ -219,6 +219,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/til/2018-01-22-7%EC%9B%9402%EC%9D%BC~7%EC%9B%9406%EC%9D%BC/",
         "teaser":null},{
+        "title": "7월09일~7월13일",
+        "excerpt":"7월 9일 월요일오늘 한일  면접준비7월 10일 화요일오늘 한일  면접 및 면접 내용 정리7월 5일 목요일오늘 한일  독하게 시작하는 c프로그래밍 - 메모리와 포인터 첫 번째 링크  알고리즘 문제 풀이 (git hub)7월 6일 금요일오늘 한일  독하게 시작하는 c프로그래밍 - 메모리와 포인터 두 번째 링크","categories": ["til"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/til/2018-01-22-7%EC%9B%9409%EC%9D%BC~7%EC%9B%9413%EC%9D%BC/",
+        "teaser":null},{
         "title": "전문가를 위한 파이썬",
         "excerpt":"","categories": ["records"],
         "tags": [],
