@@ -294,6 +294,11 @@ var store = [{
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-23-%EA%B8%B0%EC%88%A0%EB%A9%B4%EC%A0%91%EC%A4%80%EB%B9%84/",
         "teaser":null},{
+        "title": "맥 사용관련 기록",
+        "excerpt":"  사용자 폴더가 있는 곳/Users/zoozoo","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-24-test/",
+        "teaser":null},{
         "title": "독하게시작하는 c프로그래 강의 노트",
         "excerpt":"제1장 c프로그래밍 입문오류해결 사례f7키를 통해서 빌드할 때 아래와 같은 에러 발생 c:\\apiexam\\firsts\\firsts\\firsts.cpp(46): fatal error C1010: 미리 컴파일된 헤더를 찾는 동안 예기치 않은 파일의 끝이 나타났습니다. ‘#include “StdAfx.h”‘을(를) 소스에 추가하시겠습니까? 검색을 통해 문제 해결 링크 해결방법 프로젝트의 솔루션 탐색기 창에서 마우스 오른쪽 단추로 프로젝트 이름을 클릭한 다음 속성을 클릭합니다. 왼쪽 창에서...","categories": ["records"],
         "tags": [],
@@ -308,4 +313,9 @@ var store = [{
         "excerpt":"수업을 시작하며 ajax를 빠르게 알아보고 진행하는 프로젝트에 적용해보고자 해서 w3s 튜토리얼을 훑어본 후 생활코딩 강의도 빠르게 보면서 기본 개념들을 익혀 나가는 것이 목적1. 수업소개 페이지 전체를 리로딩하지 않고 부분적으로 새로운 정보를 서버와 교환하기 위해 고안된 기술2-1. 수업의 목적 사용자 입장에서는 필요한 부분만 변환되기 때문에 사용성 증대 서버와 웹브라우저의 자원을 절약할...","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax/",
+        "teaser":null},{
+        "title": "맥 사용관련 기록",
+        "excerpt":"  사용자 폴더가 있는 곳/Users/zoozoo","categories": ["records"],
+        "tags": [],
+        "url": "https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax0/",
         "teaser":null}]
