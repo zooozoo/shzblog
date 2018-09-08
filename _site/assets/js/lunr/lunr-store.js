@@ -318,4 +318,9 @@ var store = [{
         "excerpt":"  사용자 폴더가 있는 곳/Users/zoozoo","categories": ["records"],
         "tags": [],
         "url": "https://zooozoo.github.io/records/2018-03-24-%EC%83%9D%ED%99%9C%EC%BD%94%EB%94%A9web3%20Ajax0/",
+        "teaser":null},{
+        "title": "파이썬에서 파일 다루기",
+        "excerpt":"주로 장고로 웹서버만 만드는 것만 하다보니 파일을 읽고 쓰는 python기능을 자주 쓸 일이 없었다. 그런데 실제로 일을 시작하니 간혹 사용 할 일이 있더라….읽고 쓰는건 간단한 일인데 모드가 자꾸 기억나지 않아서 쓸 때마다 구글을 검색해야 하는 번잡함을 피하고자 블로그에 기록해놓으려고 한다.일단 이와 관련해서 한글로 너무나 잘 정리 된 글이 있어서 소개한다....","categories": ["posts"],
+        "tags": ["python"],
+        "url": "https://zooozoo.github.io/posts/2018-09-01-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C%20%ED%8C%8C%EC%9D%BC%20%EB%8B%A4%EB%A3%A8%EA%B8%B0/",
         "teaser":null}]
