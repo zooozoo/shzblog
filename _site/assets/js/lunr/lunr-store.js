@@ -323,4 +323,9 @@ var store = [{
         "excerpt":"주로 장고로 웹서버만 만드는 것만 하다보니 파일을 읽고 쓰는 python기능을 자주 쓸 일이 없었다. 그런데 실제로 일을 시작하니 간혹 사용 할 일이 있더라….읽고 쓰는건 간단한 일인데 모드가 자꾸 기억나지 않아서 쓸 때마다 구글을 검색해야 하는 번잡함을 피하고자 블로그에 기록해놓으려고 한다.일단 이와 관련해서 한글로 너무나 잘 정리 된 글이 있어서 소개한다....","categories": ["posts"],
         "tags": ["python"],
         "url": "https://zooozoo.github.io/posts/2018-09-01-%ED%8C%8C%EC%9D%B4%EC%8D%AC%EC%9C%BC%EB%A1%9C%20%ED%8C%8C%EC%9D%BC%20%EB%8B%A4%EB%A3%A8%EA%B8%B0/",
+        "teaser":null},{
+        "title": "파이썬에서 파일 다루기",
+        "excerpt":"RUN, CMD, ENTRYPOINT 의 차이점에 대해서 알아보자.검색을 하면 한글로도 너무나 잘 설명을 해 놓은 곳이 많기에 관련 링크를 남기고 여기서는 간단한 차이점만 알아보자(물론 더 자세하게 개념을 이해하기 위해서는 Docker의 cache와 layer의 개념을 알아야 하지만 몰라도 어느정도는 이해하고 활용할 수 있다.)RUN이미지를 빌드 할 때 원하는 명령어를 실행 할 수 있고, 실행한...","categories": ["posts"],
+        "tags": ["Doker"],
+        "url": "https://zooozoo.github.io/posts/2018-10-06-Docker%20RUN,%20CMD%20ENTRYPOINT/",
         "teaser":null}]
